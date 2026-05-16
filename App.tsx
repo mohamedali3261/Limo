@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
+import { BrowserRouter, Routes, Route, Navigate, useLocation } from 'react-router-dom';
 import { useAuthStore } from './lib/store/auth';
 import { useThemeStore } from './lib/store/theme';
 import { useSettingsStore } from './lib/store/settings';
@@ -20,7 +20,6 @@ import Stories from './pages/Stories';
 import StoryView from './pages/StoryView';
 import GameHub from './pages/GameHub';
 import GameLevel from './pages/GameLevel';
-import LevelSelection from './pages/LevelSelection';
 import ProfilePage from './pages/Profile';
 import KidsHub from './pages/KidsHub';
 import KidsAlphabetPage from './pages/kids/KidsAlphabetPage';
@@ -56,6 +55,54 @@ import FrenchApp from './pages/languages/FrenchApp';
 import GermanApp from './pages/languages/GermanApp';
 import SpanishApp from './pages/languages/SpanishApp';
 import LanguageSelector from './pages/LanguageSelector';
+
+// Component to update page title based on route
+function PageTitleUpdater() {
+  const location = useLocation();
+
+  useEffect(() => {
+    const pathTitles: Record<string, string> = {
+      '/': 'Limo - تعلم اللغات 🇬🇧',
+      '/languages': 'اختر اللغة - Limo 🇬🇧',
+      '/learning': 'مسار التعلم - Limo 🇬🇧',
+      '/stories': 'القصص - Limo 🇬🇧',
+      '/voice-conversation': 'محادثة صوتية - Limo 🇬🇧',
+      '/game': 'مركز الألعاب - Limo 🇬🇧',
+      '/profile': 'الملف الشخصي - Limo 🇬🇧',
+      '/kids': 'منطقة الأطفال - Limo 🇬🇧',
+      '/flashcards': 'بطاقات التعلم - Limo 🇬🇧',
+      '/french': 'الفرنسية - Limo 🇬🇧',
+      '/german': 'الألمانية - Limo 🇬🇧',
+      '/spanish': 'الإسبانية - Limo 🇬🇧',
+    };
+
+    // Check for exact match first
+    let title = pathTitles[location.pathname];
+
+    // If no exact match, check for partial matches
+    if (!title) {
+      if (location.pathname.includes('/kids')) {
+        title = 'منطقة الأطفال - Limo 🇬🇧';
+      } else if (location.pathname.includes('/game')) {
+        title = 'مركز الألعاب - Limo 🇬🇧';
+      } else if (location.pathname.includes('/learning')) {
+        title = 'مسار التعلم - Limo 🇬🇧';
+      } else if (location.pathname.includes('/french')) {
+        title = 'الفرنسية - Limo 🇬🇧';
+      } else if (location.pathname.includes('/german')) {
+        title = 'الألمانية - Limo 🇬🇧';
+      } else if (location.pathname.includes('/spanish')) {
+        title = 'الإسبانية - Limo 🇬🇧';
+      } else {
+        title = 'Limo 🇬🇧';
+      }
+    }
+
+    document.title = title;
+  }, [location.pathname]);
+
+  return null;
+}
 
 export default function App() {
   const { user, login, logout, token } = useAuthStore();
@@ -187,6 +234,7 @@ export default function App() {
     <>
       <Toaster position="top-center" richColors />
       <BrowserRouter>
+        <PageTitleUpdater />
         <Routes>
           {/* {!user ? (
             <>
@@ -207,7 +255,6 @@ export default function App() {
                 <Route path="/stories/:id" element={<StoryView />} />
                 <Route path="/voice-conversation" element={<VoiceConversation />} />
                 <Route path="/game" element={<GameHub />} />
-                <Route path="/game/type/:type" element={<LevelSelection />} />
                 <Route path="/game/level/:levelId" element={<GameLevel />} />
                 <Route path="/game/word-catcher" element={<WordCatcher />} />
                 <Route path="/profile" element={<ProfilePage />} />
