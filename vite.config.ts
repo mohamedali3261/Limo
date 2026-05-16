@@ -24,7 +24,7 @@ export default defineConfig(({mode}) => {
         output: {
           manualChunks: {
             'vendor': ['react', 'react-dom', 'react-router-dom'],
-            'ui': ['@base-ui/react', 'shadcn', 'lucide-react'],
+            'ui': ['@base-ui/react', 'lucide-react'],
             'three': ['three', '@react-three/fiber', '@react-three/drei'],
             'utils': ['zustand', 'clsx', 'tailwind-merge', 'uuid'],
           },
