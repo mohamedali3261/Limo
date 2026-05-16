@@ -1,0 +1,474 @@
+[
+  {
+    "id": 1000,
+    "game_level_id": 3,
+    "question_text": "Hello, I want to apply for a job.",
+    "answer_text": "I am writing to express my interest in the position.",
+    "context_ar": "رسمي: أريد التقدم لوظيفة",
+    "options": null
+  },
+  {
+    "id": 1001,
+    "game_level_id": 77,
+    "question_text": "Hello",
+    "answer_text": "مرحباً",
+    "context_ar": "تحية بسيطة",
+    "options": null
+  },
+  {
+    "id": 1002,
+    "game_level_id": 77,
+    "question_text": "Thank you",
+    "answer_text": "شكراً لك",
+    "context_ar": "شكر بسيط",
+    "options": null
+  },
+  {
+    "id": 1003,
+    "game_level_id": 78,
+    "question_text": "Good morning",
+    "answer_text": "صباح الخير",
+    "context_ar": "تحية الصباح",
+    "options": null
+  },
+  {
+    "id": 1004,
+    "game_level_id": 78,
+    "question_text": "How are you?",
+    "answer_text": "كيف حالك؟",
+    "context_ar": "سؤال عن الحال",
+    "options": null
+  },
+  {
+    "id": 1005,
+    "game_level_id": 79,
+    "question_text": "I am fine",
+    "answer_text": "أنا بخير",
+    "context_ar": "الرد على السؤال",
+    "options": null
+  },
+  {
+    "id": 1006,
+    "game_level_id": 79,
+    "question_text": "What is your name?",
+    "answer_text": "ما اسمك؟",
+    "context_ar": "سؤال عن الاسم",
+    "options": null
+  },
+  {
+    "id": 1007,
+    "game_level_id": 80,
+    "question_text": "My name is Ahmed",
+    "answer_text": "اسمي أحمد",
+    "context_ar": "تقديم الاسم",
+    "options": null
+  },
+  {
+    "id": 1008,
+    "game_level_id": 80,
+    "question_text": "Nice to meet you",
+    "answer_text": "سعيد بلقائك",
+    "context_ar": "تعبير عن السعادة",
+    "options": null
+  },
+  {
+    "id": 1009,
+    "game_level_id": 81,
+    "question_text": "Where are you from?",
+    "answer_text": "من أين أنت؟",
+    "context_ar": "سؤال عن البلد",
+    "options": null
+  },
+  {
+    "id": 1010,
+    "game_level_id": 81,
+    "question_text": "I am from Egypt",
+    "answer_text": "أنا من مصر",
+    "context_ar": "الرد عن البلد",
+    "options": null
+  },
+  {
+    "id": 1011,
+    "game_level_id": 82,
+    "question_text": "I love learning English",
+    "answer_text": "أنا أحب تعلم الإنجليزية",
+    "context_ar": "التعبير عن الحب",
+    "options": null
+  },
+  {
+    "id": 1012,
+    "game_level_id": 82,
+    "question_text": "This is my book",
+    "answer_text": "هذا كتابي",
+    "context_ar": "الإشارة للملكية",
+    "options": null
+  },
+  {
+    "id": 1013,
+    "game_level_id": 83,
+    "question_text": "I go to school every day",
+    "answer_text": "أذهب إلى المدرسة كل يوم",
+    "context_ar": "روتين يومي",
+    "options": null
+  },
+  {
+    "id": 1014,
+    "game_level_id": 83,
+    "question_text": "She is my friend",
+    "answer_text": "هي صديقتي",
+    "context_ar": "تعريف بصديق",
+    "options": null
+  },
+  {
+    "id": 1015,
+    "game_level_id": 84,
+    "question_text": "We are learning together",
+    "answer_text": "نحن نتعلم معاً",
+    "context_ar": "نشاط جماعي",
+    "options": null
+  },
+  {
+    "id": 1016,
+    "game_level_id": 84,
+    "question_text": "The weather is nice today",
+    "answer_text": "الطقس جميل اليوم",
+    "context_ar": "وصف الطقس",
+    "options": null
+  },
+  {
+    "id": 1017,
+    "game_level_id": 85,
+    "question_text": "I want to drink water",
+    "answer_text": "أريد أن أشرب ماء",
+    "context_ar": "طلب بسيط",
+    "options": null
+  },
+  {
+    "id": 1018,
+    "game_level_id": 85,
+    "question_text": "Can you help me please?",
+    "answer_text": "هل يمكنك مساعدتي من فضلك؟",
+    "context_ar": "طلب المساعدة",
+    "options": null
+  },
+  {
+    "id": 1019,
+    "game_level_id": 86,
+    "question_text": "I am happy to see you",
+    "answer_text": "أنا سعيد برؤيتك",
+    "context_ar": "التعبير عن السعادة",
+    "options": null
+  },
+  {
+    "id": 1020,
+    "game_level_id": 86,
+    "question_text": "Have a nice day",
+    "answer_text": "أتمنى لك يوماً سعيداً",
+    "context_ar": "تمنيات طيبة",
+    "options": null
+  },
+  {
+    "id": 1021,
+    "game_level_id": 87,
+    "question_text": "The book is on the table",
+    "answer_text": "الكتاب على الطاولة",
+    "context_ar": "وصف مكان",
+    "options": null
+  },
+  {
+    "id": 1022,
+    "game_level_id": 87,
+    "question_text": "I like to read books",
+    "answer_text": "أحب قراءة الكتب",
+    "context_ar": "هواية",
+    "options": null
+  },
+  {
+    "id": 1023,
+    "game_level_id": 88,
+    "question_text": "My family is very important to me",
+    "answer_text": "عائلتي مهمة جداً بالنسبة لي",
+    "context_ar": "عن العائلة",
+    "options": null
+  },
+  {
+    "id": 1024,
+    "game_level_id": 88,
+    "question_text": "I have two brothers and one sister",
+    "answer_text": "لدي أخوان وأخت واحدة",
+    "context_ar": "أفراد العائلة",
+    "options": null
+  },
+  {
+    "id": 1025,
+    "game_level_id": 89,
+    "question_text": "I work in a big company",
+    "answer_text": "أعمل في شركة كبيرة",
+    "context_ar": "عن العمل",
+    "options": null
+  },
+  {
+    "id": 1026,
+    "game_level_id": 89,
+    "question_text": "My job is very interesting",
+    "answer_text": "وظيفتي ممتعة جداً",
+    "context_ar": "وصف العمل",
+    "options": null
+  },
+  {
+    "id": 1027,
+    "game_level_id": 90,
+    "question_text": "I enjoy playing football with my friends",
+    "answer_text": "أستمتع بلعب كرة القدم مع أصدقائي",
+    "context_ar": "نشاط رياضي",
+    "options": null
+  },
+  {
+    "id": 1028,
+    "game_level_id": 90,
+    "question_text": "Exercise is good for your health",
+    "answer_text": "التمرين مفيد لصحتك",
+    "context_ar": "نصيحة صحية",
+    "options": null
+  },
+  {
+    "id": 1029,
+    "game_level_id": 91,
+    "question_text": "I usually wake up at seven o'clock",
+    "answer_text": "عادة أستيقظ في السابعة صباحاً",
+    "context_ar": "روتين يومي",
+    "options": null
+  },
+  {
+    "id": 1030,
+    "game_level_id": 91,
+    "question_text": "I have breakfast before going to work",
+    "answer_text": "أتناول الإفطار قبل الذهاب للعمل",
+    "context_ar": "عادة صباحية",
+    "options": null
+  },
+  {
+    "id": 1031,
+    "game_level_id": 92,
+    "question_text": "I love traveling to new places",
+    "answer_text": "أحب السفر إلى أماكن جديدة",
+    "context_ar": "عن السفر",
+    "options": null
+  },
+  {
+    "id": 1032,
+    "game_level_id": 92,
+    "question_text": "Last summer I visited Paris",
+    "answer_text": "الصيف الماضي زرت باريس",
+    "context_ar": "تجربة سفر",
+    "options": null
+  },
+  {
+    "id": 1033,
+    "game_level_id": 93,
+    "question_text": "Technology has changed our lives",
+    "answer_text": "التكنولوجيا غيرت حياتنا",
+    "context_ar": "عن التكنولوجيا",
+    "options": null
+  },
+  {
+    "id": 1034,
+    "game_level_id": 93,
+    "question_text": "I use my smartphone every day",
+    "answer_text": "أستخدم هاتفي الذكي كل يوم",
+    "context_ar": "استخدام التقنية",
+    "options": null
+  },
+  {
+    "id": 1035,
+    "game_level_id": 94,
+    "question_text": "Education is the key to success",
+    "answer_text": "التعليم هو مفتاح النجاح",
+    "context_ar": "عن التعليم",
+    "options": null
+  },
+  {
+    "id": 1036,
+    "game_level_id": 94,
+    "question_text": "I believe in continuous learning",
+    "answer_text": "أؤمن بالتعلم المستمر",
+    "context_ar": "فلسفة التعلم",
+    "options": null
+  },
+  {
+    "id": 1037,
+    "game_level_id": 95,
+    "question_text": "Healthy food gives you energy",
+    "answer_text": "الطعام الصحي يمنحك الطاقة",
+    "context_ar": "عن الصحة",
+    "options": null
+  },
+  {
+    "id": 1038,
+    "game_level_id": 95,
+    "question_text": "I try to eat vegetables every day",
+    "answer_text": "أحاول تناول الخضروات كل يوم",
+    "context_ar": "عادة صحية",
+    "options": null
+  },
+  {
+    "id": 1039,
+    "game_level_id": 96,
+    "question_text": "Climate change is a serious problem",
+    "answer_text": "تغير المناخ مشكلة خطيرة",
+    "context_ar": "قضية بيئية",
+    "options": null
+  },
+  {
+    "id": 1040,
+    "game_level_id": 96,
+    "question_text": "We must protect our environment",
+    "answer_text": "يجب أن نحمي بيئتنا",
+    "context_ar": "مسؤولية بيئية",
+    "options": null
+  },
+  {
+    "id": 1041,
+    "game_level_id": 97,
+    "question_text": "Communication skills are essential in business",
+    "answer_text": "مهارات التواصل ضرورية في الأعمال",
+    "context_ar": "مهارات مهنية",
+    "options": null
+  },
+  {
+    "id": 1042,
+    "game_level_id": 97,
+    "question_text": "Teamwork leads to better results",
+    "answer_text": "العمل الجماعي يؤدي إلى نتائج أفضل",
+    "context_ar": "أهمية التعاون",
+    "options": null
+  },
+  {
+    "id": 1043,
+    "game_level_id": 98,
+    "question_text": "Artificial intelligence is transforming industries",
+    "answer_text": "الذكاء الاصطناعي يحول الصناعات",
+    "context_ar": "تقنية حديثة",
+    "options": null
+  },
+  {
+    "id": 1044,
+    "game_level_id": 98,
+    "question_text": "Innovation drives economic growth",
+    "answer_text": "الابتكار يدفع النمو الاقتصادي",
+    "context_ar": "عن الابتكار",
+    "options": null
+  },
+  {
+    "id": 1045,
+    "game_level_id": 99,
+    "question_text": "Cultural diversity enriches society",
+    "answer_text": "التنوع الثقافي يثري المجتمع",
+    "context_ar": "عن الثقافة",
+    "options": null
+  },
+  {
+    "id": 1046,
+    "game_level_id": 99,
+    "question_text": "Respecting different perspectives is important",
+    "answer_text": "احترام وجهات النظر المختلفة مهم",
+    "context_ar": "قيمة اجتماعية",
+    "options": null
+  },
+  {
+    "id": 1047,
+    "game_level_id": 100,
+    "question_text": "Sustainable development requires global cooperation",
+    "answer_text": "التنمية المستدامة تتطلب تعاوناً عالمياً",
+    "context_ar": "قضية عالمية",
+    "options": null
+  },
+  {
+    "id": 1048,
+    "game_level_id": 100,
+    "question_text": "Renewable energy is the future",
+    "answer_text": "الطاقة المتجددة هي المستقبل",
+    "context_ar": "طاقة نظيفة",
+    "options": null
+  },
+  {
+    "id": 1049,
+    "game_level_id": 101,
+    "question_text": "The implementation of comprehensive strategies requires meticulous planning",
+    "answer_text": "تنفيذ الاستراتيجيات الشاملة يتطلب تخطيطاً دقيقاً",
+    "context_ar": "إدارة متقدمة",
+    "options": null
+  },
+  {
+    "id": 1050,
+    "game_level_id": 101,
+    "question_text": "Effective leadership inspires organizational excellence",
+    "answer_text": "القيادة الفعالة تلهم التميز المؤسسي",
+    "context_ar": "قيادة احترافية",
+    "options": null
+  },
+  {
+    "id": 1051,
+    "game_level_id": 102,
+    "question_text": "Quantum computing represents a paradigm shift in technology",
+    "answer_text": "الحوسبة الكمومية تمثل تحولاً جذرياً في التكنولوجيا",
+    "context_ar": "تقنية متطورة",
+    "options": null
+  },
+  {
+    "id": 1052,
+    "game_level_id": 102,
+    "question_text": "Biotechnology innovations are revolutionizing healthcare",
+    "answer_text": "ابتكارات التكنولوجيا الحيوية تحدث ثورة في الرعاية الصحية",
+    "context_ar": "علوم حديثة",
+    "options": null
+  },
+  {
+    "id": 1053,
+    "game_level_id": 103,
+    "question_text": "Geopolitical dynamics influence international trade policies",
+    "answer_text": "الديناميكيات الجيوسياسية تؤثر على سياسات التجارة الدولية",
+    "context_ar": "سياسة دولية",
+    "options": null
+  },
+  {
+    "id": 1054,
+    "game_level_id": 103,
+    "question_text": "Economic sanctions have far-reaching consequences",
+    "answer_text": "العقوبات الاقتصادية لها عواقب بعيدة المدى",
+    "context_ar": "اقتصاد عالمي",
+    "options": null
+  },
+  {
+    "id": 1055,
+    "game_level_id": 104,
+    "question_text": "Philosophical discourse examines fundamental questions of existence",
+    "answer_text": "الخطاب الفلسفي يفحص الأسئلة الأساسية للوجود",
+    "context_ar": "فلسفة عميقة",
+    "options": null
+  },
+  {
+    "id": 1056,
+    "game_level_id": 104,
+    "question_text": "Epistemological frameworks shape our understanding of knowledge",
+    "answer_text": "الأطر المعرفية تشكل فهمنا للمعرفة",
+    "context_ar": "نظرية المعرفة",
+    "options": null
+  },
+  {
+    "id": 1057,
+    "game_level_id": 105,
+    "question_text": "Neuroplasticity demonstrates the brain's remarkable adaptability",
+    "answer_text": "المرونة العصبية تظهر قدرة الدماغ الرائعة على التكيف",
+    "context_ar": "علم الأعصاب",
+    "options": null
+  },
+  {
+    "id": 1058,
+    "game_level_id": 105,
+    "question_text": "Cognitive psychology explores mental processes and behavior",
+    "answer_text": "علم النفس المعرفي يستكشف العمليات العقلية والسلوك",
+    "context_ar": "علم نفس متقدم",
+    "options": null
+  }
+]

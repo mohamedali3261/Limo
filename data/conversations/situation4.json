@@ -1,0 +1,91 @@
+{
+  "id": 4,
+  "title": "في الفندق",
+  "titleEn": "At the Hotel",
+  "icon": "🏨",
+  "color": "purple",
+  "difficulty": "medium",
+  "dialogues": [
+    {
+      "speaker": "Memo",
+      "gender": "male",
+      "en": "Good evening! I have a reservation under the name Memo.",
+      "ar": "مساء الخير! لدي حجز باسم ميمو."
+    },
+    {
+      "speaker": "Receptionist",
+      "gender": "female",
+      "en": "Good evening, Mr. Memo! Let me check. Yes, a single room for three nights.",
+      "ar": "مساء الخير، سيد ميمو! دعني أتحقق. نعم، غرفة مفردة لثلاث ليالٍ."
+    },
+    {
+      "speaker": "Memo",
+      "gender": "male",
+      "en": "That's correct. Does the room have a view?",
+      "ar": "هذا صحيح. هل للغرفة إطلالة؟"
+    },
+    {
+      "speaker": "Receptionist",
+      "gender": "female",
+      "en": "Yes, you have a beautiful view of the city. Here is your key card.",
+      "ar": "نعم، لديك إطلالة جميلة على المدينة. تفضل بطاقة المفتاح."
+    },
+    {
+      "speaker": "Memo",
+      "gender": "male",
+      "en": "Thank you! What time is breakfast served?",
+      "ar": "شكراً! في أي وقت يُقدم الإفطار؟"
+    },
+    {
+      "speaker": "Receptionist",
+      "gender": "female",
+      "en": "Breakfast is served from 7 AM to 10 AM in the restaurant.",
+      "ar": "يُقدم الإفطار من السابعة صباحاً حتى العاشرة في المطعم."
+    },
+    {
+      "speaker": "Memo",
+      "gender": "male",
+      "en": "Perfect! Is there WiFi in the room?",
+      "ar": "ممتاز! هل يوجد واي فاي في الغرفة؟"
+    },
+    {
+      "speaker": "Receptionist",
+      "gender": "female",
+      "en": "Yes, the WiFi password is on the card. Enjoy your stay!",
+      "ar": "نعم، كلمة مرور الواي فاي على البطاقة. استمتع بإقامتك!"
+    }
+  ],
+  "quiz": {
+    "title": "اختبار الفندق",
+    "questions": [
+      {
+        "id": 1,
+        "question": "What type of room did Memo book?",
+        "questionAr": "ما نوع الغرفة التي حجزها ميمو؟",
+        "options": ["Double room", "Single room", "Suite", "Twin room"],
+        "correctAnswer": 1
+      },
+      {
+        "id": 2,
+        "question": "Does the room have a view?",
+        "questionAr": "هل للغرفة إطلالة؟",
+        "options": ["No", "Yes, of the city", "Yes, of the sea", "Not mentioned"],
+        "correctAnswer": 1
+      },
+      {
+        "id": 3,
+        "question": "What time is breakfast served?",
+        "questionAr": "في أي وقت يُقدم الإفطار؟",
+        "options": ["6 AM to 9 AM", "7 AM to 10 AM", "8 AM to 11 AM", "9 AM to 12 PM"],
+        "correctAnswer": 1
+      },
+      {
+        "id": 4,
+        "question": "Is there WiFi in the room?",
+        "questionAr": "هل يوجد واي فاي في الغرفة؟",
+        "options": ["No", "Yes", "Only in lobby", "Not mentioned"],
+        "correctAnswer": 1
+      }
+    ]
+  }
+}

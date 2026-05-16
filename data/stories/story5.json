@@ -1,0 +1,97 @@
+{
+  "id": 5,
+  "title": "هواياتي المفضلة",
+  "description": "تحدث عن الأشياء التي تحب القيام بها في وقت فراغك.",
+  "difficulty": "easy",
+  "thumbnail": "hobbies.png",
+  "xp_reward": 90,
+  "scenes": [
+    {
+      "name": "Narrator",
+      "en": "Mona and Ahmed are in the park. They are talking about hobbies.",
+      "ar": "منى وأحمد في الحديقة. يتحدثان عن الهوايات."
+    },
+    {
+      "name": "Mona",
+      "en": "Ahmed, what do you like to do?",
+      "ar": "أحمد، ماذا تحب أن تفعل؟"
+    },
+    {
+      "name": "Ahmed",
+      "en": "I like to play football! It is fun!",
+      "ar": "أحب أن ألعب كرة القدم! إنها ممتعة!"
+    },
+    {
+      "name": "Mona",
+      "en": "Football is great! I like to read books.",
+      "ar": "كرة القدم رائعة! أنا أحب قراءة الكتب."
+    },
+    {
+      "name": "Ahmed",
+      "en": "Reading is good! What books do you like?",
+      "ar": "القراءة جيدة! أي كتب تحبين؟"
+    },
+    {
+      "name": "Mona",
+      "en": "I like adventure books! They are exciting!",
+      "ar": "أحب كتب المغامرات! إنها مشوقة!"
+    },
+    {
+      "name": "Ahmed",
+      "en": "I also like to draw. I draw animals.",
+      "ar": "أحب الرسم أيضاً. أرسم الحيوانات."
+    },
+    {
+      "name": "Mona",
+      "en": "That is nice! I like to listen to music.",
+      "ar": "هذا جميل! أحب الاستماع للموسيقى."
+    },
+    {
+      "name": "Ahmed",
+      "en": "Music is wonderful! We have many hobbies!",
+      "ar": "الموسيقى رائعة! لدينا هوايات كثيرة!"
+    }
+  ],
+  "questions": [
+    {
+      "scene_idx": 2,
+      "type": "multiple_choice",
+      "q": "What does Ahmed like to do?",
+      "options": [
+        "Play football",
+        "Read books",
+        "Watch TV"
+      ],
+      "a": "Play football"
+    },
+    {
+      "scene_idx": 3,
+      "type": "typing",
+      "q": "I like to ___ books.|||أحب قراءة الكتب.",
+      "a": "read"
+    },
+    {
+      "scene_idx": 6,
+      "type": "dictation",
+      "a": "I draw animals"
+    }
+  ],
+  "finalQuestions": [
+    {
+      "type": "multiple_choice",
+      "q": "What does Mona like to do?",
+      "options": [
+        "Read books",
+        "Play football",
+        "Draw"
+      ],
+      "a": "Read books"
+    },
+    {
+      "type": "typing",
+      "q": "What do you like to ___?|||ماذا تحب أن تفعل؟",
+      "a": "do"
+    }
+  ]
+}
+

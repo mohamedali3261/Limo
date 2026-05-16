@@ -1,0 +1,109 @@
+{
+  "id": 12,
+  "title": "في المقهى",
+  "titleEn": "At the Cafe",
+  "icon": "cafe",
+  "color": "amber",
+  "difficulty": "easy",
+  "dialogues": [
+    {
+      "speaker": "Barista",
+      "gender": "female",
+      "en": "Welcome to our cafe! What can I get for you today?",
+      "ar": "مرحباً بك في مقهانا! ماذا يمكنني أن أحضر لك اليوم؟"
+    },
+    {
+      "speaker": "Customer",
+      "gender": "male",
+      "en": "Hi! I'd like a cappuccino and a croissant, please.",
+      "ar": "مرحباً! أود كابتشينو وكرواسان، من فضلك."
+    },
+    {
+      "speaker": "Barista",
+      "gender": "female",
+      "en": "Great choice! Would you like your cappuccino hot or iced?",
+      "ar": "اختيار رائع! هل تريد الكابتشينو ساخناً أم مثلجاً؟"
+    },
+    {
+      "speaker": "Customer",
+      "gender": "male",
+      "en": "Hot, please. And can you make it with oat milk?",
+      "ar": "ساخناً، من فضلك. وهل يمكنك أن تصنعه بحليب الشوفان؟"
+    },
+    {
+      "speaker": "Barista",
+      "gender": "female",
+      "en": "Of course! We have oat milk, almond milk, and soy milk available.",
+      "ar": "بالطبع! لدينا حليب الشوفان وحليب اللوز وحليب الصويا متاحة."
+    },
+    {
+      "speaker": "Customer",
+      "gender": "male",
+      "en": "Perfect! Oat milk is my favorite. Do you have any pastries besides croissants?",
+      "ar": "مثالي! حليب الشوفان هو المفضل لدي. هل لديك أي معجنات غير الكرواسان؟"
+    },
+    {
+      "speaker": "Barista",
+      "gender": "female",
+      "en": "Yes! We have muffins, donuts, and chocolate cake. All freshly baked this morning.",
+      "ar": "نعم! لدينا كعك الفطر والدونات وكعكة الشوكولاتة. كل شيء مخبوز طازة هذا الصباح."
+    },
+    {
+      "speaker": "Customer",
+      "gender": "male",
+      "en": "That sounds delicious! I'll stick with the croissant. How much will that be?",
+      "ar": "يبدو لذيذاً! سأبقى مع الكرواسان. كم سيكون السعر؟"
+    },
+    {
+      "speaker": "Barista",
+      "gender": "female",
+      "en": "That's £5.50 for the cappuccino and £2.50 for the croissant. Total is £8.",
+      "ar": "هذا 5.50 جنيهات للكابتشينو و 2.50 جنيهات للكرواسان. المجموع 8 جنيهات."
+    },
+    {
+      "speaker": "Customer",
+      "gender": "male",
+      "en": "Here you go! Keep the change. This is a lovely cafe!",
+      "ar": "تفضل! احتفظ بالباقي. هذا مقهى جميل!"
+    },
+    {
+      "speaker": "Barista",
+      "gender": "female",
+      "en": "Thank you so much! Please come again soon. Enjoy your coffee!",
+      "ar": "شكراً جزيلاً! من فضلك تعود قريباً. استمتع بقهوتك!"
+    }
+  ],
+  "quiz": {
+    "title": "اختبار المقهى",
+    "questions": [
+      {
+        "id": 1,
+        "question": "What did the customer order to drink?",
+        "questionAr": "ماذا طلب العميل للشرب؟",
+        "options": ["Coffee", "Cappuccino", "Tea", "Juice"],
+        "correctAnswer": 1
+      },
+      {
+        "id": 2,
+        "question": "What type of milk did the customer choose?",
+        "questionAr": "ما نوع الحليب الذي اختاره العميل؟",
+        "options": ["Almond milk", "Soy milk", "Oat milk", "Regular milk"],
+        "correctAnswer": 2
+      },
+      {
+        "id": 3,
+        "question": "What pastries are available?",
+        "questionAr": "ما المعجنات المتاحة؟",
+        "options": ["Only croissants", "Croissants and muffins", "Muffins, donuts, and chocolate cake", "Only donuts"],
+        "correctAnswer": 2
+      },
+      {
+        "id": 4,
+        "question": "What is the total price?",
+        "questionAr": "ما هو السعر الإجمالي؟",
+        "options": ["£5.50", "£7", "£8", "£10"],
+        "correctAnswer": 2
+      }
+    ]
+  }
+}

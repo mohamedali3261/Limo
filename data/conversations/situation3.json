@@ -1,0 +1,91 @@
+{
+  "id": 3,
+  "title": "عند الطبيب",
+  "titleEn": "At the Doctor",
+  "icon": "👨‍⚕️",
+  "color": "red",
+  "difficulty": "medium",
+  "dialogues": [
+    {
+      "speaker": "Omar",
+      "gender": "male",
+      "en": "Good morning, Doctor. I'm not feeling well.",
+      "ar": "صباح الخير يا دكتور. لا أشعر بصحة جيدة."
+    },
+    {
+      "speaker": "Dr. Lisa",
+      "gender": "female",
+      "en": "Good morning! What seems to be the problem?",
+      "ar": "صباح الخير! ما هي المشكلة؟"
+    },
+    {
+      "speaker": "Omar",
+      "gender": "male",
+      "en": "I have a terrible headache and a sore throat.",
+      "ar": "لدي صداع شديد والتهاب في الحلق."
+    },
+    {
+      "speaker": "Dr. Lisa",
+      "gender": "female",
+      "en": "Do you have a fever?",
+      "ar": "هل لديك حمى؟"
+    },
+    {
+      "speaker": "Omar",
+      "gender": "male",
+      "en": "Yes, I think so. I feel very hot.",
+      "ar": "نعم، أعتقد ذلك. أشعر بحرارة شديدة."
+    },
+    {
+      "speaker": "Dr. Lisa",
+      "gender": "female",
+      "en": "Let me check your temperature. Open your mouth, please.",
+      "ar": "دعني أفحص درجة حرارتك. افتح فمك، من فضلك."
+    },
+    {
+      "speaker": "Omar",
+      "gender": "male",
+      "en": "Is it serious, Doctor?",
+      "ar": "هل هو خطير يا دكتور؟"
+    },
+    {
+      "speaker": "Dr. Lisa",
+      "gender": "female",
+      "en": "No, don't worry. You have a cold. Take this medicine three times a day.",
+      "ar": "لا، لا تقلق. لديك نزلة برد. خذ هذا الدواء ثلاث مرات يومياً."
+    }
+  ],
+  "quiz": {
+    "title": "اختبار الطبيب",
+    "questions": [
+      {
+        "id": 1,
+        "question": "Who is Omar visiting?",
+        "questionAr": "من يزور عمر؟",
+        "options": ["A nurse", "A doctor", "A pharmacist", "A dentist"],
+        "correctAnswer": 1
+      },
+      {
+        "id": 2,
+        "question": "Does Omar have a fever?",
+        "questionAr": "هل لدى عمر حمى؟",
+        "options": ["No", "Yes", "Maybe", "Not mentioned"],
+        "correctAnswer": 1
+      },
+      {
+        "id": 3,
+        "question": "What is the diagnosis?",
+        "questionAr": "ما هو التشخيص؟",
+        "options": ["Flu", "Cold", "Pneumonia", "Allergy"],
+        "correctAnswer": 1
+      },
+      {
+        "id": 4,
+        "question": "How many times a day should Omar take the medicine?",
+        "questionAr": "كم مرة في اليوم يجب على عمر تناول الدواء؟",
+        "options": ["Once", "Twice", "Three times", "Four times"],
+        "correctAnswer": 2
+      }
+    ]
+  }
+}

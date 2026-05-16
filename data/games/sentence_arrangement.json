@@ -1,0 +1,1178 @@
+[
+  {
+    "id": 3,
+    "game_level_id": 2,
+    "question_text": "The cat is on the mat",
+    "answer_text": "The cat is on the mat",
+    "context_ar": "Ø§Ù„Ù‚Ø·Ø© Ø¹Ù„Ù‰ Ø§Ù„Ø³Ø¬Ø§Ø¯Ø©",
+    "options": null
+  },
+  {
+    "id": 4,
+    "game_level_id": 2,
+    "question_text": "I love learning languages",
+    "answer_text": "I love learning languages",
+    "context_ar": "Ø£Ù†Ø§ Ø£Ø­Ø¨ ØªØ¹Ù„Ù… Ø§Ù„Ù„ØºØ§Øª",
+    "options": null
+  },
+  {
+    "id": 181,
+    "game_level_id": 48,
+    "question_text": "They visited the museum last week",
+    "answer_text": "They visited the museum last week",
+    "context_ar": "Ù‚Ø§Ù…ÙˆØ§ Ø¨Ø²ÙŠØ§Ø±Ø© Ø§Ù„Ù…ØªØ­Ù Ø§Ù„Ø£Ø³Ø¨ÙˆØ¹ Ø§Ù„Ù…Ø§Ø¶ÙŠ",
+    "options": null
+  },
+  {
+    "id": 182,
+    "game_level_id": 48,
+    "question_text": "Can you help me with this?",
+    "answer_text": "Can you help me with this?",
+    "context_ar": "Ù‡Ù„ ÙŠÙ…ÙƒÙ†Ùƒ Ù…Ø³Ø§Ø¹Ø¯ØªÙŠ ÙÙŠ Ù‡Ø°Ø§ØŸ",
+    "options": null
+  },
+  {
+    "id": 183,
+    "game_level_id": 48,
+    "question_text": "They are planning a trip to Paris",
+    "answer_text": "They are planning a trip to Paris",
+    "context_ar": "ÙŠØ®Ø·Ø·ÙˆÙ† Ù„Ø±Ø­Ù„Ø© Ø¥Ù„Ù‰ Ø¨Ø§Ø±ÙŠØ³",
+    "options": null
+  },
+  {
+    "id": 184,
+    "game_level_id": 48,
+    "question_text": "She likes to read books",
+    "answer_text": "She likes to read books",
+    "context_ar": "Ø¥Ù†Ù‡Ø§ ØªØ­Ø¨ Ù‚Ø±Ø§Ø¡Ø© Ø§Ù„ÙƒØªØ¨",
+    "options": null
+  },
+  {
+    "id": 185,
+    "game_level_id": 48,
+    "question_text": "The cat is sleeping on the sofa",
+    "answer_text": "The cat is sleeping on the sofa",
+    "context_ar": "Ø§Ù„Ù‚Ø·Ø© Ù†Ø§Ø¦Ù…Ø© Ø¹Ù„Ù‰ Ø§Ù„Ø£Ø±ÙŠÙƒØ©",
+    "options": null
+  },
+  {
+    "id": 186,
+    "game_level_id": 49,
+    "question_text": "They visited the museum last week",
+    "answer_text": "They visited the museum last week",
+    "context_ar": "Ù‚Ø§Ù…ÙˆØ§ Ø¨Ø²ÙŠØ§Ø±Ø© Ø§Ù„Ù…ØªØ­Ù Ø§Ù„Ø£Ø³Ø¨ÙˆØ¹ Ø§Ù„Ù…Ø§Ø¶ÙŠ",
+    "options": null
+  },
+  {
+    "id": 187,
+    "game_level_id": 49,
+    "question_text": "He plays football with his friends",
+    "answer_text": "He plays football with his friends",
+    "context_ar": "Ù‡Ùˆ ÙŠÙ„Ø¹Ø¨ ÙƒØ±Ø© Ø§Ù„Ù‚Ø¯Ù… Ù…Ø¹ Ø£ØµØ¯Ù‚Ø§Ø¦Ù‡",
+    "options": null
+  },
+  {
+    "id": 188,
+    "game_level_id": 49,
+    "question_text": "She likes to read books",
+    "answer_text": "She likes to read books",
+    "context_ar": "Ø¥Ù†Ù‡Ø§ ØªØ­Ø¨ Ù‚Ø±Ø§Ø¡Ø© Ø§Ù„ÙƒØªØ¨",
+    "options": null
+  },
+  {
+    "id": 189,
+    "game_level_id": 49,
+    "question_text": "They are planning a trip to Paris",
+    "answer_text": "They are planning a trip to Paris",
+    "context_ar": "ÙŠØ®Ø·Ø·ÙˆÙ† Ù„Ø±Ø­Ù„Ø© Ø¥Ù„Ù‰ Ø¨Ø§Ø±ÙŠØ³",
+    "options": null
+  },
+  {
+    "id": 190,
+    "game_level_id": 49,
+    "question_text": "Can you help me with this?",
+    "answer_text": "Can you help me with this?",
+    "context_ar": "Ù‡Ù„ ÙŠÙ…ÙƒÙ†Ùƒ Ù…Ø³Ø§Ø¹Ø¯ØªÙŠ ÙÙŠ Ù‡Ø°Ø§ØŸ",
+    "options": null
+  },
+  {
+    "id": 191,
+    "game_level_id": 50,
+    "question_text": "Can you help me with this?",
+    "answer_text": "Can you help me with this?",
+    "context_ar": "Ù‡Ù„ ÙŠÙ…ÙƒÙ†Ùƒ Ù…Ø³Ø§Ø¹Ø¯ØªÙŠ ÙÙŠ Ù‡Ø°Ø§ØŸ",
+    "options": null
+  },
+  {
+    "id": 192,
+    "game_level_id": 50,
+    "question_text": "She is a very good driver",
+    "answer_text": "She is a very good driver",
+    "context_ar": "Ø¥Ù†Ù‡Ø§ Ø³Ø§Ø¦Ù‚Ø© Ù…Ù…ØªØ§Ø²Ø©",
+    "options": null
+  },
+  {
+    "id": 193,
+    "game_level_id": 50,
+    "question_text": "The cat is sleeping on the sofa",
+    "answer_text": "The cat is sleeping on the sofa",
+    "context_ar": "Ø§Ù„Ù‚Ø·Ø© Ù†Ø§Ø¦Ù…Ø© Ø¹Ù„Ù‰ Ø§Ù„Ø£Ø±ÙŠÙƒØ©",
+    "options": null
+  },
+  {
+    "id": 194,
+    "game_level_id": 50,
+    "question_text": "They are planning a trip to Paris",
+    "answer_text": "They are planning a trip to Paris",
+    "context_ar": "ÙŠØ®Ø·Ø·ÙˆÙ† Ù„Ø±Ø­Ù„Ø© Ø¥Ù„Ù‰ Ø¨Ø§Ø±ÙŠØ³",
+    "options": null
+  },
+  {
+    "id": 195,
+    "game_level_id": 50,
+    "question_text": "I go to school every day",
+    "answer_text": "I go to school every day",
+    "context_ar": "Ø£Ø°Ù‡Ø¨ Ø¥Ù„Ù‰ Ø§Ù„Ù…Ø¯Ø±Ø³Ø© ÙƒÙ„ ÙŠÙˆÙ…",
+    "options": null
+  },
+  {
+    "id": 196,
+    "game_level_id": 51,
+    "question_text": "She likes to read books",
+    "answer_text": "She likes to read books",
+    "context_ar": "Ø¥Ù†Ù‡Ø§ ØªØ­Ø¨ Ù‚Ø±Ø§Ø¡Ø© Ø§Ù„ÙƒØªØ¨",
+    "options": null
+  },
+  {
+    "id": 197,
+    "game_level_id": 51,
+    "question_text": "They visited the museum last week",
+    "answer_text": "They visited the museum last week",
+    "context_ar": "Ù‚Ø§Ù…ÙˆØ§ Ø¨Ø²ÙŠØ§Ø±Ø© Ø§Ù„Ù…ØªØ­Ù Ø§Ù„Ø£Ø³Ø¨ÙˆØ¹ Ø§Ù„Ù…Ø§Ø¶ÙŠ",
+    "options": null
+  },
+  {
+    "id": 198,
+    "game_level_id": 51,
+    "question_text": "My favorite color is blue",
+    "answer_text": "My favorite color is blue",
+    "context_ar": "Ù„ÙˆÙ†ÙŠ Ø§Ù„Ù…ÙØ¶Ù„ Ù‡Ùˆ Ø§Ù„Ø£Ø²Ø±Ù‚",
+    "options": null
+  },
+  {
+    "id": 199,
+    "game_level_id": 51,
+    "question_text": "He plays football with his friends",
+    "answer_text": "He plays football with his friends",
+    "context_ar": "Ù‡Ùˆ ÙŠÙ„Ø¹Ø¨ ÙƒØ±Ø© Ø§Ù„Ù‚Ø¯Ù… Ù…Ø¹ Ø£ØµØ¯Ù‚Ø§Ø¦Ù‡",
+    "options": null
+  },
+  {
+    "id": 200,
+    "game_level_id": 51,
+    "question_text": "She is a very good driver",
+    "answer_text": "She is a very good driver",
+    "context_ar": "Ø¥Ù†Ù‡Ø§ Ø³Ø§Ø¦Ù‚Ø© Ù…Ù…ØªØ§Ø²Ø©",
+    "options": null
+  },
+  {
+    "id": 201,
+    "game_level_id": 52,
+    "question_text": "I would like a cup of coffee",
+    "answer_text": "I would like a cup of coffee",
+    "context_ar": "Ø£Ø±ÙŠØ¯ ÙƒÙˆØ¨Ø§ Ù…Ù† Ø§Ù„Ù‚Ù‡ÙˆØ©",
+    "options": null
+  },
+  {
+    "id": 202,
+    "game_level_id": 52,
+    "question_text": "My favorite color is blue",
+    "answer_text": "My favorite color is blue",
+    "context_ar": "Ù„ÙˆÙ†ÙŠ Ø§Ù„Ù…ÙØ¶Ù„ Ù‡Ùˆ Ø§Ù„Ø£Ø²Ø±Ù‚",
+    "options": null
+  },
+  {
+    "id": 203,
+    "game_level_id": 52,
+    "question_text": "He plays football with his friends",
+    "answer_text": "He plays football with his friends",
+    "context_ar": "Ù‡Ùˆ ÙŠÙ„Ø¹Ø¨ ÙƒØ±Ø© Ø§Ù„Ù‚Ø¯Ù… Ù…Ø¹ Ø£ØµØ¯Ù‚Ø§Ø¦Ù‡",
+    "options": null
+  },
+  {
+    "id": 204,
+    "game_level_id": 52,
+    "question_text": "He plays football with his friends",
+    "answer_text": "He plays football with his friends",
+    "context_ar": "Ù‡Ùˆ ÙŠÙ„Ø¹Ø¨ ÙƒØ±Ø© Ø§Ù„Ù‚Ø¯Ù… Ù…Ø¹ Ø£ØµØ¯Ù‚Ø§Ø¦Ù‡",
+    "options": null
+  },
+  {
+    "id": 205,
+    "game_level_id": 52,
+    "question_text": "The sun rises in the east",
+    "answer_text": "The sun rises in the east",
+    "context_ar": "ØªØ´Ø±Ù‚ Ø§Ù„Ø´Ù…Ø³ ÙÙŠ Ø§Ù„Ø´Ø±Ù‚",
+    "options": null
+  },
+  {
+    "id": 206,
+    "game_level_id": 53,
+    "question_text": "My favorite color is blue",
+    "answer_text": "My favorite color is blue",
+    "context_ar": "Ù„ÙˆÙ†ÙŠ Ø§Ù„Ù…ÙØ¶Ù„ Ù‡Ùˆ Ø§Ù„Ø£Ø²Ø±Ù‚",
+    "options": null
+  },
+  {
+    "id": 207,
+    "game_level_id": 53,
+    "question_text": "I go to school every day",
+    "answer_text": "I go to school every day",
+    "context_ar": "Ø£Ø°Ù‡Ø¨ Ø¥Ù„Ù‰ Ø§Ù„Ù…Ø¯Ø±Ø³Ø© ÙƒÙ„ ÙŠÙˆÙ…",
+    "options": null
+  },
+  {
+    "id": 208,
+    "game_level_id": 53,
+    "question_text": "He bought a new car yesterday",
+    "answer_text": "He bought a new car yesterday",
+    "context_ar": "Ø§Ø´ØªØ±Ù‰ Ø³ÙŠØ§Ø±Ø© Ø¬Ø¯ÙŠØ¯Ø© Ø¨Ø§Ù„Ø£Ù…Ø³",
+    "options": null
+  },
+  {
+    "id": 209,
+    "game_level_id": 53,
+    "question_text": "They visited the museum last week",
+    "answer_text": "They visited the museum last week",
+    "context_ar": "Ù‚Ø§Ù…ÙˆØ§ Ø¨Ø²ÙŠØ§Ø±Ø© Ø§Ù„Ù…ØªØ­Ù Ø§Ù„Ø£Ø³Ø¨ÙˆØ¹ Ø§Ù„Ù…Ø§Ø¶ÙŠ",
+    "options": null
+  },
+  {
+    "id": 210,
+    "game_level_id": 53,
+    "question_text": "They visited the museum last week",
+    "answer_text": "They visited the museum last week",
+    "context_ar": "Ù‚Ø§Ù…ÙˆØ§ Ø¨Ø²ÙŠØ§Ø±Ø© Ø§Ù„Ù…ØªØ­Ù Ø§Ù„Ø£Ø³Ø¨ÙˆØ¹ Ø§Ù„Ù…Ø§Ø¶ÙŠ",
+    "options": null
+  },
+  {
+    "id": 211,
+    "game_level_id": 54,
+    "question_text": "The cat is sleeping on the sofa",
+    "answer_text": "The cat is sleeping on the sofa",
+    "context_ar": "Ø§Ù„Ù‚Ø·Ø© Ù†Ø§Ø¦Ù…Ø© Ø¹Ù„Ù‰ Ø§Ù„Ø£Ø±ÙŠÙƒØ©",
+    "options": null
+  },
+  {
+    "id": 212,
+    "game_level_id": 54,
+    "question_text": "He plays football with his friends",
+    "answer_text": "He plays football with his friends",
+    "context_ar": "Ù‡Ùˆ ÙŠÙ„Ø¹Ø¨ ÙƒØ±Ø© Ø§Ù„Ù‚Ø¯Ù… Ù…Ø¹ Ø£ØµØ¯Ù‚Ø§Ø¦Ù‡",
+    "options": null
+  },
+  {
+    "id": 213,
+    "game_level_id": 54,
+    "question_text": "The weather is nice today",
+    "answer_text": "The weather is nice today",
+    "context_ar": "Ø§Ù„Ø·Ù‚Ø³ Ø¬Ù…ÙŠÙ„ Ø§Ù„ÙŠÙˆÙ…",
+    "options": null
+  },
+  {
+    "id": 214,
+    "game_level_id": 54,
+    "question_text": "Can you help me with this?",
+    "answer_text": "Can you help me with this?",
+    "context_ar": "Ù‡Ù„ ÙŠÙ…ÙƒÙ†Ùƒ Ù…Ø³Ø§Ø¹Ø¯ØªÙŠ ÙÙŠ Ù‡Ø°Ø§ØŸ",
+    "options": null
+  },
+  {
+    "id": 215,
+    "game_level_id": 54,
+    "question_text": "He bought a new car yesterday",
+    "answer_text": "He bought a new car yesterday",
+    "context_ar": "Ø§Ø´ØªØ±Ù‰ Ø³ÙŠØ§Ø±Ø© Ø¬Ø¯ÙŠØ¯Ø© Ø¨Ø§Ù„Ø£Ù…Ø³",
+    "options": null
+  },
+  {
+    "id": 216,
+    "game_level_id": 55,
+    "question_text": "He bought a new car yesterday",
+    "answer_text": "He bought a new car yesterday",
+    "context_ar": "Ø§Ø´ØªØ±Ù‰ Ø³ÙŠØ§Ø±Ø© Ø¬Ø¯ÙŠØ¯Ø© Ø¨Ø§Ù„Ø£Ù…Ø³",
+    "options": null
+  },
+  {
+    "id": 217,
+    "game_level_id": 55,
+    "question_text": "The sun rises in the east",
+    "answer_text": "The sun rises in the east",
+    "context_ar": "ØªØ´Ø±Ù‚ Ø§Ù„Ø´Ù…Ø³ ÙÙŠ Ø§Ù„Ø´Ø±Ù‚",
+    "options": null
+  },
+  {
+    "id": 218,
+    "game_level_id": 55,
+    "question_text": "Can you help me with this?",
+    "answer_text": "Can you help me with this?",
+    "context_ar": "Ù‡Ù„ ÙŠÙ…ÙƒÙ†Ùƒ Ù…Ø³Ø§Ø¹Ø¯ØªÙŠ ÙÙŠ Ù‡Ø°Ø§ØŸ",
+    "options": null
+  },
+  {
+    "id": 219,
+    "game_level_id": 55,
+    "question_text": "I go to school every day",
+    "answer_text": "I go to school every day",
+    "context_ar": "Ø£Ø°Ù‡Ø¨ Ø¥Ù„Ù‰ Ø§Ù„Ù…Ø¯Ø±Ø³Ø© ÙƒÙ„ ÙŠÙˆÙ…",
+    "options": null
+  },
+  {
+    "id": 220,
+    "game_level_id": 55,
+    "question_text": "I would like a cup of coffee",
+    "answer_text": "I would like a cup of coffee",
+    "context_ar": "Ø£Ø±ÙŠØ¯ ÙƒÙˆØ¨Ø§ Ù…Ù† Ø§Ù„Ù‚Ù‡ÙˆØ©",
+    "options": null
+  },
+  {
+    "id": 221,
+    "game_level_id": 56,
+    "question_text": "She is a very good driver",
+    "answer_text": "She is a very good driver",
+    "context_ar": "Ø¥Ù†Ù‡Ø§ Ø³Ø§Ø¦Ù‚Ø© Ù…Ù…ØªØ§Ø²Ø©",
+    "options": null
+  },
+  {
+    "id": 222,
+    "game_level_id": 56,
+    "question_text": "He bought a new car yesterday",
+    "answer_text": "He bought a new car yesterday",
+    "context_ar": "Ø§Ø´ØªØ±Ù‰ Ø³ÙŠØ§Ø±Ø© Ø¬Ø¯ÙŠØ¯Ø© Ø¨Ø§Ù„Ø£Ù…Ø³",
+    "options": null
+  },
+  {
+    "id": 223,
+    "game_level_id": 56,
+    "question_text": "What time is it now?",
+    "answer_text": "What time is it now?",
+    "context_ar": "ÙƒÙ… Ø§Ù„Ø³Ø§Ø¹Ø© Ø§Ù„Ø¢Ù†ØŸ",
+    "options": null
+  },
+  {
+    "id": 224,
+    "game_level_id": 56,
+    "question_text": "I would like a cup of coffee",
+    "answer_text": "I would like a cup of coffee",
+    "context_ar": "Ø£Ø±ÙŠØ¯ ÙƒÙˆØ¨Ø§ Ù…Ù† Ø§Ù„Ù‚Ù‡ÙˆØ©",
+    "options": null
+  },
+  {
+    "id": 225,
+    "game_level_id": 56,
+    "question_text": "My favorite color is blue",
+    "answer_text": "My favorite color is blue",
+    "context_ar": "Ù„ÙˆÙ†ÙŠ Ø§Ù„Ù…ÙØ¶Ù„ Ù‡Ùˆ Ø§Ù„Ø£Ø²Ø±Ù‚",
+    "options": null
+  },
+  {
+    "id": 226,
+    "game_level_id": 57,
+    "question_text": "The weather is nice today",
+    "answer_text": "The weather is nice today",
+    "context_ar": "Ø§Ù„Ø·Ù‚Ø³ Ø¬Ù…ÙŠÙ„ Ø§Ù„ÙŠÙˆÙ…",
+    "options": null
+  },
+  {
+    "id": 227,
+    "game_level_id": 57,
+    "question_text": "He plays football with his friends",
+    "answer_text": "He plays football with his friends",
+    "context_ar": "Ù‡Ùˆ ÙŠÙ„Ø¹Ø¨ ÙƒØ±Ø© Ø§Ù„Ù‚Ø¯Ù… Ù…Ø¹ Ø£ØµØ¯Ù‚Ø§Ø¦Ù‡",
+    "options": null
+  },
+  {
+    "id": 228,
+    "game_level_id": 57,
+    "question_text": "He bought a new car yesterday",
+    "answer_text": "He bought a new car yesterday",
+    "context_ar": "Ø§Ø´ØªØ±Ù‰ Ø³ÙŠØ§Ø±Ø© Ø¬Ø¯ÙŠØ¯Ø© Ø¨Ø§Ù„Ø£Ù…Ø³",
+    "options": null
+  },
+  {
+    "id": 229,
+    "game_level_id": 57,
+    "question_text": "The cat is sleeping on the sofa",
+    "answer_text": "The cat is sleeping on the sofa",
+    "context_ar": "Ø§Ù„Ù‚Ø·Ø© Ù†Ø§Ø¦Ù…Ø© Ø¹Ù„Ù‰ Ø§Ù„Ø£Ø±ÙŠÙƒØ©",
+    "options": null
+  },
+  {
+    "id": 230,
+    "game_level_id": 57,
+    "question_text": "They visited the museum last week",
+    "answer_text": "They visited the museum last week",
+    "context_ar": "Ù‚Ø§Ù…ÙˆØ§ Ø¨Ø²ÙŠØ§Ø±Ø© Ø§Ù„Ù…ØªØ­Ù Ø§Ù„Ø£Ø³Ø¨ÙˆØ¹ Ø§Ù„Ù…Ø§Ø¶ÙŠ",
+    "options": null
+  },
+  {
+    "id": 231,
+    "game_level_id": 58,
+    "question_text": "He bought a new car yesterday",
+    "answer_text": "He bought a new car yesterday",
+    "context_ar": "Ø§Ø´ØªØ±Ù‰ Ø³ÙŠØ§Ø±Ø© Ø¬Ø¯ÙŠØ¯Ø© Ø¨Ø§Ù„Ø£Ù…Ø³",
+    "options": null
+  },
+  {
+    "id": 232,
+    "game_level_id": 58,
+    "question_text": "She is a very good driver",
+    "answer_text": "She is a very good driver",
+    "context_ar": "Ø¥Ù†Ù‡Ø§ Ø³Ø§Ø¦Ù‚Ø© Ù…Ù…ØªØ§Ø²Ø©",
+    "options": null
+  },
+  {
+    "id": 233,
+    "game_level_id": 58,
+    "question_text": "The weather is nice today",
+    "answer_text": "The weather is nice today",
+    "context_ar": "Ø§Ù„Ø·Ù‚Ø³ Ø¬Ù…ÙŠÙ„ Ø§Ù„ÙŠÙˆÙ…",
+    "options": null
+  },
+  {
+    "id": 234,
+    "game_level_id": 58,
+    "question_text": "He plays football with his friends",
+    "answer_text": "He plays football with his friends",
+    "context_ar": "Ù‡Ùˆ ÙŠÙ„Ø¹Ø¨ ÙƒØ±Ø© Ø§Ù„Ù‚Ø¯Ù… Ù…Ø¹ Ø£ØµØ¯Ù‚Ø§Ø¦Ù‡",
+    "options": null
+  },
+  {
+    "id": 235,
+    "game_level_id": 58,
+    "question_text": "He bought a new car yesterday",
+    "answer_text": "He bought a new car yesterday",
+    "context_ar": "Ø§Ø´ØªØ±Ù‰ Ø³ÙŠØ§Ø±Ø© Ø¬Ø¯ÙŠØ¯Ø© Ø¨Ø§Ù„Ø£Ù…Ø³",
+    "options": null
+  },
+  {
+    "id": 236,
+    "game_level_id": 59,
+    "question_text": "The sun rises in the east",
+    "answer_text": "The sun rises in the east",
+    "context_ar": "ØªØ´Ø±Ù‚ Ø§Ù„Ø´Ù…Ø³ ÙÙŠ Ø§Ù„Ø´Ø±Ù‚",
+    "options": null
+  },
+  {
+    "id": 237,
+    "game_level_id": 59,
+    "question_text": "They are planning a trip to Paris",
+    "answer_text": "They are planning a trip to Paris",
+    "context_ar": "ÙŠØ®Ø·Ø·ÙˆÙ† Ù„Ø±Ø­Ù„Ø© Ø¥Ù„Ù‰ Ø¨Ø§Ø±ÙŠØ³",
+    "options": null
+  },
+  {
+    "id": 238,
+    "game_level_id": 59,
+    "question_text": "I would like a cup of coffee",
+    "answer_text": "I would like a cup of coffee",
+    "context_ar": "Ø£Ø±ÙŠØ¯ ÙƒÙˆØ¨Ø§ Ù…Ù† Ø§Ù„Ù‚Ù‡ÙˆØ©",
+    "options": null
+  },
+  {
+    "id": 239,
+    "game_level_id": 59,
+    "question_text": "The sun rises in the east",
+    "answer_text": "The sun rises in the east",
+    "context_ar": "ØªØ´Ø±Ù‚ Ø§Ù„Ø´Ù…Ø³ ÙÙŠ Ø§Ù„Ø´Ø±Ù‚",
+    "options": null
+  },
+  {
+    "id": 240,
+    "game_level_id": 59,
+    "question_text": "He bought a new car yesterday",
+    "answer_text": "He bought a new car yesterday",
+    "context_ar": "Ø§Ø´ØªØ±Ù‰ Ø³ÙŠØ§Ø±Ø© Ø¬Ø¯ÙŠØ¯Ø© Ø¨Ø§Ù„Ø£Ù…Ø³",
+    "options": null
+  },
+  {
+    "id": 241,
+    "game_level_id": 60,
+    "question_text": "They are planning a trip to Paris",
+    "answer_text": "They are planning a trip to Paris",
+    "context_ar": "ÙŠØ®Ø·Ø·ÙˆÙ† Ù„Ø±Ø­Ù„Ø© Ø¥Ù„Ù‰ Ø¨Ø§Ø±ÙŠØ³",
+    "options": null
+  },
+  {
+    "id": 242,
+    "game_level_id": 60,
+    "question_text": "The sun rises in the east",
+    "answer_text": "The sun rises in the east",
+    "context_ar": "ØªØ´Ø±Ù‚ Ø§Ù„Ø´Ù…Ø³ ÙÙŠ Ø§Ù„Ø´Ø±Ù‚",
+    "options": null
+  },
+  {
+    "id": 243,
+    "game_level_id": 60,
+    "question_text": "They visited the museum last week",
+    "answer_text": "They visited the museum last week",
+    "context_ar": "Ù‚Ø§Ù…ÙˆØ§ Ø¨Ø²ÙŠØ§Ø±Ø© Ø§Ù„Ù…ØªØ­Ù Ø§Ù„Ø£Ø³Ø¨ÙˆØ¹ Ø§Ù„Ù…Ø§Ø¶ÙŠ",
+    "options": null
+  },
+  {
+    "id": 244,
+    "game_level_id": 60,
+    "question_text": "I go to school every day",
+    "answer_text": "I go to school every day",
+    "context_ar": "Ø£Ø°Ù‡Ø¨ Ø¥Ù„Ù‰ Ø§Ù„Ù…Ø¯Ø±Ø³Ø© ÙƒÙ„ ÙŠÙˆÙ…",
+    "options": null
+  },
+  {
+    "id": 245,
+    "game_level_id": 60,
+    "question_text": "The weather is nice today",
+    "answer_text": "The weather is nice today",
+    "context_ar": "Ø§Ù„Ø·Ù‚Ø³ Ø¬Ù…ÙŠÙ„ Ø§Ù„ÙŠÙˆÙ…",
+    "options": null
+  },
+  {
+    "id": 246,
+    "game_level_id": 61,
+    "question_text": "The cat is sleeping on the sofa",
+    "answer_text": "The cat is sleeping on the sofa",
+    "context_ar": "Ø§Ù„Ù‚Ø·Ø© Ù†Ø§Ø¦Ù…Ø© Ø¹Ù„Ù‰ Ø§Ù„Ø£Ø±ÙŠÙƒØ©",
+    "options": null
+  },
+  {
+    "id": 247,
+    "game_level_id": 61,
+    "question_text": "They are planning a trip to Paris",
+    "answer_text": "They are planning a trip to Paris",
+    "context_ar": "ÙŠØ®Ø·Ø·ÙˆÙ† Ù„Ø±Ø­Ù„Ø© Ø¥Ù„Ù‰ Ø¨Ø§Ø±ÙŠØ³",
+    "options": null
+  },
+  {
+    "id": 248,
+    "game_level_id": 61,
+    "question_text": "They visited the museum last week",
+    "answer_text": "They visited the museum last week",
+    "context_ar": "Ù‚Ø§Ù…ÙˆØ§ Ø¨Ø²ÙŠØ§Ø±Ø© Ø§Ù„Ù…ØªØ­Ù Ø§Ù„Ø£Ø³Ø¨ÙˆØ¹ Ø§Ù„Ù…Ø§Ø¶ÙŠ",
+    "options": null
+  },
+  {
+    "id": 249,
+    "game_level_id": 61,
+    "question_text": "I go to school every day",
+    "answer_text": "I go to school every day",
+    "context_ar": "Ø£Ø°Ù‡Ø¨ Ø¥Ù„Ù‰ Ø§Ù„Ù…Ø¯Ø±Ø³Ø© ÙƒÙ„ ÙŠÙˆÙ…",
+    "options": null
+  },
+  {
+    "id": 250,
+    "game_level_id": 61,
+    "question_text": "We are learning a new language",
+    "answer_text": "We are learning a new language",
+    "context_ar": "Ù†Ø­Ù† Ù†ØªØ¹Ù„Ù… Ù„ØºØ© Ø¬Ø¯ÙŠØ¯Ø©",
+    "options": null
+  },
+  {
+    "id": 251,
+    "game_level_id": 62,
+    "question_text": "I would like a cup of coffee",
+    "answer_text": "I would like a cup of coffee",
+    "context_ar": "Ø£Ø±ÙŠØ¯ ÙƒÙˆØ¨Ø§ Ù…Ù† Ø§Ù„Ù‚Ù‡ÙˆØ©",
+    "options": null
+  },
+  {
+    "id": 252,
+    "game_level_id": 62,
+    "question_text": "My favorite color is blue",
+    "answer_text": "My favorite color is blue",
+    "context_ar": "Ù„ÙˆÙ†ÙŠ Ø§Ù„Ù…ÙØ¶Ù„ Ù‡Ùˆ Ø§Ù„Ø£Ø²Ø±Ù‚",
+    "options": null
+  },
+  {
+    "id": 253,
+    "game_level_id": 62,
+    "question_text": "We are learning a new language",
+    "answer_text": "We are learning a new language",
+    "context_ar": "Ù†Ø­Ù† Ù†ØªØ¹Ù„Ù… Ù„ØºØ© Ø¬Ø¯ÙŠØ¯Ø©",
+    "options": null
+  },
+  {
+    "id": 254,
+    "game_level_id": 62,
+    "question_text": "We are learning a new language",
+    "answer_text": "We are learning a new language",
+    "context_ar": "Ù†Ø­Ù† Ù†ØªØ¹Ù„Ù… Ù„ØºØ© Ø¬Ø¯ÙŠØ¯Ø©",
+    "options": null
+  },
+  {
+    "id": 255,
+    "game_level_id": 62,
+    "question_text": "He bought a new car yesterday",
+    "answer_text": "He bought a new car yesterday",
+    "context_ar": "Ø§Ø´ØªØ±Ù‰ Ø³ÙŠØ§Ø±Ø© Ø¬Ø¯ÙŠØ¯Ø© Ø¨Ø§Ù„Ø£Ù…Ø³",
+    "options": null
+  },
+  {
+    "id": 256,
+    "game_level_id": 63,
+    "question_text": "My favorite color is blue",
+    "answer_text": "My favorite color is blue",
+    "context_ar": "Ù„ÙˆÙ†ÙŠ Ø§Ù„Ù…ÙØ¶Ù„ Ù‡Ùˆ Ø§Ù„Ø£Ø²Ø±Ù‚",
+    "options": null
+  },
+  {
+    "id": 257,
+    "game_level_id": 63,
+    "question_text": "Can you help me with this?",
+    "answer_text": "Can you help me with this?",
+    "context_ar": "Ù‡Ù„ ÙŠÙ…ÙƒÙ†Ùƒ Ù…Ø³Ø§Ø¹Ø¯ØªÙŠ ÙÙŠ Ù‡Ø°Ø§ØŸ",
+    "options": null
+  },
+  {
+    "id": 258,
+    "game_level_id": 63,
+    "question_text": "The weather is nice today",
+    "answer_text": "The weather is nice today",
+    "context_ar": "Ø§Ù„Ø·Ù‚Ø³ Ø¬Ù…ÙŠÙ„ Ø§Ù„ÙŠÙˆÙ…",
+    "options": null
+  },
+  {
+    "id": 259,
+    "game_level_id": 63,
+    "question_text": "What time is it now?",
+    "answer_text": "What time is it now?",
+    "context_ar": "ÙƒÙ… Ø§Ù„Ø³Ø§Ø¹Ø© Ø§Ù„Ø¢Ù†ØŸ",
+    "options": null
+  },
+  {
+    "id": 260,
+    "game_level_id": 63,
+    "question_text": "He bought a new car yesterday",
+    "answer_text": "He bought a new car yesterday",
+    "context_ar": "Ø§Ø´ØªØ±Ù‰ Ø³ÙŠØ§Ø±Ø© Ø¬Ø¯ÙŠØ¯Ø© Ø¨Ø§Ù„Ø£Ù…Ø³",
+    "options": null
+  },
+  {
+    "id": 261,
+    "game_level_id": 64,
+    "question_text": "I would like a cup of coffee",
+    "answer_text": "I would like a cup of coffee",
+    "context_ar": "Ø£Ø±ÙŠØ¯ ÙƒÙˆØ¨Ø§ Ù…Ù† Ø§Ù„Ù‚Ù‡ÙˆØ©",
+    "options": null
+  },
+  {
+    "id": 262,
+    "game_level_id": 64,
+    "question_text": "She likes to read books",
+    "answer_text": "She likes to read books",
+    "context_ar": "Ø¥Ù†Ù‡Ø§ ØªØ­Ø¨ Ù‚Ø±Ø§Ø¡Ø© Ø§Ù„ÙƒØªØ¨",
+    "options": null
+  },
+  {
+    "id": 263,
+    "game_level_id": 64,
+    "question_text": "What time is it now?",
+    "answer_text": "What time is it now?",
+    "context_ar": "ÙƒÙ… Ø§Ù„Ø³Ø§Ø¹Ø© Ø§Ù„Ø¢Ù†ØŸ",
+    "options": null
+  },
+  {
+    "id": 264,
+    "game_level_id": 64,
+    "question_text": "She is a very good driver",
+    "answer_text": "She is a very good driver",
+    "context_ar": "Ø¥Ù†Ù‡Ø§ Ø³Ø§Ø¦Ù‚Ø© Ù…Ù…ØªØ§Ø²Ø©",
+    "options": null
+  },
+  {
+    "id": 265,
+    "game_level_id": 64,
+    "question_text": "I go to school every day",
+    "answer_text": "I go to school every day",
+    "context_ar": "Ø£Ø°Ù‡Ø¨ Ø¥Ù„Ù‰ Ø§Ù„Ù…Ø¯Ø±Ø³Ø© ÙƒÙ„ ÙŠÙˆÙ…",
+    "options": null
+  },
+  {
+    "id": 266,
+    "game_level_id": 65,
+    "question_text": "They are planning a trip to Paris",
+    "answer_text": "They are planning a trip to Paris",
+    "context_ar": "ÙŠØ®Ø·Ø·ÙˆÙ† Ù„Ø±Ø­Ù„Ø© Ø¥Ù„Ù‰ Ø¨Ø§Ø±ÙŠØ³",
+    "options": null
+  },
+  {
+    "id": 267,
+    "game_level_id": 65,
+    "question_text": "We are learning a new language",
+    "answer_text": "We are learning a new language",
+    "context_ar": "Ù†Ø­Ù† Ù†ØªØ¹Ù„Ù… Ù„ØºØ© Ø¬Ø¯ÙŠØ¯Ø©",
+    "options": null
+  },
+  {
+    "id": 268,
+    "game_level_id": 65,
+    "question_text": "He plays football with his friends",
+    "answer_text": "He plays football with his friends",
+    "context_ar": "Ù‡Ùˆ ÙŠÙ„Ø¹Ø¨ ÙƒØ±Ø© Ø§Ù„Ù‚Ø¯Ù… Ù…Ø¹ Ø£ØµØ¯Ù‚Ø§Ø¦Ù‡",
+    "options": null
+  },
+  {
+    "id": 269,
+    "game_level_id": 65,
+    "question_text": "The cat is sleeping on the sofa",
+    "answer_text": "The cat is sleeping on the sofa",
+    "context_ar": "Ø§Ù„Ù‚Ø·Ø© Ù†Ø§Ø¦Ù…Ø© Ø¹Ù„Ù‰ Ø§Ù„Ø£Ø±ÙŠÙƒØ©",
+    "options": null
+  },
+  {
+    "id": 270,
+    "game_level_id": 65,
+    "question_text": "He plays football with his friends",
+    "answer_text": "He plays football with his friends",
+    "context_ar": "Ù‡Ùˆ ÙŠÙ„Ø¹Ø¨ ÙƒØ±Ø© Ø§Ù„Ù‚Ø¯Ù… Ù…Ø¹ Ø£ØµØ¯Ù‚Ø§Ø¦Ù‡",
+    "options": null
+  },
+  {
+    "id": 271,
+    "game_level_id": 66,
+    "question_text": "He plays football with his friends",
+    "answer_text": "He plays football with his friends",
+    "context_ar": "Ù‡Ùˆ ÙŠÙ„Ø¹Ø¨ ÙƒØ±Ø© Ø§Ù„Ù‚Ø¯Ù… Ù…Ø¹ Ø£ØµØ¯Ù‚Ø§Ø¦Ù‡",
+    "options": null
+  },
+  {
+    "id": 272,
+    "game_level_id": 66,
+    "question_text": "The weather is nice today",
+    "answer_text": "The weather is nice today",
+    "context_ar": "Ø§Ù„Ø·Ù‚Ø³ Ø¬Ù…ÙŠÙ„ Ø§Ù„ÙŠÙˆÙ…",
+    "options": null
+  },
+  {
+    "id": 273,
+    "game_level_id": 66,
+    "question_text": "My favorite color is blue",
+    "answer_text": "My favorite color is blue",
+    "context_ar": "Ù„ÙˆÙ†ÙŠ Ø§Ù„Ù…ÙØ¶Ù„ Ù‡Ùˆ Ø§Ù„Ø£Ø²Ø±Ù‚",
+    "options": null
+  },
+  {
+    "id": 274,
+    "game_level_id": 66,
+    "question_text": "He bought a new car yesterday",
+    "answer_text": "He bought a new car yesterday",
+    "context_ar": "Ø§Ø´ØªØ±Ù‰ Ø³ÙŠØ§Ø±Ø© Ø¬Ø¯ÙŠØ¯Ø© Ø¨Ø§Ù„Ø£Ù…Ø³",
+    "options": null
+  },
+  {
+    "id": 275,
+    "game_level_id": 66,
+    "question_text": "The sun rises in the east",
+    "answer_text": "The sun rises in the east",
+    "context_ar": "ØªØ´Ø±Ù‚ Ø§Ù„Ø´Ù…Ø³ ÙÙŠ Ø§Ù„Ø´Ø±Ù‚",
+    "options": null
+  },
+  {
+    "id": 276,
+    "game_level_id": 67,
+    "question_text": "We are learning a new language",
+    "answer_text": "We are learning a new language",
+    "context_ar": "Ù†Ø­Ù† Ù†ØªØ¹Ù„Ù… Ù„ØºØ© Ø¬Ø¯ÙŠØ¯Ø©",
+    "options": null
+  },
+  {
+    "id": 277,
+    "game_level_id": 67,
+    "question_text": "She likes to read books",
+    "answer_text": "She likes to read books",
+    "context_ar": "Ø¥Ù†Ù‡Ø§ ØªØ­Ø¨ Ù‚Ø±Ø§Ø¡Ø© Ø§Ù„ÙƒØªØ¨",
+    "options": null
+  },
+  {
+    "id": 278,
+    "game_level_id": 67,
+    "question_text": "We are learning a new language",
+    "answer_text": "We are learning a new language",
+    "context_ar": "Ù†Ø­Ù† Ù†ØªØ¹Ù„Ù… Ù„ØºØ© Ø¬Ø¯ÙŠØ¯Ø©",
+    "options": null
+  },
+  {
+    "id": 279,
+    "game_level_id": 67,
+    "question_text": "My favorite color is blue",
+    "answer_text": "My favorite color is blue",
+    "context_ar": "Ù„ÙˆÙ†ÙŠ Ø§Ù„Ù…ÙØ¶Ù„ Ù‡Ùˆ Ø§Ù„Ø£Ø²Ø±Ù‚",
+    "options": null
+  },
+  {
+    "id": 280,
+    "game_level_id": 67,
+    "question_text": "The cat is sleeping on the sofa",
+    "answer_text": "The cat is sleeping on the sofa",
+    "context_ar": "Ø§Ù„Ù‚Ø·Ø© Ù†Ø§Ø¦Ù…Ø© Ø¹Ù„Ù‰ Ø§Ù„Ø£Ø±ÙŠÙƒØ©",
+    "options": null
+  },
+  {
+    "id": 281,
+    "game_level_id": 68,
+    "question_text": "My favorite color is blue",
+    "answer_text": "My favorite color is blue",
+    "context_ar": "Ù„ÙˆÙ†ÙŠ Ø§Ù„Ù…ÙØ¶Ù„ Ù‡Ùˆ Ø§Ù„Ø£Ø²Ø±Ù‚",
+    "options": null
+  },
+  {
+    "id": 282,
+    "game_level_id": 68,
+    "question_text": "She likes to read books",
+    "answer_text": "She likes to read books",
+    "context_ar": "Ø¥Ù†Ù‡Ø§ ØªØ­Ø¨ Ù‚Ø±Ø§Ø¡Ø© Ø§Ù„ÙƒØªØ¨",
+    "options": null
+  },
+  {
+    "id": 283,
+    "game_level_id": 68,
+    "question_text": "She likes to read books",
+    "answer_text": "She likes to read books",
+    "context_ar": "Ø¥Ù†Ù‡Ø§ ØªØ­Ø¨ Ù‚Ø±Ø§Ø¡Ø© Ø§Ù„ÙƒØªØ¨",
+    "options": null
+  },
+  {
+    "id": 284,
+    "game_level_id": 68,
+    "question_text": "The sun rises in the east",
+    "answer_text": "The sun rises in the east",
+    "context_ar": "ØªØ´Ø±Ù‚ Ø§Ù„Ø´Ù…Ø³ ÙÙŠ Ø§Ù„Ø´Ø±Ù‚",
+    "options": null
+  },
+  {
+    "id": 285,
+    "game_level_id": 68,
+    "question_text": "She is a very good driver",
+    "answer_text": "She is a very good driver",
+    "context_ar": "Ø¥Ù†Ù‡Ø§ Ø³Ø§Ø¦Ù‚Ø© Ù…Ù…ØªØ§Ø²Ø©",
+    "options": null
+  },
+  {
+    "id": 286,
+    "game_level_id": 69,
+    "question_text": "She likes to read books",
+    "answer_text": "She likes to read books",
+    "context_ar": "Ø¥Ù†Ù‡Ø§ ØªØ­Ø¨ Ù‚Ø±Ø§Ø¡Ø© Ø§Ù„ÙƒØªØ¨",
+    "options": null
+  },
+  {
+    "id": 287,
+    "game_level_id": 69,
+    "question_text": "Can you help me with this?",
+    "answer_text": "Can you help me with this?",
+    "context_ar": "Ù‡Ù„ ÙŠÙ…ÙƒÙ†Ùƒ Ù…Ø³Ø§Ø¹Ø¯ØªÙŠ ÙÙŠ Ù‡Ø°Ø§ØŸ",
+    "options": null
+  },
+  {
+    "id": 288,
+    "game_level_id": 69,
+    "question_text": "We are learning a new language",
+    "answer_text": "We are learning a new language",
+    "context_ar": "Ù†Ø­Ù† Ù†ØªØ¹Ù„Ù… Ù„ØºØ© Ø¬Ø¯ÙŠØ¯Ø©",
+    "options": null
+  },
+  {
+    "id": 289,
+    "game_level_id": 69,
+    "question_text": "They visited the museum last week",
+    "answer_text": "They visited the museum last week",
+    "context_ar": "Ù‚Ø§Ù…ÙˆØ§ Ø¨Ø²ÙŠØ§Ø±Ø© Ø§Ù„Ù…ØªØ­Ù Ø§Ù„Ø£Ø³Ø¨ÙˆØ¹ Ø§Ù„Ù…Ø§Ø¶ÙŠ",
+    "options": null
+  },
+  {
+    "id": 290,
+    "game_level_id": 69,
+    "question_text": "She likes to read books",
+    "answer_text": "She likes to read books",
+    "context_ar": "Ø¥Ù†Ù‡Ø§ ØªØ­Ø¨ Ù‚Ø±Ø§Ø¡Ø© Ø§Ù„ÙƒØªØ¨",
+    "options": null
+  },
+  {
+    "id": 291,
+    "game_level_id": 70,
+    "question_text": "I go to school every day",
+    "answer_text": "I go to school every day",
+    "context_ar": "Ø£Ø°Ù‡Ø¨ Ø¥Ù„Ù‰ Ø§Ù„Ù…Ø¯Ø±Ø³Ø© ÙƒÙ„ ÙŠÙˆÙ…",
+    "options": null
+  },
+  {
+    "id": 292,
+    "game_level_id": 70,
+    "question_text": "She is a very good driver",
+    "answer_text": "She is a very good driver",
+    "context_ar": "Ø¥Ù†Ù‡Ø§ Ø³Ø§Ø¦Ù‚Ø© Ù…Ù…ØªØ§Ø²Ø©",
+    "options": null
+  },
+  {
+    "id": 293,
+    "game_level_id": 70,
+    "question_text": "We are learning a new language",
+    "answer_text": "We are learning a new language",
+    "context_ar": "Ù†Ø­Ù† Ù†ØªØ¹Ù„Ù… Ù„ØºØ© Ø¬Ø¯ÙŠØ¯Ø©",
+    "options": null
+  },
+  {
+    "id": 294,
+    "game_level_id": 70,
+    "question_text": "He plays football with his friends",
+    "answer_text": "He plays football with his friends",
+    "context_ar": "Ù‡Ùˆ ÙŠÙ„Ø¹Ø¨ ÙƒØ±Ø© Ø§Ù„Ù‚Ø¯Ù… Ù…Ø¹ Ø£ØµØ¯Ù‚Ø§Ø¦Ù‡",
+    "options": null
+  },
+  {
+    "id": 295,
+    "game_level_id": 70,
+    "question_text": "He bought a new car yesterday",
+    "answer_text": "He bought a new car yesterday",
+    "context_ar": "Ø§Ø´ØªØ±Ù‰ Ø³ÙŠØ§Ø±Ø© Ø¬Ø¯ÙŠØ¯Ø© Ø¨Ø§Ù„Ø£Ù…Ø³",
+    "options": null
+  },
+  {
+    "id": 296,
+    "game_level_id": 71,
+    "question_text": "My favorite color is blue",
+    "answer_text": "My favorite color is blue",
+    "context_ar": "Ù„ÙˆÙ†ÙŠ Ø§Ù„Ù…ÙØ¶Ù„ Ù‡Ùˆ Ø§Ù„Ø£Ø²Ø±Ù‚",
+    "options": null
+  },
+  {
+    "id": 297,
+    "game_level_id": 71,
+    "question_text": "The sun rises in the east",
+    "answer_text": "The sun rises in the east",
+    "context_ar": "ØªØ´Ø±Ù‚ Ø§Ù„Ø´Ù…Ø³ ÙÙŠ Ø§Ù„Ø´Ø±Ù‚",
+    "options": null
+  },
+  {
+    "id": 298,
+    "game_level_id": 71,
+    "question_text": "We are learning a new language",
+    "answer_text": "We are learning a new language",
+    "context_ar": "Ù†Ø­Ù† Ù†ØªØ¹Ù„Ù… Ù„ØºØ© Ø¬Ø¯ÙŠØ¯Ø©",
+    "options": null
+  },
+  {
+    "id": 299,
+    "game_level_id": 71,
+    "question_text": "I go to school every day",
+    "answer_text": "I go to school every day",
+    "context_ar": "Ø£Ø°Ù‡Ø¨ Ø¥Ù„Ù‰ Ø§Ù„Ù…Ø¯Ø±Ø³Ø© ÙƒÙ„ ÙŠÙˆÙ…",
+    "options": null
+  },
+  {
+    "id": 300,
+    "game_level_id": 71,
+    "question_text": "She likes to read books",
+    "answer_text": "She likes to read books",
+    "context_ar": "Ø¥Ù†Ù‡Ø§ ØªØ­Ø¨ Ù‚Ø±Ø§Ø¡Ø© Ø§Ù„ÙƒØªØ¨",
+    "options": null
+  },
+  {
+    "id": 301,
+    "game_level_id": 72,
+    "question_text": "She is a very good driver",
+    "answer_text": "She is a very good driver",
+    "context_ar": "Ø¥Ù†Ù‡Ø§ Ø³Ø§Ø¦Ù‚Ø© Ù…Ù…ØªØ§Ø²Ø©",
+    "options": null
+  },
+  {
+    "id": 302,
+    "game_level_id": 72,
+    "question_text": "Can you help me with this?",
+    "answer_text": "Can you help me with this?",
+    "context_ar": "Ù‡Ù„ ÙŠÙ…ÙƒÙ†Ùƒ Ù…Ø³Ø§Ø¹Ø¯ØªÙŠ ÙÙŠ Ù‡Ø°Ø§ØŸ",
+    "options": null
+  },
+  {
+    "id": 303,
+    "game_level_id": 72,
+    "question_text": "He plays football with his friends",
+    "answer_text": "He plays football with his friends",
+    "context_ar": "Ù‡Ùˆ ÙŠÙ„Ø¹Ø¨ ÙƒØ±Ø© Ø§Ù„Ù‚Ø¯Ù… Ù…Ø¹ Ø£ØµØ¯Ù‚Ø§Ø¦Ù‡",
+    "options": null
+  },
+  {
+    "id": 304,
+    "game_level_id": 72,
+    "question_text": "The cat is sleeping on the sofa",
+    "answer_text": "The cat is sleeping on the sofa",
+    "context_ar": "Ø§Ù„Ù‚Ø·Ø© Ù†Ø§Ø¦Ù…Ø© Ø¹Ù„Ù‰ Ø§Ù„Ø£Ø±ÙŠÙƒØ©",
+    "options": null
+  },
+  {
+    "id": 305,
+    "game_level_id": 72,
+    "question_text": "Can you help me with this?",
+    "answer_text": "Can you help me with this?",
+    "context_ar": "Ù‡Ù„ ÙŠÙ…ÙƒÙ†Ùƒ Ù…Ø³Ø§Ø¹Ø¯ØªÙŠ ÙÙŠ Ù‡Ø°Ø§ØŸ",
+    "options": null
+  },
+  {
+    "id": 306,
+    "game_level_id": 73,
+    "question_text": "The cat is sleeping on the sofa",
+    "answer_text": "The cat is sleeping on the sofa",
+    "context_ar": "Ø§Ù„Ù‚Ø·Ø© Ù†Ø§Ø¦Ù…Ø© Ø¹Ù„Ù‰ Ø§Ù„Ø£Ø±ÙŠÙƒØ©",
+    "options": null
+  },
+  {
+    "id": 307,
+    "game_level_id": 73,
+    "question_text": "I go to school every day",
+    "answer_text": "I go to school every day",
+    "context_ar": "Ø£Ø°Ù‡Ø¨ Ø¥Ù„Ù‰ Ø§Ù„Ù…Ø¯Ø±Ø³Ø© ÙƒÙ„ ÙŠÙˆÙ…",
+    "options": null
+  },
+  {
+    "id": 308,
+    "game_level_id": 73,
+    "question_text": "Can you help me with this?",
+    "answer_text": "Can you help me with this?",
+    "context_ar": "Ù‡Ù„ ÙŠÙ…ÙƒÙ†Ùƒ Ù…Ø³Ø§Ø¹Ø¯ØªÙŠ ÙÙŠ Ù‡Ø°Ø§ØŸ",
+    "options": null
+  },
+  {
+    "id": 309,
+    "game_level_id": 73,
+    "question_text": "He plays football with his friends",
+    "answer_text": "He plays football with his friends",
+    "context_ar": "Ù‡Ùˆ ÙŠÙ„Ø¹Ø¨ ÙƒØ±Ø© Ø§Ù„Ù‚Ø¯Ù… Ù…Ø¹ Ø£ØµØ¯Ù‚Ø§Ø¦Ù‡",
+    "options": null
+  },
+  {
+    "id": 310,
+    "game_level_id": 73,
+    "question_text": "He plays football with his friends",
+    "answer_text": "He plays football with his friends",
+    "context_ar": "Ù‡Ùˆ ÙŠÙ„Ø¹Ø¨ ÙƒØ±Ø© Ø§Ù„Ù‚Ø¯Ù… Ù…Ø¹ Ø£ØµØ¯Ù‚Ø§Ø¦Ù‡",
+    "options": null
+  },
+  {
+    "id": 311,
+    "game_level_id": 74,
+    "question_text": "The cat is sleeping on the sofa",
+    "answer_text": "The cat is sleeping on the sofa",
+    "context_ar": "Ø§Ù„Ù‚Ø·Ø© Ù†Ø§Ø¦Ù…Ø© Ø¹Ù„Ù‰ Ø§Ù„Ø£Ø±ÙŠÙƒØ©",
+    "options": null
+  },
+  {
+    "id": 312,
+    "game_level_id": 74,
+    "question_text": "She is a very good driver",
+    "answer_text": "She is a very good driver",
+    "context_ar": "Ø¥Ù†Ù‡Ø§ Ø³Ø§Ø¦Ù‚Ø© Ù…Ù…ØªØ§Ø²Ø©",
+    "options": null
+  },
+  {
+    "id": 313,
+    "game_level_id": 74,
+    "question_text": "Can you help me with this?",
+    "answer_text": "Can you help me with this?",
+    "context_ar": "Ù‡Ù„ ÙŠÙ…ÙƒÙ†Ùƒ Ù…Ø³Ø§Ø¹Ø¯ØªÙŠ ÙÙŠ Ù‡Ø°Ø§ØŸ",
+    "options": null
+  },
+  {
+    "id": 314,
+    "game_level_id": 74,
+    "question_text": "They are planning a trip to Paris",
+    "answer_text": "They are planning a trip to Paris",
+    "context_ar": "ÙŠØ®Ø·Ø·ÙˆÙ† Ù„Ø±Ø­Ù„Ø© Ø¥Ù„Ù‰ Ø¨Ø§Ø±ÙŠØ³",
+    "options": null
+  },
+  {
+    "id": 315,
+    "game_level_id": 74,
+    "question_text": "He plays football with his friends",
+    "answer_text": "He plays football with his friends",
+    "context_ar": "Ù‡Ùˆ ÙŠÙ„Ø¹Ø¨ ÙƒØ±Ø© Ø§Ù„Ù‚Ø¯Ù… Ù…Ø¹ Ø£ØµØ¯Ù‚Ø§Ø¦Ù‡",
+    "options": null
+  },
+  {
+    "id": 316,
+    "game_level_id": 75,
+    "question_text": "She is a very good driver",
+    "answer_text": "She is a very good driver",
+    "context_ar": "Ø¥Ù†Ù‡Ø§ Ø³Ø§Ø¦Ù‚Ø© Ù…Ù…ØªØ§Ø²Ø©",
+    "options": null
+  },
+  {
+    "id": 317,
+    "game_level_id": 75,
+    "question_text": "He bought a new car yesterday",
+    "answer_text": "He bought a new car yesterday",
+    "context_ar": "Ø§Ø´ØªØ±Ù‰ Ø³ÙŠØ§Ø±Ø© Ø¬Ø¯ÙŠØ¯Ø© Ø¨Ø§Ù„Ø£Ù…Ø³",
+    "options": null
+  },
+  {
+    "id": 318,
+    "game_level_id": 75,
+    "question_text": "I would like a cup of coffee",
+    "answer_text": "I would like a cup of coffee",
+    "context_ar": "Ø£Ø±ÙŠØ¯ ÙƒÙˆØ¨Ø§ Ù…Ù† Ø§Ù„Ù‚Ù‡ÙˆØ©",
+    "options": null
+  },
+  {
+    "id": 319,
+    "game_level_id": 75,
+    "question_text": "The weather is nice today",
+    "answer_text": "The weather is nice today",
+    "context_ar": "Ø§Ù„Ø·Ù‚Ø³ Ø¬Ù…ÙŠÙ„ Ø§Ù„ÙŠÙˆÙ…",
+    "options": null
+  },
+  {
+    "id": 320,
+    "game_level_id": 75,
+    "question_text": "I would like a cup of coffee",
+    "answer_text": "I would like a cup of coffee",
+    "context_ar": "Ø£Ø±ÙŠØ¯ ÙƒÙˆØ¨Ø§ Ù…Ù† Ø§Ù„Ù‚Ù‡ÙˆØ©",
+    "options": null
+  },
+  {
+    "id": 321,
+    "game_level_id": 76,
+    "question_text": "The weather is nice today",
+    "answer_text": "The weather is nice today",
+    "context_ar": "Ø§Ù„Ø·Ù‚Ø³ Ø¬Ù…ÙŠÙ„ Ø§Ù„ÙŠÙˆÙ…",
+    "options": null
+  },
+  {
+    "id": 322,
+    "game_level_id": 76,
+    "question_text": "He plays football with his friends",
+    "answer_text": "He plays football with his friends",
+    "context_ar": "Ù‡Ùˆ ÙŠÙ„Ø¹Ø¨ ÙƒØ±Ø© Ø§Ù„Ù‚Ø¯Ù… Ù…Ø¹ Ø£ØµØ¯Ù‚Ø§Ø¦Ù‡",
+    "options": null
+  },
+  {
+    "id": 323,
+    "game_level_id": 76,
+    "question_text": "She is a very good driver",
+    "answer_text": "She is a very good driver",
+    "context_ar": "Ø¥Ù†Ù‡Ø§ Ø³Ø§Ø¦Ù‚Ø© Ù…Ù…ØªØ§Ø²Ø©",
+    "options": null
+  },
+  {
+    "id": 324,
+    "game_level_id": 76,
+    "question_text": "I would like a cup of coffee",
+    "answer_text": "I would like a cup of coffee",
+    "context_ar": "Ø£Ø±ÙŠØ¯ ÙƒÙˆØ¨Ø§ Ù…Ù† Ø§Ù„Ù‚Ù‡ÙˆØ©",
+    "options": null
+  },
+  {
+    "id": 325,
+    "game_level_id": 76,
+    "question_text": "The weather is nice today",
+    "answer_text": "The weather is nice today",
+    "context_ar": "Ø§Ù„Ø·Ù‚Ø³ Ø¬Ù…ÙŠÙ„ Ø§Ù„ÙŠÙˆÙ…",
+    "options": null
+  }
+]

@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "title": "ما اللغة التي تريد تعلمها؟",
+    "description": "اختر لغة لتبدأ رحلتك البطولية اليوم.",
+    "type": "choice",
+    "step_key": "language",
+    "order_index": 1
+  },
+  {
+    "id": 2,
+    "title": "ما هو هدفك من التعلم؟",
+    "description": "سنقوم بتخصيص تجربتك بناءً على هدفك.",
+    "type": "choice",
+    "step_key": "goal",
+    "order_index": 2
+  },
+  {
+    "id": 3,
+    "title": "ما هو مستواك الحالي؟",
+    "description": "ساعدنا لنبدأ من المكان المناسب لك.",
+    "type": "choice",
+    "step_key": "level",
+    "order_index": 3
+  },
+  {
+    "id": 4,
+    "title": "كم من الوقت يمكنك التعلم يومياً؟",
+    "description": "سنصمم خطة تناسب جدولك اليومي.",
+    "type": "choice",
+    "step_key": "daily_time",
+    "order_index": 4
+  },
+  {
+    "id": 5,
+    "title": "ما هي فئتك العمرية؟",
+    "description": "لتخصيص المحتوى والأنشطة المناسبة لك.",
+    "type": "choice",
+    "step_key": "age_group",
+    "order_index": 5
+  }
+]

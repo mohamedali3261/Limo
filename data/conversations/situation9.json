@@ -1,0 +1,91 @@
+{
+  "id": 9,
+  "title": "في الصيدلية",
+  "titleEn": "At the Pharmacy",
+  "icon": "💊",
+  "color": "rose",
+  "difficulty": "medium",
+  "dialogues": [
+    {
+      "speaker": "Customer",
+      "gender": "female",
+      "en": "Good morning! I need to pick up a prescription.",
+      "ar": "صباح الخير! أحتاج لاستلام وصفة طبية."
+    },
+    {
+      "speaker": "Pharmacist",
+      "gender": "male",
+      "en": "Of course! What's your name?",
+      "ar": "بالطبع! ما اسمك؟"
+    },
+    {
+      "speaker": "Customer",
+      "gender": "female",
+      "en": "It's Sarah Johnson.",
+      "ar": "أنا سارة جونسون."
+    },
+    {
+      "speaker": "Pharmacist",
+      "gender": "male",
+      "en": "Let me check... Yes, I have it here. This is for your cough, right?",
+      "ar": "دعني أتحقق... نعم، لدي هنا. هذا للسعال، صحيح؟"
+    },
+    {
+      "speaker": "Customer",
+      "gender": "female",
+      "en": "Yes, that's correct. How much do I owe?",
+      "ar": "نعم، هذا صحيح. كم أدين؟"
+    },
+    {
+      "speaker": "Pharmacist",
+      "gender": "male",
+      "en": "That's £12.50. Take one spoonful three times a day after meals.",
+      "ar": "هذا 12.50 جنيهاً. خذي ملعقة واحدة ثلاث مرات يومياً بعد الطعام."
+    },
+    {
+      "speaker": "Customer",
+      "gender": "female",
+      "en": "Thank you! Any side effects I should know about?",
+      "ar": "شكراً! هل هناك أي آثار جانبية يجب أن أعرفها؟"
+    },
+    {
+      "speaker": "Pharmacist",
+      "gender": "male",
+      "en": "It may cause drowsiness. Don't drive after taking it. Get well soon!",
+      "ar": "قد يسبب النعاس. لا تقودي السيارة بعد تناوله. تعافي قريباً!"
+    }
+  ],
+  "quiz": {
+    "title": "اختبار الصيدلية",
+    "questions": [
+      {
+        "id": 1,
+        "question": "What is the customer picking up?",
+        "questionAr": "ماذا يستلم العميل؟",
+        "options": ["Medicine", "Prescription", "Vitamins", "Supplements"],
+        "correctAnswer": 1
+      },
+      {
+        "id": 2,
+        "question": "What is the medicine for?",
+        "questionAr": "ما الدواء؟",
+        "options": ["Headache", "Cough", "Fever", "Stomach pain"],
+        "correctAnswer": 1
+      },
+      {
+        "id": 3,
+        "question": "How much does the medicine cost?",
+        "questionAr": "كم سعر الدواء؟",
+        "options": ["£10", "£12.50", "£15", "£20"],
+        "correctAnswer": 1
+      },
+      {
+        "id": 4,
+        "question": "How many times a day should the customer take it?",
+        "questionAr": "كم مرة في اليوم يجب على العميل تناوله؟",
+        "options": ["Once", "Twice", "Three times", "Four times"],
+        "correctAnswer": 2
+      }
+    ]
+  }
+}

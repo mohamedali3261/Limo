@@ -1,0 +1,97 @@
+{
+  "id": 1,
+  "title": "مرحباً يا صديقي",
+  "description": "تعلم كيف تلقي التحية وتتعرف على شخص جديد بطريقة بسيطة.",
+  "difficulty": "easy",
+  "thumbnail": "hello.png",
+  "xp_reward": 50,
+  "scenes": [
+    {
+      "name": "Narrator",
+      "en": "It is a sunny morning. Ali is in the park.",
+      "ar": "إنه صباح مشمس. علي في الحديقة."
+    },
+    {
+      "name": "Narrator",
+      "en": "He sees a girl sitting on a bench.",
+      "ar": "يرى فتاة جالسة على مقعد."
+    },
+    {
+      "name": "Ali",
+      "en": "Hello! Good morning!",
+      "ar": "مرحباً! صباح الخير!"
+    },
+    {
+      "name": "Sara",
+      "en": "Hello! Good morning!",
+      "ar": "مرحباً! صباح الخير!"
+    },
+    {
+      "name": "Ali",
+      "en": "How are you?",
+      "ar": "كيف حالك؟"
+    },
+    {
+      "name": "Sara",
+      "en": "I am fine, thank you! And you?",
+      "ar": "أنا بخير، شكراً! وأنت؟"
+    },
+    {
+      "name": "Ali",
+      "en": "I am fine too. Thank you!",
+      "ar": "أنا بخير أيضاً. شكراً!"
+    },
+    {
+      "name": "Sara",
+      "en": "Nice to meet you!",
+      "ar": "سعيدة بلقائك!"
+    },
+    {
+      "name": "Ali",
+      "en": "Nice to meet you too!",
+      "ar": "سعيد بلقائك أيضاً!"
+    }
+  ],
+  "questions": [
+    {
+      "scene_idx": 2,
+      "type": "multiple_choice",
+      "q": "What does Ali say first?",
+      "options": [
+        "Hello! Good morning!",
+        "Goodbye!",
+        "Good night!"
+      ],
+      "a": "Hello! Good morning!"
+    },
+    {
+      "scene_idx": 4,
+      "type": "typing",
+      "q": "How ___ you?|||كيف حالك؟",
+      "a": "are"
+    },
+    {
+      "scene_idx": 7,
+      "type": "dictation",
+      "a": "Nice to meet you"
+    }
+  ],
+  "finalQuestions": [
+    {
+      "type": "multiple_choice",
+      "q": "How is Sara?",
+      "options": [
+        "Fine",
+        "Sad",
+        "Tired"
+      ],
+      "a": "Fine"
+    },
+    {
+      "type": "typing",
+      "q": "I am ___, thank you!|||أنا بخير، شكراً!",
+      "a": "fine"
+    }
+  ]
+}
+

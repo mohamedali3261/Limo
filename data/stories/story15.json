@@ -1,0 +1,102 @@
+{
+  "id": 15,
+  "title": "البحث عن شقة",
+  "description": "ليو يبحث عن شقة للإيجار ويتحدث مع وكيل العقارات.",
+  "difficulty": "medium",
+  "thumbnail": "house.png",
+  "xp_reward": 190,
+  "scenes": [
+    {
+      "name": "Narrator",
+      "en": "Memo is looking for a flat to rent. He calls an estate agent.",
+      "ar": "ليو يبحث عن شقة للإيجار. يتصل بوكيل عقارات."
+    },
+    {
+      "name": "Agent",
+      "en": "Good morning! This is City Homes. How can I help you?",
+      "ar": "صباح الخير! هذه سيتي هومز. كيف يمكنني مساعدتك؟"
+    },
+    {
+      "name": "Memo",
+      "en": "Hello! I am looking for a one-bedroom flat in central London.",
+      "ar": "مرحباً! أبحث عن شقة بغرفة نوم واحدة في وسط لندن."
+    },
+    {
+      "name": "Agent",
+      "en": "What is your budget per month?",
+      "ar": "ما هي ميزانيتك الشهرية؟"
+    },
+    {
+      "name": "Memo",
+      "en": "Around one thousand pounds per month.",
+      "ar": "حوالي ألف جنيه شهرياً."
+    },
+    {
+      "name": "Agent",
+      "en": "I have a nice flat near the tube station. Would you like to view it?",
+      "ar": "لدي شقة جميلة بالقرب من محطة المترو. هل تريد معاينتها؟"
+    },
+    {
+      "name": "Memo",
+      "en": "Yes, please! When can I see it?",
+      "ar": "نعم، من فضلك! متى يمكنني رؤيتها؟"
+    },
+    {
+      "name": "Agent",
+      "en": "How about tomorrow at two o'clock?",
+      "ar": "ما رأيك في الغد في الساعة الثانية؟"
+    },
+    {
+      "name": "Memo",
+      "en": "Perfect! I will be there. Thank you!",
+      "ar": "ممتاز! سأكون هناك. شكراً!"
+    },
+    {
+      "name": "Agent",
+      "en": "Great! See you tomorrow!",
+      "ar": "رائع! أراك غداً!"
+    }
+  ],
+  "questions": [
+    {
+      "scene_idx": 2,
+      "type": "multiple_choice",
+      "q": "What is Memo looking for?",
+      "options": [
+        "A one-bedroom flat",
+        "A house",
+        "A two-bedroom flat"
+      ],
+      "a": "A one-bedroom flat"
+    },
+    {
+      "scene_idx": 4,
+      "type": "typing",
+      "q": "Around one thousand pounds per ___.|||حوالي ألف جنيه شهرياً.",
+      "a": "month"
+    },
+    {
+      "scene_idx": 5,
+      "type": "dictation",
+      "a": "I have a nice flat near the tube station"
+    }
+  ],
+  "finalQuestions": [
+    {
+      "type": "multiple_choice",
+      "q": "When will Memo view the flat?",
+      "options": [
+        "Tomorrow at two",
+        "Today",
+        "Next week"
+      ],
+      "a": "Tomorrow at two"
+    },
+    {
+      "type": "typing",
+      "q": "What is your ___ per month?|||ما هي ميزانيتك الشهرية؟",
+      "a": "budget"
+    }
+  ]
+}
+

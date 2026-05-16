@@ -1,0 +1,32 @@
+[
+  {
+    "id": "first_lesson",
+    "title": "أول خطوة",
+    "description": "أكملت درسك الأول بنجاح!",
+    "icon": "Star"
+  },
+  {
+    "id": "five_lessons",
+    "title": "المثابر",
+    "description": "أكملت 5 دروس تعليمية.",
+    "icon": "Zap"
+  },
+  {
+    "id": "level_1_master",
+    "title": "بطل البدايات",
+    "description": "أنهيت المستوى الأول بالكامل.",
+    "icon": "Trophy"
+  },
+  {
+    "id": "streak_3",
+    "title": "الملتزم",
+    "description": "حافظت على نشاطك لمدة 3 أيام متتالية.",
+    "icon": "Flame"
+  },
+  {
+    "id": "xp_500",
+    "title": "الخبير",
+    "description": "جمعت أكثر من 500 نقطة خبرة.",
+    "icon": "Award"
+  }
+]

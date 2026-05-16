@@ -1,0 +1,91 @@
+{
+  "id": 1,
+  "title": "التعارف",
+  "titleEn": "Meeting Someone",
+  "icon": "👋",
+  "color": "blue",
+  "difficulty": "easy",
+  "dialogues": [
+    {
+      "speaker": "Ahmed",
+      "gender": "male",
+      "en": "Hello! My name is Ahmed. What's your name?",
+      "ar": "مرحباً! اسمي أحمد. ما اسمك؟"
+    },
+    {
+      "speaker": "Sarah",
+      "gender": "female",
+      "en": "Hi Ahmed! I'm Sarah. Nice to meet you!",
+      "ar": "مرحباً أحمد! أنا سارة. سعيدة بلقائك!"
+    },
+    {
+      "speaker": "Ahmed",
+      "gender": "male",
+      "en": "Nice to meet you too! Where are you from?",
+      "ar": "سعيد بلقائك أيضاً! من أين أنتِ؟"
+    },
+    {
+      "speaker": "Sarah",
+      "gender": "female",
+      "en": "I'm from London. And you?",
+      "ar": "أنا من لندن. وأنت؟"
+    },
+    {
+      "speaker": "Ahmed",
+      "gender": "male",
+      "en": "I'm from Cairo. I'm visiting London for the first time.",
+      "ar": "أنا من القاهرة. أزور لندن لأول مرة."
+    },
+    {
+      "speaker": "Sarah",
+      "gender": "female",
+      "en": "That's wonderful! How long will you stay?",
+      "ar": "هذا رائع! كم ستبقى؟"
+    },
+    {
+      "speaker": "Ahmed",
+      "gender": "male",
+      "en": "I'll stay for two weeks. Can you recommend some places to visit?",
+      "ar": "سأبقى لمدة أسبوعين. هل يمكنك أن توصي ببعض الأماكن للزيارة؟"
+    },
+    {
+      "speaker": "Sarah",
+      "gender": "female",
+      "en": "Of course! You should visit Big Ben and the British Museum!",
+      "ar": "بالطبع! يجب أن تزور بيج بن والمتحف البريطاني!"
+    }
+  ],
+  "quiz": {
+    "title": "اختبار التعارف",
+    "questions": [
+      {
+        "id": 1,
+        "question": "Where is Ahmed visiting for the first time?",
+        "questionAr": "أين يزور أحمد لأول مرة؟",
+        "options": ["Cairo", "London", "Paris", "Dubai"],
+        "correctAnswer": 1
+      },
+      {
+        "id": 2,
+        "question": "Where is Sarah from?",
+        "questionAr": "من أين سارة؟",
+        "options": ["Cairo", "London", "Paris", "Dubai"],
+        "correctAnswer": 1
+      },
+      {
+        "id": 3,
+        "question": "How long will Ahmed stay?",
+        "questionAr": "كم من الوقت سيبقى أحمد؟",
+        "options": ["One week", "Two weeks", "One month", "Two months"],
+        "correctAnswer": 1
+      },
+      {
+        "id": 4,
+        "question": "What did Sarah recommend to visit?",
+        "questionAr": "ماذا أوصت سارة بزيارته؟",
+        "options": ["Tower Bridge", "Big Ben and British Museum", "Buckingham Palace", "Westminster Abbey"],
+        "correctAnswer": 1
+      }
+    ]
+  }
+}

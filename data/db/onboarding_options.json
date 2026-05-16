@@ -1,0 +1,146 @@
+[
+  {
+    "id": 1,
+    "step_id": 1,
+    "label": "الإنجليزية (English)",
+    "value": "english",
+    "icon_name": "Globe",
+    "color_class": "bg-blue-500"
+  },
+  {
+    "id": 2,
+    "step_id": 1,
+    "label": "الفرنسية (Français)",
+    "value": "french",
+    "icon_name": "Languages",
+    "color_class": "bg-red-500"
+  },
+  {
+    "id": 3,
+    "step_id": 2,
+    "label": "تطوير المسار المهني",
+    "value": "career",
+    "icon_name": "Target",
+    "color_class": "bg-purple-500"
+  },
+  {
+    "id": 4,
+    "step_id": 2,
+    "label": "السفر والسياحة",
+    "value": "travel",
+    "icon_name": "Sparkles",
+    "color_class": "bg-yellow-500"
+  },
+  {
+    "id": 5,
+    "step_id": 2,
+    "label": "تطوير شخصي",
+    "value": "personal",
+    "icon_name": "CheckCircle2",
+    "color_class": "bg-green-500"
+  },
+  {
+    "id": 6,
+    "step_id": 2,
+    "label": "الدراسة الأكاديمية",
+    "value": "academic",
+    "icon_name": "Book",
+    "color_class": "bg-indigo-500"
+  },
+  {
+    "id": 7,
+    "step_id": 3,
+    "label": "مبتدئ تماماً",
+    "value": "beginner",
+    "icon_name": "Star",
+    "color_class": "bg-green-500"
+  },
+  {
+    "id": 8,
+    "step_id": 3,
+    "label": "أعرف بعض الأساسيات",
+    "value": "elementary",
+    "icon_name": "Sparkles",
+    "color_class": "bg-blue-500"
+  },
+  {
+    "id": 9,
+    "step_id": 3,
+    "label": "متوسط",
+    "value": "intermediate",
+    "icon_name": "Target",
+    "color_class": "bg-orange-500"
+  },
+  {
+    "id": 10,
+    "step_id": 3,
+    "label": "متقدم",
+    "value": "advanced",
+    "icon_name": "Sword",
+    "color_class": "bg-purple-500"
+  },
+  {
+    "id": 11,
+    "step_id": 4,
+    "label": "5 دقائق يومياً",
+    "value": "5min",
+    "icon_name": "Heart",
+    "color_class": "bg-pink-500"
+  },
+  {
+    "id": 12,
+    "step_id": 4,
+    "label": "10 دقائق يومياً",
+    "value": "10min",
+    "icon_name": "Star",
+    "color_class": "bg-yellow-500"
+  },
+  {
+    "id": 13,
+    "step_id": 4,
+    "label": "20 دقيقة يومياً",
+    "value": "20min",
+    "icon_name": "Target",
+    "color_class": "bg-blue-500"
+  },
+  {
+    "id": 14,
+    "step_id": 4,
+    "label": "30 دقيقة أو أكثر",
+    "value": "30min",
+    "icon_name": "Sword",
+    "color_class": "bg-purple-500"
+  },
+  {
+    "id": 15,
+    "step_id": 5,
+    "label": "أطفال (5-12 سنة)",
+    "value": "kids",
+    "icon_name": "Sparkles",
+    "color_class": "bg-pink-500"
+  },
+  {
+    "id": 16,
+    "step_id": 5,
+    "label": "مراهقين (13-17 سنة)",
+    "value": "teens",
+    "icon_name": "Star",
+    "color_class": "bg-blue-500"
+  },
+  {
+    "id": 17,
+    "step_id": 5,
+    "label": "شباب (18-35 سنة)",
+    "value": "adults",
+    "icon_name": "Target",
+    "color_class": "bg-green-500"
+  },
+  {
+    "id": 18,
+    "step_id": 5,
+    "label": "كبار (36+ سنة)",
+    "value": "seniors",
+    "icon_name": "Book",
+    "color_class": "bg-orange-500"
+  }
+]

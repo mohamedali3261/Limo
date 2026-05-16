@@ -1,0 +1,9 @@
+export default function GermanFlag() {
+  return (
+    <svg viewBox="0 0 900 600" className="w-full h-full">
+      <rect width="900" height="200" fill="#000000" />
+      <rect y="200" width="900" height="200" fill="#DD0000" />
+      <rect y="400" width="900" height="200" fill="#FFCE00" />
+    </svg>
+  );
+}

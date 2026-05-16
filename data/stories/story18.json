@@ -1,0 +1,102 @@
+{
+  "id": 18,
+  "title": "حفلة عيد الميلاد",
+  "description": "التخطيط لحفلة مفاجئة لصديق وتنظيم كل التفاصيل.",
+  "difficulty": "hard",
+  "thumbnail": "party.png",
+  "xp_reward": 220,
+  "scenes": [
+    {
+      "name": "Narrator",
+      "en": "Memo and Sara are planning a surprise birthday party for their friend Tom.",
+      "ar": "ليو وسارة يخططان لحفلة عيد ميلاد مفاجئة لصديقهم توم."
+    },
+    {
+      "name": "Memo",
+      "en": "We need to organize everything carefully. Tom shouldn't suspect anything!",
+      "ar": "نحتاج لتنظيم كل شيء بعناية. يجب ألا يشك توم بأي شيء!"
+    },
+    {
+      "name": "Sara",
+      "en": "I agree! Let's make a list. We need decorations, food, and a cake.",
+      "ar": "أوافق! دعنا نعمل قائمة. نحتاج زينة وطعام وكعكة."
+    },
+    {
+      "name": "Memo",
+      "en": "I can order the cake from the bakery. What flavor does Tom like?",
+      "ar": "يمكنني طلب الكعكة من المخبز. أي نكهة يحب توم؟"
+    },
+    {
+      "name": "Sara",
+      "en": "He loves chocolate! Make sure it says 'Happy Birthday Tom' on it.",
+      "ar": "يحب الشوكولاتة! تأكد من أنها تقول 'عيد ميلاد سعيد توم' عليها."
+    },
+    {
+      "name": "Memo",
+      "en": "Got it! What about the decorations? Balloons and banners?",
+      "ar": "فهمت! ماذا عن الزينة؟ بالونات ولافتات؟"
+    },
+    {
+      "name": "Sara",
+      "en": "Yes! I'll buy blue and gold decorations. Those are his favorite colors.",
+      "ar": "نعم! سأشتري زينة زرقاء وذهبية. هذه ألوانه المفضلة."
+    },
+    {
+      "name": "Memo",
+      "en": "Perfect! What time should everyone arrive?",
+      "ar": "ممتاز! في أي وقت يجب أن يصل الجميع؟"
+    },
+    {
+      "name": "Sara",
+      "en": "Tom finishes work at six. Let's tell everyone to come at five thirty.",
+      "ar": "توم ينهي العمل في السادسة. دعنا نخبر الجميع بالحضور في الخامسة والنصف."
+    },
+    {
+      "name": "Memo",
+      "en": "Great plan! This will be the best surprise ever!",
+      "ar": "خطة رائعة! ستكون هذه أفضل مفاجأة على الإطلاق!"
+    }
+  ],
+  "questions": [
+    {
+      "scene_idx": 2,
+      "type": "multiple_choice",
+      "q": "What do they need for the party?",
+      "options": [
+        "Decorations, food, and cake",
+        "Only cake",
+        "Only decorations"
+      ],
+      "a": "Decorations, food, and cake"
+    },
+    {
+      "scene_idx": 4,
+      "type": "typing",
+      "q": "He loves ___!|||يحب الشوكولاتة!",
+      "a": "chocolate"
+    },
+    {
+      "scene_idx": 6,
+      "type": "dictation",
+      "a": "I'll buy blue and gold decorations"
+    }
+  ],
+  "finalQuestions": [
+    {
+      "type": "multiple_choice",
+      "q": "What are Tom's favorite colors?",
+      "options": [
+        "Blue and gold",
+        "Red and green",
+        "Black and white"
+      ],
+      "a": "Blue and gold"
+    },
+    {
+      "type": "typing",
+      "q": "What time should everyone ___?|||في أي وقت يجب أن يصل الجميع؟",
+      "a": "arrive"
+    }
+  ]
+}
+

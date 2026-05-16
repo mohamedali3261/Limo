@@ -1,0 +1,97 @@
+{
+  "id": 7,
+  "title": "في المطعم",
+  "description": "تعلم كيف تطلب الطعام في المطعم وتتحدث مع النادل.",
+  "difficulty": "easy",
+  "thumbnail": "restaurant.png",
+  "xp_reward": 110,
+  "scenes": [
+    {
+      "name": "Narrator",
+      "en": "Memo is in a restaurant. He is hungry.",
+      "ar": "ميمو في مطعم. هو جائع."
+    },
+    {
+      "name": "Waiter",
+      "en": "Good evening! Welcome to our restaurant!",
+      "ar": "مساء الخير! مرحباً بك في مطعمنا!"
+    },
+    {
+      "name": "Memo",
+      "en": "Good evening! Can I see the menu, please?",
+      "ar": "مساء الخير! هل يمكنني رؤية القائمة، من فضلك؟"
+    },
+    {
+      "name": "Waiter",
+      "en": "Of course! Here is the menu.",
+      "ar": "بالطبع! تفضل القائمة."
+    },
+    {
+      "name": "Memo",
+      "en": "I would like a burger and chips, please.",
+      "ar": "أود برجر وبطاطس، من فضلك."
+    },
+    {
+      "name": "Waiter",
+      "en": "Good choice! What would you like to drink?",
+      "ar": "اختيار جيد! ماذا تريد أن تشرب؟"
+    },
+    {
+      "name": "Memo",
+      "en": "I would like orange juice, please.",
+      "ar": "أود عصير برتقال، من فضلك."
+    },
+    {
+      "name": "Waiter",
+      "en": "Perfect! Your food will be ready soon.",
+      "ar": "ممتاز! طعامك سيكون جاهزاً قريباً."
+    },
+    {
+      "name": "Memo",
+      "en": "Thank you very much!",
+      "ar": "شكراً جزيلاً!"
+    }
+  ],
+  "questions": [
+    {
+      "scene_idx": 4,
+      "type": "multiple_choice",
+      "q": "What food does Memo order?",
+      "options": [
+        "Burger and chips",
+        "Pizza",
+        "Salad"
+      ],
+      "a": "Burger and chips"
+    },
+    {
+      "scene_idx": 6,
+      "type": "typing",
+      "q": "I would like orange ___.|||أود عصير برتقال.",
+      "a": "juice"
+    },
+    {
+      "scene_idx": 7,
+      "type": "dictation",
+      "a": "Your food will be ready soon"
+    }
+  ],
+  "finalQuestions": [
+    {
+      "type": "multiple_choice",
+      "q": "What does Memo drink?",
+      "options": [
+        "Orange juice",
+        "Water",
+        "Cola"
+      ],
+      "a": "Orange juice"
+    },
+    {
+      "type": "typing",
+      "q": "Can I see the ___, please?|||هل يمكنني رؤية القائمة؟",
+      "a": "menu"
+    }
+  ]
+}
+

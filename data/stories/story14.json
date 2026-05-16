@@ -1,0 +1,107 @@
+{
+  "id": 14,
+  "title": "في المطار",
+  "description": "رحلة ليو إلى لندن وإجراءات المطار والجوازات.",
+  "difficulty": "medium",
+  "thumbnail": "airport.png",
+  "xp_reward": 180,
+  "scenes": [
+    {
+      "name": "Narrator",
+      "en": "Memo arrives at Heathrow Airport in London. He is excited!",
+      "ar": "ليو يصل إلى مطار هيثرو في لندن. هو متحمس!"
+    },
+    {
+      "name": "Officer",
+      "en": "Good morning! Passport, please.",
+      "ar": "صباح الخير! جواز السفر، من فضلك."
+    },
+    {
+      "name": "Memo",
+      "en": "Good morning! Here is my passport.",
+      "ar": "صباح الخير! تفضل جواز سفري."
+    },
+    {
+      "name": "Officer",
+      "en": "What is the purpose of your visit?",
+      "ar": "ما هو الغرض من زيارتك؟"
+    },
+    {
+      "name": "Memo",
+      "en": "I am here for tourism. I want to see London!",
+      "ar": "أنا هنا للسياحة. أريد أن أرى لندن!"
+    },
+    {
+      "name": "Officer",
+      "en": "How long will you stay in the UK?",
+      "ar": "كم من الوقت ستبقى في المملكة المتحدة؟"
+    },
+    {
+      "name": "Memo",
+      "en": "I will stay for two weeks.",
+      "ar": "سأبقى لمدة أسبوعين."
+    },
+    {
+      "name": "Officer",
+      "en": "Where will you be staying?",
+      "ar": "أين ستقيم؟"
+    },
+    {
+      "name": "Memo",
+      "en": "I have a hotel reservation near Big Ben.",
+      "ar": "لدي حجز فندق بالقرب من بيج بن."
+    },
+    {
+      "name": "Officer",
+      "en": "Perfect! Welcome to London! Enjoy your stay!",
+      "ar": "ممتاز! مرحباً بك في لندن! استمتع بإقامتك!"
+    },
+    {
+      "name": "Memo",
+      "en": "Thank you very much!",
+      "ar": "شكراً جزيلاً!"
+    }
+  ],
+  "questions": [
+    {
+      "scene_idx": 4,
+      "type": "multiple_choice",
+      "q": "Why is Memo in London?",
+      "options": [
+        "Tourism",
+        "Work",
+        "Study"
+      ],
+      "a": "Tourism"
+    },
+    {
+      "scene_idx": 6,
+      "type": "typing",
+      "q": "I will stay for two ___.|||سأبقى لمدة أسبوعين.",
+      "a": "weeks"
+    },
+    {
+      "scene_idx": 8,
+      "type": "dictation",
+      "a": "I have a hotel reservation near Big Ben"
+    }
+  ],
+  "finalQuestions": [
+    {
+      "type": "multiple_choice",
+      "q": "How long will Memo stay?",
+      "options": [
+        "Two weeks",
+        "One week",
+        "One month"
+      ],
+      "a": "Two weeks"
+    },
+    {
+      "type": "typing",
+      "q": "What is the ___ of your visit?|||ما هو الغرض من زيارتك؟",
+      "a": "purpose"
+    }
+  ]
+}
+

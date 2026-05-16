@@ -1,0 +1,1602 @@
+[
+  {
+    "id": 1,
+    "title": "خلط الحروف: فواكه",
+    "description": "كلمات الفواكه والخضروات",
+    "level_type": "scrambled_word",
+    "difficulty": "easy",
+    "xp_reward": 20,
+    "order_index": 1,
+    "icon_url": null
+  },
+  {
+    "id": 2,
+    "title": "بناء الجمل: التحيات",
+    "description": "جمل التحية والترحيب",
+    "level_type": "sentence_arrangement",
+    "difficulty": "medium",
+    "xp_reward": 50,
+    "order_index": 2,
+    "icon_url": null
+  },
+  {
+    "id": 3,
+    "title": "التحدي الاحترافي",
+    "description": "ترجم وحسن من مستوى النص",
+    "level_type": "translation",
+    "difficulty": "hard",
+    "xp_reward": 100,
+    "order_index": 3,
+    "icon_url": null
+  },
+  {
+    "id": 4,
+    "title": "توصيل: أساسيات 1",
+    "description": "مفردات عامة",
+    "level_type": "word_matching",
+    "difficulty": "easy",
+    "xp_reward": 30,
+    "order_index": 4,
+    "icon_url": null
+  },
+  {
+    "id": 5,
+    "title": "توصيل: عائلة",
+    "description": "أفراد العائلة",
+    "level_type": "word_matching",
+    "difficulty": "easy",
+    "xp_reward": 40,
+    "order_index": 5,
+    "icon_url": null
+  },
+  {
+    "id": 6,
+    "title": "توصيل: مأكولات",
+    "description": "طعام ومشروبات",
+    "level_type": "word_matching",
+    "difficulty": "medium",
+    "xp_reward": 50,
+    "order_index": 6,
+    "icon_url": null
+  },
+  {
+    "id": 7,
+    "title": "توصيل: أدوات مكتبية",
+    "description": "مفردات عمل",
+    "level_type": "word_matching",
+    "difficulty": "medium",
+    "xp_reward": 75,
+    "order_index": 7,
+    "icon_url": null
+  },
+  {
+    "id": 8,
+    "title": "توصيل: طبيعة",
+    "description": "مستوى متقدم",
+    "level_type": "word_matching",
+    "difficulty": "hard",
+    "xp_reward": 100,
+    "order_index": 8,
+    "icon_url": null
+  },
+  {
+    "id": 9,
+    "title": "توصيل: تكنولوجيا",
+    "description": "مصطلحات حديثة",
+    "level_type": "word_matching",
+    "difficulty": "hard",
+    "xp_reward": 125,
+    "order_index": 9,
+    "icon_url": null
+  },
+  {
+    "id": 10,
+    "title": "توصيل: مشاعر",
+    "description": "صفات ومشاعر",
+    "level_type": "word_matching",
+    "difficulty": "hard",
+    "xp_reward": 150,
+    "order_index": 10,
+    "icon_url": null
+  },
+  {
+    "id": 11,
+    "title": "توصيل: الخضروات",
+    "description": "أنواع الخضروات",
+    "level_type": "word_matching",
+    "difficulty": "medium",
+    "xp_reward": 50,
+    "order_index": 11,
+    "icon_url": null
+  },
+  {
+    "id": 12,
+    "title": "توصيل: الطقس",
+    "description": "حالات الطقس والمناخ",
+    "level_type": "word_matching",
+    "difficulty": "medium",
+    "xp_reward": 50,
+    "order_index": 12,
+    "icon_url": null
+  },
+  {
+    "id": 13,
+    "title": "توصيل: أدوات المطبخ",
+    "description": "أدوات الطبخ والطعام",
+    "level_type": "word_matching",
+    "difficulty": "medium",
+    "xp_reward": 60,
+    "order_index": 13,
+    "icon_url": null
+  },
+  {
+    "id": 14,
+    "title": "توصيل: الطبخ والنكهات",
+    "description": "توابل ونكهات الطعام",
+    "level_type": "word_matching",
+    "difficulty": "medium",
+    "xp_reward": 60,
+    "order_index": 14,
+    "icon_url": null
+  },
+  {
+    "id": 15,
+    "title": "توصيل: المشاعر",
+    "description": "المشاعر والأحاسيس",
+    "level_type": "word_matching",
+    "difficulty": "medium",
+    "xp_reward": 70,
+    "order_index": 15,
+    "icon_url": null
+  },
+  {
+    "id": 16,
+    "title": "توصيل: أنشطة يومية",
+    "description": "الروتين اليومي",
+    "level_type": "word_matching",
+    "difficulty": "medium",
+    "xp_reward": 70,
+    "order_index": 16,
+    "icon_url": null
+  },
+  {
+    "id": 17,
+    "title": "توصيل: الطبيعة",
+    "description": "عناصر الطبيعة",
+    "level_type": "word_matching",
+    "difficulty": "hard",
+    "xp_reward": 80,
+    "order_index": 17,
+    "icon_url": null
+  },
+  {
+    "id": 18,
+    "title": "توصيل: السماء والفضاء",
+    "description": "الكواكب والنجوم",
+    "level_type": "word_matching",
+    "difficulty": "hard",
+    "xp_reward": 80,
+    "order_index": 18,
+    "icon_url": null
+  },
+  {
+    "id": 19,
+    "title": "توصيل: حيوانات برية",
+    "description": "حيوانات الغابة",
+    "level_type": "word_matching",
+    "difficulty": "hard",
+    "xp_reward": 90,
+    "order_index": 19,
+    "icon_url": null
+  },
+  {
+    "id": 20,
+    "title": "توصيل: المكتب",
+    "description": "أدوات العمل",
+    "level_type": "word_matching",
+    "difficulty": "hard",
+    "xp_reward": 90,
+    "order_index": 20,
+    "icon_url": null
+  },
+  {
+    "id": 21,
+    "title": "توصيل: مشاعر متقدمة",
+    "description": "مشاعر وأحاسيس معقدة",
+    "level_type": "word_matching",
+    "difficulty": "hard",
+    "xp_reward": 100,
+    "order_index": 21,
+    "icon_url": null
+  },
+  {
+    "id": 22,
+    "title": "توصيل: الأعمال",
+    "description": "مصطلحات الشركات",
+    "level_type": "word_matching",
+    "difficulty": "hard",
+    "xp_reward": 100,
+    "order_index": 22,
+    "icon_url": null
+  },
+  {
+    "id": 23,
+    "title": "توصيل: التقنية",
+    "description": "مصطلحات تقنية",
+    "level_type": "word_matching",
+    "difficulty": "hard",
+    "xp_reward": 110,
+    "order_index": 23,
+    "icon_url": null
+  },
+  {
+    "id": 24,
+    "title": "توصيل: الطب",
+    "description": "مصطلحات طبية",
+    "level_type": "word_matching",
+    "difficulty": "hard",
+    "xp_reward": 110,
+    "order_index": 24,
+    "icon_url": null
+  },
+  {
+    "id": 25,
+    "title": "توصيل: تقنية متقدمة",
+    "description": "ذكاء اصطناعي وتشفير",
+    "level_type": "word_matching",
+    "difficulty": "hard",
+    "xp_reward": 120,
+    "order_index": 25,
+    "icon_url": null
+  },
+  {
+    "id": 26,
+    "title": "توصيل: الفلسفة",
+    "description": "مفاهيم فلسفية",
+    "level_type": "word_matching",
+    "difficulty": "hard",
+    "xp_reward": 120,
+    "order_index": 26,
+    "icon_url": null
+  },
+  {
+    "id": 27,
+    "title": "توصيل: العلوم",
+    "description": "مصطلحات علمية",
+    "level_type": "word_matching",
+    "difficulty": "hard",
+    "xp_reward": 130,
+    "order_index": 27,
+    "icon_url": null
+  },
+  {
+    "id": 28,
+    "title": "توصيل: الاقتصاد",
+    "description": "مصطلحات اقتصادية",
+    "level_type": "word_matching",
+    "difficulty": "hard",
+    "xp_reward": 130,
+    "order_index": 28,
+    "icon_url": null
+  },
+  {
+    "id": 29,
+    "title": "توصيل: الرياضة",
+    "description": "ألعاب رياضية",
+    "level_type": "word_matching",
+    "difficulty": "hard",
+    "xp_reward": 140,
+    "order_index": 29,
+    "icon_url": null
+  },
+  {
+    "id": 30,
+    "title": "توصيل: السفر",
+    "description": "مصطلحات السفر",
+    "level_type": "word_matching",
+    "difficulty": "hard",
+    "xp_reward": 140,
+    "order_index": 30,
+    "icon_url": null
+  },
+  {
+    "id": 31,
+    "title": "توصيل: الموسيقى",
+    "description": "آلات موسيقية",
+    "level_type": "word_matching",
+    "difficulty": "hard",
+    "xp_reward": 150,
+    "order_index": 31,
+    "icon_url": null
+  },
+  {
+    "id": 32,
+    "title": "توصيل: الفنون",
+    "description": "مصطلحات فنية",
+    "level_type": "word_matching",
+    "difficulty": "hard",
+    "xp_reward": 150,
+    "order_index": 32,
+    "icon_url": null
+  },
+  {
+    "id": 33,
+    "title": "توصيل: القانون",
+    "description": "مصطلحات قانونية",
+    "level_type": "word_matching",
+    "difficulty": "hard",
+    "xp_reward": 160,
+    "order_index": 33,
+    "icon_url": null
+  },
+  {
+    "id": 34,
+    "title": "توصيل: البيئة",
+    "description": "مصطلحات بيئية",
+    "level_type": "word_matching",
+    "difficulty": "hard",
+    "xp_reward": 170,
+    "order_index": 34,
+    "icon_url": null
+  },
+  {
+    "id": 35,
+    "title": "توصيل: الإعلام",
+    "description": "مصطلحات إعلامية",
+    "level_type": "word_matching",
+    "difficulty": "hard",
+    "xp_reward": 170,
+    "order_index": 35,
+    "icon_url": null
+  },
+  {
+    "id": 36,
+    "title": "توصيل: التعليم",
+    "description": "مصطلحات تعليمية",
+    "level_type": "word_matching",
+    "difficulty": "hard",
+    "xp_reward": 180,
+    "order_index": 36,
+    "icon_url": null
+  },
+  {
+    "id": 37,
+    "title": "توصيل: الصحة",
+    "description": "مصطلحات صحية",
+    "level_type": "word_matching",
+    "difficulty": "hard",
+    "xp_reward": 180,
+    "order_index": 37,
+    "icon_url": null
+  },
+  {
+    "id": 38,
+    "title": "توصيل: الهندسة",
+    "description": "مصطلحات هندسية",
+    "level_type": "word_matching",
+    "difficulty": "hard",
+    "xp_reward": 190,
+    "order_index": 38,
+    "icon_url": null
+  },
+  {
+    "id": 39,
+    "title": "توصيل: الكيمياء",
+    "description": "عناصر كيميائية",
+    "level_type": "word_matching",
+    "difficulty": "hard",
+    "xp_reward": 190,
+    "order_index": 39,
+    "icon_url": null
+  },
+  {
+    "id": 40,
+    "title": "توصيل: الفيزياء",
+    "description": "مفاهيم فيزيائية",
+    "level_type": "word_matching",
+    "difficulty": "hard",
+    "xp_reward": 200,
+    "order_index": 40,
+    "icon_url": null
+  },
+  {
+    "id": 41,
+    "title": "توصيل: الجغرافيا",
+    "description": "مصطلحات جغرافية",
+    "level_type": "word_matching",
+    "difficulty": "hard",
+    "xp_reward": 200,
+    "order_index": 41,
+    "icon_url": null
+  },
+  {
+    "id": 42,
+    "title": "توصيل: التاريخ",
+    "description": "مصطلحات تاريخية",
+    "level_type": "word_matching",
+    "difficulty": "hard",
+    "xp_reward": 210,
+    "order_index": 42,
+    "icon_url": null
+  },
+  {
+    "id": 43,
+    "title": "توصيل: الأدب",
+    "description": "مصطلحات أدبية",
+    "level_type": "word_matching",
+    "difficulty": "hard",
+    "xp_reward": 210,
+    "order_index": 43,
+    "icon_url": null
+  },
+  {
+    "id": 48,
+    "title": "خلط الحروف: مهن متقدمة",
+    "description": "وظائف متخصصة",
+    "level_type": "scrambled_word",
+    "difficulty": "hard",
+    "xp_reward": 72,
+    "order_index": 48,
+    "icon_url": null
+  },
+  {
+    "id": 49,
+    "title": "خلط الحروف: أجهزة منزلية",
+    "description": "أجهزة كهربائية",
+    "level_type": "scrambled_word",
+    "difficulty": "hard",
+    "xp_reward": 74,
+    "order_index": 49,
+    "icon_url": null
+  },
+  {
+    "id": 50,
+    "title": "خلط الحروف: مشاعر",
+    "description": "أحاسيس ومشاعر",
+    "level_type": "scrambled_word",
+    "difficulty": "hard",
+    "xp_reward": 76,
+    "order_index": 50,
+    "icon_url": null
+  },
+  {
+    "id": 51,
+    "title": "خلط الحروف: أماكن عامة",
+    "description": "مرافق عامة",
+    "level_type": "scrambled_word",
+    "difficulty": "hard",
+    "xp_reward": 78,
+    "order_index": 51,
+    "icon_url": null
+  },
+  {
+    "id": 52,
+    "title": "خلط الحروف: وسائل إعلام",
+    "description": "صحافة وإعلام",
+    "level_type": "scrambled_word",
+    "difficulty": "hard",
+    "xp_reward": 80,
+    "order_index": 52,
+    "icon_url": null
+  },
+  {
+    "id": 53,
+    "title": "خلط الحروف: حشرات",
+    "description": "أنواع الحشرات",
+    "level_type": "scrambled_word",
+    "difficulty": "hard",
+    "xp_reward": 82,
+    "order_index": 53,
+    "icon_url": null
+  },
+  {
+    "id": 54,
+    "title": "خلط الحروف: أشجار",
+    "description": "أنواع الأشجار",
+    "level_type": "scrambled_word",
+    "difficulty": "hard",
+    "xp_reward": 84,
+    "order_index": 54,
+    "icon_url": null
+  },
+  {
+    "id": 55,
+    "title": "خلط الحروف: معادن",
+    "description": "أنواع المعادن",
+    "level_type": "scrambled_word",
+    "difficulty": "hard",
+    "xp_reward": 86,
+    "order_index": 55,
+    "icon_url": null
+  },
+  {
+    "id": 56,
+    "title": "خلط الحروف: أحجار كريمة",
+    "description": "جواهر وأحجار",
+    "level_type": "scrambled_word",
+    "difficulty": "hard",
+    "xp_reward": 88,
+    "order_index": 56,
+    "icon_url": null
+  },
+  {
+    "id": 57,
+    "title": "خلط الحروف: كواكب",
+    "description": "كواكب المجموعة الشمسية",
+    "level_type": "scrambled_word",
+    "difficulty": "hard",
+    "xp_reward": 90,
+    "order_index": 57,
+    "icon_url": null
+  },
+  {
+    "id": 77,
+    "title": "بناء الجمل: التعليم",
+    "description": "جمل عن التعلم",
+    "level_type": "sentence_arrangement",
+    "difficulty": "hard",
+    "xp_reward": 113,
+    "order_index": 77,
+    "icon_url": null
+  },
+  {
+    "id": 78,
+    "title": "بناء الجمل: الأمن",
+    "description": "جمل عن الأمان",
+    "level_type": "sentence_arrangement",
+    "difficulty": "hard",
+    "xp_reward": 116,
+    "order_index": 78,
+    "icon_url": null
+  },
+  {
+    "id": 79,
+    "title": "بناء الجمل: الدين",
+    "description": "جمل دينية",
+    "level_type": "sentence_arrangement",
+    "difficulty": "hard",
+    "xp_reward": 119,
+    "order_index": 79,
+    "icon_url": null
+  },
+  {
+    "id": 80,
+    "title": "بناء الجمل: الأخلاق",
+    "description": "جمل أخلاقية",
+    "level_type": "sentence_arrangement",
+    "difficulty": "hard",
+    "xp_reward": 122,
+    "order_index": 80,
+    "icon_url": null
+  },
+  {
+    "id": 81,
+    "title": "بناء الجمل: الصداقة",
+    "description": "جمل عن الأصدقاء",
+    "level_type": "sentence_arrangement",
+    "difficulty": "hard",
+    "xp_reward": 125,
+    "order_index": 81,
+    "icon_url": null
+  },
+  {
+    "id": 82,
+    "title": "بناء الجمل: الحب",
+    "description": "جمل عن المحبة",
+    "level_type": "sentence_arrangement",
+    "difficulty": "hard",
+    "xp_reward": 128,
+    "order_index": 82,
+    "icon_url": null
+  },
+  {
+    "id": 83,
+    "title": "بناء الجمل: النجاح",
+    "description": "جمل عن التفوق",
+    "level_type": "sentence_arrangement",
+    "difficulty": "hard",
+    "xp_reward": 131,
+    "order_index": 83,
+    "icon_url": null
+  },
+  {
+    "id": 84,
+    "title": "بناء الجمل: الطموح",
+    "description": "جمل عن الأحلام",
+    "level_type": "sentence_arrangement",
+    "difficulty": "hard",
+    "xp_reward": 134,
+    "order_index": 84,
+    "icon_url": null
+  },
+  {
+    "id": 85,
+    "title": "بناء الجمل: الإبداع",
+    "description": "جمل عن الابتكار",
+    "level_type": "sentence_arrangement",
+    "difficulty": "hard",
+    "xp_reward": 137,
+    "order_index": 85,
+    "icon_url": null
+  },
+  {
+    "id": 86,
+    "title": "بناء الجمل: القيادة",
+    "description": "جمل عن الإدارة",
+    "level_type": "sentence_arrangement",
+    "difficulty": "hard",
+    "xp_reward": 140,
+    "order_index": 86,
+    "icon_url": null
+  },
+  {
+    "id": 106,
+    "title": "مترجم: نصوص بسيطة 1",
+    "description": "ترجمة جمل قصيرة",
+    "level_type": "translation",
+    "difficulty": "easy",
+    "xp_reward": 154,
+    "order_index": 106,
+    "icon_url": null
+  },
+  {
+    "id": 107,
+    "title": "مترجم: نصوص بسيطة 2",
+    "description": "ترجمة جمل قصيرة",
+    "level_type": "translation",
+    "difficulty": "easy",
+    "xp_reward": 158,
+    "order_index": 107,
+    "icon_url": null
+  },
+  {
+    "id": 108,
+    "title": "مترجم: نصوص بسيطة 3",
+    "description": "ترجمة جمل قصيرة",
+    "level_type": "translation",
+    "difficulty": "easy",
+    "xp_reward": 162,
+    "order_index": 108,
+    "icon_url": null
+  },
+  {
+    "id": 109,
+    "title": "مترجم: نصوص بسيطة 4",
+    "description": "ترجمة جمل قصيرة",
+    "level_type": "translation",
+    "difficulty": "easy",
+    "xp_reward": 166,
+    "order_index": 109,
+    "icon_url": null
+  },
+  {
+    "id": 110,
+    "title": "مترجم: نصوص بسيطة 5",
+    "description": "ترجمة جمل قصيرة",
+    "level_type": "translation",
+    "difficulty": "easy",
+    "xp_reward": 170,
+    "order_index": 110,
+    "icon_url": null
+  },
+  {
+    "id": 111,
+    "title": "مترجم: نصوص متوسطة 1",
+    "description": "ترجمة فقرات",
+    "level_type": "translation",
+    "difficulty": "medium",
+    "xp_reward": 174,
+    "order_index": 111,
+    "icon_url": null
+  },
+  {
+    "id": 112,
+    "title": "مترجم: نصوص متوسطة 2",
+    "description": "ترجمة فقرات",
+    "level_type": "translation",
+    "difficulty": "medium",
+    "xp_reward": 178,
+    "order_index": 112,
+    "icon_url": null
+  },
+  {
+    "id": 113,
+    "title": "مترجم: نصوص متوسطة 3",
+    "description": "ترجمة فقرات",
+    "level_type": "translation",
+    "difficulty": "medium",
+    "xp_reward": 182,
+    "order_index": 113,
+    "icon_url": null
+  },
+  {
+    "id": 114,
+    "title": "مترجم: نصوص متقدمة 1",
+    "description": "ترجمة نصوص معقدة",
+    "level_type": "translation",
+    "difficulty": "hard",
+    "xp_reward": 186,
+    "order_index": 114,
+    "icon_url": null
+  },
+  {
+    "id": 115,
+    "title": "مترجم: نصوص متقدمة 2",
+    "description": "ترجمة نصوص معقدة",
+    "level_type": "translation",
+    "difficulty": "hard",
+    "xp_reward": 190,
+    "order_index": 115,
+    "icon_url": null
+  },
+  {
+    "id": 19,
+    "title": "خلط الحروف: حيوانات",
+    "description": "أسماء الحيوانات",
+    "level_type": "scrambled_word",
+    "difficulty": "easy",
+    "xp_reward": 14,
+    "order_index": 20,
+    "icon_url": null
+  },
+  {
+    "id": 20,
+    "title": "خلط الحروف: ألوان",
+    "description": "كلمات الألوان",
+    "level_type": "scrambled_word",
+    "difficulty": "easy",
+    "xp_reward": 16,
+    "order_index": 21,
+    "icon_url": null
+  },
+  {
+    "id": 21,
+    "title": "خلط الحروف: أرقام",
+    "description": "الأرقام بالحروف",
+    "level_type": "scrambled_word",
+    "difficulty": "easy",
+    "xp_reward": 18,
+    "order_index": 22,
+    "icon_url": null
+  },
+  {
+    "id": 22,
+    "title": "خلط الحروف: جسم الإنسان",
+    "description": "أعضاء الجسم",
+    "level_type": "scrambled_word",
+    "difficulty": "easy",
+    "xp_reward": 20,
+    "order_index": 23,
+    "icon_url": null
+  },
+  {
+    "id": 23,
+    "title": "خلط الحروف: ملابس",
+    "description": "أسماء الملابس",
+    "level_type": "scrambled_word",
+    "difficulty": "easy",
+    "xp_reward": 22,
+    "order_index": 24,
+    "icon_url": null
+  },
+  {
+    "id": 24,
+    "title": "خلط الحروف: طعام",
+    "description": "أنواع الطعام",
+    "level_type": "scrambled_word",
+    "difficulty": "easy",
+    "xp_reward": 24,
+    "order_index": 25,
+    "icon_url": null
+  },
+  {
+    "id": 25,
+    "title": "خلط الحروف: مشروبات",
+    "description": "أنواع المشروبات",
+    "level_type": "scrambled_word",
+    "difficulty": "easy",
+    "xp_reward": 26,
+    "order_index": 26,
+    "icon_url": null
+  },
+  {
+    "id": 26,
+    "title": "خلط الحروف: أدوات",
+    "description": "أدوات المنزل",
+    "level_type": "scrambled_word",
+    "difficulty": "easy",
+    "xp_reward": 28,
+    "order_index": 27,
+    "icon_url": null
+  },
+  {
+    "id": 27,
+    "title": "خلط الحروف: مهن",
+    "description": "أسماء المهن",
+    "level_type": "scrambled_word",
+    "difficulty": "easy",
+    "xp_reward": 30,
+    "order_index": 28,
+    "icon_url": null
+  },
+  {
+    "id": 28,
+    "title": "خلط الحروف: رياضة",
+    "description": "مصطلحات رياضية",
+    "level_type": "scrambled_word",
+    "difficulty": "medium",
+    "xp_reward": 32,
+    "order_index": 29,
+    "icon_url": null
+  },
+  {
+    "id": 29,
+    "title": "خلط الحروف: سفر",
+    "description": "كلمات السفر",
+    "level_type": "scrambled_word",
+    "difficulty": "medium",
+    "xp_reward": 34,
+    "order_index": 30,
+    "icon_url": null
+  },
+  {
+    "id": 30,
+    "title": "خلط الحروف: طقس",
+    "description": "حالات الطقس",
+    "level_type": "scrambled_word",
+    "difficulty": "medium",
+    "xp_reward": 36,
+    "order_index": 31,
+    "icon_url": null
+  },
+  {
+    "id": 31,
+    "title": "خلط الحروف: مدينة",
+    "description": "أماكن في المدينة",
+    "level_type": "scrambled_word",
+    "difficulty": "medium",
+    "xp_reward": 38,
+    "order_index": 32,
+    "icon_url": null
+  },
+  {
+    "id": 32,
+    "title": "خلط الحروف: طبيعة",
+    "description": "عناصر الطبيعة",
+    "level_type": "scrambled_word",
+    "difficulty": "medium",
+    "xp_reward": 40,
+    "order_index": 33,
+    "icon_url": null
+  },
+  {
+    "id": 33,
+    "title": "خلط الحروف: بحر",
+    "description": "كلمات بحرية",
+    "level_type": "scrambled_word",
+    "difficulty": "medium",
+    "xp_reward": 42,
+    "order_index": 34,
+    "icon_url": null
+  },
+  {
+    "id": 34,
+    "title": "خلط الحروف: فضاء",
+    "description": "مصطلحات الفضاء",
+    "level_type": "scrambled_word",
+    "difficulty": "medium",
+    "xp_reward": 44,
+    "order_index": 35,
+    "icon_url": null
+  },
+  {
+    "id": 35,
+    "title": "خلط الحروف: موسيقى",
+    "description": "آلات موسيقية",
+    "level_type": "scrambled_word",
+    "difficulty": "medium",
+    "xp_reward": 46,
+    "order_index": 36,
+    "icon_url": null
+  },
+  {
+    "id": 36,
+    "title": "خلط الحروف: فنون",
+    "description": "مصطلحات فنية",
+    "level_type": "scrambled_word",
+    "difficulty": "medium",
+    "xp_reward": 48,
+    "order_index": 37,
+    "icon_url": null
+  },
+  {
+    "id": 37,
+    "title": "خلط الحروف: تكنولوجيا",
+    "description": "أجهزة تقنية",
+    "level_type": "scrambled_word",
+    "difficulty": "medium",
+    "xp_reward": 50,
+    "order_index": 38,
+    "icon_url": null
+  },
+  {
+    "id": 38,
+    "title": "خلط الحروف: طب",
+    "description": "مصطلحات طبية",
+    "level_type": "scrambled_word",
+    "difficulty": "hard",
+    "xp_reward": 52,
+    "order_index": 39,
+    "icon_url": null
+  },
+  {
+    "id": 39,
+    "title": "خلط الحروف: هندسة",
+    "description": "مصطلحات هندسية",
+    "level_type": "scrambled_word",
+    "difficulty": "hard",
+    "xp_reward": 54,
+    "order_index": 40,
+    "icon_url": null
+  },
+  {
+    "id": 40,
+    "title": "خلط الحروف: كيمياء",
+    "description": "عناصر كيميائية",
+    "level_type": "scrambled_word",
+    "difficulty": "hard",
+    "xp_reward": 56,
+    "order_index": 41,
+    "icon_url": null
+  },
+  {
+    "id": 41,
+    "title": "خلط الحروف: فيزياء",
+    "description": "مفاهيم فيزيائية",
+    "level_type": "scrambled_word",
+    "difficulty": "hard",
+    "xp_reward": 58,
+    "order_index": 42,
+    "icon_url": null
+  },
+  {
+    "id": 42,
+    "title": "خلط الحروف: جغرافيا",
+    "description": "مصطلحات جغرافية",
+    "level_type": "scrambled_word",
+    "difficulty": "hard",
+    "xp_reward": 60,
+    "order_index": 43,
+    "icon_url": null
+  },
+  {
+    "id": 43,
+    "title": "خلط الحروف: تاريخ",
+    "description": "مصطلحات تاريخية",
+    "level_type": "scrambled_word",
+    "difficulty": "hard",
+    "xp_reward": 62,
+    "order_index": 44,
+    "icon_url": null
+  },
+  {
+    "id": 44,
+    "title": "خلط الحروف: اقتصاد",
+    "description": "مصطلحات اقتصادية",
+    "level_type": "scrambled_word",
+    "difficulty": "hard",
+    "xp_reward": 64,
+    "order_index": 45,
+    "icon_url": null
+  },
+  {
+    "id": 45,
+    "title": "خلط الحروف: قانون",
+    "description": "مصطلحات قانونية",
+    "level_type": "scrambled_word",
+    "difficulty": "hard",
+    "xp_reward": 66,
+    "order_index": 46,
+    "icon_url": null
+  },
+  {
+    "id": 46,
+    "title": "خلط الحروف: فلسفة",
+    "description": "مفاهيم فلسفية",
+    "level_type": "scrambled_word",
+    "difficulty": "hard",
+    "xp_reward": 68,
+    "order_index": 47,
+    "icon_url": null
+  },
+  {
+    "id": 47,
+    "title": "خلط الحروف: أدب",
+    "description": "مصطلحات أدبية",
+    "level_type": "scrambled_word",
+    "difficulty": "hard",
+    "xp_reward": 70,
+    "order_index": 48,
+    "icon_url": null
+  },
+  {
+    "id": 48,
+    "title": "بناء الجمل: العائلة",
+    "description": "جمل عن أفراد العائلة",
+    "level_type": "sentence_arrangement",
+    "difficulty": "easy",
+    "xp_reward": 26,
+    "order_index": 49,
+    "icon_url": null
+  },
+  {
+    "id": 49,
+    "title": "بناء الجمل: الطعام",
+    "description": "جمل عن الأكل والشرب",
+    "level_type": "sentence_arrangement",
+    "difficulty": "easy",
+    "xp_reward": 29,
+    "order_index": 50,
+    "icon_url": null
+  },
+  {
+    "id": 50,
+    "title": "بناء الجمل: المدرسة",
+    "description": "جمل عن الدراسة",
+    "level_type": "sentence_arrangement",
+    "difficulty": "easy",
+    "xp_reward": 32,
+    "order_index": 51,
+    "icon_url": null
+  },
+  {
+    "id": 51,
+    "title": "بناء الجمل: الألوان",
+    "description": "جمل وصف الألوان",
+    "level_type": "sentence_arrangement",
+    "difficulty": "easy",
+    "xp_reward": 35,
+    "order_index": 52,
+    "icon_url": null
+  },
+  {
+    "id": 52,
+    "title": "بناء الجمل: الأرقام",
+    "description": "جمل العد والحساب",
+    "level_type": "sentence_arrangement",
+    "difficulty": "easy",
+    "xp_reward": 38,
+    "order_index": 53,
+    "icon_url": null
+  },
+  {
+    "id": 53,
+    "title": "بناء الجمل: الوقت",
+    "description": "جمل عن الساعة واليوم",
+    "level_type": "sentence_arrangement",
+    "difficulty": "easy",
+    "xp_reward": 41,
+    "order_index": 54,
+    "icon_url": null
+  },
+  {
+    "id": 54,
+    "title": "بناء الجمل: المنزل",
+    "description": "جمل عن البيت والغرف",
+    "level_type": "sentence_arrangement",
+    "difficulty": "easy",
+    "xp_reward": 44,
+    "order_index": 55,
+    "icon_url": null
+  },
+  {
+    "id": 55,
+    "title": "بناء الجمل: الملابس",
+    "description": "جمل عن اللبس",
+    "level_type": "sentence_arrangement",
+    "difficulty": "easy",
+    "xp_reward": 47,
+    "order_index": 56,
+    "icon_url": null
+  },
+  {
+    "id": 56,
+    "title": "بناء الجمل: الحيوانات",
+    "description": "جمل عن الحيوانات",
+    "level_type": "sentence_arrangement",
+    "difficulty": "easy",
+    "xp_reward": 50,
+    "order_index": 57,
+    "icon_url": null
+  },
+  {
+    "id": 57,
+    "title": "بناء الجمل: الرياضة",
+    "description": "جمل عن الألعاب الرياضية",
+    "level_type": "sentence_arrangement",
+    "difficulty": "medium",
+    "xp_reward": 53,
+    "order_index": 58,
+    "icon_url": null
+  },
+  {
+    "id": 58,
+    "title": "بناء الجمل: السفر",
+    "description": "جمل عن الرحلات",
+    "level_type": "sentence_arrangement",
+    "difficulty": "medium",
+    "xp_reward": 56,
+    "order_index": 59,
+    "icon_url": null
+  },
+  {
+    "id": 59,
+    "title": "بناء الجمل: الطقس",
+    "description": "جمل وصف الجو",
+    "level_type": "sentence_arrangement",
+    "difficulty": "medium",
+    "xp_reward": 59,
+    "order_index": 60,
+    "icon_url": null
+  },
+  {
+    "id": 60,
+    "title": "بناء الجمل: الهوايات",
+    "description": "جمل عن الاهتمامات",
+    "level_type": "sentence_arrangement",
+    "difficulty": "medium",
+    "xp_reward": 62,
+    "order_index": 61,
+    "icon_url": null
+  },
+  {
+    "id": 61,
+    "title": "بناء الجمل: العمل",
+    "description": "جمل عن الوظيفة",
+    "level_type": "sentence_arrangement",
+    "difficulty": "medium",
+    "xp_reward": 65,
+    "order_index": 62,
+    "icon_url": null
+  },
+  {
+    "id": 62,
+    "title": "بناء الجمل: الصحة",
+    "description": "جمل عن الطب والعلاج",
+    "level_type": "sentence_arrangement",
+    "difficulty": "medium",
+    "xp_reward": 68,
+    "order_index": 63,
+    "icon_url": null
+  },
+  {
+    "id": 63,
+    "title": "بناء الجمل: التسوق",
+    "description": "جمل عن الشراء",
+    "level_type": "sentence_arrangement",
+    "difficulty": "medium",
+    "xp_reward": 71,
+    "order_index": 64,
+    "icon_url": null
+  },
+  {
+    "id": 64,
+    "title": "بناء الجمل: المواصلات",
+    "description": "جمل عن النقل",
+    "level_type": "sentence_arrangement",
+    "difficulty": "medium",
+    "xp_reward": 74,
+    "order_index": 65,
+    "icon_url": null
+  },
+  {
+    "id": 65,
+    "title": "بناء الجمل: الطبيعة",
+    "description": "جمل عن البيئة",
+    "level_type": "sentence_arrangement",
+    "difficulty": "medium",
+    "xp_reward": 77,
+    "order_index": 66,
+    "icon_url": null
+  },
+  {
+    "id": 66,
+    "title": "بناء الجمل: المشاعر",
+    "description": "جمل التعبير عن الأحاسيس",
+    "level_type": "sentence_arrangement",
+    "difficulty": "medium",
+    "xp_reward": 80,
+    "order_index": 67,
+    "icon_url": null
+  },
+  {
+    "id": 67,
+    "title": "بناء الجمل: التكنولوجيا",
+    "description": "جمل عن الأجهزة الحديثة",
+    "level_type": "sentence_arrangement",
+    "difficulty": "hard",
+    "xp_reward": 83,
+    "order_index": 68,
+    "icon_url": null
+  },
+  {
+    "id": 68,
+    "title": "بناء الجمل: الثقافة",
+    "description": "جمل عن الفنون والآداب",
+    "level_type": "sentence_arrangement",
+    "difficulty": "hard",
+    "xp_reward": 86,
+    "order_index": 69,
+    "icon_url": null
+  },
+  {
+    "id": 69,
+    "title": "بناء الجمل: الاقتصاد",
+    "description": "جمل عن المال والأعمال",
+    "level_type": "sentence_arrangement",
+    "difficulty": "hard",
+    "xp_reward": 89,
+    "order_index": 70,
+    "icon_url": null
+  },
+  {
+    "id": 70,
+    "title": "بناء الجمل: السياسة",
+    "description": "جمل عن الحكومة",
+    "level_type": "sentence_arrangement",
+    "difficulty": "hard",
+    "xp_reward": 92,
+    "order_index": 71,
+    "icon_url": null
+  },
+  {
+    "id": 71,
+    "title": "بناء الجمل: التاريخ",
+    "description": "جمل عن الماضي",
+    "level_type": "sentence_arrangement",
+    "difficulty": "hard",
+    "xp_reward": 95,
+    "order_index": 72,
+    "icon_url": null
+  },
+  {
+    "id": 72,
+    "title": "بناء الجمل: العلوم",
+    "description": "جمل علمية متقدمة",
+    "level_type": "sentence_arrangement",
+    "difficulty": "hard",
+    "xp_reward": 98,
+    "order_index": 73,
+    "icon_url": null
+  },
+  {
+    "id": 73,
+    "title": "بناء الجمل: الفلسفة",
+    "description": "جمل فكرية عميقة",
+    "level_type": "sentence_arrangement",
+    "difficulty": "hard",
+    "xp_reward": 101,
+    "order_index": 74,
+    "icon_url": null
+  },
+  {
+    "id": 74,
+    "title": "بناء الجمل: البيئة",
+    "description": "جمل عن المناخ والطبيعة",
+    "level_type": "sentence_arrangement",
+    "difficulty": "hard",
+    "xp_reward": 104,
+    "order_index": 75,
+    "icon_url": null
+  },
+  {
+    "id": 75,
+    "title": "بناء الجمل: الإعلام",
+    "description": "جمل عن الصحافة",
+    "level_type": "sentence_arrangement",
+    "difficulty": "hard",
+    "xp_reward": 107,
+    "order_index": 76,
+    "icon_url": null
+  },
+  {
+    "id": 76,
+    "title": "بناء الجمل: المستقبل",
+    "description": "جمل عن التوقعات والأحلام",
+    "level_type": "sentence_arrangement",
+    "difficulty": "hard",
+    "xp_reward": 110,
+    "order_index": 77,
+    "icon_url": null
+  },
+  {
+    "id": 77,
+    "title": "مترجم محترف 2",
+    "description": "المستوى 2 من تحسين الترجمة والصياغة",
+    "level_type": "translation",
+    "difficulty": "easy",
+    "xp_reward": 38,
+    "order_index": 78,
+    "icon_url": null
+  },
+  {
+    "id": 78,
+    "title": "مترجم محترف 3",
+    "description": "المستوى 3 من تحسين الترجمة والصياغة",
+    "level_type": "translation",
+    "difficulty": "easy",
+    "xp_reward": 42,
+    "order_index": 79,
+    "icon_url": null
+  },
+  {
+    "id": 79,
+    "title": "مترجم محترف 4",
+    "description": "المستوى 4 من تحسين الترجمة والصياغة",
+    "level_type": "translation",
+    "difficulty": "easy",
+    "xp_reward": 46,
+    "order_index": 80,
+    "icon_url": null
+  },
+  {
+    "id": 80,
+    "title": "مترجم محترف 5",
+    "description": "المستوى 5 من تحسين الترجمة والصياغة",
+    "level_type": "translation",
+    "difficulty": "easy",
+    "xp_reward": 50,
+    "order_index": 81,
+    "icon_url": null
+  },
+  {
+    "id": 81,
+    "title": "مترجم محترف 6",
+    "description": "المستوى 6 من تحسين الترجمة والصياغة",
+    "level_type": "translation",
+    "difficulty": "easy",
+    "xp_reward": 54,
+    "order_index": 82,
+    "icon_url": null
+  },
+  {
+    "id": 82,
+    "title": "مترجم محترف 7",
+    "description": "المستوى 7 من تحسين الترجمة والصياغة",
+    "level_type": "translation",
+    "difficulty": "easy",
+    "xp_reward": 58,
+    "order_index": 83,
+    "icon_url": null
+  },
+  {
+    "id": 83,
+    "title": "مترجم محترف 8",
+    "description": "المستوى 8 من تحسين الترجمة والصياغة",
+    "level_type": "translation",
+    "difficulty": "easy",
+    "xp_reward": 62,
+    "order_index": 84,
+    "icon_url": null
+  },
+  {
+    "id": 84,
+    "title": "مترجم محترف 9",
+    "description": "المستوى 9 من تحسين الترجمة والصياغة",
+    "level_type": "translation",
+    "difficulty": "easy",
+    "xp_reward": 66,
+    "order_index": 85,
+    "icon_url": null
+  },
+  {
+    "id": 85,
+    "title": "مترجم محترف 10",
+    "description": "المستوى 10 من تحسين الترجمة والصياغة",
+    "level_type": "translation",
+    "difficulty": "easy",
+    "xp_reward": 70,
+    "order_index": 86,
+    "icon_url": null
+  },
+  {
+    "id": 86,
+    "title": "مترجم محترف 11",
+    "description": "المستوى 11 من تحسين الترجمة والصياغة",
+    "level_type": "translation",
+    "difficulty": "medium",
+    "xp_reward": 74,
+    "order_index": 87,
+    "icon_url": null
+  },
+  {
+    "id": 87,
+    "title": "مترجم محترف 12",
+    "description": "المستوى 12 من تحسين الترجمة والصياغة",
+    "level_type": "translation",
+    "difficulty": "medium",
+    "xp_reward": 78,
+    "order_index": 88,
+    "icon_url": null
+  },
+  {
+    "id": 88,
+    "title": "مترجم محترف 13",
+    "description": "المستوى 13 من تحسين الترجمة والصياغة",
+    "level_type": "translation",
+    "difficulty": "medium",
+    "xp_reward": 82,
+    "order_index": 89,
+    "icon_url": null
+  },
+  {
+    "id": 89,
+    "title": "مترجم محترف 14",
+    "description": "المستوى 14 من تحسين الترجمة والصياغة",
+    "level_type": "translation",
+    "difficulty": "medium",
+    "xp_reward": 86,
+    "order_index": 90,
+    "icon_url": null
+  },
+  {
+    "id": 90,
+    "title": "مترجم محترف 15",
+    "description": "المستوى 15 من تحسين الترجمة والصياغة",
+    "level_type": "translation",
+    "difficulty": "medium",
+    "xp_reward": 90,
+    "order_index": 91,
+    "icon_url": null
+  },
+  {
+    "id": 91,
+    "title": "مترجم محترف 16",
+    "description": "المستوى 16 من تحسين الترجمة والصياغة",
+    "level_type": "translation",
+    "difficulty": "medium",
+    "xp_reward": 94,
+    "order_index": 92,
+    "icon_url": null
+  },
+  {
+    "id": 92,
+    "title": "مترجم محترف 17",
+    "description": "المستوى 17 من تحسين الترجمة والصياغة",
+    "level_type": "translation",
+    "difficulty": "medium",
+    "xp_reward": 98,
+    "order_index": 93,
+    "icon_url": null
+  },
+  {
+    "id": 93,
+    "title": "مترجم محترف 18",
+    "description": "المستوى 18 من تحسين الترجمة والصياغة",
+    "level_type": "translation",
+    "difficulty": "medium",
+    "xp_reward": 102,
+    "order_index": 94,
+    "icon_url": null
+  },
+  {
+    "id": 94,
+    "title": "مترجم محترف 19",
+    "description": "المستوى 19 من تحسين الترجمة والصياغة",
+    "level_type": "translation",
+    "difficulty": "medium",
+    "xp_reward": 106,
+    "order_index": 95,
+    "icon_url": null
+  },
+  {
+    "id": 95,
+    "title": "مترجم محترف 20",
+    "description": "المستوى 20 من تحسين الترجمة والصياغة",
+    "level_type": "translation",
+    "difficulty": "medium",
+    "xp_reward": 110,
+    "order_index": 96,
+    "icon_url": null
+  },
+  {
+    "id": 96,
+    "title": "مترجم محترف 21",
+    "description": "المستوى 21 من تحسين الترجمة والصياغة",
+    "level_type": "translation",
+    "difficulty": "hard",
+    "xp_reward": 114,
+    "order_index": 97,
+    "icon_url": null
+  },
+  {
+    "id": 97,
+    "title": "مترجم محترف 22",
+    "description": "المستوى 22 من تحسين الترجمة والصياغة",
+    "level_type": "translation",
+    "difficulty": "hard",
+    "xp_reward": 118,
+    "order_index": 98,
+    "icon_url": null
+  },
+  {
+    "id": 98,
+    "title": "مترجم محترف 23",
+    "description": "المستوى 23 من تحسين الترجمة والصياغة",
+    "level_type": "translation",
+    "difficulty": "hard",
+    "xp_reward": 122,
+    "order_index": 99,
+    "icon_url": null
+  },
+  {
+    "id": 99,
+    "title": "مترجم محترف 24",
+    "description": "المستوى 24 من تحسين الترجمة والصياغة",
+    "level_type": "translation",
+    "difficulty": "hard",
+    "xp_reward": 126,
+    "order_index": 100,
+    "icon_url": null
+  },
+  {
+    "id": 100,
+    "title": "مترجم محترف 25",
+    "description": "المستوى 25 من تحسين الترجمة والصياغة",
+    "level_type": "translation",
+    "difficulty": "hard",
+    "xp_reward": 130,
+    "order_index": 101,
+    "icon_url": null
+  },
+  {
+    "id": 101,
+    "title": "مترجم محترف 26",
+    "description": "المستوى 26 من تحسين الترجمة والصياغة",
+    "level_type": "translation",
+    "difficulty": "hard",
+    "xp_reward": 134,
+    "order_index": 102,
+    "icon_url": null
+  },
+  {
+    "id": 102,
+    "title": "مترجم محترف 27",
+    "description": "المستوى 27 من تحسين الترجمة والصياغة",
+    "level_type": "translation",
+    "difficulty": "hard",
+    "xp_reward": 138,
+    "order_index": 103,
+    "icon_url": null
+  },
+  {
+    "id": 103,
+    "title": "مترجم محترف 28",
+    "description": "المستوى 28 من تحسين الترجمة والصياغة",
+    "level_type": "translation",
+    "difficulty": "hard",
+    "xp_reward": 142,
+    "order_index": 104,
+    "icon_url": null
+  },
+  {
+    "id": 104,
+    "title": "مترجم محترف 29",
+    "description": "المستوى 29 من تحسين الترجمة والصياغة",
+    "level_type": "translation",
+    "difficulty": "hard",
+    "xp_reward": 146,
+    "order_index": 105,
+    "icon_url": null
+  },
+  {
+    "id": 105,
+    "title": "مترجم محترف 30",
+    "description": "المستوى 30 من تحسين الترجمة والصياغة",
+    "level_type": "translation",
+    "difficulty": "hard",
+    "xp_reward": 150,
+    "order_index": 106,
+    "icon_url": null
+  }
+]

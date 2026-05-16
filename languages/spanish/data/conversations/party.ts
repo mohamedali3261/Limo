@@ -1,0 +1,19 @@
+import { ConversationScenario } from './types';
+
+export const party: ConversationScenario = {
+    id: 'party_meeting',
+    arabicTitle: 'لقاء في حفلة',
+    description: 'التعرف على شخص في حفلة صديق',
+    lines: [
+      { speaker: 'A', speakerNameEs: 'Invitado', speakerNameAr: 'ضيف', spanish: '¡Hola! Es una buena fiesta, ¿no?', arabicTranslation: 'مرحباً! إنها حفلة رائعة، أليس كذلك؟', arabicPronunciation: 'أولا! إس أونا بوينا فييستا، نو؟' },
+      { speaker: 'B', speakerNameEs: 'Otro Invitado', speakerNameAr: 'ضيف آخر', spanish: 'Sí, me gusta mucho la música. ¿Conoces al organizador?', arabicTranslation: 'نعم، أحب الموسيقى كثيراً. هل تعرف المنظم؟', arabicPronunciation: 'سي، مي جوستا موتشو لا موسيكا. كونوثيس آل أورجانثادور؟' },
+      { speaker: 'A', speakerNameEs: 'Invitado', speakerNameAr: 'ضيف', spanish: 'Sí, es mi amigo de la universidad. Soy Carlos.', arabicTranslation: 'نعم، إنه صديقي من الجامعة. أنا كارلوس.', arabicPronunciation: 'سي، إس مي أميجو دي لا أونيبرسيداد. سوي كارلوس.' },
+      { speaker: 'B', speakerNameEs: 'Otro Invitado', speakerNameAr: 'ضيف آخر', spanish: 'Mucho gusto, Carlos. Yo soy Ana.', arabicTranslation: 'تشرفنا يا كارلوس. أنا أنا.', arabicPronunciation: 'موتشو جوستو، كارلوس. يو سوي أنا.' },
+      { speaker: 'A', speakerNameEs: 'Invitado', speakerNameAr: 'ضيف', spanish: '¿Vives aquí en la ciudad, Ana?', arabicTranslation: 'هل تسكنين هنا في المدينة، أنا؟', arabicPronunciation: 'بيبيس أكي إن لا ثيوداد، أنا؟' },
+      { speaker: 'B', speakerNameEs: 'Otro Invitado', speakerNameAr: 'ضيف آخر', spanish: 'No, vengo de visita desde Valencia.', arabicTranslation: 'لا، جئت للزيارة من فالنسيا.', arabicPronunciation: 'نو، بينجو دي بيسيتا ديسدي بالينثيا.' }
+    ],
+    quiz: [
+        { type: 'multiple_choice', spanish: '¿Cómo se llaman?', arabic: 'Wie heißen sie?', options: [ { text: 'Carlos y Ana', correct: true }, { text: 'Pedro y Maria', correct: false }, { text: 'Juan y Ana', correct: false } ] },
+        { type: 'true_false', spanish: 'Ana vive en esta ciudad.', arabic: 'Ana wohnt in dieser Stadt.', isTrue: false, correctArabic: 'Sie kommt aus Valencia' }
+    ]
+};

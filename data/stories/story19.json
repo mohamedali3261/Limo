@@ -1,0 +1,107 @@
+{
+  "id": 19,
+  "title": "مشكلة في الفندق",
+  "description": "ليو يواجه مشكلة في غرفة الفندق ويحتاج لحلها مع الموظفين.",
+  "difficulty": "hard",
+  "thumbnail": "hotel.png",
+  "xp_reward": 230,
+  "scenes": [
+    {
+      "name": "Narrator",
+      "en": "Memo checks into his hotel room. Something is wrong with the air conditioning.",
+      "ar": "ليو يسجل دخوله في غرفة الفندق. هناك مشكلة في التكييف."
+    },
+    {
+      "name": "Memo",
+      "en": "Hello, reception? I have a problem with my room.",
+      "ar": "مرحباً، الاستقبال؟ لدي مشكلة في غرفتي."
+    },
+    {
+      "name": "Receptionist",
+      "en": "I'm sorry to hear that! What seems to be the problem?",
+      "ar": "آسف لسماع ذلك! ما هي المشكلة؟"
+    },
+    {
+      "name": "Memo",
+      "en": "The air conditioning isn't working, and it's very hot in here.",
+      "ar": "التكييف لا يعمل، والجو حار جداً هنا."
+    },
+    {
+      "name": "Receptionist",
+      "en": "I apologize for the inconvenience. I'll send someone to fix it immediately.",
+      "ar": "أعتذر عن الإزعاج. سأرسل شخصاً لإصلاحه فوراً."
+    },
+    {
+      "name": "Memo",
+      "en": "How long will it take? I have an important meeting tomorrow morning.",
+      "ar": "كم من الوقت سيستغرق؟ لدي اجتماع مهم صباح الغد."
+    },
+    {
+      "name": "Receptionist",
+      "en": "It should take about thirty minutes. If we can't fix it, we'll move you to another room.",
+      "ar": "يجب أن يستغرق حوالي ثلاثين دقيقة. إذا لم نستطع إصلاحه، سننقلك لغرفة أخرى."
+    },
+    {
+      "name": "Memo",
+      "en": "That would be helpful. Also, could I get some extra towels?",
+      "ar": "سيكون ذلك مفيداً. أيضاً، هل يمكنني الحصول على بعض المناشف الإضافية؟"
+    },
+    {
+      "name": "Receptionist",
+      "en": "Of course! I'll send them up with the technician right away.",
+      "ar": "بالطبع! سأرسلها مع الفني فوراً."
+    },
+    {
+      "name": "Memo",
+      "en": "Thank you for your quick response!",
+      "ar": "شكراً على استجابتك السريعة!"
+    },
+    {
+      "name": "Receptionist",
+      "en": "You're welcome! We want to ensure you have a comfortable stay.",
+      "ar": "على الرحب والسعة! نريد التأكد من أن لديك إقامة مريحة."
+    }
+  ],
+  "questions": [
+    {
+      "scene_idx": 3,
+      "type": "multiple_choice",
+      "q": "What is the problem?",
+      "options": [
+        "Air conditioning not working",
+        "No hot water",
+        "Broken TV"
+      ],
+      "a": "Air conditioning not working"
+    },
+    {
+      "scene_idx": 6,
+      "type": "typing",
+      "q": "It should take about thirty ___.|||يجب أن يستغرق حوالي ثلاثين دقيقة.",
+      "a": "minutes"
+    },
+    {
+      "scene_idx": 7,
+      "type": "dictation",
+      "a": "Could I get some extra towels"
+    }
+  ],
+  "finalQuestions": [
+    {
+      "type": "multiple_choice",
+      "q": "What will happen if they can't fix it?",
+      "options": [
+        "Move to another room",
+        "Get a refund",
+        "Nothing"
+      ],
+      "a": "Move to another room"
+    },
+    {
+      "type": "typing",
+      "q": "I have an important ___ tomorrow.|||لدي اجتماع مهم غداً.",
+      "a": "meeting"
+    }
+  ]
+}
+

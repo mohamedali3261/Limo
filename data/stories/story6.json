@@ -1,0 +1,102 @@
+{
+  "id": 6,
+  "title": "في المقهى",
+  "description": "تعلم كيف تطلب المشروبات والطعام في المقهى.",
+  "difficulty": "easy",
+  "thumbnail": "coffee.png",
+  "xp_reward": 100,
+  "scenes": [
+    {
+      "name": "Narrator",
+      "en": "Memo enters a coffee shop. He is thirsty.",
+      "ar": "ميمو يدخل مقهى. هو عطشان."
+    },
+    {
+      "name": "Barista",
+      "en": "Good morning! What can I get for you?",
+      "ar": "صباح الخير! ماذا يمكنني أن أقدم لك؟"
+    },
+    {
+      "name": "Memo",
+      "en": "Good morning! I would like a coffee, please.",
+      "ar": "صباح الخير! أود قهوة، من فضلك."
+    },
+    {
+      "name": "Barista",
+      "en": "Would you like milk with your coffee?",
+      "ar": "هل تريد حليباً مع قهوتك؟"
+    },
+    {
+      "name": "Memo",
+      "en": "Yes, please. With milk and sugar.",
+      "ar": "نعم، من فضلك. مع حليب وسكر."
+    },
+    {
+      "name": "Barista",
+      "en": "Would you like anything to eat?",
+      "ar": "هل تريد أي شيء لتأكله؟"
+    },
+    {
+      "name": "Memo",
+      "en": "Yes! I would like a chocolate cake.",
+      "ar": "نعم! أود كعكة شوكولاتة."
+    },
+    {
+      "name": "Barista",
+      "en": "That will be five pounds, please.",
+      "ar": "سيكون ذلك خمسة جنيهات، من فضلك."
+    },
+    {
+      "name": "Memo",
+      "en": "Here you are. Thank you!",
+      "ar": "تفضل. شكراً لك!"
+    },
+    {
+      "name": "Barista",
+      "en": "You are welcome! Enjoy your coffee!",
+      "ar": "على الرحب والسعة! استمتع بقهوتك!"
+    }
+  ],
+  "questions": [
+    {
+      "scene_idx": 2,
+      "type": "multiple_choice",
+      "q": "What does Memo order?",
+      "options": [
+        "Coffee",
+        "Tea",
+        "Juice"
+      ],
+      "a": "Coffee"
+    },
+    {
+      "scene_idx": 4,
+      "type": "typing",
+      "q": "With milk and ___.|||مع حليب وسكر.",
+      "a": "sugar"
+    },
+    {
+      "scene_idx": 6,
+      "type": "dictation",
+      "a": "I would like a chocolate cake"
+    }
+  ],
+  "finalQuestions": [
+    {
+      "type": "multiple_choice",
+      "q": "How much does Memo pay?",
+      "options": [
+        "Five pounds",
+        "Three pounds",
+        "Ten pounds"
+      ],
+      "a": "Five pounds"
+    },
+    {
+      "type": "typing",
+      "q": "I would ___ a coffee.|||أود قهوة.",
+      "a": "like"
+    }
+  ]
+}
+

@@ -1,0 +1,39 @@
+{
+  "id": 2,
+  "title": "The Lost Key",
+  "titleAr": "المفتاح المفقود",
+  "difficulty": "easy",
+  "scenes": [
+    {
+      "id": 1,
+      "text": "Sarah was looking for her house key.",
+      "textAr": "كانت سارة تبحث عن مفتاح منزلها."
+    },
+    {
+      "id": 2,
+      "text": "She checked her bag but couldn't find it.",
+      "textAr": "فتشت حقيبتها لكنها لم تجده."
+    },
+    {
+      "id": 3,
+      "text": "She remembered leaving it at the cafe.",
+      "textAr": "تذكرت أنها تركته في المقهى."
+    }
+  ],
+  "questions": [
+    {
+      "id": 1,
+      "question": "What was Sarah looking for?",
+      "questionAr": "ماذا كانت سارة تبحث عنه؟",
+      "options": ["Her phone", "Her key", "Her wallet", "Her book"],
+      "correctAnswer": 1
+    },
+    {
+      "id": 2,
+      "question": "Where did she remember leaving it?",
+      "questionAr": "أين تذكرت أنها تركته؟",
+      "options": ["At home", "At the cafe", "At work", "At school"],
+      "correctAnswer": 1
+    }
+  ]
+}

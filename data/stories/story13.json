@@ -1,0 +1,97 @@
+{
+  "id": 13,
+  "title": "في البنك",
+  "description": "تعلم كيف تفتح حساباً بنكياً وتتعامل مع الموظفين.",
+  "difficulty": "medium",
+  "thumbnail": "bank.png",
+  "xp_reward": 170,
+  "scenes": [
+    {
+      "name": "Narrator",
+      "en": "Memo enters a bank. He wants to open a new account.",
+      "ar": "ليو يدخل بنكاً. يريد فتح حساب جديد."
+    },
+    {
+      "name": "Clerk",
+      "en": "Good afternoon! How can I help you today?",
+      "ar": "مساء الخير! كيف يمكنني مساعدتك اليوم؟"
+    },
+    {
+      "name": "Memo",
+      "en": "I would like to open a bank account, please.",
+      "ar": "أود فتح حساب بنكي، من فضلك."
+    },
+    {
+      "name": "Clerk",
+      "en": "Of course! Do you have your passport and proof of address?",
+      "ar": "بالطبع! هل لديك جواز سفرك وإثبات عنوان؟"
+    },
+    {
+      "name": "Memo",
+      "en": "Yes, I have both documents here.",
+      "ar": "نعم، لدي كلا المستندين هنا."
+    },
+    {
+      "name": "Clerk",
+      "en": "Perfect! What type of account would you like? Savings or current?",
+      "ar": "ممتاز! أي نوع من الحسابات تريد؟ توفير أم جاري؟"
+    },
+    {
+      "name": "Memo",
+      "en": "A current account, please. Can I get a debit card?",
+      "ar": "حساب جاري، من فضلك. هل يمكنني الحصول على بطاقة خصم؟"
+    },
+    {
+      "name": "Clerk",
+      "en": "Yes! Your card will arrive in five to seven working days.",
+      "ar": "نعم! ستصل بطاقتك في خمسة إلى سبعة أيام عمل."
+    },
+    {
+      "name": "Memo",
+      "en": "That's great! Thank you for your help!",
+      "ar": "هذا رائع! شكراً على مساعدتك!"
+    }
+  ],
+  "questions": [
+    {
+      "scene_idx": 2,
+      "type": "multiple_choice",
+      "q": "What does Memo want to do?",
+      "options": [
+        "Open a bank account",
+        "Close an account",
+        "Get a loan"
+      ],
+      "a": "Open a bank account"
+    },
+    {
+      "scene_idx": 6,
+      "type": "typing",
+      "q": "Can I get a debit ___?|||هل يمكنني الحصول على بطاقة خصم؟",
+      "a": "card"
+    },
+    {
+      "scene_idx": 7,
+      "type": "dictation",
+      "a": "Your card will arrive in five to seven working days"
+    }
+  ],
+  "finalQuestions": [
+    {
+      "type": "multiple_choice",
+      "q": "What type of account does Memo want?",
+      "options": [
+        "Current account",
+        "Savings account",
+        "Business account"
+      ],
+      "a": "Current account"
+    },
+    {
+      "type": "typing",
+      "q": "Do you have your ___ and proof of address?|||هل لديك جواز سفرك وإثبات عنوان؟",
+      "a": "passport"
+    }
+  ]
+}
+

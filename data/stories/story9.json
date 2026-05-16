@@ -1,0 +1,97 @@
+{
+  "id": 9,
+  "title": "في الحديقة",
+  "description": "يوم جميل في الحديقة مع الأصدقاء والألعاب.",
+  "difficulty": "easy",
+  "thumbnail": "park.png",
+  "xp_reward": 130,
+  "scenes": [
+    {
+      "name": "Narrator",
+      "en": "It is Saturday. Memo is in the park with his friends.",
+      "ar": "إنه يوم السبت. ميمو في الحديقة مع أصدقائه."
+    },
+    {
+      "name": "Memo",
+      "en": "What a beautiful day! The weather is perfect!",
+      "ar": "يا له من يوم جميل! الطقس مثالي!"
+    },
+    {
+      "name": "Sara",
+      "en": "Yes! Let's play football!",
+      "ar": "نعم! دعونا نلعب كرة القدم!"
+    },
+    {
+      "name": "Tom",
+      "en": "Good idea! I love football!",
+      "ar": "فكرة جيدة! أحب كرة القدم!"
+    },
+    {
+      "name": "Narrator",
+      "en": "They play football for one hour. They are happy.",
+      "ar": "يلعبون كرة القدم لمدة ساعة. هم سعداء."
+    },
+    {
+      "name": "Memo",
+      "en": "I am tired now. Let's sit under that tree.",
+      "ar": "أنا متعب الآن. دعونا نجلس تحت تلك الشجرة."
+    },
+    {
+      "name": "Sara",
+      "en": "Good idea! I have some water and sandwiches.",
+      "ar": "فكرة جيدة! لدي بعض الماء والسندويشات."
+    },
+    {
+      "name": "Tom",
+      "en": "Thank you, Sara! You are very kind!",
+      "ar": "شكراً لك يا سارة! أنت لطيفة جداً!"
+    },
+    {
+      "name": "Memo",
+      "en": "This is a perfect day with friends!",
+      "ar": "هذا يوم مثالي مع الأصدقاء!"
+    }
+  ],
+  "questions": [
+    {
+      "scene_idx": 2,
+      "type": "multiple_choice",
+      "q": "What do they want to play?",
+      "options": [
+        "Football",
+        "Tennis",
+        "Basketball"
+      ],
+      "a": "Football"
+    },
+    {
+      "scene_idx": 4,
+      "type": "typing",
+      "q": "They play for one ___.|||يلعبون لمدة ساعة.",
+      "a": "hour"
+    },
+    {
+      "scene_idx": 6,
+      "type": "dictation",
+      "a": "I have some water and sandwiches"
+    }
+  ],
+  "finalQuestions": [
+    {
+      "type": "multiple_choice",
+      "q": "How does Memo feel?",
+      "options": [
+        "Happy",
+        "Sad",
+        "Angry"
+      ],
+      "a": "Happy"
+    },
+    {
+      "type": "typing",
+      "q": "The weather is ___!|||الطقس مثالي!",
+      "a": "perfect"
+    }
+  ]
+}
+

@@ -1,0 +1,112 @@
+{
+  "id": 16,
+  "title": "مقابلة العمل",
+  "description": "ليو يذهب لمقابلة عمل ويتحدث عن خبراته ومهاراته.",
+  "difficulty": "hard",
+  "thumbnail": "job.png",
+  "xp_reward": 200,
+  "scenes": [
+    {
+      "name": "Narrator",
+      "en": "Memo has a job interview today. He is a bit nervous but ready.",
+      "ar": "ليو لديه مقابلة عمل اليوم. هو متوتر قليلاً لكنه مستعد."
+    },
+    {
+      "name": "Manager",
+      "en": "Good morning, Leo! Please have a seat. Tell me about yourself.",
+      "ar": "صباح الخير يا ليو! تفضل بالجلوس. حدثني عن نفسك."
+    },
+    {
+      "name": "Memo",
+      "en": "Good morning! I am a software developer with five years of experience.",
+      "ar": "صباح الخير! أنا مطور برمجيات لدي خمس سنوات من الخبرة."
+    },
+    {
+      "name": "Manager",
+      "en": "That's impressive! What programming languages do you know?",
+      "ar": "هذا مثير للإعجاب! ما هي لغات البرمجة التي تعرفها؟"
+    },
+    {
+      "name": "Memo",
+      "en": "I am proficient in Python, JavaScript, and Java. I also know SQL.",
+      "ar": "أنا متمكن من بايثون وجافا سكريبت وجافا. أعرف أيضاً SQL."
+    },
+    {
+      "name": "Manager",
+      "en": "Excellent! Why do you want to work for our company?",
+      "ar": "ممتاز! لماذا تريد العمل في شركتنا؟"
+    },
+    {
+      "name": "Memo",
+      "en": "I admire your innovative projects. I believe I can contribute to your team.",
+      "ar": "أنا معجب بمشاريعكم المبتكرة. أعتقد أنني أستطيع المساهمة في فريقكم."
+    },
+    {
+      "name": "Manager",
+      "en": "What are your strengths and weaknesses?",
+      "ar": "ما هي نقاط قوتك وضعفك؟"
+    },
+    {
+      "name": "Memo",
+      "en": "I am a quick learner and work well in teams. I sometimes focus too much on details.",
+      "ar": "أنا سريع التعلم وأعمل جيداً في الفرق. أحياناً أركز كثيراً على التفاصيل."
+    },
+    {
+      "name": "Manager",
+      "en": "When can you start?",
+      "ar": "متى يمكنك البدء؟"
+    },
+    {
+      "name": "Memo",
+      "en": "I can start in two weeks if you offer me the position.",
+      "ar": "يمكنني البدء في أسبوعين إذا عرضت علي الوظيفة."
+    },
+    {
+      "name": "Manager",
+      "en": "Great! We will contact you within three days. Thank you for coming!",
+      "ar": "رائع! سنتصل بك خلال ثلاثة أيام. شكراً لحضورك!"
+    }
+  ],
+  "questions": [
+    {
+      "scene_idx": 2,
+      "type": "multiple_choice",
+      "q": "What is Leo's job?",
+      "options": [
+        "Software developer",
+        "Teacher",
+        "Doctor"
+      ],
+      "a": "Software developer"
+    },
+    {
+      "scene_idx": 4,
+      "type": "typing",
+      "q": "I am proficient in Python, JavaScript, and ___.|||أنا متمكن من بايثون وجافا سكريبت وجافا.",
+      "a": "Java"
+    },
+    {
+      "scene_idx": 8,
+      "type": "dictation",
+      "a": "I am a quick learner and work well in teams"
+    }
+  ],
+  "finalQuestions": [
+    {
+      "type": "multiple_choice",
+      "q": "How many years of experience does Memo have?",
+      "options": [
+        "Five years",
+        "Three years",
+        "Ten years"
+      ],
+      "a": "Five years"
+    },
+    {
+      "type": "typing",
+      "q": "When can you ___?|||متى يمكنك البدء؟",
+      "a": "start"
+    }
+  ]
+}
+

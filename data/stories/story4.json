@@ -1,0 +1,92 @@
+{
+  "id": 4,
+  "title": "أين تسكن؟",
+  "description": "تعلم كيف تسأل وتجيب عن مكان السكن.",
+  "difficulty": "easy",
+  "thumbnail": "house.png",
+  "xp_reward": 80,
+  "scenes": [
+    {
+      "name": "Narrator",
+      "en": "Jack and Fatima are talking in a cafe.",
+      "ar": "جاك وفاطمة يتحدثان في مقهى."
+    },
+    {
+      "name": "Jack",
+      "en": "Fatima, where do you live?",
+      "ar": "فاطمة، أين تسكنين؟"
+    },
+    {
+      "name": "Fatima",
+      "en": "I live in London. It is a big city!",
+      "ar": "أسكن في لندن. إنها مدينة كبيرة!"
+    },
+    {
+      "name": "Jack",
+      "en": "London is beautiful! I live in Manchester.",
+      "ar": "لندن جميلة! أنا أسكن في مانشستر."
+    },
+    {
+      "name": "Fatima",
+      "en": "Manchester is nice! Is it far from London?",
+      "ar": "مانشستر جميلة! هل هي بعيدة عن لندن؟"
+    },
+    {
+      "name": "Jack",
+      "en": "No, it is not far. It is two hours by train.",
+      "ar": "لا، ليست بعيدة. ساعتان بالقطار."
+    },
+    {
+      "name": "Fatima",
+      "en": "That is good! Do you like Manchester?",
+      "ar": "هذا جيد! هل تحب مانشستر؟"
+    },
+    {
+      "name": "Jack",
+      "en": "Yes! I love my city!",
+      "ar": "نعم! أحب مدينتي!"
+    }
+  ],
+  "questions": [
+    {
+      "scene_idx": 2,
+      "type": "multiple_choice",
+      "q": "Where does Fatima live?",
+      "options": [
+        "London",
+        "Manchester",
+        "Paris"
+      ],
+      "a": "London"
+    },
+    {
+      "scene_idx": 3,
+      "type": "typing",
+      "q": "I live ___ Manchester.|||أسكن في مانشستر.",
+      "a": "in"
+    },
+    {
+      "scene_idx": 5,
+      "type": "dictation",
+      "a": "It is two hours by train"
+    }
+  ],
+  "finalQuestions": [
+    {
+      "type": "multiple_choice",
+      "q": "Where does Jack live?",
+      "options": [
+        "Manchester",
+        "London",
+        "Liverpool"
+      ],
+      "a": "Manchester"
+    },
+    {
+      "type": "typing",
+      "q": "Where ___ you live?|||أين تسكن؟",
+      "a": "do"
+    }
+  ]
+}
+

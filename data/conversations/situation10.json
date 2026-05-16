@@ -1,0 +1,109 @@
+{
+  "id": 10,
+  "title": "في المدرسة",
+  "titleEn": "At School",
+  "icon": "school",
+  "color": "indigo",
+  "difficulty": "medium",
+  "dialogues": [
+    {
+      "speaker": "Teacher",
+      "gender": "female",
+      "en": "Good morning, class! Today we're going to learn about English grammar.",
+      "ar": "صباح الخير يا فصل! اليوم سنتعلم عن قواعد اللغة الإنجليزية."
+    },
+    {
+      "speaker": "Student1",
+      "gender": "male",
+      "en": "Good morning, teacher! Can you explain the present tense?",
+      "ar": "صباح الخير يا معلمة! هل يمكنك شرح الزمن الحاضر؟"
+    },
+    {
+      "speaker": "Teacher",
+      "gender": "female",
+      "en": "Of course! The present tense is used to describe actions that happen now or regularly.",
+      "ar": "بالطبع! يُستخدم الزمن الحاضر لوصف الإجراءات التي تحدث الآن أو بانتظام."
+    },
+    {
+      "speaker": "Student2",
+      "gender": "female",
+      "en": "Can you give us some examples?",
+      "ar": "هل يمكنك أن تعطينا بعض الأمثلة؟"
+    },
+    {
+      "speaker": "Teacher",
+      "gender": "female",
+      "en": "Sure! For example: 'I study English every day' or 'She plays tennis on weekends.'",
+      "ar": "بالتأكيد! على سبيل المثال: 'أدرس اللغة الإنجليزية كل يوم' أو 'تلعب التنس في نهاية الأسبوع'."
+    },
+    {
+      "speaker": "Student1",
+      "gender": "male",
+      "en": "What about the past tense? How is it different?",
+      "ar": "ماذا عن الزمن الماضي؟ كيف يختلف؟"
+    },
+    {
+      "speaker": "Teacher",
+      "gender": "female",
+      "en": "The past tense describes actions that already happened. For example: 'I studied English yesterday.'",
+      "ar": "يصف الزمن الماضي الإجراءات التي حدثت بالفعل. على سبيل المثال: 'درست اللغة الإنجليزية أمس'."
+    },
+    {
+      "speaker": "Student2",
+      "gender": "female",
+      "en": "This is very helpful! Do we have homework?",
+      "ar": "هذا مفيد جداً! هل لدينا واجب منزلي؟"
+    },
+    {
+      "speaker": "Teacher",
+      "gender": "female",
+      "en": "Yes, please write ten sentences using the present tense and ten using the past tense.",
+      "ar": "نعم، من فضلك اكتب عشر جمل باستخدام الزمن الحاضر وعشر باستخدام الزمن الماضي."
+    },
+    {
+      "speaker": "Student1",
+      "gender": "male",
+      "en": "When is it due?",
+      "ar": "متى موعد التسليم؟"
+    },
+    {
+      "speaker": "Teacher",
+      "gender": "female",
+      "en": "It's due next Monday. Class dismissed!",
+      "ar": "موعد التسليم الاثنين القادم. انصرفوا!"
+    }
+  ],
+  "quiz": {
+    "title": "اختبار المدرسة",
+    "questions": [
+      {
+        "id": 1,
+        "question": "Who is teaching the class?",
+        "questionAr": "من يدرس الفصل؟",
+        "options": ["A student", "A teacher", "A principal", "A parent"],
+        "correctAnswer": 1
+      },
+      {
+        "id": 2,
+        "question": "What is the present tense used for?",
+        "questionAr": "ما الذي يُستخدم الزمن الحاضر له؟",
+        "options": ["Past actions", "Future actions", "Actions that happen now or regularly", "Hypothetical situations"],
+        "correctAnswer": 2
+      },
+      {
+        "id": 3,
+        "question": "What is the homework?",
+        "questionAr": "ما الواجب المنزلي؟",
+        "options": ["Read a book", "Write sentences", "Do math problems", "Draw pictures"],
+        "correctAnswer": 1
+      },
+      {
+        "id": 4,
+        "question": "When is the homework due?",
+        "questionAr": "متى موعد الواجب المنزلي؟",
+        "options": ["Today", "Tomorrow", "Next Monday", "Next Friday"],
+        "correctAnswer": 2
+      }
+    ]
+  }
+}

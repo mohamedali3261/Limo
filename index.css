@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&family=Nunito:wght@400;600;700;800;900&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #ff9500;
+  --color-primary-dark: #ff8c00;
+  --color-secondary: #ce82ff;
+  --color-blue-accent: #1cb0f6;
+  --color-bg: #ffffff;
+  
+  --font-sans: "Almarai", "Nunito", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Almarai", "Nunito", sans-serif;
+
+  @keyframes shake {
+    0%, 100% { transform: translateX(0); }
+    25% { transform: translateX(-4px); }
+    75% { transform: translateX(4px); }
+  }
+
+  @keyframes shimmer {
+    0% { transform: translateX(-100%); }
+    100% { transform: translateX(100%); }
+  }
+}
+
+@layer base {
+  body {
+    @apply bg-white text-gray-900;
+  }
+
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  .custom-scrollbar::-webkit-scrollbar {
+    width: 6px;
+  }
+  .custom-scrollbar::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  .custom-scrollbar::-webkit-scrollbar-thumb {
+    background: #e2e8f0;
+    border-radius: 10px;
+  }
+  .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+    background: #cbd5e1;
+  }
+
+  .btn-push {
+    @apply relative transition-all active:translate-y-1 bg-white border-b-4 border-gray-200 active:border-b-0;
+  }
+  
+  .btn-primary {
+    @apply relative transition-all active:translate-y-1 bg-primary text-white font-bold border-b-4 border-primary-dark active:border-b-0 rounded-[1rem] px-6 py-3 uppercase tracking-wide flex items-center justify-center;
+  }
+
+  .animate-shimmer {
+    animation: shimmer 2s infinite;
+  }
+}

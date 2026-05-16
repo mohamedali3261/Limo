@@ -1,0 +1,18 @@
+export const kidsColors = [
+  { color: 'Red', arabic: 'أحمر', bgClass: 'bg-red-500', textClass: 'text-red-500' },
+  { color: 'Blue', arabic: 'أزرق', bgClass: 'bg-blue-500', textClass: 'text-blue-500' },
+  { color: 'Green', arabic: 'أخضر', bgClass: 'bg-green-500', textClass: 'text-green-500' },
+  { color: 'Yellow', arabic: 'أصفر', bgClass: 'bg-yellow-400', textClass: 'text-yellow-500' },
+  { color: 'Orange', arabic: 'برتقالي', bgClass: 'bg-orange-500', textClass: 'text-orange-500' },
+  { color: 'Purple', arabic: 'بنفسجي', bgClass: 'bg-purple-500', textClass: 'text-purple-500' },
+  { color: 'Pink', arabic: 'وردي', bgClass: 'bg-pink-400', textClass: 'text-pink-500' },
+  { color: 'Black', arabic: 'أسود', bgClass: 'bg-black', textClass: 'text-gray-900' },
+  { color: 'White', arabic: 'أبيض', bgClass: 'bg-white', textClass: 'text-gray-400' },
+  { color: 'Brown', arabic: 'بني', bgClass: 'bg-amber-800', textClass: 'text-amber-800' },
+  { color: 'Gray', arabic: 'رمادي', bgClass: 'bg-gray-500', textClass: 'text-gray-600' },
+  { color: 'Cyan', arabic: 'سماوي', bgClass: 'bg-cyan-400', textClass: 'text-cyan-500' },
+  { color: 'Lime', arabic: 'ليموني', bgClass: 'bg-lime-400', textClass: 'text-lime-600' },
+  { color: 'Indigo', arabic: 'نيلي', bgClass: 'bg-indigo-600', textClass: 'text-indigo-600' },
+  { color: 'Silver', arabic: 'فضي', bgClass: 'bg-slate-300', textClass: 'text-slate-500' },
+  { color: 'Gold', arabic: 'ذهبي', bgClass: 'bg-yellow-500', textClass: 'text-yellow-600' },
+];

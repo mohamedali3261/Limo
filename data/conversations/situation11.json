@@ -1,0 +1,109 @@
+{
+  "id": 11,
+  "title": "في المكتب",
+  "titleEn": "At the Office",
+  "icon": "office",
+  "color": "slate",
+  "difficulty": "medium",
+  "dialogues": [
+    {
+      "speaker": "Manager",
+      "gender": "male",
+      "en": "Good morning, everyone! Let's start our daily meeting.",
+      "ar": "صباح الخير يا الجميع! دعونا نبدأ اجتماعنا اليومي."
+    },
+    {
+      "speaker": "Employee1",
+      "gender": "female",
+      "en": "Good morning! I finished the project report yesterday.",
+      "ar": "صباح الخير! انتهيت من تقرير المشروع أمس."
+    },
+    {
+      "speaker": "Manager",
+      "gender": "male",
+      "en": "Excellent! Can you present it to the team?",
+      "ar": "ممتاز! هل يمكنك تقديمه للفريق؟"
+    },
+    {
+      "speaker": "Employee1",
+      "gender": "female",
+      "en": "Of course! The project is 80% complete. We need two more weeks to finish it.",
+      "ar": "بالطبع! المشروع مكتمل بنسبة 80٪. نحتاج إلى أسبوعين آخرين لإنهاؤه."
+    },
+    {
+      "speaker": "Employee2",
+      "gender": "male",
+      "en": "What about the budget? Are we within the budget?",
+      "ar": "ماذا عن الميزانية؟ هل نحن ضمن الميزانية؟"
+    },
+    {
+      "speaker": "Employee1",
+      "gender": "female",
+      "en": "Yes, we're within budget. We've spent 75% of the allocated budget.",
+      "ar": "نعم، نحن ضمن الميزانية. لقد أنفقنا 75٪ من الميزانية المخصصة."
+    },
+    {
+      "speaker": "Manager",
+      "gender": "male",
+      "en": "Great! What are the next steps?",
+      "ar": "رائع! ما هي الخطوات التالية؟"
+    },
+    {
+      "speaker": "Employee1",
+      "gender": "female",
+      "en": "We need to test the system and fix any bugs. Then we'll prepare for the launch.",
+      "ar": "نحتاج إلى اختبار النظام وإصلاح أي أخطاء. ثم سنستعد للإطلاق."
+    },
+    {
+      "speaker": "Employee2",
+      "gender": "male",
+      "en": "When is the launch date?",
+      "ar": "متى موعد الإطلاق؟"
+    },
+    {
+      "speaker": "Manager",
+      "gender": "male",
+      "en": "The launch is scheduled for the end of next month. Let's make sure everything is ready.",
+      "ar": "الإطلاق مجدول لنهاية الشهر القادم. دعونا نتأكد من أن كل شيء جاهز."
+    },
+    {
+      "speaker": "Employee1",
+      "gender": "female",
+      "en": "We'll do our best! Thank you for the update.",
+      "ar": "سنبذل قصارى جهدنا! شكراً على التحديث."
+    }
+  ],
+  "quiz": {
+    "title": "اختبار المكتب",
+    "questions": [
+      {
+        "id": 1,
+        "question": "What is the meeting about?",
+        "questionAr": "ما موضوع الاجتماع؟",
+        "options": ["Budget review", "Project update", "Team building", "Marketing strategy"],
+        "correctAnswer": 1
+      },
+      {
+        "id": 2,
+        "question": "How much of the project is complete?",
+        "questionAr": "كم نسبة اكتمال المشروع؟",
+        "options": ["50%", "60%", "75%", "80%"],
+        "correctAnswer": 3
+      },
+      {
+        "id": 3,
+        "question": "How much of the budget has been spent?",
+        "questionAr": "كم نسبة الميزانية التي تم إنفاقها؟",
+        "options": ["50%", "60%", "75%", "90%"],
+        "correctAnswer": 2
+      },
+      {
+        "id": 4,
+        "question": "When is the launch scheduled?",
+        "questionAr": "متى موعد الإطلاق؟",
+        "options": ["Next week", "Next month", "End of next month", "Next quarter"],
+        "correctAnswer": 2
+      }
+    ]
+  }
+}

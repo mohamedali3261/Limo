@@ -1,0 +1,20 @@
+node_modules/
+build/
+dist/
+coverage/
+.DS_Store
+*.log
+.env*
+!.env.example
+
+# Old backend files (not needed anymore)
+backend/
+memohero.db
+memohero.db-journal
+*.cjs
+extract-db-data.ts
+tsconfig.server.json
+
+# Vercel
+.vercel
+
