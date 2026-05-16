@@ -109,17 +109,17 @@ export default function LearningPath() {
 
   const handleChestClick = (id: string) => {
     if (claimedRadios.includes(id)) {
-      toast.info('You already claimed this reward!');
+      toast.info('لقد حصلت على هذه المكافأة بالفعل!');
       return;
     }
     setClaimedRadios([...claimedRadios, id]);
-    toast.success('Congratulations! You earned 50 XP!', {
+    toast.success('مبروك! لقد حصلت على 50 نقطة!', {
        icon: '🎁'
     });
   };
 
   if (loading) {
-    return <LoadingPage message="Building your adventure map..." />;
+    return <LoadingPage message="بناء خريطة مغامرتك..." />;
   }
 
   return (
@@ -191,8 +191,8 @@ export default function LearningPath() {
         {/* Next Goal Header */}
         <div className="flex justify-center mb-6">
            <div className="bg-white/50 backdrop-blur px-4 py-1.5 rounded-full border border-gray-100 flex items-center gap-2">
-              <span className="text-[10px] font-black text-gray-400 uppercase tracking-widest">Next Goal:</span>
-              <span className="text-[10px] font-black text-primary uppercase">{levels[nodes[currentNodeIndex]?.levelIndex + 1]?.title || 'The Great Finale'}</span>
+              <span className="text-[10px] font-black text-gray-400 uppercase tracking-widest">الهدف التالي:</span>
+              <span className="text-[10px] font-black text-primary uppercase">{levels[nodes[currentNodeIndex]?.levelIndex + 1]?.title || 'النهاية العظيمة'}</span>
            </div>
         </div>
 
@@ -202,8 +202,8 @@ export default function LearningPath() {
              <GraduationCap size={48} className="text-primary" />
              <motion.div animate={{ scale: [1, 1.2, 1], opacity: [0.3, 0.1, 0.3] }} transition={{ repeat: Infinity, duration: 2 }} className="absolute inset-0 bg-primary rounded-full blur-2xl" />
           </div>
-          <h2 className="text-4xl font-display font-black text-slate-900 mb-4 tracking-tight">Start Your Epic Journey</h2>
-          <p className="text-slate-400 font-bold max-w-xs mx-auto leading-relaxed">Every lesson is a step towards greatness. Complete lessons to unlock new areas.</p>
+          <h2 className="text-4xl font-display font-black text-slate-900 mb-4 tracking-tight">ابدأ رحلتك الملحمية</h2>
+          <p className="text-slate-400 font-bold max-w-xs mx-auto leading-relaxed">كل درس هو خطوة نحو العظمة. أكمل الدروس لفتح مناطق جديدة.</p>
         </div>
 
         {/* Dynamic Nodes with SVG Path */}
@@ -363,7 +363,7 @@ export default function LearningPath() {
                             <span className="text-2xl font-black">{node.levelIndex + 1}</span>
                          </div>
                          <h2 className={`text-2xl font-black ${isLocked ? 'text-gray-400' : 'text-gray-900'}`}>
-                           {currentLevel?.title || 'New Level'}
+                           {currentLevel?.title || 'مستوى جديد'}
                          </h2>
                          <div className="flex items-center gap-2">
                            <div className={`px-4 py-1.5 rounded-full text-xs font-black uppercase tracking-widest ${
@@ -377,7 +377,7 @@ export default function LearningPath() {
                          {!isLocked && (
                             <div className="w-full max-w-[200px] mt-4 space-y-1">
                                <div className="flex justify-between text-[10px] font-black text-slate-400 uppercase">
-                                  <span>Progress</span>
+                                  <span>التقدم</span>
                                   <span>{Math.round((currentLevel?.lessons?.filter((l: any) => l.is_completed).length / currentLevel?.lessons?.length * 100) || 0)}%</span>
                                </div>
                                <div className="h-2 bg-slate-100 rounded-full overflow-hidden">
@@ -431,7 +431,7 @@ export default function LearningPath() {
                   >
                     <div className="bg-gradient-to-r from-yellow-400 to-orange-500 text-white text-xs font-black px-3 py-1.5 rounded-full flex items-center gap-1 shadow-lg shadow-orange-500/30 border border-white/20 whitespace-nowrap">
                       <Zap size={14} className="fill-white animate-pulse" />
-                      <span>Flash Event: 2x XP</span>
+                      <span>حدث خاص: 2x نقاط</span>
                     </div>
                   </motion.div>
                 )}
@@ -461,8 +461,8 @@ export default function LearningPath() {
                     whileTap={!isLocked ? { scale: 0.9 } : {}}
                     onClick={() => {
                       if (isLocked) {
-                        toast.error('Complete the previous lesson first! 🔒', {
-                          description: 'You must learn in order to achieve the best results.'
+                        toast.error('أكمل الدرس السابق أولاً! 🔒', {
+                          description: 'يجب أن تتعلم بالترتيب لتحقيق أفضل النتائج.'
                         });
                       } else {
                         navigate(`/learning/lesson/${node.id}`);
@@ -497,7 +497,7 @@ export default function LearningPath() {
                          ) : (
                            <Sword className="w-12 h-12 sm:w-14 sm:h-14 mb-1" />
                          )}
-                         <span className="text-[9px] font-black uppercase tracking-tighter">Boss Challenge</span>
+                         <span className="text-[9px] font-black uppercase tracking-tighter">تحدي الزعيم</span>
                       </div>
                     ) : (
                       <motion.div animate={{ scale: [1, 1.1, 1] }} transition={{ repeat: Infinity }}>

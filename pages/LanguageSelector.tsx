@@ -24,7 +24,7 @@ const languages: Language[] = [
     flag: EnglishFlag,
     color: 'from-indigo-500 to-blue-600',
     description: 'تعلم اللغة الإنجليزية من الصفر',
-    route: '/'
+    route: '/learning'
   },
   {
     code: 'fr',
