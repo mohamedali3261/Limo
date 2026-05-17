@@ -508,7 +508,7 @@ export default function LearningPath() {
                                 )}
                               </div>
                               {/* Simple Progress Mini-bar */}
-                              <div className="absolute -top-3 left-1/2 -translate-x-1/2 bg-gray-900 text-[8px] text-white px-2 py-0.5 rounded-full font-black shadow-sm">
+                              <div className="absolute -top-3 left-1/2 -translate-x-1/2 bg-gray-900 text-[8px] text-white px-2 py-0.5 rounded-full font-black shadow-sm hidden md:block">
                                 {(currentNodeIndex / (nodes.length - 1) * 100).toFixed(0)}%
                               </div>
                           </div>
