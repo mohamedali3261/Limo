@@ -1,0 +1,47 @@
+[
+  {
+    "id": 1,
+    "story_id": null,
+    "scene_id": 2,
+    "question_text": "How does Memo feel after the flight?",
+    "options": "[\"Tired\", \"Hungry\", \"Angry\", \"Excited\"]",
+    "correct_answer": "Tired",
+    "type": "multiple_choice"
+  },
+  {
+    "id": 2,
+    "story_id": null,
+    "scene_id": 5,
+    "question_text": "What did the officer ask for?",
+    "options": "[\"Ticket\", \"Money\", \"Passport\", \"Bag\"]",
+    "correct_answer": "Passport",
+    "type": "multiple_choice"
+  },
+  {
+    "id": 3,
+    "story_id": null,
+    "scene_id": 6,
+    "question_text": "Why is Memo visiting London?",
+    "options": "[\"Work\", \"Study\", \"Tourism\", \"Family\"]",
+    "correct_answer": "Tourism",
+    "type": "multiple_choice"
+  },
+  {
+    "id": 4,
+    "story_id": null,
+    "scene_id": 8,
+    "question_text": "How long is Memo staying?",
+    "options": "[\"One month\", \"Two weeks\", \"Three days\", \"A year\"]",
+    "correct_answer": "Two weeks",
+    "type": "multiple_choice"
+  },
+  {
+    "id": 5,
+    "story_id": null,
+    "scene_id": 10,
+    "question_text": "Where is Memo going to stay during his visit?",
+    "options": "[\"With family\", \"In a hostel\", \"In an apartment\", \"At a hotel\"]",
+    "correct_answer": "At a hotel",
+    "type": "multiple_choice"
+  }
+]

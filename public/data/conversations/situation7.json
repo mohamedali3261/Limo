@@ -1,0 +1,91 @@
+{
+  "id": 7,
+  "title": "في المكتبة",
+  "titleEn": "At the Library",
+  "icon": "📚",
+  "color": "indigo",
+  "difficulty": "medium",
+  "dialogues": [
+    {
+      "speaker": "Librarian",
+      "gender": "female",
+      "en": "Good afternoon! Welcome to our library. How can I help you?",
+      "ar": "مساء الخير! مرحباً بك في مكتبتنا. كيف يمكنني مساعدتك؟"
+    },
+    {
+      "speaker": "Student",
+      "gender": "male",
+      "en": "Hi! I'm looking for books about English literature.",
+      "ar": "مرحباً! أبحث عن كتب عن الأدب الإنجليزي."
+    },
+    {
+      "speaker": "Librarian",
+      "gender": "female",
+      "en": "Great! We have a large collection. What author are you interested in?",
+      "ar": "رائع! لدينا مجموعة كبيرة. ما الكاتب الذي تهتم به؟"
+    },
+    {
+      "speaker": "Student",
+      "gender": "male",
+      "en": "I'm interested in Shakespeare. Do you have any of his works?",
+      "ar": "أهتم بشكسبير. هل لديك أي من أعماله؟"
+    },
+    {
+      "speaker": "Librarian",
+      "gender": "female",
+      "en": "Of course! We have Hamlet, Macbeth, and Romeo and Juliet. Would you like to borrow one?",
+      "ar": "بالطبع! لدينا هاملت وماكبث وروميو وجولييت. هل تريد استعارة واحد؟"
+    },
+    {
+      "speaker": "Student",
+      "gender": "male",
+      "en": "Yes, I'll take Hamlet. How long can I keep it?",
+      "ar": "نعم، سآخذ هاملت. كم من الوقت يمكنني الاحتفاظ به؟"
+    },
+    {
+      "speaker": "Librarian",
+      "gender": "female",
+      "en": "You can keep it for three weeks. Here's your library card.",
+      "ar": "يمكنك الاحتفاظ به لمدة ثلاثة أسابيع. تفضل بطاقة المكتبة."
+    },
+    {
+      "speaker": "Student",
+      "gender": "male",
+      "en": "Thank you so much! This is very helpful.",
+      "ar": "شكراً جزيلاً! هذا مفيد جداً."
+    }
+  ],
+  "quiz": {
+    "title": "اختبار المكتبة",
+    "questions": [
+      {
+        "id": 1,
+        "question": "Where is the student looking for books?",
+        "questionAr": "أين يبحث الطالب عن الكتب؟",
+        "options": ["Bookstore", "Library", "School", "Museum"],
+        "correctAnswer": 1
+      },
+      {
+        "id": 2,
+        "question": "Which author is the student interested in?",
+        "questionAr": "ما الكاتب الذي يهتم به الطالب؟",
+        "options": ["Austen", "Shakespeare", "Dickens", "Bronte"],
+        "correctAnswer": 1
+      },
+      {
+        "id": 3,
+        "question": "Which book did the student borrow?",
+        "questionAr": "أي كتاب استعار الطالب؟",
+        "options": ["Macbeth", "Romeo and Juliet", "Hamlet", "Othello"],
+        "correctAnswer": 2
+      },
+      {
+        "id": 4,
+        "question": "How long can the student keep the book?",
+        "questionAr": "كم من الوقت يمكن للطالب الاحتفاظ بالكتاب؟",
+        "options": ["One week", "Two weeks", "Three weeks", "One month"],
+        "correctAnswer": 2
+      }
+    ]
+  }
+}

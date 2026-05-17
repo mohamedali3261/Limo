@@ -1,0 +1,17 @@
+export const kidsHouse = [
+  { name: 'House', arabic: 'منزل', emoji: '🏠', color: 'bg-amber-100 text-amber-600 border-amber-200' },
+  { name: 'Door', arabic: 'باب', emoji: '🚪', color: 'bg-stone-100 text-stone-600 border-stone-200' },
+  { name: 'Window', arabic: 'نافذة', emoji: '🪟', color: 'bg-cyan-100 text-cyan-600 border-cyan-200' },
+  { name: 'Bed', arabic: 'سرير', emoji: '🛏️', color: 'bg-blue-100 text-blue-600 border-blue-200' },
+  { name: 'Chair', arabic: 'كرسي', emoji: '🪑', color: 'bg-orange-100 text-orange-600 border-orange-200' },
+  { name: 'Table', arabic: 'طاولة', emoji: '🪵', color: 'bg-amber-200 text-amber-700 border-amber-300' },
+  { name: 'Sofa', arabic: 'أريكة', emoji: '🛋️', color: 'bg-rose-100 text-rose-600 border-rose-200' },
+  { name: 'Television', arabic: 'تلفاز', emoji: '📺', color: 'bg-slate-100 text-slate-600 border-slate-200' },
+  { name: 'Clock', arabic: 'ساعة', emoji: '🕰️', color: 'bg-yellow-100 text-yellow-600 border-yellow-200' },
+  { name: 'Lamp', arabic: 'مصباح', emoji: '💡', color: 'bg-yellow-200 text-yellow-700 border-yellow-300' },
+  { name: 'Kitchen', arabic: 'مطبخ', emoji: '🍳', color: 'bg-orange-100 text-orange-600 border-orange-200' },
+  { name: 'Bathroom', arabic: 'حمام', emoji: '🛁', color: 'bg-cyan-100 text-cyan-600 border-cyan-200' },
+  { name: 'Bedroom', arabic: 'غرفة نوم', emoji: '🛌', color: 'bg-indigo-100 text-indigo-600 border-indigo-200' },
+  { name: 'Garden', arabic: 'حديقة', emoji: '🌻', color: 'bg-green-100 text-green-600 border-green-200' },
+  { name: 'Toilet', arabic: 'مرحاض', emoji: '🚽', color: 'bg-slate-100 text-slate-600 border-slate-200' },
+];

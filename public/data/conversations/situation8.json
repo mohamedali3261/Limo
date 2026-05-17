@@ -1,0 +1,91 @@
+{
+  "id": 8,
+  "title": "في محطة القطار",
+  "titleEn": "At the Train Station",
+  "icon": "🚂",
+  "color": "slate",
+  "difficulty": "medium",
+  "dialogues": [
+    {
+      "speaker": "Passenger",
+      "gender": "male",
+      "en": "Excuse me! What time does the train to Manchester leave?",
+      "ar": "عذراً! في أي وقت يغادر القطار إلى مانشستر؟"
+    },
+    {
+      "speaker": "Staff",
+      "gender": "female",
+      "en": "The next train leaves at 2:30 PM from platform 5.",
+      "ar": "القطار التالي يغادر في الساعة 2:30 مساءً من الرصيف 5."
+    },
+    {
+      "speaker": "Passenger",
+      "gender": "male",
+      "en": "How long is the journey?",
+      "ar": "كم تستغرق الرحلة؟"
+    },
+    {
+      "speaker": "Staff",
+      "gender": "female",
+      "en": "It takes about two hours. Would you like to buy a ticket?",
+      "ar": "تستغرق حوالي ساعتين. هل تريد شراء تذكرة؟"
+    },
+    {
+      "speaker": "Passenger",
+      "gender": "male",
+      "en": "Yes, one ticket please. How much is it?",
+      "ar": "نعم، تذكرة واحدة من فضلك. كم السعر؟"
+    },
+    {
+      "speaker": "Staff",
+      "gender": "female",
+      "en": "That's £25 for a single ticket. Would you like a return ticket?",
+      "ar": "هذا 25 جنيهاً للتذكرة الواحدة. هل تريد تذكرة ذهاب وإياب؟"
+    },
+    {
+      "speaker": "Passenger",
+      "gender": "male",
+      "en": "Yes, please. A return ticket for tomorrow.",
+      "ar": "نعم، من فضلك. تذكرة ذهاب وإياب لغداً."
+    },
+    {
+      "speaker": "Staff",
+      "gender": "female",
+      "en": "That will be £45 in total. Here are your tickets. Have a good journey!",
+      "ar": "سيكون المجموع 45 جنيهاً. تفضل بالتذاكر. رحلة سعيدة!"
+    }
+  ],
+  "quiz": {
+    "title": "اختبار محطة القطار",
+    "questions": [
+      {
+        "id": 1,
+        "question": "Where is the passenger traveling to?",
+        "questionAr": "إلى أين يسافر الراكب؟",
+        "options": ["Liverpool", "Manchester", "Birmingham", "Leeds"],
+        "correctAnswer": 1
+      },
+      {
+        "id": 2,
+        "question": "Which platform is the train from?",
+        "questionAr": "من أي رصيف القطار؟",
+        "options": ["Platform 3", "Platform 4", "Platform 5", "Platform 6"],
+        "correctAnswer": 2
+      },
+      {
+        "id": 3,
+        "question": "How long is the journey?",
+        "questionAr": "كم تستغرق الرحلة؟",
+        "options": ["One hour", "One and a half hours", "Two hours", "Two and a half hours"],
+        "correctAnswer": 2
+      },
+      {
+        "id": 4,
+        "question": "What is the total price for a return ticket?",
+        "questionAr": "ما هو السعر الإجمالي لتذكرة ذهاب وإياب؟",
+        "options": ["£25", "£35", "£45", "£55"],
+        "correctAnswer": 2
+      }
+    ]
+  }
+}

@@ -1,0 +1,702 @@
+[
+  {
+    "id": 1,
+    "phrase": "Hello",
+    "meaning": "مرحباً",
+    "level": "مبتدئ",
+    "category": "تحيات"
+  },
+  {
+    "id": 2,
+    "phrase": "Goodbye",
+    "meaning": "وداعاً",
+    "level": "مبتدئ",
+    "category": "تحيات"
+  },
+  {
+    "id": 3,
+    "phrase": "Thank you",
+    "meaning": "شكراً لك",
+    "level": "مبتدئ",
+    "category": "تحيات"
+  },
+  {
+    "id": 4,
+    "phrase": "Please",
+    "meaning": "من فضلك",
+    "level": "مبتدئ",
+    "category": "تحيات"
+  },
+  {
+    "id": 5,
+    "phrase": "Sorry",
+    "meaning": "آسف",
+    "level": "مبتدئ",
+    "category": "تحيات"
+  },
+  {
+    "id": 6,
+    "phrase": "Yes",
+    "meaning": "نعم",
+    "level": "مبتدئ",
+    "category": "أساسيات"
+  },
+  {
+    "id": 7,
+    "phrase": "No",
+    "meaning": "لا",
+    "level": "مبتدئ",
+    "category": "أساسيات"
+  },
+  {
+    "id": 8,
+    "phrase": "Good morning",
+    "meaning": "صباح الخير",
+    "level": "مبتدئ",
+    "category": "تحيات"
+  },
+  {
+    "id": 9,
+    "phrase": "Good evening",
+    "meaning": "مساء الخير",
+    "level": "مبتدئ",
+    "category": "تحيات"
+  },
+  {
+    "id": 10,
+    "phrase": "Good night",
+    "meaning": "تصبح على خير",
+    "level": "مبتدئ",
+    "category": "تحيات"
+  },
+  {
+    "id": 11,
+    "phrase": "How are you?",
+    "meaning": "كيف حالك؟",
+    "level": "مبتدئ",
+    "category": "محادثة"
+  },
+  {
+    "id": 12,
+    "phrase": "I am fine",
+    "meaning": "أنا بخير",
+    "level": "مبتدئ",
+    "category": "محادثة"
+  },
+  {
+    "id": 13,
+    "phrase": "What is your name?",
+    "meaning": "ما اسمك؟",
+    "level": "مبتدئ",
+    "category": "محادثة"
+  },
+  {
+    "id": 14,
+    "phrase": "My name is",
+    "meaning": "اسمي",
+    "level": "مبتدئ",
+    "category": "محادثة"
+  },
+  {
+    "id": 15,
+    "phrase": "Nice to meet you",
+    "meaning": "سعيد بلقائك",
+    "level": "مبتدئ",
+    "category": "محادثة"
+  },
+  {
+    "id": 16,
+    "phrase": "Where are you from?",
+    "meaning": "من أين أنت؟",
+    "level": "مبتدئ",
+    "category": "محادثة"
+  },
+  {
+    "id": 17,
+    "phrase": "I am from",
+    "meaning": "أنا من",
+    "level": "مبتدئ",
+    "category": "محادثة"
+  },
+  {
+    "id": 18,
+    "phrase": "Excuse me",
+    "meaning": "عفواً",
+    "level": "مبتدئ",
+    "category": "تحيات"
+  },
+  {
+    "id": 19,
+    "phrase": "I don't understand",
+    "meaning": "أنا لا أفهم",
+    "level": "مبتدئ",
+    "category": "محادثة"
+  },
+  {
+    "id": 20,
+    "phrase": "Can you help me?",
+    "meaning": "هل يمكنك مساعدتي؟",
+    "level": "مبتدئ",
+    "category": "محادثة"
+  },
+  {
+    "id": 21,
+    "phrase": "Water",
+    "meaning": "ماء",
+    "level": "مبتدئ",
+    "category": "طعام وشراب"
+  },
+  {
+    "id": 22,
+    "phrase": "Food",
+    "meaning": "طعام",
+    "level": "مبتدئ",
+    "category": "طعام وشراب"
+  },
+  {
+    "id": 23,
+    "phrase": "Coffee",
+    "meaning": "قهوة",
+    "level": "مبتدئ",
+    "category": "طعام وشراب"
+  },
+  {
+    "id": 24,
+    "phrase": "Tea",
+    "meaning": "شاي",
+    "level": "مبتدئ",
+    "category": "طعام وشراب"
+  },
+  {
+    "id": 25,
+    "phrase": "Bread",
+    "meaning": "خبز",
+    "level": "مبتدئ",
+    "category": "طعام وشراب"
+  },
+  {
+    "id": 26,
+    "phrase": "House",
+    "meaning": "منزل",
+    "level": "مبتدئ",
+    "category": "أماكن"
+  },
+  {
+    "id": 27,
+    "phrase": "School",
+    "meaning": "مدرسة",
+    "level": "مبتدئ",
+    "category": "أماكن"
+  },
+  {
+    "id": 28,
+    "phrase": "Hospital",
+    "meaning": "مستشفى",
+    "level": "مبتدئ",
+    "category": "أماكن"
+  },
+  {
+    "id": 29,
+    "phrase": "Restaurant",
+    "meaning": "مطعم",
+    "level": "مبتدئ",
+    "category": "أماكن"
+  },
+  {
+    "id": 30,
+    "phrase": "Airport",
+    "meaning": "مطار",
+    "level": "مبتدئ",
+    "category": "أماكن"
+  },
+  {
+    "id": 31,
+    "phrase": "Book",
+    "meaning": "كتاب",
+    "level": "مبتدئ",
+    "category": "أشياء"
+  },
+  {
+    "id": 32,
+    "phrase": "Pen",
+    "meaning": "قلم",
+    "level": "مبتدئ",
+    "category": "أشياء"
+  },
+  {
+    "id": 33,
+    "phrase": "Phone",
+    "meaning": "هاتف",
+    "level": "مبتدئ",
+    "category": "أشياء"
+  },
+  {
+    "id": 34,
+    "phrase": "Computer",
+    "meaning": "حاسوب",
+    "level": "مبتدئ",
+    "category": "أشياء"
+  },
+  {
+    "id": 35,
+    "phrase": "Car",
+    "meaning": "سيارة",
+    "level": "مبتدئ",
+    "category": "أشياء"
+  },
+  {
+    "id": 36,
+    "phrase": "Big",
+    "meaning": "كبير",
+    "level": "مبتدئ",
+    "category": "صفات"
+  },
+  {
+    "id": 37,
+    "phrase": "Small",
+    "meaning": "صغير",
+    "level": "مبتدئ",
+    "category": "صفات"
+  },
+  {
+    "id": 38,
+    "phrase": "Good",
+    "meaning": "جيد",
+    "level": "مبتدئ",
+    "category": "صفات"
+  },
+  {
+    "id": 39,
+    "phrase": "Bad",
+    "meaning": "سيء",
+    "level": "مبتدئ",
+    "category": "صفات"
+  },
+  {
+    "id": 40,
+    "phrase": "Beautiful",
+    "meaning": "جميل",
+    "level": "مبتدئ",
+    "category": "صفات"
+  },
+  {
+    "id": 41,
+    "phrase": "Happy",
+    "meaning": "سعيد",
+    "level": "متوسط",
+    "category": "صفات"
+  },
+  {
+    "id": 42,
+    "phrase": "Sad",
+    "meaning": "حزين",
+    "level": "متوسط",
+    "category": "صفات"
+  },
+  {
+    "id": 43,
+    "phrase": "Tired",
+    "meaning": "متعب",
+    "level": "متوسط",
+    "category": "صفات"
+  },
+  {
+    "id": 44,
+    "phrase": "Hungry",
+    "meaning": "جائع",
+    "level": "متوسط",
+    "category": "صفات"
+  },
+  {
+    "id": 45,
+    "phrase": "Thirsty",
+    "meaning": "عطشان",
+    "level": "متوسط",
+    "category": "صفات"
+  },
+  {
+    "id": 46,
+    "phrase": "To go",
+    "meaning": "يذهب",
+    "level": "متوسط",
+    "category": "أفعال"
+  },
+  {
+    "id": 47,
+    "phrase": "To come",
+    "meaning": "يأتي",
+    "level": "متوسط",
+    "category": "أفعال"
+  },
+  {
+    "id": 48,
+    "phrase": "To eat",
+    "meaning": "يأكل",
+    "level": "متوسط",
+    "category": "أفعال"
+  },
+  {
+    "id": 49,
+    "phrase": "To drink",
+    "meaning": "يشرب",
+    "level": "متوسط",
+    "category": "أفعال"
+  },
+  {
+    "id": 50,
+    "phrase": "To sleep",
+    "meaning": "ينام",
+    "level": "متوسط",
+    "category": "أفعال"
+  },
+  {
+    "id": 51,
+    "phrase": "To work",
+    "meaning": "يعمل",
+    "level": "متوسط",
+    "category": "أفعال"
+  },
+  {
+    "id": 52,
+    "phrase": "To study",
+    "meaning": "يدرس",
+    "level": "متوسط",
+    "category": "أفعال"
+  },
+  {
+    "id": 53,
+    "phrase": "To read",
+    "meaning": "يقرأ",
+    "level": "متوسط",
+    "category": "أفعال"
+  },
+  {
+    "id": 54,
+    "phrase": "To write",
+    "meaning": "يكتب",
+    "level": "متوسط",
+    "category": "أفعال"
+  },
+  {
+    "id": 55,
+    "phrase": "To speak",
+    "meaning": "يتكلم",
+    "level": "متوسط",
+    "category": "أفعال"
+  },
+  {
+    "id": 56,
+    "phrase": "To listen",
+    "meaning": "يستمع",
+    "level": "متوسط",
+    "category": "أفعال"
+  },
+  {
+    "id": 57,
+    "phrase": "To see",
+    "meaning": "يرى",
+    "level": "متوسط",
+    "category": "أفعال"
+  },
+  {
+    "id": 58,
+    "phrase": "To watch",
+    "meaning": "يشاهد",
+    "level": "متوسط",
+    "category": "أفعال"
+  },
+  {
+    "id": 59,
+    "phrase": "To buy",
+    "meaning": "يشتري",
+    "level": "متوسط",
+    "category": "أفعال"
+  },
+  {
+    "id": 60,
+    "phrase": "To sell",
+    "meaning": "يبيع",
+    "level": "متوسط",
+    "category": "أفعال"
+  },
+  {
+    "id": 61,
+    "phrase": "Monday",
+    "meaning": "الإثنين",
+    "level": "متوسط",
+    "category": "أيام الأسبوع"
+  },
+  {
+    "id": 62,
+    "phrase": "Tuesday",
+    "meaning": "الثلاثاء",
+    "level": "متوسط",
+    "category": "أيام الأسبوع"
+  },
+  {
+    "id": 63,
+    "phrase": "Wednesday",
+    "meaning": "الأربعاء",
+    "level": "متوسط",
+    "category": "أيام الأسبوع"
+  },
+  {
+    "id": 64,
+    "phrase": "Thursday",
+    "meaning": "الخميس",
+    "level": "متوسط",
+    "category": "أيام الأسبوع"
+  },
+  {
+    "id": 65,
+    "phrase": "Friday",
+    "meaning": "الجمعة",
+    "level": "متوسط",
+    "category": "أيام الأسبوع"
+  },
+  {
+    "id": 66,
+    "phrase": "Saturday",
+    "meaning": "السبت",
+    "level": "متوسط",
+    "category": "أيام الأسبوع"
+  },
+  {
+    "id": 67,
+    "phrase": "Sunday",
+    "meaning": "الأحد",
+    "level": "متوسط",
+    "category": "أيام الأسبوع"
+  },
+  {
+    "id": 68,
+    "phrase": "January",
+    "meaning": "يناير",
+    "level": "متوسط",
+    "category": "شهور السنة"
+  },
+  {
+    "id": 69,
+    "phrase": "February",
+    "meaning": "فبراير",
+    "level": "متوسط",
+    "category": "شهور السنة"
+  },
+  {
+    "id": 70,
+    "phrase": "March",
+    "meaning": "مارس",
+    "level": "متوسط",
+    "category": "شهور السنة"
+  },
+  {
+    "id": 71,
+    "phrase": "April",
+    "meaning": "أبريل",
+    "level": "متوسط",
+    "category": "شهور السنة"
+  },
+  {
+    "id": 72,
+    "phrase": "May",
+    "meaning": "مايو",
+    "level": "متوسط",
+    "category": "شهور السنة"
+  },
+  {
+    "id": 73,
+    "phrase": "June",
+    "meaning": "يونيو",
+    "level": "متوسط",
+    "category": "شهور السنة"
+  },
+  {
+    "id": 74,
+    "phrase": "July",
+    "meaning": "يوليو",
+    "level": "متوسط",
+    "category": "شهور السنة"
+  },
+  {
+    "id": 75,
+    "phrase": "August",
+    "meaning": "أغسطس",
+    "level": "متوسط",
+    "category": "شهور السنة"
+  },
+  {
+    "id": 76,
+    "phrase": "September",
+    "meaning": "سبتمبر",
+    "level": "متوسط",
+    "category": "شهور السنة"
+  },
+  {
+    "id": 77,
+    "phrase": "October",
+    "meaning": "أكتوبر",
+    "level": "متوسط",
+    "category": "شهور السنة"
+  },
+  {
+    "id": 78,
+    "phrase": "November",
+    "meaning": "نوفمبر",
+    "level": "متوسط",
+    "category": "شهور السنة"
+  },
+  {
+    "id": 79,
+    "phrase": "December",
+    "meaning": "ديسمبر",
+    "level": "متوسط",
+    "category": "شهور السنة"
+  },
+  {
+    "id": 80,
+    "phrase": "One",
+    "meaning": "واحد",
+    "level": "مبتدئ",
+    "category": "أرقام"
+  },
+  {
+    "id": 81,
+    "phrase": "Two",
+    "meaning": "اثنان",
+    "level": "مبتدئ",
+    "category": "أرقام"
+  },
+  {
+    "id": 82,
+    "phrase": "Three",
+    "meaning": "ثلاثة",
+    "level": "مبتدئ",
+    "category": "أرقام"
+  },
+  {
+    "id": 83,
+    "phrase": "Four",
+    "meaning": "أربعة",
+    "level": "مبتدئ",
+    "category": "أرقام"
+  },
+  {
+    "id": 84,
+    "phrase": "Five",
+    "meaning": "خمسة",
+    "level": "مبتدئ",
+    "category": "أرقام"
+  },
+  {
+    "id": 85,
+    "phrase": "Six",
+    "meaning": "ستة",
+    "level": "مبتدئ",
+    "category": "أرقام"
+  },
+  {
+    "id": 86,
+    "phrase": "Seven",
+    "meaning": "سبعة",
+    "level": "مبتدئ",
+    "category": "أرقام"
+  },
+  {
+    "id": 87,
+    "phrase": "Eight",
+    "meaning": "ثمانية",
+    "level": "مبتدئ",
+    "category": "أرقام"
+  },
+  {
+    "id": 88,
+    "phrase": "Nine",
+    "meaning": "تسعة",
+    "level": "مبتدئ",
+    "category": "أرقام"
+  },
+  {
+    "id": 89,
+    "phrase": "Ten",
+    "meaning": "عشرة",
+    "level": "مبتدئ",
+    "category": "أرقام"
+  },
+  {
+    "id": 90,
+    "phrase": "Red",
+    "meaning": "أحمر",
+    "level": "مبتدئ",
+    "category": "ألوان"
+  },
+  {
+    "id": 91,
+    "phrase": "Blue",
+    "meaning": "أزرق",
+    "level": "مبتدئ",
+    "category": "ألوان"
+  },
+  {
+    "id": 92,
+    "phrase": "Green",
+    "meaning": "أخضر",
+    "level": "مبتدئ",
+    "category": "ألوان"
+  },
+  {
+    "id": 93,
+    "phrase": "Yellow",
+    "meaning": "أصفر",
+    "level": "مبتدئ",
+    "category": "ألوان"
+  },
+  {
+    "id": 94,
+    "phrase": "Black",
+    "meaning": "أسود",
+    "level": "مبتدئ",
+    "category": "ألوان"
+  },
+  {
+    "id": 95,
+    "phrase": "White",
+    "meaning": "أبيض",
+    "level": "مبتدئ",
+    "category": "ألوان"
+  },
+  {
+    "id": 96,
+    "phrase": "Orange",
+    "meaning": "برتقالي",
+    "level": "مبتدئ",
+    "category": "ألوان"
+  },
+  {
+    "id": 97,
+    "phrase": "Purple",
+    "meaning": "بنفسجي",
+    "level": "مبتدئ",
+    "category": "ألوان"
+  },
+  {
+    "id": 98,
+    "phrase": "Pink",
+    "meaning": "وردي",
+    "level": "مبتدئ",
+    "category": "ألوان"
+  },
+  {
+    "id": 99,
+    "phrase": "Brown",
+    "meaning": "بني",
+    "level": "مبتدئ",
+    "category": "ألوان"
+  },
+  {
+    "id": 100,
+    "phrase": "Gray",
+    "meaning": "رمادي",
+    "level": "مبتدئ",
+    "category": "ألوان"
+  }
+]

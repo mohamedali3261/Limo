@@ -1,0 +1,97 @@
+{
+  "id": 3,
+  "title": "الألوان الجميلة",
+  "description": "تعلم أسماء الألوان وكيف تتحدث عن ألوانك المفضلة.",
+  "difficulty": "easy",
+  "thumbnail": "colors.png",
+  "xp_reward": 70,
+  "scenes": [
+    {
+      "name": "Narrator",
+      "en": "Emma and Omar are in art class. They have many colors.",
+      "ar": "إيما وعمر في حصة الفن. لديهم ألوان كثيرة."
+    },
+    {
+      "name": "Emma",
+      "en": "Omar, what is your favorite color?",
+      "ar": "عمر، ما هو لونك المفضل؟"
+    },
+    {
+      "name": "Omar",
+      "en": "My favorite color is blue. I love blue!",
+      "ar": "لوني المفضل هو الأزرق. أحب الأزرق!"
+    },
+    {
+      "name": "Emma",
+      "en": "Blue is beautiful! I like red.",
+      "ar": "الأزرق جميل! أنا أحب الأحمر."
+    },
+    {
+      "name": "Omar",
+      "en": "Red is nice! What about yellow?",
+      "ar": "الأحمر جميل! ماذا عن الأصفر؟"
+    },
+    {
+      "name": "Emma",
+      "en": "I like yellow too! Yellow is happy!",
+      "ar": "أحب الأصفر أيضاً! الأصفر سعيد!"
+    },
+    {
+      "name": "Omar",
+      "en": "Do you like green?",
+      "ar": "هل تحبين الأخضر؟"
+    },
+    {
+      "name": "Emma",
+      "en": "Yes! Green is the color of trees!",
+      "ar": "نعم! الأخضر هو لون الأشجار!"
+    },
+    {
+      "name": "Omar",
+      "en": "Let's use all the colors!",
+      "ar": "دعينا نستخدم كل الألوان!"
+    }
+  ],
+  "questions": [
+    {
+      "scene_idx": 2,
+      "type": "multiple_choice",
+      "q": "What is Omar's favorite color?",
+      "options": [
+        "Blue",
+        "Red",
+        "Green"
+      ],
+      "a": "Blue"
+    },
+    {
+      "scene_idx": 3,
+      "type": "typing",
+      "q": "I ___ red.|||أنا أحب الأحمر.",
+      "a": "like"
+    },
+    {
+      "scene_idx": 7,
+      "type": "dictation",
+      "a": "Green is the color of trees"
+    }
+  ],
+  "finalQuestions": [
+    {
+      "type": "multiple_choice",
+      "q": "What is Emma's favorite color?",
+      "options": [
+        "Red",
+        "Blue",
+        "Green"
+      ],
+      "a": "Red"
+    },
+    {
+      "type": "typing",
+      "q": "My favorite color ___ blue.|||لوني المفضل هو الأزرق.",
+      "a": "is"
+    }
+  ]
+}
+

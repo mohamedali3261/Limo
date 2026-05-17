@@ -1,0 +1,18 @@
+export const kidsNature = [
+  { name: 'Tree', arabic: 'شجرة', emoji: '🌳', color: 'bg-green-100 text-green-600 border-green-200' },
+  { name: 'Flower', arabic: 'زهرة', emoji: '🌸', color: 'bg-pink-100 text-pink-600 border-pink-200' },
+  { name: 'Sun', arabic: 'شمس', emoji: '☀️', color: 'bg-yellow-100 text-yellow-600 border-yellow-200' },
+  { name: 'Moon', arabic: 'قمر', emoji: '🌙', color: 'bg-slate-100 text-slate-600 border-slate-200' },
+  { name: 'Star', arabic: 'نجمة', emoji: '⭐', color: 'bg-yellow-200 text-yellow-700 border-yellow-300' },
+  { name: 'Cloud', arabic: 'سحابة', emoji: '☁️', color: 'bg-blue-50 text-blue-500 border-blue-100' },
+  { name: 'Rain', arabic: 'مطر', emoji: '🌧️', color: 'bg-blue-100 text-blue-600 border-blue-200' },
+  { name: 'Grass', arabic: 'عشب', emoji: '🌱', color: 'bg-emerald-100 text-emerald-600 border-emerald-200' },
+  { name: 'Mountain', arabic: 'جبل', emoji: '⛰️', color: 'bg-stone-100 text-stone-600 border-stone-200' },
+  { name: 'River', arabic: 'نهر', emoji: '🌊', color: 'bg-cyan-100 text-cyan-600 border-cyan-200' },
+  { name: 'Ocean', arabic: 'محيط', emoji: '🏖️', color: 'bg-blue-100 text-blue-600 border-blue-200' },
+  { name: 'Lake', arabic: 'بحيرة', emoji: '🌅', color: 'bg-indigo-100 text-indigo-600 border-indigo-200' },
+  { name: 'Forest', arabic: 'غابة', emoji: '🌲', color: 'bg-green-100 text-green-600 border-green-200' },
+  { name: 'Snow', arabic: 'ثلج', emoji: '❄️', color: 'bg-slate-100 text-slate-600 border-slate-200' },
+  { name: 'Fire', arabic: 'نار', emoji: '🔥', color: 'bg-orange-100 text-orange-600 border-orange-200' },
+  { name: 'Wind', arabic: 'رياح', emoji: '🌬️', color: 'bg-neutral-100 text-neutral-600 border-neutral-200' },
+];

@@ -1,0 +1,101 @@
+{
+  "id": 17,
+  "title": "في المتحف",
+  "description": "زيارة المتحف البريطاني واستكشاف التاريخ والآثار.",
+  "difficulty": "hard",
+  "thumbnail": "museum.png",
+  "xp_reward": 210,
+  "scenes": [
+    {
+      "name": "Narrator",
+      "en": "Memo visits the British Museum. He loves history and ancient artifacts.",
+      "ar": "ليو يزور المتحف البريطاني. يحب التاريخ والآثار القديمة."
+    },
+    {
+      "name": "Memo",
+      "en": "Excuse me! Where can I find the Egyptian collection?",
+      "ar": "عذراً! أين يمكنني العثور على المجموعة المصرية؟"
+    },
+    {
+      "name": "Guide",
+      "en": "The Egyptian galleries are on the upper floor, rooms 62 and 63.",
+      "ar": "القاعات المصرية في الطابق العلوي، الغرف 62 و63."
+    },
+    {
+      "name": "Memo",
+      "en": "Thank you! Is there a guided tour available?",
+      "ar": "شكراً! هل هناك جولة إرشادية متاحة؟"
+    },
+    {
+      "name": "Guide",
+      "en": "Yes! The next tour starts in fifteen minutes at the main entrance.",
+      "ar": "نعم! الجولة التالية تبدأ خلال خمس عشرة دقيقة عند المدخل الرئيسي."
+    },
+    {
+      "name": "Memo",
+      "en": "Perfect! How much does it cost?",
+      "ar": "ممتاز! كم تكلفتها؟"
+    },
+    {
+      "name": "Guide",
+      "en": "The museum is free, but the guided tour costs ten pounds.",
+      "ar": "المتحف مجاني، لكن الجولة الإرشادية تكلف عشرة جنيهات."
+    },
+    {
+      "name": "Memo",
+      "en": "That's reasonable! Can I take photos inside?",
+      "ar": "هذا معقول! هل يمكنني التقاط صور بالداخل؟"
+    },
+    {
+      "name": "Guide",
+      "en": "Yes, but please don't use flash. It can damage the artifacts.",
+      "ar": "نعم، لكن من فضلك لا تستخدم الفلاش. يمكن أن يضر بالآثار."
+    },
+    {
+      "name": "Memo",
+      "en": "I understand. Thank you for the information!",
+      "ar": "أفهم. شكراً على المعلومات!"
+    }
+  ],
+  "questions": [
+    {
+      "scene_idx": 2,
+      "type": "multiple_choice",
+      "q": "Where are the Egyptian galleries?",
+      "options": [
+        "Upper floor, rooms 62 and 63",
+        "Ground floor",
+        "Basement"
+      ],
+      "a": "Upper floor, rooms 62 and 63"
+    },
+    {
+      "scene_idx": 6,
+      "type": "typing",
+      "q": "The guided tour costs ten ___.|||الجولة الإرشادية تكلف عشرة جنيهات.",
+      "a": "pounds"
+    },
+    {
+      "scene_idx": 8,
+      "type": "dictation",
+      "a": "Please don't use flash"
+    }
+  ],
+  "finalQuestions": [
+    {
+      "type": "multiple_choice",
+      "q": "Is the museum free?",
+      "options": [
+        "Yes",
+        "No"
+      ],
+      "a": "Yes"
+    },
+    {
+      "type": "typing",
+      "q": "Can I take ___ inside?|||هل يمكنني التقاط صور؟",
+      "a": "photos"
+    }
+  ]
+}
+

@@ -1,0 +1,101 @@
+{
+  "id": 12,
+  "title": "عند الطبيب",
+  "description": "زيارة الطبيب والتحدث عن الأعراض الصحية.",
+  "difficulty": "medium",
+  "thumbnail": "doctor.png",
+  "xp_reward": 160,
+  "scenes": [
+    {
+      "name": "Narrator",
+      "en": "limo is not feeling well. He goes to see the doctor.",
+      "ar": "ليمو لا يشعر بصحة جيدة. يذهب لرؤية الطبيب."
+    },
+    {
+      "name": "Doctor",
+      "en": "Good morning, limo! What is the problem?",
+      "ar": "صباح الخير يا ليمو! ما هي المشكلة؟"
+    },
+    {
+      "name": "Memo",
+      "en": "I have a headache and a sore throat.",
+      "ar": "لدي صداع والتهاب في الحلق."
+    },
+    {
+      "name": "Doctor",
+      "en": "Do you have a fever?",
+      "ar": "هل لديك حمى؟"
+    },
+    {
+      "name": "Memo",
+      "en": "Yes, I think so. I feel very hot.",
+      "ar": "نعم، أعتقد ذلك. أشعر بحرارة شديدة."
+    },
+    {
+      "name": "Doctor",
+      "en": "Let me check your temperature. Yes, you have a fever.",
+      "ar": "دعني أفحص درجة حرارتك. نعم، لديك حمى."
+    },
+    {
+      "name": "Memo",
+      "en": "Is it serious, doctor?",
+      "ar": "هل هو خطير يا دكتور؟"
+    },
+    {
+      "name": "Doctor",
+      "en": "No, don't worry! You have a cold. Take this medicine and rest.",
+      "ar": "لا، لا تقلق! لديك نزلة برد. خذ هذا الدواء واسترح."
+    },
+    {
+      "name": "Memo",
+      "en": "Thank you, doctor! How often should I take the medicine?",
+      "ar": "شكراً يا دكتور! كم مرة يجب أن آخذ الدواء؟"
+    },
+    {
+      "name": "Doctor",
+      "en": "Three times a day, after meals. You will feel better soon!",
+      "ar": "ثلاث مرات في اليوم، بعد الوجبات. ستشعر بتحسن قريباً!"
+    }
+  ],
+  "questions": [
+    {
+      "scene_idx": 2,
+      "type": "multiple_choice",
+      "q": "What are limo's symptoms?",
+      "options": [
+        "Headache and sore throat",
+        "Broken leg",
+        "Stomach ache"
+      ],
+      "a": "Headache and sore throat"
+    },
+    {
+      "scene_idx": 7,
+      "type": "typing",
+      "q": "You have a ___.|||لديك نزلة برد.",
+      "a": "cold"
+    },
+    {
+      "scene_idx": 9,
+      "type": "dictation",
+      "a": "Three times a day after meals"
+    }
+  ],
+  "finalQuestions": [
+    {
+      "type": "multiple_choice",
+      "q": "Does Memo have a fever?",
+      "options": [
+        "Yes",
+        "No"
+      ],
+      "a": "Yes"
+    },
+    {
+      "type": "typing",
+      "q": "Take this ___ and rest.|||خذ هذا الدواء واسترح.",
+      "a": "medicine"
+    }
+  ]
+}
+

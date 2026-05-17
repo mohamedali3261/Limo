@@ -1,0 +1,91 @@
+{
+  "id": 6,
+  "title": "في المطار",
+  "titleEn": "At the Airport",
+  "icon": "✈️",
+  "color": "cyan",
+  "difficulty": "medium",
+  "dialogues": [
+    {
+      "speaker": "Karim",
+      "gender": "male",
+      "en": "Good morning! I'd like to check in for flight BA123 to London.",
+      "ar": "صباح الخير! أود تسجيل الدخول لرحلة BA123 إلى لندن."
+    },
+    {
+      "speaker": "Agent",
+      "gender": "female",
+      "en": "Good morning! May I see your passport and ticket, please?",
+      "ar": "صباح الخير! هل يمكنني رؤية جواز سفرك وتذكرتك، من فضلك؟"
+    },
+    {
+      "speaker": "Karim",
+      "gender": "male",
+      "en": "Here you are. Can I have a window seat?",
+      "ar": "تفضل. هل يمكنني الحصول على مقعد بجانب النافذة؟"
+    },
+    {
+      "speaker": "Agent",
+      "gender": "female",
+      "en": "Let me check... Yes, I have seat 12A for you. How many bags are you checking?",
+      "ar": "دعني أتحقق... نعم، لدي مقعد 12A لك. كم حقيبة ستسجل؟"
+    },
+    {
+      "speaker": "Karim",
+      "gender": "male",
+      "en": "Just one suitcase. Is it within the weight limit?",
+      "ar": "حقيبة واحدة فقط. هل هي ضمن حد الوزن؟"
+    },
+    {
+      "speaker": "Agent",
+      "gender": "female",
+      "en": "Yes, it's 18 kilos. That's fine. Here is your boarding pass.",
+      "ar": "نعم، 18 كيلو. هذا جيد. تفضل بطاقة الصعود."
+    },
+    {
+      "speaker": "Karim",
+      "gender": "male",
+      "en": "Thank you! What gate should I go to?",
+      "ar": "شكراً! إلى أي بوابة يجب أن أذهب؟"
+    },
+    {
+      "speaker": "Agent",
+      "gender": "female",
+      "en": "Gate 24. Boarding starts at 10:30 AM. Have a pleasant flight!",
+      "ar": "بوابة 24. يبدأ الصعود في الساعة 10:30 صباحاً. رحلة سعيدة!"
+    }
+  ],
+  "quiz": {
+    "title": "اختبار المطار",
+    "questions": [
+      {
+        "id": 1,
+        "question": "Where is Karim traveling to?",
+        "questionAr": "إلى أين يسافر كريم؟",
+        "options": ["Paris", "London", "Berlin", "Amsterdam"],
+        "correctAnswer": 1
+      },
+      {
+        "id": 2,
+        "question": "What seat number did Karim get?",
+        "questionAr": "ما رقم المقعد الذي حصل عليه كريم؟",
+        "options": ["10A", "11A", "12A", "13A"],
+        "correctAnswer": 2
+      },
+      {
+        "id": 3,
+        "question": "How many bags is Karim checking?",
+        "questionAr": "كم حقيبة يسجل كريم؟",
+        "options": ["None", "One", "Two", "Three"],
+        "correctAnswer": 1
+      },
+      {
+        "id": 4,
+        "question": "What gate should Karim go to?",
+        "questionAr": "إلى أي بوابة يجب أن يذهب كريم؟",
+        "options": ["Gate 20", "Gate 22", "Gate 24", "Gate 26"],
+        "correctAnswer": 2
+      }
+    ]
+  }
+}

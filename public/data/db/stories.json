@@ -1,0 +1,202 @@
+[
+  {
+    "id": 1,
+    "title": "مرحباً يا صديقي",
+    "description": "تعلم كيف تلقي التحية وتتعرف على شخص جديد بطريقة بسيطة.",
+    "difficulty": "easy",
+    "level": 1,
+    "thumbnail": "hello.png",
+    "xp_reward": 50,
+    "is_completed": false
+  },
+  {
+    "id": 2,
+    "title": "ما اسمك؟",
+    "description": "تعلم كيف تسأل عن الأسماء وتعرّف بنفسك.",
+    "difficulty": "easy",
+    "level": 2,
+    "thumbnail": "name.png",
+    "xp_reward": 60,
+    "is_completed": false
+  },
+  {
+    "id": 3,
+    "title": "الألوان الجميلة",
+    "description": "تعلم أسماء الألوان وكيف تتحدث عن ألوانك المفضلة.",
+    "difficulty": "easy",
+    "level": 3,
+    "thumbnail": "colors.png",
+    "xp_reward": 70,
+    "is_completed": false
+  },
+  {
+    "id": 4,
+    "title": "أين تسكن؟",
+    "description": "تعلم كيف تسأل وتجيب عن مكان السكن.",
+    "difficulty": "easy",
+    "level": 4,
+    "thumbnail": "house.png",
+    "xp_reward": 80,
+    "is_completed": false
+  },
+  {
+    "id": 5,
+    "title": "هواياتي المفضلة",
+    "description": "تحدث عن الأشياء التي تحب القيام بها في وقت فراغك.",
+    "difficulty": "easy",
+    "level": 5,
+    "thumbnail": "hobbies.png",
+    "xp_reward": 90,
+    "is_completed": false
+  },
+  {
+    "id": 6,
+    "title": "في المقهى",
+    "description": "تعلم كيف تطلب المشروبات والطعام في المقهى.",
+    "difficulty": "easy",
+    "level": 6,
+    "thumbnail": "coffee.png",
+    "xp_reward": 100,
+    "is_completed": false
+  },
+  {
+    "id": 7,
+    "title": "في المطعم",
+    "description": "تعلم كيف تطلب الطعام في المطعم وتتحدث مع النادل.",
+    "difficulty": "easy",
+    "level": 7,
+    "thumbnail": "restaurant.png",
+    "xp_reward": 110,
+    "is_completed": false
+  },
+  {
+    "id": 8,
+    "title": "في المتجر",
+    "description": "تعلم كيف تتسوق وتسأل عن الأسعار في المتجر.",
+    "difficulty": "easy",
+    "level": 8,
+    "thumbnail": "shopping.png",
+    "xp_reward": 120,
+    "is_completed": false
+  },
+  {
+    "id": 9,
+    "title": "في الحديقة",
+    "description": "يوم جميل في الحديقة مع الأصدقاء والألعاب.",
+    "difficulty": "easy",
+    "level": 9,
+    "thumbnail": "park.png",
+    "xp_reward": 130,
+    "is_completed": false
+  },
+  {
+    "id": 10,
+    "title": "في المكتبة",
+    "description": "زيارة المكتبة للبحث عن كتب جديدة ومثيرة.",
+    "difficulty": "easy",
+    "level": 10,
+    "thumbnail": "library.png",
+    "xp_reward": 140,
+    "is_completed": false
+  },
+  {
+    "id": 11,
+    "title": "في محطة القطار",
+    "description": "تعلم كيف تشتري تذكرة قطار وتسأل عن المواعيد.",
+    "difficulty": "medium",
+    "level": 11,
+    "thumbnail": "train.png",
+    "xp_reward": 150,
+    "is_completed": false
+  },
+  {
+    "id": 12,
+    "title": "عند الطبيب",
+    "description": "زيارة الطبيب والتحدث عن الأعراض الصحية.",
+    "difficulty": "medium",
+    "level": 12,
+    "thumbnail": "doctor.png",
+    "xp_reward": 160,
+    "is_completed": false
+  },
+  {
+    "id": 13,
+    "title": "في البنك",
+    "description": "تعلم كيف تفتح حساباً بنكياً وتتعامل مع الموظفين.",
+    "difficulty": "medium",
+    "level": 13,
+    "thumbnail": "bank.png",
+    "xp_reward": 170,
+    "is_completed": false
+  },
+  {
+    "id": 14,
+    "title": "في المطار",
+    "description": "رحلة ميمو إلى لندن وإجراءات المطار والجوازات.",
+    "difficulty": "medium",
+    "level": 14,
+    "thumbnail": "airport.png",
+    "xp_reward": 180,
+    "is_completed": false
+  },
+  {
+    "id": 15,
+    "title": "البحث عن شقة",
+    "description": "ميمو يبحث عن شقة للإيجار ويتحدث مع وكيل العقارات.",
+    "difficulty": "medium",
+    "level": 15,
+    "thumbnail": "house.png",
+    "xp_reward": 190,
+    "is_completed": false
+  },
+  {
+    "id": 16,
+    "title": "مقابلة العمل",
+    "description": "ميمو يذهب لمقابلة عمل ويتحدث عن خبراته ومهاراته.",
+    "difficulty": "hard",
+    "level": 16,
+    "thumbnail": "job.png",
+    "xp_reward": 200,
+    "is_completed": false
+  },
+  {
+    "id": 17,
+    "title": "في المتحف",
+    "description": "زيارة المتحف البريطاني واستكشاف التاريخ والآثار.",
+    "difficulty": "hard",
+    "level": 17,
+    "thumbnail": "museum.png",
+    "xp_reward": 210,
+    "is_completed": false
+  },
+  {
+    "id": 18,
+    "title": "حفلة عيد الميلاد",
+    "description": "التخطيط لحفلة مفاجئة لصديق وتنظيم كل التفاصيل.",
+    "difficulty": "hard",
+    "level": 18,
+    "thumbnail": "party.png",
+    "xp_reward": 220,
+    "is_completed": false
+  },
+  {
+    "id": 19,
+    "title": "مشكلة في الفندق",
+    "description": "ميمو يواجه مشكلة في غرفة الفندق ويحتاج لحلها مع الموظفين.",
+    "difficulty": "hard",
+    "level": 19,
+    "thumbnail": "hotel.png",
+    "xp_reward": 230,
+    "is_completed": false
+  },
+  {
+    "id": 20,
+    "title": "مغامرة غير متوقعة",
+    "description": "ميمو يجد رسالة غامضة تقوده إلى مغامرة مثيرة في لندن.",
+    "difficulty": "hard",
+    "level": 20,
+    "thumbnail": "mystery.png",
+    "xp_reward": 250,
+    "is_completed": false
+  }
+]

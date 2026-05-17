@@ -1,0 +1,66 @@
+[
+  {
+    "id": 0,
+    "title": "الحروف الإنجليزية",
+    "description": "تعلم حروف اللغة الإنجليزية بصوتها وبعض الكلمات.",
+    "order_index": 0,
+    "language": "english",
+    "icon_url": null
+  },
+  {
+    "id": 1,
+    "title": "المستوى 1: الكلمات الأساسية",
+    "description": "تعلّم الكلمات الأساسية (Basic Vocabulary). ابدأ بأهم الكلمات (أفعال، أشياء، صفات).",
+    "order_index": 1,
+    "language": "english",
+    "icon_url": null
+  },
+  {
+    "id": 2,
+    "title": "المستوى 2: الأفعال",
+    "description": "تعلّم مجموعة متنوعة من الأفعال ومارسها في جمل.",
+    "order_index": 2,
+    "language": "english",
+    "icon_url": null
+  },
+  {
+    "id": 3,
+    "title": "المستوى 3: تكوين الجمل",
+    "description": "تعلّم بناء الجمل الأساسية (فاعل + فعل + مفعول).",
+    "order_index": 3,
+    "language": "english",
+    "icon_url": null
+  },
+  {
+    "id": 4,
+    "title": "المستوى 4: الأرقام",
+    "description": "تعلّم الأرقام من 1 إلى 20 وكيفية استخدامها.",
+    "order_index": 4,
+    "language": "english",
+    "icon_url": null
+  },
+  {
+    "id": 5,
+    "title": "المستوى 5: الألوان",
+    "description": "تعلّم أسماء الألوان الأساسية وكيفية وصف الأشياء بها.",
+    "order_index": 5,
+    "language": "english",
+    "icon_url": null
+  },
+  {
+    "id": 6,
+    "title": "المستوى 6: الوقت والزمان",
+    "description": "تعلّم أيام الأسبوع، شهور السنة، ومفاهيم الوقت.",
+    "order_index": 6,
+    "language": "english",
+    "icon_url": null
+  },
+  {
+    "id": 10,
+    "title": "مراجعة شاملة للأساسيات",
+    "description": "تجميع لكل التمارين التفاعلية (كلمات، جمل، أزمنة).",
+    "order_index": 10,
+    "language": "english",
+    "icon_url": null
+  }
+]

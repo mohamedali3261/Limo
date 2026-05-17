@@ -1,0 +1,145 @@
+{
+  "id": 2,
+  "title": "ما اسمك؟",
+  "description": "تعلم كيف تسأل عن الأسماء وتعرّف بنفسك.",
+  "difficulty": "easy",
+  "thumbnail": "name.png",
+  "xp_reward": 60,
+  "scenes": [
+    {
+      "id": 1,
+      "story_id": 2,
+      "character_name": "Narrator",
+      "content_en": "Limo meets a new friend at the park. He wants to introduce himself.",
+      "content_ar": "يلتقي ليمو بصديق جديد في الحديقة. يريد أن يعرّف بنفسه.",
+      "order_index": 0
+    },
+    {
+      "id": 2,
+      "story_id": 2,
+      "character_name": "Friend",
+      "content_en": "Hello! What is your name?",
+      "content_ar": "مرحباً! ما اسمك؟",
+      "order_index": 1
+    },
+    {
+      "id": 3,
+      "story_id": 2,
+      "character_name": "Limo",
+      "content_en": "Hi! My name is Limo. Nice to meet you!",
+      "content_ar": "مرحباً! اسمي ليمو. يسعدني التعرف عليك!",
+      "order_index": 2
+    },
+    {
+      "id": 4,
+      "story_id": 2,
+      "character_name": "Friend",
+      "content_en": "Nice to meet you too! My name is Sarah.",
+      "content_ar": "يسعدني التعرف عليك أيضاً! اسمي سارة.",
+      "order_index": 3
+    },
+    {
+      "id": 5,
+      "story_id": 2,
+      "character_name": "Limo",
+      "content_en": "Where are you from, Sarah?",
+      "content_ar": "من أين أنتِ يا سارة؟",
+      "order_index": 4
+    },
+    {
+      "id": 6,
+      "story_id": 2,
+      "character_name": "Sarah",
+      "content_en": "I am from London. What about you?",
+      "content_ar": "أنا من لندن. وأنت؟",
+      "order_index": 5
+    },
+    {
+      "id": 7,
+      "story_id": 2,
+      "character_name": "Limo",
+      "content_en": "I am from Cairo. It is nice to meet you!",
+      "content_ar": "أنا من القاهرة. يسعدني التعرف عليك!",
+      "order_index": 6
+    },
+    {
+      "id": 8,
+      "story_id": 2,
+      "character_name": "Sarah",
+      "content_en": "Great! Let's be friends!",
+      "content_ar": "رائع! لنكن أصدقاء!",
+      "order_index": 7
+    }
+  ],
+  "questions": [
+    {
+      "id": 1,
+      "story_id": 2,
+      "scene_idx": 2,
+      "type": "multiple_choice",
+      "question_en": "What is Limo's name?",
+      "question_ar": "ما اسم ليمو؟",
+      "options": [
+        "Limo",
+        "Sarah",
+        "Ahmed"
+      ],
+      "answer": "Limo"
+    },
+    {
+      "id": 2,
+      "story_id": 2,
+      "scene_idx": 3,
+      "type": "typing",
+      "question_en": "My name is ___.",
+      "question_ar": "اسمي ___.",
+      "answer": "Limo"
+    },
+    {
+      "id": 3,
+      "story_id": 2,
+      "scene_idx": 4,
+      "type": "multiple_choice",
+      "question_en": "Where is Sarah from?",
+      "question_ar": "من أين سارة؟",
+      "options": [
+        "Cairo",
+        "London",
+        "Paris"
+      ],
+      "answer": "London"
+    },
+    {
+      "id": 4,
+      "story_id": 2,
+      "scene_idx": 5,
+      "type": "typing",
+      "question_en": "I am from ___.",
+      "question_ar": "أنا من ___.",
+      "answer": "Cairo"
+    }
+  ],
+  "finalQuestions": [
+    {
+      "id": 1,
+      "story_id": 2,
+      "type": "multiple_choice",
+      "question_en": "What is the main topic of this story?",
+      "question_ar": "ما هو الموضوع الرئيسي لهذه القصة؟",
+      "options": [
+        "Introducing yourself and asking names",
+        "Traveling to different countries",
+        "Playing games in the park"
+      ],
+      "answer": "Introducing yourself and asking names"
+    },
+    {
+      "id": 2,
+      "story_id": 2,
+      "type": "typing",
+      "question_en": "How do you ask someone's name in English?",
+      "question_ar": "كيف تسأل عن اسم شخص ما بالإنجليزية؟",
+      "answer": "What is your name"
+    }
+  ]
+}

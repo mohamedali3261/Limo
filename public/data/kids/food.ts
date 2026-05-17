@@ -1,0 +1,16 @@
+export const kidsFood = [
+  { name: 'Pizza', arabic: 'بيتزا', emoji: '🍕', color: 'bg-orange-100 text-orange-600 border-orange-200' },
+  { name: 'Burger', arabic: 'برجر', emoji: '🍔', color: 'bg-amber-100 text-amber-600 border-amber-200' },
+  { name: 'Egg', arabic: 'بيضة', emoji: '🥚', color: 'bg-yellow-100 text-yellow-600 border-yellow-200' },
+  { name: 'Bread', arabic: 'خبز', emoji: '🍞', color: 'bg-amber-100 text-amber-700 border-amber-300' },
+  { name: 'Cheese', arabic: 'جبن', emoji: '🧀', color: 'bg-yellow-100 text-yellow-600 border-yellow-200' },
+  { name: 'Meat', arabic: 'لحم', emoji: '🥩', color: 'bg-red-100 text-red-600 border-red-200' },
+  { name: 'Chicken', arabic: 'دجاج', emoji: '🍗', color: 'bg-orange-100 text-orange-600 border-orange-200' },
+  { name: 'Fish', arabic: 'سمك', emoji: '🐟', color: 'bg-blue-100 text-blue-600 border-blue-200' },
+  { name: 'Water', arabic: 'ماء', emoji: '💧', color: 'bg-cyan-100 text-cyan-600 border-cyan-200' },
+  { name: 'Milk', arabic: 'حليب', emoji: '🥛', color: 'bg-slate-100 text-slate-600 border-slate-200' },
+  { name: 'Juice', arabic: 'عصير', emoji: '🧃', color: 'bg-purple-100 text-purple-600 border-purple-200' },
+  { name: 'Ice Cream', arabic: 'مثلجات', emoji: '🍦', color: 'bg-pink-100 text-pink-600 border-pink-200' },
+  { name: 'Cake', arabic: 'كعكة', emoji: '🎂', color: 'bg-rose-100 text-rose-600 border-rose-200' },
+  { name: 'Chocolate', arabic: 'شوكولاتة', emoji: '🍫', color: 'bg-stone-100 text-stone-600 border-stone-200' },
+];

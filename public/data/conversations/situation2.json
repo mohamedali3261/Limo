@@ -1,0 +1,91 @@
+{
+  "id": 2,
+  "title": "في السوق",
+  "titleEn": "At the Market",
+  "icon": "🛒",
+  "color": "green",
+  "difficulty": "easy",
+  "dialogues": [
+    {
+      "speaker": "Ali",
+      "gender": "male",
+      "en": "Excuse me! How much are these apples?",
+      "ar": "عذراً! كم سعر هذه التفاحات؟"
+    },
+    {
+      "speaker": "Emma",
+      "gender": "female",
+      "en": "They are three pounds per kilo.",
+      "ar": "ثلاثة جنيهات للكيلو."
+    },
+    {
+      "speaker": "Ali",
+      "gender": "male",
+      "en": "I'll take two kilos, please.",
+      "ar": "سآخذ كيلوين، من فضلك."
+    },
+    {
+      "speaker": "Emma",
+      "gender": "female",
+      "en": "Sure! Would you like anything else?",
+      "ar": "بالتأكيد! هل تريد أي شيء آخر؟"
+    },
+    {
+      "speaker": "Ali",
+      "gender": "male",
+      "en": "Yes, I need some oranges too. Are they fresh?",
+      "ar": "نعم، أحتاج بعض البرتقال أيضاً. هل هو طازج؟"
+    },
+    {
+      "speaker": "Emma",
+      "gender": "female",
+      "en": "Yes, very fresh! They arrived this morning.",
+      "ar": "نعم، طازج جداً! وصل هذا الصباح."
+    },
+    {
+      "speaker": "Ali",
+      "gender": "male",
+      "en": "Great! I'll take one kilo of oranges.",
+      "ar": "رائع! سآخذ كيلو برتقال."
+    },
+    {
+      "speaker": "Emma",
+      "gender": "female",
+      "en": "That will be nine pounds in total.",
+      "ar": "سيكون المجموع تسعة جنيهات."
+    }
+  ],
+  "quiz": {
+    "title": "اختبار السوق",
+    "questions": [
+      {
+        "id": 1,
+        "question": "What did Ali ask about first?",
+        "questionAr": "ماذا سأل علي أولاً؟",
+        "options": ["About oranges", "About apples", "About bananas", "About grapes"],
+        "correctAnswer": 1
+      },
+      {
+        "id": 2,
+        "question": "How many kilos of apples did Ali buy?",
+        "questionAr": "كم كيلو تفاح اشترى علي؟",
+        "options": ["One kilo", "Two kilos", "Three kilos", "Four kilos"],
+        "correctAnswer": 1
+      },
+      {
+        "id": 3,
+        "question": "Are the oranges fresh?",
+        "questionAr": "هل البرتقال طازج؟",
+        "options": ["No", "Yes", "Maybe", "Not sure"],
+        "correctAnswer": 1
+      },
+      {
+        "id": 4,
+        "question": "What is the total price?",
+        "questionAr": "ما هو السعر الإجمالي؟",
+        "options": ["Six pounds", "Seven pounds", "Eight pounds", "Nine pounds"],
+        "correctAnswer": 3
+      }
+    ]
+  }
+}

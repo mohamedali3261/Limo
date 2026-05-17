@@ -1,0 +1,117 @@
+{
+  "id": 20,
+  "title": "مغامرة غير متوقعة",
+  "description": "ليو يجد رسالة غامضة تقوده إلى مغامرة مثيرة في لندن.",
+  "difficulty": "hard",
+  "thumbnail": "mystery.png",
+  "xp_reward": 250,
+  "scenes": [
+    {
+      "name": "Narrator",
+      "en": "Memo finds a mysterious envelope under his hotel room door. It has no name on it.",
+      "ar": "ليو يجد مغلفاً غامضاً تحت باب غرفة الفندق. لا يوجد عليه اسم."
+    },
+    {
+      "name": "Memo",
+      "en": "That's strange! Who could have left this here?",
+      "ar": "هذا غريب! من يمكن أن يكون قد ترك هذا هنا؟"
+    },
+    {
+      "name": "Narrator",
+      "en": "He opens the envelope carefully. Inside is a handwritten note.",
+      "ar": "يفتح المغلف بحذر. بالداخل رسالة مكتوبة بخط اليد."
+    },
+    {
+      "name": "Letter",
+      "en": "Dear Traveler, if you seek adventure, go to the red phone box on Baker Street at noon.",
+      "ar": "عزيزي المسافر، إذا كنت تبحث عن المغامرة، اذهب إلى كابينة الهاتف الحمراء في شارع بيكر عند الظهر."
+    },
+    {
+      "name": "Memo",
+      "en": "This is intriguing! Should I go? It could be dangerous, but also exciting!",
+      "ar": "هذا مثير للاهتمام! هل يجب أن أذهب؟ قد يكون خطيراً، لكنه مثير أيضاً!"
+    },
+    {
+      "name": "Narrator",
+      "en": "Memo decides to follow the instructions. At noon, he arrives at Baker Street.",
+      "ar": "يقرر ليو اتباع التعليمات. عند الظهر، يصل إلى شارع بيكر."
+    },
+    {
+      "name": "Memo",
+      "en": "Here's the red phone box! Now what? Should I wait or go inside?",
+      "ar": "ها هي كابينة الهاتف الحمراء! الآن ماذا؟ هل يجب أن أنتظر أم أدخل؟"
+    },
+    {
+      "name": "Narrator",
+      "en": "Suddenly, the phone inside starts ringing. Memo hesitates, then answers it.",
+      "ar": "فجأة، الهاتف بالداخل يبدأ بالرنين. ليو يتردد، ثم يجيب عليه."
+    },
+    {
+      "name": "Voice",
+      "en": "Well done for coming! Look behind you. There's a blue door. Knock three times.",
+      "ar": "أحسنت بالحضور! انظر خلفك. هناك باب أزرق. اطرق ثلاث مرات."
+    },
+    {
+      "name": "Memo",
+      "en": "This is getting more mysterious! But I've come this far. Let's see what happens!",
+      "ar": "هذا يصبح أكثر غموضاً! لكنني وصلت إلى هنا. دعنا نرى ما سيحدث!"
+    },
+    {
+      "name": "Narrator",
+      "en": "Memo knocks three times. The door opens slowly, revealing a hidden bookshop.",
+      "ar": "ليو يطرق ثلاث مرات. الباب ينفتح ببطء، كاشفاً عن مكتبة كتب مخفية."
+    },
+    {
+      "name": "Owner",
+      "en": "Welcome! You must be the curious traveler. I have something special for you!",
+      "ar": "مرحباً! لا بد أنك المسافر الفضولي. لدي شيء خاص لك!"
+    },
+    {
+      "name": "Memo",
+      "en": "What an incredible adventure! I never expected this!",
+      "ar": "يا لها من مغامرة لا تصدق! لم أتوقع هذا أبداً!"
+    }
+  ],
+  "questions": [
+    {
+      "scene_idx": 3,
+      "type": "multiple_choice",
+      "q": "Where should Memo go?",
+      "options": [
+        "Red phone box on Baker Street",
+        "Blue door",
+        "Museum"
+      ],
+      "a": "Red phone box on Baker Street"
+    },
+    {
+      "scene_idx": 8,
+      "type": "typing",
+      "q": "Knock ___ times.|||اطرق ثلاث مرات.",
+      "a": "three"
+    },
+    {
+      "scene_idx": 10,
+      "type": "dictation",
+      "a": "The door opens slowly"
+    }
+  ],
+  "finalQuestions": [
+    {
+      "type": "multiple_choice",
+      "q": "What does Memo find behind the blue door?",
+      "options": [
+        "A hidden bookshop",
+        "A restaurant",
+        "A museum"
+      ],
+      "a": "A hidden bookshop"
+    },
+    {
+      "type": "typing",
+      "q": "This is getting more ___!|||هذا يصبح أكثر غموضاً!",
+      "a": "mysterious"
+    }
+  ]
+}
+

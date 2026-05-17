@@ -1,0 +1,97 @@
+{
+  "id": 11,
+  "title": "في محطة القطار",
+  "description": "تعلم كيف تشتري تذكرة قطار وتسأل عن المواعيد.",
+  "difficulty": "medium",
+  "thumbnail": "train.png",
+  "xp_reward": 150,
+  "scenes": [
+    {
+      "name": "Narrator",
+      "en": "Memo is at the train station. He wants to go to Oxford.",
+      "ar": "ليو في محطة القطار. يريد الذهاب إلى أكسفورد."
+    },
+    {
+      "name": "Memo",
+      "en": "Excuse me! I need a ticket to Oxford, please.",
+      "ar": "عذراً! أحتاج تذكرة إلى أكسفورد، من فضلك."
+    },
+    {
+      "name": "Staff",
+      "en": "Single or return ticket?",
+      "ar": "تذكرة ذهاب فقط أم ذهاب وعودة؟"
+    },
+    {
+      "name": "Memo",
+      "en": "Return ticket, please. When is the next train?",
+      "ar": "تذكرة ذهاب وعودة، من فضلك. متى القطار التالي؟"
+    },
+    {
+      "name": "Staff",
+      "en": "The next train is at three o'clock. Platform five.",
+      "ar": "القطار التالي في الساعة الثالثة. الرصيف الخامس."
+    },
+    {
+      "name": "Memo",
+      "en": "How long is the journey?",
+      "ar": "كم مدة الرحلة؟"
+    },
+    {
+      "name": "Staff",
+      "en": "It takes about one hour. That will be twenty-five pounds.",
+      "ar": "تستغرق حوالي ساعة واحدة. سيكون ذلك خمسة وعشرين جنيهاً."
+    },
+    {
+      "name": "Memo",
+      "en": "Here you are. Thank you for your help!",
+      "ar": "تفضل. شكراً على مساعدتك!"
+    },
+    {
+      "name": "Staff",
+      "en": "You are welcome! Have a safe journey!",
+      "ar": "على الرحب والسعة! رحلة آمنة!"
+    }
+  ],
+  "questions": [
+    {
+      "scene_idx": 2,
+      "type": "multiple_choice",
+      "q": "What type of ticket does Memo want?",
+      "options": [
+        "Return ticket",
+        "Single ticket",
+        "Weekly ticket"
+      ],
+      "a": "Return ticket"
+    },
+    {
+      "scene_idx": 4,
+      "type": "typing",
+      "q": "The train is at ___ five.|||القطار في الرصيف الخامس.",
+      "a": "platform"
+    },
+    {
+      "scene_idx": 6,
+      "type": "dictation",
+      "a": "It takes about one hour"
+    }
+  ],
+  "finalQuestions": [
+    {
+      "type": "multiple_choice",
+      "q": "Where is Memo going?",
+      "options": [
+        "Oxford",
+        "London",
+        "Manchester"
+      ],
+      "a": "Oxford"
+    },
+    {
+      "type": "typing",
+      "q": "How ___ is the journey?|||كم مدة الرحلة؟",
+      "a": "long"
+    }
+  ]
+}
+

@@ -1,0 +1,91 @@
+{
+  "id": 5,
+  "title": "في المطعم",
+  "titleEn": "At the Restaurant",
+  "icon": "🍽️",
+  "color": "orange",
+  "difficulty": "easy",
+  "dialogues": [
+    {
+      "speaker": "Youssef",
+      "gender": "male",
+      "en": "Good evening! Table for two, please.",
+      "ar": "مساء الخير! طاولة لشخصين، من فضلك."
+    },
+    {
+      "speaker": "Waitress",
+      "gender": "female",
+      "en": "Of course! Follow me, please. Here is your table.",
+      "ar": "بالطبع! اتبعني، من فضلك. تفضل طاولتك."
+    },
+    {
+      "speaker": "Youssef",
+      "gender": "male",
+      "en": "Thank you! Can we see the menu?",
+      "ar": "شكراً! هل يمكننا رؤية القائمة؟"
+    },
+    {
+      "speaker": "Waitress",
+      "gender": "female",
+      "en": "Here you are. Would you like something to drink first?",
+      "ar": "تفضل. هل تريد شيئاً للشرب أولاً؟"
+    },
+    {
+      "speaker": "Youssef",
+      "gender": "male",
+      "en": "Yes, two glasses of water, please.",
+      "ar": "نعم، كأسان من الماء، من فضلك."
+    },
+    {
+      "speaker": "Waitress",
+      "gender": "female",
+      "en": "Right away! Are you ready to order food?",
+      "ar": "حالاً! هل أنتم مستعدون لطلب الطعام؟"
+    },
+    {
+      "speaker": "Youssef",
+      "gender": "male",
+      "en": "Yes, I'll have the grilled chicken with rice.",
+      "ar": "نعم، سآخذ الدجاج المشوي مع الأرز."
+    },
+    {
+      "speaker": "Waitress",
+      "gender": "female",
+      "en": "Excellent choice! Your order will be ready in 15 minutes.",
+      "ar": "اختيار ممتاز! طلبك سيكون جاهزاً خلال 15 دقيقة."
+    }
+  ],
+  "quiz": {
+    "title": "اختبار المطعم",
+    "questions": [
+      {
+        "id": 1,
+        "question": "What did the waitress ask first?",
+        "questionAr": "ماذا سألت الويترس أولاً؟",
+        "options": ["About food", "About drinks", "About the table", "About allergies"],
+        "correctAnswer": 1
+      },
+      {
+        "id": 2,
+        "question": "What did Youssef order to drink?",
+        "questionAr": "ماذا طلب يوسف للشرب؟",
+        "options": ["Coffee", "Tea", "Water", "Juice"],
+        "correctAnswer": 2
+      },
+      {
+        "id": 3,
+        "question": "What food did Youssef order?",
+        "questionAr": "ما الطعام الذي طلبه يوسف؟",
+        "options": ["Fish", "Grilled chicken with rice", "Pasta", "Steak"],
+        "correctAnswer": 1
+      },
+      {
+        "id": 4,
+        "question": "How long will the order take?",
+        "questionAr": "كم من الوقت سيستغرق الطلب؟",
+        "options": ["10 minutes", "15 minutes", "20 minutes", "30 minutes"],
+        "correctAnswer": 1
+      }
+    ]
+  }
+}

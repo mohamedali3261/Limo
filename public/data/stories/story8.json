@@ -1,0 +1,97 @@
+{
+  "id": 8,
+  "title": "في المتجر",
+  "description": "تعلم كيف تتسوق وتسأل عن الأسعار في المتجر.",
+  "difficulty": "easy",
+  "thumbnail": "shopping.png",
+  "xp_reward": 120,
+  "scenes": [
+    {
+      "name": "Narrator",
+      "en": "Memo is in a shop. He wants to buy a shirt.",
+      "ar": "ميمو في متجر. يريد أن يشتري قميصاً."
+    },
+    {
+      "name": "Memo",
+      "en": "Excuse me! How much is this blue shirt?",
+      "ar": "عذراً! كم سعر هذا القميص الأزرق؟"
+    },
+    {
+      "name": "Assistant",
+      "en": "This shirt is twenty pounds.",
+      "ar": "هذا القميص بعشرين جنيهاً."
+    },
+    {
+      "name": "Memo",
+      "en": "Do you have it in size medium?",
+      "ar": "هل لديك مقاس متوسط؟"
+    },
+    {
+      "name": "Assistant",
+      "en": "Yes, we do! Would you like to try it on?",
+      "ar": "نعم، لدينا! هل تريد تجربته؟"
+    },
+    {
+      "name": "Memo",
+      "en": "Yes, please! Where is the changing room?",
+      "ar": "نعم، من فضلك! أين غرفة القياس؟"
+    },
+    {
+      "name": "Assistant",
+      "en": "It is over there, next to the shoes.",
+      "ar": "إنها هناك، بجانب الأحذية."
+    },
+    {
+      "name": "Narrator",
+      "en": "Memo tries the shirt. It fits perfectly!",
+      "ar": "ميمو يجرب القميص. إنه مناسب تماماً!"
+    },
+    {
+      "name": "Memo",
+      "en": "Perfect! I will take it!",
+      "ar": "ممتاز! سآخذه!"
+    }
+  ],
+  "questions": [
+    {
+      "scene_idx": 2,
+      "type": "multiple_choice",
+      "q": "How much is the shirt?",
+      "options": [
+        "Twenty pounds",
+        "Ten pounds",
+        "Thirty pounds"
+      ],
+      "a": "Twenty pounds"
+    },
+    {
+      "scene_idx": 3,
+      "type": "typing",
+      "q": "Do you have it in size ___?|||هل لديك مقاس متوسط؟",
+      "a": "medium"
+    },
+    {
+      "scene_idx": 6,
+      "type": "dictation",
+      "a": "It is next to the shoes"
+    }
+  ],
+  "finalQuestions": [
+    {
+      "type": "multiple_choice",
+      "q": "What color is the shirt?",
+      "options": [
+        "Blue",
+        "Red",
+        "Green"
+      ],
+      "a": "Blue"
+    },
+    {
+      "type": "typing",
+      "q": "How ___ is this shirt?|||كم سعر هذا القميص؟",
+      "a": "much"
+    }
+  ]
+}
+

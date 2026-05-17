@@ -1,0 +1,1178 @@
+[
+  {
+    "id": 1,
+    "game_level_id": 1,
+    "question_text": "APPLE",
+    "answer_text": "APPLE",
+    "context_ar": "ØªÙØ§Ø­Ø©",
+    "options": null
+  },
+  {
+    "id": 2,
+    "game_level_id": 1,
+    "question_text": "HELLO",
+    "answer_text": "HELLO",
+    "context_ar": "Ù…Ø±Ø­Ø¨Ø§Ù‹",
+    "options": null
+  },
+  {
+    "id": 36,
+    "game_level_id": 19,
+    "question_text": "CLOUD",
+    "answer_text": "CLOUD",
+    "context_ar": "Ø³Ø­Ø§Ø¨Ø©",
+    "options": null
+  },
+  {
+    "id": 37,
+    "game_level_id": 19,
+    "question_text": "SHIP",
+    "answer_text": "SHIP",
+    "context_ar": "Ø³ÙÙŠÙ†Ø©",
+    "options": null
+  },
+  {
+    "id": 38,
+    "game_level_id": 19,
+    "question_text": "LIGHT",
+    "answer_text": "LIGHT",
+    "context_ar": "Ù†ÙˆØ±",
+    "options": null
+  },
+  {
+    "id": 39,
+    "game_level_id": 19,
+    "question_text": "MINUTE",
+    "answer_text": "MINUTE",
+    "context_ar": "Ø¯Ù‚ÙŠÙ‚Ø©",
+    "options": null
+  },
+  {
+    "id": 40,
+    "game_level_id": 19,
+    "question_text": "CLOUD",
+    "answer_text": "CLOUD",
+    "context_ar": "Ø³Ø­Ø§Ø¨Ø©",
+    "options": null
+  },
+  {
+    "id": 41,
+    "game_level_id": 20,
+    "question_text": "SNOW",
+    "answer_text": "SNOW",
+    "context_ar": "Ø«Ù„Ø¬",
+    "options": null
+  },
+  {
+    "id": 42,
+    "game_level_id": 20,
+    "question_text": "DOWN",
+    "answer_text": "DOWN",
+    "context_ar": "ØªØ­Øª",
+    "options": null
+  },
+  {
+    "id": 43,
+    "game_level_id": 20,
+    "question_text": "STREET",
+    "answer_text": "STREET",
+    "context_ar": "Ø´Ø§Ø±Ø¹",
+    "options": null
+  },
+  {
+    "id": 44,
+    "game_level_id": 20,
+    "question_text": "SUN",
+    "answer_text": "SUN",
+    "context_ar": "Ø´Ù…Ø³",
+    "options": null
+  },
+  {
+    "id": 45,
+    "game_level_id": 20,
+    "question_text": "CAR",
+    "answer_text": "CAR",
+    "context_ar": "Ø³ÙŠØ§Ø±Ø©",
+    "options": null
+  },
+  {
+    "id": 46,
+    "game_level_id": 21,
+    "question_text": "SHIP",
+    "answer_text": "SHIP",
+    "context_ar": "Ø³ÙÙŠÙ†Ø©",
+    "options": null
+  },
+  {
+    "id": 47,
+    "game_level_id": 21,
+    "question_text": "MONTH",
+    "answer_text": "MONTH",
+    "context_ar": "Ø´Ù‡Ø±",
+    "options": null
+  },
+  {
+    "id": 48,
+    "game_level_id": 21,
+    "question_text": "EVENING",
+    "answer_text": "EVENING",
+    "context_ar": "Ù…Ø³Ø§Ø¡",
+    "options": null
+  },
+  {
+    "id": 49,
+    "game_level_id": 21,
+    "question_text": "BOOK",
+    "answer_text": "BOOK",
+    "context_ar": "ÙƒØªØ§Ø¨",
+    "options": null
+  },
+  {
+    "id": 50,
+    "game_level_id": 21,
+    "question_text": "SNOW",
+    "answer_text": "SNOW",
+    "context_ar": "Ø«Ù„Ø¬",
+    "options": null
+  },
+  {
+    "id": 51,
+    "game_level_id": 22,
+    "question_text": "FIRE",
+    "answer_text": "FIRE",
+    "context_ar": "Ù†Ø§Ø±",
+    "options": null
+  },
+  {
+    "id": 52,
+    "game_level_id": 22,
+    "question_text": "RAIN",
+    "answer_text": "RAIN",
+    "context_ar": "Ù…Ø·Ø±",
+    "options": null
+  },
+  {
+    "id": 53,
+    "game_level_id": 22,
+    "question_text": "BIRD",
+    "answer_text": "BIRD",
+    "context_ar": "Ø·Ø§Ø¦Ø±",
+    "options": null
+  },
+  {
+    "id": 54,
+    "game_level_id": 22,
+    "question_text": "LIGHT",
+    "answer_text": "LIGHT",
+    "context_ar": "Ù†ÙˆØ±",
+    "options": null
+  },
+  {
+    "id": 55,
+    "game_level_id": 22,
+    "question_text": "CITY",
+    "answer_text": "CITY",
+    "context_ar": "Ù…Ø¯ÙŠÙ†Ø©",
+    "options": null
+  },
+  {
+    "id": 56,
+    "game_level_id": 23,
+    "question_text": "FIRE",
+    "answer_text": "FIRE",
+    "context_ar": "Ù†Ø§Ø±",
+    "options": null
+  },
+  {
+    "id": 57,
+    "game_level_id": 23,
+    "question_text": "FIRE",
+    "answer_text": "FIRE",
+    "context_ar": "Ù†Ø§Ø±",
+    "options": null
+  },
+  {
+    "id": 58,
+    "game_level_id": 23,
+    "question_text": "TEACHER",
+    "answer_text": "TEACHER",
+    "context_ar": "Ù…Ø¹Ù„Ù…",
+    "options": null
+  },
+  {
+    "id": 59,
+    "game_level_id": 23,
+    "question_text": "UP",
+    "answer_text": "UP",
+    "context_ar": "ÙÙˆÙ‚",
+    "options": null
+  },
+  {
+    "id": 60,
+    "game_level_id": 23,
+    "question_text": "PLANET",
+    "answer_text": "PLANET",
+    "context_ar": "ÙƒÙˆÙƒØ¨",
+    "options": null
+  },
+  {
+    "id": 61,
+    "game_level_id": 24,
+    "question_text": "SHIP",
+    "answer_text": "SHIP",
+    "context_ar": "Ø³ÙÙŠÙ†Ø©",
+    "options": null
+  },
+  {
+    "id": 62,
+    "game_level_id": 24,
+    "question_text": "YEAR",
+    "answer_text": "YEAR",
+    "context_ar": "Ø³Ù†Ø©",
+    "options": null
+  },
+  {
+    "id": 63,
+    "game_level_id": 24,
+    "question_text": "CAT",
+    "answer_text": "CAT",
+    "context_ar": "Ù‚Ø·Ø©",
+    "options": null
+  },
+  {
+    "id": 64,
+    "game_level_id": 24,
+    "question_text": "DOG",
+    "answer_text": "DOG",
+    "context_ar": "ÙƒÙ„Ø¨",
+    "options": null
+  },
+  {
+    "id": 65,
+    "game_level_id": 24,
+    "question_text": "HOUR",
+    "answer_text": "HOUR",
+    "context_ar": "Ø³Ø§Ø¹Ø©",
+    "options": null
+  },
+  {
+    "id": 66,
+    "game_level_id": 25,
+    "question_text": "HOUSE",
+    "answer_text": "HOUSE",
+    "context_ar": "Ù…Ù†Ø²Ù„",
+    "options": null
+  },
+  {
+    "id": 67,
+    "game_level_id": 25,
+    "question_text": "PLANE",
+    "answer_text": "PLANE",
+    "context_ar": "Ø·Ø§Ø¦Ø±Ø©",
+    "options": null
+  },
+  {
+    "id": 68,
+    "game_level_id": 25,
+    "question_text": "BACK",
+    "answer_text": "BACK",
+    "context_ar": "Ø®Ù„Ù",
+    "options": null
+  },
+  {
+    "id": 69,
+    "game_level_id": 25,
+    "question_text": "EVENING",
+    "answer_text": "EVENING",
+    "context_ar": "Ù…Ø³Ø§Ø¡",
+    "options": null
+  },
+  {
+    "id": 70,
+    "game_level_id": 25,
+    "question_text": "PLANET",
+    "answer_text": "PLANET",
+    "context_ar": "ÙƒÙˆÙƒØ¨",
+    "options": null
+  },
+  {
+    "id": 71,
+    "game_level_id": 26,
+    "question_text": "STREET",
+    "answer_text": "STREET",
+    "context_ar": "Ø´Ø§Ø±Ø¹",
+    "options": null
+  },
+  {
+    "id": 72,
+    "game_level_id": 26,
+    "question_text": "DOG",
+    "answer_text": "DOG",
+    "context_ar": "ÙƒÙ„Ø¨",
+    "options": null
+  },
+  {
+    "id": 73,
+    "game_level_id": 26,
+    "question_text": "BOOK",
+    "answer_text": "BOOK",
+    "context_ar": "ÙƒØªØ§Ø¨",
+    "options": null
+  },
+  {
+    "id": 74,
+    "game_level_id": 26,
+    "question_text": "BOOK",
+    "answer_text": "BOOK",
+    "context_ar": "ÙƒØªØ§Ø¨",
+    "options": null
+  },
+  {
+    "id": 75,
+    "game_level_id": 26,
+    "question_text": "UP",
+    "answer_text": "UP",
+    "context_ar": "ÙÙˆÙ‚",
+    "options": null
+  },
+  {
+    "id": 76,
+    "game_level_id": 27,
+    "question_text": "WATER",
+    "answer_text": "WATER",
+    "context_ar": "Ù…Ø§Ø¡",
+    "options": null
+  },
+  {
+    "id": 77,
+    "game_level_id": 27,
+    "question_text": "ROAD",
+    "answer_text": "ROAD",
+    "context_ar": "Ø·Ø±ÙŠÙ‚",
+    "options": null
+  },
+  {
+    "id": 78,
+    "game_level_id": 27,
+    "question_text": "CITY",
+    "answer_text": "CITY",
+    "context_ar": "Ù…Ø¯ÙŠÙ†Ø©",
+    "options": null
+  },
+  {
+    "id": 79,
+    "game_level_id": 27,
+    "question_text": "WIND",
+    "answer_text": "WIND",
+    "context_ar": "Ø±ÙŠØ§Ø­",
+    "options": null
+  },
+  {
+    "id": 80,
+    "game_level_id": 27,
+    "question_text": "FIRE",
+    "answer_text": "FIRE",
+    "context_ar": "Ù†Ø§Ø±",
+    "options": null
+  },
+  {
+    "id": 81,
+    "game_level_id": 28,
+    "question_text": "HOUR",
+    "answer_text": "HOUR",
+    "context_ar": "Ø³Ø§Ø¹Ø©",
+    "options": null
+  },
+  {
+    "id": 82,
+    "game_level_id": 28,
+    "question_text": "MINUTE",
+    "answer_text": "MINUTE",
+    "context_ar": "Ø¯Ù‚ÙŠÙ‚Ø©",
+    "options": null
+  },
+  {
+    "id": 83,
+    "game_level_id": 28,
+    "question_text": "CAR",
+    "answer_text": "CAR",
+    "context_ar": "Ø³ÙŠØ§Ø±Ø©",
+    "options": null
+  },
+  {
+    "id": 84,
+    "game_level_id": 28,
+    "question_text": "CLOUD",
+    "answer_text": "CLOUD",
+    "context_ar": "Ø³Ø­Ø§Ø¨Ø©",
+    "options": null
+  },
+  {
+    "id": 85,
+    "game_level_id": 28,
+    "question_text": "GIRL",
+    "answer_text": "GIRL",
+    "context_ar": "Ø¨Ù†Øª",
+    "options": null
+  },
+  {
+    "id": 86,
+    "game_level_id": 29,
+    "question_text": "WIND",
+    "answer_text": "WIND",
+    "context_ar": "Ø±ÙŠØ§Ø­",
+    "options": null
+  },
+  {
+    "id": 87,
+    "game_level_id": 29,
+    "question_text": "HOUR",
+    "answer_text": "HOUR",
+    "context_ar": "Ø³Ø§Ø¹Ø©",
+    "options": null
+  },
+  {
+    "id": 88,
+    "game_level_id": 29,
+    "question_text": "BIRD",
+    "answer_text": "BIRD",
+    "context_ar": "Ø·Ø§Ø¦Ø±",
+    "options": null
+  },
+  {
+    "id": 89,
+    "game_level_id": 29,
+    "question_text": "GIRL",
+    "answer_text": "GIRL",
+    "context_ar": "Ø¨Ù†Øª",
+    "options": null
+  },
+  {
+    "id": 90,
+    "game_level_id": 29,
+    "question_text": "BACK",
+    "answer_text": "BACK",
+    "context_ar": "Ø®Ù„Ù",
+    "options": null
+  },
+  {
+    "id": 91,
+    "game_level_id": 30,
+    "question_text": "SECOND",
+    "answer_text": "SECOND",
+    "context_ar": "Ø«Ø§Ù†ÙŠØ©",
+    "options": null
+  },
+  {
+    "id": 92,
+    "game_level_id": 30,
+    "question_text": "RIVER",
+    "answer_text": "RIVER",
+    "context_ar": "Ù†Ù‡Ø±",
+    "options": null
+  },
+  {
+    "id": 93,
+    "game_level_id": 30,
+    "question_text": "TEACHER",
+    "answer_text": "TEACHER",
+    "context_ar": "Ù…Ø¹Ù„Ù…",
+    "options": null
+  },
+  {
+    "id": 94,
+    "game_level_id": 30,
+    "question_text": "OCEAN",
+    "answer_text": "OCEAN",
+    "context_ar": "Ù…Ø­ÙŠØ·",
+    "options": null
+  },
+  {
+    "id": 95,
+    "game_level_id": 30,
+    "question_text": "BACK",
+    "answer_text": "BACK",
+    "context_ar": "Ø®Ù„Ù",
+    "options": null
+  },
+  {
+    "id": 96,
+    "game_level_id": 31,
+    "question_text": "FIRE",
+    "answer_text": "FIRE",
+    "context_ar": "Ù†Ø§Ø±",
+    "options": null
+  },
+  {
+    "id": 97,
+    "game_level_id": 31,
+    "question_text": "OCEAN",
+    "answer_text": "OCEAN",
+    "context_ar": "Ù…Ø­ÙŠØ·",
+    "options": null
+  },
+  {
+    "id": 98,
+    "game_level_id": 31,
+    "question_text": "BOY",
+    "answer_text": "BOY",
+    "context_ar": "ÙˆÙ„Ø¯",
+    "options": null
+  },
+  {
+    "id": 99,
+    "game_level_id": 31,
+    "question_text": "MOUNTAIN",
+    "answer_text": "MOUNTAIN",
+    "context_ar": "Ø¬Ø¨Ù„",
+    "options": null
+  },
+  {
+    "id": 100,
+    "game_level_id": 31,
+    "question_text": "CAR",
+    "answer_text": "CAR",
+    "context_ar": "Ø³ÙŠØ§Ø±Ø©",
+    "options": null
+  },
+  {
+    "id": 101,
+    "game_level_id": 32,
+    "question_text": "TIME",
+    "answer_text": "TIME",
+    "context_ar": "ÙˆÙ‚Øª",
+    "options": null
+  },
+  {
+    "id": 102,
+    "game_level_id": 32,
+    "question_text": "DOG",
+    "answer_text": "DOG",
+    "context_ar": "ÙƒÙ„Ø¨",
+    "options": null
+  },
+  {
+    "id": 103,
+    "game_level_id": 32,
+    "question_text": "APPLE",
+    "answer_text": "APPLE",
+    "context_ar": "ØªÙØ§Ø­Ø©",
+    "options": null
+  },
+  {
+    "id": 104,
+    "game_level_id": 32,
+    "question_text": "WOMAN",
+    "answer_text": "WOMAN",
+    "context_ar": "Ø§Ù…Ø±Ø£Ø©",
+    "options": null
+  },
+  {
+    "id": 105,
+    "game_level_id": 32,
+    "question_text": "HOUSE",
+    "answer_text": "HOUSE",
+    "context_ar": "Ù…Ù†Ø²Ù„",
+    "options": null
+  },
+  {
+    "id": 106,
+    "game_level_id": 33,
+    "question_text": "DARK",
+    "answer_text": "DARK",
+    "context_ar": "Ø¸Ù„Ø§Ù…",
+    "options": null
+  },
+  {
+    "id": 107,
+    "game_level_id": 33,
+    "question_text": "CAR",
+    "answer_text": "CAR",
+    "context_ar": "Ø³ÙŠØ§Ø±Ø©",
+    "options": null
+  },
+  {
+    "id": 108,
+    "game_level_id": 33,
+    "question_text": "TIME",
+    "answer_text": "TIME",
+    "context_ar": "ÙˆÙ‚Øª",
+    "options": null
+  },
+  {
+    "id": 109,
+    "game_level_id": 33,
+    "question_text": "MOUNTAIN",
+    "answer_text": "MOUNTAIN",
+    "context_ar": "Ø¬Ø¨Ù„",
+    "options": null
+  },
+  {
+    "id": 110,
+    "game_level_id": 33,
+    "question_text": "PEN",
+    "answer_text": "PEN",
+    "context_ar": "Ù‚Ù„Ù…",
+    "options": null
+  },
+  {
+    "id": 111,
+    "game_level_id": 34,
+    "question_text": "DOG",
+    "answer_text": "DOG",
+    "context_ar": "ÙƒÙ„Ø¨",
+    "options": null
+  },
+  {
+    "id": 112,
+    "game_level_id": 34,
+    "question_text": "PEN",
+    "answer_text": "PEN",
+    "context_ar": "Ù‚Ù„Ù…",
+    "options": null
+  },
+  {
+    "id": 113,
+    "game_level_id": 34,
+    "question_text": "NIGHT",
+    "answer_text": "NIGHT",
+    "context_ar": "Ù„ÙŠÙ„",
+    "options": null
+  },
+  {
+    "id": 114,
+    "game_level_id": 34,
+    "question_text": "STUDENT",
+    "answer_text": "STUDENT",
+    "context_ar": "Ø·Ø§Ù„Ø¨",
+    "options": null
+  },
+  {
+    "id": 115,
+    "game_level_id": 34,
+    "question_text": "DARK",
+    "answer_text": "DARK",
+    "context_ar": "Ø¸Ù„Ø§Ù…",
+    "options": null
+  },
+  {
+    "id": 116,
+    "game_level_id": 35,
+    "question_text": "PEN",
+    "answer_text": "PEN",
+    "context_ar": "Ù‚Ù„Ù…",
+    "options": null
+  },
+  {
+    "id": 117,
+    "game_level_id": 35,
+    "question_text": "DAY",
+    "answer_text": "DAY",
+    "context_ar": "ÙŠÙˆÙ…",
+    "options": null
+  },
+  {
+    "id": 118,
+    "game_level_id": 35,
+    "question_text": "FIRE",
+    "answer_text": "FIRE",
+    "context_ar": "Ù†Ø§Ø±",
+    "options": null
+  },
+  {
+    "id": 119,
+    "game_level_id": 35,
+    "question_text": "NIGHT",
+    "answer_text": "NIGHT",
+    "context_ar": "Ù„ÙŠÙ„",
+    "options": null
+  },
+  {
+    "id": 120,
+    "game_level_id": 35,
+    "question_text": "GIRL",
+    "answer_text": "GIRL",
+    "context_ar": "Ø¨Ù†Øª",
+    "options": null
+  },
+  {
+    "id": 121,
+    "game_level_id": 36,
+    "question_text": "DOWN",
+    "answer_text": "DOWN",
+    "context_ar": "ØªØ­Øª",
+    "options": null
+  },
+  {
+    "id": 122,
+    "game_level_id": 36,
+    "question_text": "PLANE",
+    "answer_text": "PLANE",
+    "context_ar": "Ø·Ø§Ø¦Ø±Ø©",
+    "options": null
+  },
+  {
+    "id": 123,
+    "game_level_id": 36,
+    "question_text": "SCHOOL",
+    "answer_text": "SCHOOL",
+    "context_ar": "Ù…Ø¯Ø±Ø³Ø©",
+    "options": null
+  },
+  {
+    "id": 124,
+    "game_level_id": 36,
+    "question_text": "SCHOOL",
+    "answer_text": "SCHOOL",
+    "context_ar": "Ù…Ø¯Ø±Ø³Ø©",
+    "options": null
+  },
+  {
+    "id": 125,
+    "game_level_id": 36,
+    "question_text": "DARK",
+    "answer_text": "DARK",
+    "context_ar": "Ø¸Ù„Ø§Ù…",
+    "options": null
+  },
+  {
+    "id": 126,
+    "game_level_id": 37,
+    "question_text": "FIRE",
+    "answer_text": "FIRE",
+    "context_ar": "Ù†Ø§Ø±",
+    "options": null
+  },
+  {
+    "id": 127,
+    "game_level_id": 37,
+    "question_text": "WATER",
+    "answer_text": "WATER",
+    "context_ar": "Ù…Ø§Ø¡",
+    "options": null
+  },
+  {
+    "id": 128,
+    "game_level_id": 37,
+    "question_text": "DAY",
+    "answer_text": "DAY",
+    "context_ar": "ÙŠÙˆÙ…",
+    "options": null
+  },
+  {
+    "id": 129,
+    "game_level_id": 37,
+    "question_text": "ROAD",
+    "answer_text": "ROAD",
+    "context_ar": "Ø·Ø±ÙŠÙ‚",
+    "options": null
+  },
+  {
+    "id": 130,
+    "game_level_id": 37,
+    "question_text": "EARTH",
+    "answer_text": "EARTH",
+    "context_ar": "Ø£Ø±Ø¶",
+    "options": null
+  },
+  {
+    "id": 131,
+    "game_level_id": 38,
+    "question_text": "BOOK",
+    "answer_text": "BOOK",
+    "context_ar": "ÙƒØªØ§Ø¨",
+    "options": null
+  },
+  {
+    "id": 132,
+    "game_level_id": 38,
+    "question_text": "HOUR",
+    "answer_text": "HOUR",
+    "context_ar": "Ø³Ø§Ø¹Ø©",
+    "options": null
+  },
+  {
+    "id": 133,
+    "game_level_id": 38,
+    "question_text": "FIRE",
+    "answer_text": "FIRE",
+    "context_ar": "Ù†Ø§Ø±",
+    "options": null
+  },
+  {
+    "id": 134,
+    "game_level_id": 38,
+    "question_text": "SEA",
+    "answer_text": "SEA",
+    "context_ar": "Ø¨Ø­Ø±",
+    "options": null
+  },
+  {
+    "id": 135,
+    "game_level_id": 38,
+    "question_text": "CLOUD",
+    "answer_text": "CLOUD",
+    "context_ar": "Ø³Ø­Ø§Ø¨Ø©",
+    "options": null
+  },
+  {
+    "id": 136,
+    "game_level_id": 39,
+    "question_text": "TEACHER",
+    "answer_text": "TEACHER",
+    "context_ar": "Ù…Ø¹Ù„Ù…",
+    "options": null
+  },
+  {
+    "id": 137,
+    "game_level_id": 39,
+    "question_text": "SKY",
+    "answer_text": "SKY",
+    "context_ar": "Ø³Ù…Ø§Ø¡",
+    "options": null
+  },
+  {
+    "id": 138,
+    "game_level_id": 39,
+    "question_text": "SUN",
+    "answer_text": "SUN",
+    "context_ar": "Ø´Ù…Ø³",
+    "options": null
+  },
+  {
+    "id": 139,
+    "game_level_id": 39,
+    "question_text": "TEACHER",
+    "answer_text": "TEACHER",
+    "context_ar": "Ù…Ø¹Ù„Ù…",
+    "options": null
+  },
+  {
+    "id": 140,
+    "game_level_id": 39,
+    "question_text": "OCEAN",
+    "answer_text": "OCEAN",
+    "context_ar": "Ù…Ø­ÙŠØ·",
+    "options": null
+  },
+  {
+    "id": 141,
+    "game_level_id": 40,
+    "question_text": "SNOW",
+    "answer_text": "SNOW",
+    "context_ar": "Ø«Ù„Ø¬",
+    "options": null
+  },
+  {
+    "id": 142,
+    "game_level_id": 40,
+    "question_text": "HOUSE",
+    "answer_text": "HOUSE",
+    "context_ar": "Ù…Ù†Ø²Ù„",
+    "options": null
+  },
+  {
+    "id": 143,
+    "game_level_id": 40,
+    "question_text": "TREE",
+    "answer_text": "TREE",
+    "context_ar": "Ø´Ø¬Ø±Ø©",
+    "options": null
+  },
+  {
+    "id": 144,
+    "game_level_id": 40,
+    "question_text": "UP",
+    "answer_text": "UP",
+    "context_ar": "ÙÙˆÙ‚",
+    "options": null
+  },
+  {
+    "id": 145,
+    "game_level_id": 40,
+    "question_text": "PLANET",
+    "answer_text": "PLANET",
+    "context_ar": "ÙƒÙˆÙƒØ¨",
+    "options": null
+  },
+  {
+    "id": 146,
+    "game_level_id": 41,
+    "question_text": "BACK",
+    "answer_text": "BACK",
+    "context_ar": "Ø®Ù„Ù",
+    "options": null
+  },
+  {
+    "id": 147,
+    "game_level_id": 41,
+    "question_text": "SCHOOL",
+    "answer_text": "SCHOOL",
+    "context_ar": "Ù…Ø¯Ø±Ø³Ø©",
+    "options": null
+  },
+  {
+    "id": 148,
+    "game_level_id": 41,
+    "question_text": "BACK",
+    "answer_text": "BACK",
+    "context_ar": "Ø®Ù„Ù",
+    "options": null
+  },
+  {
+    "id": 149,
+    "game_level_id": 41,
+    "question_text": "WIND",
+    "answer_text": "WIND",
+    "context_ar": "Ø±ÙŠØ§Ø­",
+    "options": null
+  },
+  {
+    "id": 150,
+    "game_level_id": 41,
+    "question_text": "HOUSE",
+    "answer_text": "HOUSE",
+    "context_ar": "Ù…Ù†Ø²Ù„",
+    "options": null
+  },
+  {
+    "id": 151,
+    "game_level_id": 42,
+    "question_text": "BOY",
+    "answer_text": "BOY",
+    "context_ar": "ÙˆÙ„Ø¯",
+    "options": null
+  },
+  {
+    "id": 152,
+    "game_level_id": 42,
+    "question_text": "CLOUD",
+    "answer_text": "CLOUD",
+    "context_ar": "Ø³Ø­Ø§Ø¨Ø©",
+    "options": null
+  },
+  {
+    "id": 153,
+    "game_level_id": 42,
+    "question_text": "RIVER",
+    "answer_text": "RIVER",
+    "context_ar": "Ù†Ù‡Ø±",
+    "options": null
+  },
+  {
+    "id": 154,
+    "game_level_id": 42,
+    "question_text": "SNOW",
+    "answer_text": "SNOW",
+    "context_ar": "Ø«Ù„Ø¬",
+    "options": null
+  },
+  {
+    "id": 155,
+    "game_level_id": 42,
+    "question_text": "BOY",
+    "answer_text": "BOY",
+    "context_ar": "ÙˆÙ„Ø¯",
+    "options": null
+  },
+  {
+    "id": 156,
+    "game_level_id": 43,
+    "question_text": "WOMAN",
+    "answer_text": "WOMAN",
+    "context_ar": "Ø§Ù…Ø±Ø£Ø©",
+    "options": null
+  },
+  {
+    "id": 157,
+    "game_level_id": 43,
+    "question_text": "DAY",
+    "answer_text": "DAY",
+    "context_ar": "ÙŠÙˆÙ…",
+    "options": null
+  },
+  {
+    "id": 158,
+    "game_level_id": 43,
+    "question_text": "EARTH",
+    "answer_text": "EARTH",
+    "context_ar": "Ø£Ø±Ø¶",
+    "options": null
+  },
+  {
+    "id": 159,
+    "game_level_id": 43,
+    "question_text": "BOOK",
+    "answer_text": "BOOK",
+    "context_ar": "ÙƒØªØ§Ø¨",
+    "options": null
+  },
+  {
+    "id": 160,
+    "game_level_id": 43,
+    "question_text": "CITY",
+    "answer_text": "CITY",
+    "context_ar": "Ù…Ø¯ÙŠÙ†Ø©",
+    "options": null
+  },
+  {
+    "id": 161,
+    "game_level_id": 44,
+    "question_text": "APPLE",
+    "answer_text": "APPLE",
+    "context_ar": "ØªÙØ§Ø­Ø©",
+    "options": null
+  },
+  {
+    "id": 162,
+    "game_level_id": 44,
+    "question_text": "MORNING",
+    "answer_text": "MORNING",
+    "context_ar": "ØµØ¨Ø§Ø­",
+    "options": null
+  },
+  {
+    "id": 163,
+    "game_level_id": 44,
+    "question_text": "CAT",
+    "answer_text": "CAT",
+    "context_ar": "Ù‚Ø·Ø©",
+    "options": null
+  },
+  {
+    "id": 164,
+    "game_level_id": 44,
+    "question_text": "FRONT",
+    "answer_text": "FRONT",
+    "context_ar": "Ø£Ù…Ø§Ù…",
+    "options": null
+  },
+  {
+    "id": 165,
+    "game_level_id": 44,
+    "question_text": "BANANA",
+    "answer_text": "BANANA",
+    "context_ar": "Ù…ÙˆØ²",
+    "options": null
+  },
+  {
+    "id": 166,
+    "game_level_id": 45,
+    "question_text": "CAR",
+    "answer_text": "CAR",
+    "context_ar": "Ø³ÙŠØ§Ø±Ø©",
+    "options": null
+  },
+  {
+    "id": 167,
+    "game_level_id": 45,
+    "question_text": "STREET",
+    "answer_text": "STREET",
+    "context_ar": "Ø´Ø§Ø±Ø¹",
+    "options": null
+  },
+  {
+    "id": 168,
+    "game_level_id": 45,
+    "question_text": "MOUNTAIN",
+    "answer_text": "MOUNTAIN",
+    "context_ar": "Ø¬Ø¨Ù„",
+    "options": null
+  },
+  {
+    "id": 169,
+    "game_level_id": 45,
+    "question_text": "DOG",
+    "answer_text": "DOG",
+    "context_ar": "ÙƒÙ„Ø¨",
+    "options": null
+  },
+  {
+    "id": 170,
+    "game_level_id": 45,
+    "question_text": "ROAD",
+    "answer_text": "ROAD",
+    "context_ar": "Ø·Ø±ÙŠÙ‚",
+    "options": null
+  },
+  {
+    "id": 171,
+    "game_level_id": 46,
+    "question_text": "SNOW",
+    "answer_text": "SNOW",
+    "context_ar": "Ø«Ù„Ø¬",
+    "options": null
+  },
+  {
+    "id": 172,
+    "game_level_id": 46,
+    "question_text": "CLOUD",
+    "answer_text": "CLOUD",
+    "context_ar": "Ø³Ø­Ø§Ø¨Ø©",
+    "options": null
+  },
+  {
+    "id": 173,
+    "game_level_id": 46,
+    "question_text": "EARTH",
+    "answer_text": "EARTH",
+    "context_ar": "Ø£Ø±Ø¶",
+    "options": null
+  },
+  {
+    "id": 174,
+    "game_level_id": 46,
+    "question_text": "DOG",
+    "answer_text": "DOG",
+    "context_ar": "ÙƒÙ„Ø¨",
+    "options": null
+  },
+  {
+    "id": 175,
+    "game_level_id": 46,
+    "question_text": "SUN",
+    "answer_text": "SUN",
+    "context_ar": "Ø´Ù…Ø³",
+    "options": null
+  },
+  {
+    "id": 176,
+    "game_level_id": 47,
+    "question_text": "FIRE",
+    "answer_text": "FIRE",
+    "context_ar": "Ù†Ø§Ø±",
+    "options": null
+  },
+  {
+    "id": 177,
+    "game_level_id": 47,
+    "question_text": "FIRE",
+    "answer_text": "FIRE",
+    "context_ar": "Ù†Ø§Ø±",
+    "options": null
+  },
+  {
+    "id": 178,
+    "game_level_id": 47,
+    "question_text": "WEEK",
+    "answer_text": "WEEK",
+    "context_ar": "Ø£Ø³Ø¨ÙˆØ¹",
+    "options": null
+  },
+  {
+    "id": 179,
+    "game_level_id": 47,
+    "question_text": "FIRE",
+    "answer_text": "FIRE",
+    "context_ar": "Ù†Ø§Ø±",
+    "options": null
+  },
+  {
+    "id": 180,
+    "game_level_id": 47,
+    "question_text": "SECOND",
+    "answer_text": "SECOND",
+    "context_ar": "Ø«Ø§Ù†ÙŠØ©",
+    "options": null
+  }
+]

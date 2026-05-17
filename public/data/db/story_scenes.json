@@ -1,0 +1,434 @@
+[
+  {
+    "id": 101,
+    "story_id": 16,
+    "character_name": "Sarah",
+    "content_en": "Hello",
+    "content_ar": "مرحباً",
+    "order_index": 0
+  },
+  {
+    "id": 102,
+    "story_id": 16,
+    "character_name": "Tom",
+    "content_en": "Hi",
+    "content_ar": "أهلاً",
+    "order_index": 1
+  },
+  {
+    "id": 103,
+    "story_id": 16,
+    "character_name": "Sarah",
+    "content_en": "How are you",
+    "content_ar": "كيف حالك؟",
+    "order_index": 2
+  },
+  {
+    "id": 104,
+    "story_id": 16,
+    "character_name": "Tom",
+    "content_en": "I am fine thank you",
+    "content_ar": "أنا بخير، شكراً لك",
+    "order_index": 3
+  },
+  {
+    "id": 105,
+    "story_id": 17,
+    "character_name": "Memo",
+    "content_en": "What is your name",
+    "content_ar": "ما اسمك؟",
+    "order_index": 0
+  },
+  {
+    "id": 106,
+    "story_id": 17,
+    "character_name": "Emma",
+    "content_en": "My name is Emma",
+    "content_ar": "اسمي إيما",
+    "order_index": 1
+  },
+  {
+    "id": 107,
+    "story_id": 17,
+    "character_name": "Emma",
+    "content_en": "What is your name",
+    "content_ar": "ما اسمك؟",
+    "order_index": 2
+  },
+  {
+    "id": 108,
+    "story_id": 17,
+    "character_name": "Memo",
+    "content_en": "I am Memo",
+    "content_ar": "أنا ميمو",
+    "order_index": 3
+  },
+  {
+    "id": 109,
+    "story_id": 18,
+    "character_name": "Teacher",
+    "content_en": "What is your favorite color",
+    "content_ar": "ما لونك المفضل؟",
+    "order_index": 0
+  },
+  {
+    "id": 110,
+    "story_id": 18,
+    "character_name": "Student",
+    "content_en": "My favorite color is blue",
+    "content_ar": "لوني المفضل هو الأزرق",
+    "order_index": 1
+  },
+  {
+    "id": 111,
+    "story_id": 18,
+    "character_name": "Teacher",
+    "content_en": "I like red",
+    "content_ar": "أنا أحب الأحمر",
+    "order_index": 2
+  },
+  {
+    "id": 112,
+    "story_id": 18,
+    "character_name": "Student",
+    "content_en": "Red is nice",
+    "content_ar": "الأحمر جميل",
+    "order_index": 3
+  },
+  {
+    "id": 113,
+    "story_id": 19,
+    "character_name": "Friend",
+    "content_en": "Where do you live",
+    "content_ar": "أين تسكن؟",
+    "order_index": 0
+  },
+  {
+    "id": 114,
+    "story_id": 19,
+    "character_name": "You",
+    "content_en": "I live in London",
+    "content_ar": "أنا أسكن في لندن",
+    "order_index": 1
+  },
+  {
+    "id": 115,
+    "story_id": 19,
+    "character_name": "Friend",
+    "content_en": "London is a big city",
+    "content_ar": "لندن مدينة كبيرة",
+    "order_index": 2
+  },
+  {
+    "id": 116,
+    "story_id": 19,
+    "character_name": "You",
+    "content_en": "Yes it is very big",
+    "content_ar": "نعم، إنها كبيرة جداً",
+    "order_index": 3
+  },
+  {
+    "id": 117,
+    "story_id": 20,
+    "character_name": "Mom",
+    "content_en": "What do you like to do",
+    "content_ar": "ماذا تحب أن تفعل؟",
+    "order_index": 0
+  },
+  {
+    "id": 118,
+    "story_id": 20,
+    "character_name": "Child",
+    "content_en": "I like to play football",
+    "content_ar": "أحب أن ألعب كرة القدم",
+    "order_index": 1
+  },
+  {
+    "id": 119,
+    "story_id": 20,
+    "character_name": "Mom",
+    "content_en": "Do you like reading",
+    "content_ar": "هل تحب القراءة؟",
+    "order_index": 2
+  },
+  {
+    "id": 120,
+    "story_id": 20,
+    "character_name": "Child",
+    "content_en": "Yes I like reading books",
+    "content_ar": "نعم، أحب قراءة الكتب",
+    "order_index": 3
+  },
+  {
+    "id": 1,
+    "story_id": 1,
+    "character_name": "Narrator",
+    "content_en": "Memo has finally arrived in London.",
+    "content_ar": "وصل ميمو أخيراً إلى لندن.",
+    "order_index": 0
+  },
+  {
+    "id": 2,
+    "story_id": 1,
+    "character_name": "Memo",
+    "content_en": "I am so tired. It was a long flight.",
+    "content_ar": "أنا متعب جداً. كانت رحلة طويلة.",
+    "order_index": 1
+  },
+  {
+    "id": 3,
+    "story_id": 1,
+    "character_name": "Officer",
+    "content_en": "Next, please. Hand me your passport.",
+    "content_ar": "التالي من فضلك. أعطني جواز سفرك.",
+    "order_index": 2
+  },
+  {
+    "id": 4,
+    "story_id": 1,
+    "character_name": "Memo",
+    "content_en": "Here is my passport. Good morning.",
+    "content_ar": "تفضل جواز سفري. صباح الخير.",
+    "order_index": 3
+  },
+  {
+    "id": 5,
+    "story_id": 1,
+    "character_name": "Officer",
+    "content_en": "What is the purpose of your visit?",
+    "content_ar": "ما هو الغرض من زيارتك؟",
+    "order_index": 4
+  },
+  {
+    "id": 6,
+    "story_id": 1,
+    "character_name": "Memo",
+    "content_en": "I am here for tourism.",
+    "content_ar": "أنا هنا للسياحة.",
+    "order_index": 5
+  },
+  {
+    "id": 7,
+    "story_id": 1,
+    "character_name": "Officer",
+    "content_en": "How long will you stay in the UK?",
+    "content_ar": "كم من الوقت ستبقى في المملكة المتحدة؟",
+    "order_index": 6
+  },
+  {
+    "id": 8,
+    "story_id": 1,
+    "character_name": "Memo",
+    "content_en": "I will stay for two weeks.",
+    "content_ar": "أأنا سأبقى لمدة أسبوعين.",
+    "order_index": 7
+  },
+  {
+    "id": 9,
+    "story_id": 1,
+    "character_name": "Officer",
+    "content_en": "Where will you be staying?",
+    "content_ar": "أين ستقيم؟",
+    "order_index": 8
+  },
+  {
+    "id": 10,
+    "story_id": 1,
+    "character_name": "Memo",
+    "content_en": "At a hotel in central London.",
+    "content_ar": "في فندق في وسط لندن.",
+    "order_index": 9
+  },
+  {
+    "id": 11,
+    "story_id": 1,
+    "character_name": "Officer",
+    "content_en": "Do you have a return ticket?",
+    "content_ar": "هل لديك تذكرة عودة؟",
+    "order_index": 10
+  },
+  {
+    "id": 12,
+    "story_id": 1,
+    "character_name": "Memo",
+    "content_en": "Yes, here it is.",
+    "content_ar": "نعم، تفضل.",
+    "order_index": 11
+  },
+  {
+    "id": 13,
+    "story_id": 1,
+    "character_name": "Officer",
+    "content_en": "Any items to declare?",
+    "content_ar": "هل لديك أي أغراض للتصريح عنها؟",
+    "order_index": 12
+  },
+  {
+    "id": 14,
+    "story_id": 1,
+    "character_name": "Memo",
+    "content_en": "No, just my personal items.",
+    "content_ar": "لا، فقط أغراضي الشخصية.",
+    "order_index": 13
+  },
+  {
+    "id": 15,
+    "story_id": 1,
+    "character_name": "Officer",
+    "content_en": "Welcome to London, enjoy your stay.",
+    "content_ar": "مرحباً بك في لندن، استمتع بإقامتك.",
+    "order_index": 14
+  },
+  {
+    "id": 16,
+    "story_id": 4,
+    "character_name": "Narrator",
+    "content_en": "Memo entered the old library, looking for \"The Secret History\".",
+    "content_ar": "دخل ميمو المكتبة القديمة، باحثاً عن \"التاريخ السري\".",
+    "order_index": 0
+  },
+  {
+    "id": 17,
+    "story_id": 4,
+    "character_name": "Librarian",
+    "content_en": "The restricted section is closed, young man.",
+    "content_ar": "القسم المحظور مغلق يا شاب.",
+    "order_index": 1
+  },
+  {
+    "id": 18,
+    "story_id": 4,
+    "character_name": "Memo",
+    "content_en": "Please, I am a researcher.",
+    "content_ar": "أرجوك، أنا باحث.",
+    "order_index": 2
+  },
+  {
+    "id": 19,
+    "story_id": 4,
+    "character_name": "Librarian",
+    "content_en": "Show me your library card first.",
+    "content_ar": "أرني بطاقة المكتبة الخاصة بك أولاً.",
+    "order_index": 3
+  },
+  {
+    "id": 20,
+    "story_id": 4,
+    "character_name": "Memo",
+    "content_en": "Here it is.",
+    "content_ar": "ها هي.",
+    "order_index": 4
+  },
+  {
+    "id": 21,
+    "story_id": 4,
+    "character_name": "Librarian",
+    "content_en": "Alright, but be quiet and careful.",
+    "content_ar": "حسناً، لكن كن هادئاً وحذراً.",
+    "order_index": 5
+  },
+  {
+    "id": 22,
+    "story_id": 4,
+    "character_name": "Narrator",
+    "content_en": "Inside, he found a book glowing in the dark.",
+    "content_ar": "في الداخل، وجد كتاباً يتوهج في الظلام.",
+    "order_index": 6
+  },
+  {
+    "id": 23,
+    "story_id": 2,
+    "character_name": "Waiter",
+    "content_en": "Good evening, how many people?",
+    "content_ar": "مساء الخير، كم عدد الأشخاص؟",
+    "order_index": 0
+  },
+  {
+    "id": 24,
+    "story_id": 2,
+    "character_name": "Memo",
+    "content_en": "Table for two, please.",
+    "content_ar": "طاولة لشخصين من فضلك.",
+    "order_index": 1
+  },
+  {
+    "id": 25,
+    "story_id": 2,
+    "character_name": "Waiter",
+    "content_en": "Would you like to see the menu?",
+    "content_ar": "هل تودون رؤية قائمة الطعام؟",
+    "order_index": 2
+  },
+  {
+    "id": 26,
+    "story_id": 2,
+    "character_name": "Memo",
+    "content_en": "Yes. What is your special today?",
+    "content_ar": "نعم. ما هو طبق اليوم المميز؟",
+    "order_index": 3
+  },
+  {
+    "id": 27,
+    "story_id": 2,
+    "character_name": "Waiter",
+    "content_en": "Today we have grilled salmon.",
+    "content_ar": "لدينا اليوم سمك السلمون المشوي.",
+    "order_index": 4
+  },
+  {
+    "id": 28,
+    "story_id": 2,
+    "character_name": "Memo",
+    "content_en": "I will take that, thank you.",
+    "content_ar": "سآخذ ذلك، شكراً لك.",
+    "order_index": 5
+  },
+  {
+    "id": 29,
+    "story_id": 3,
+    "character_name": "Sarah",
+    "content_en": "Hi, I am Sarah. This is my first day.",
+    "content_ar": "مرحباً، أنا سارة. هذا هو يومي الأول.",
+    "order_index": 0
+  },
+  {
+    "id": 30,
+    "story_id": 3,
+    "character_name": "Manager",
+    "content_en": "Welcome, Sarah! We are excited to have you.",
+    "content_ar": "مرحباً بك سارة! نحن متحمسون لانضمامك.",
+    "order_index": 1
+  },
+  {
+    "id": 31,
+    "story_id": 3,
+    "character_name": "Sarah",
+    "content_en": "Could you show me my desk?",
+    "content_ar": "هل يمكنك إرشادي إلى مكتبي؟",
+    "order_index": 2
+  },
+  {
+    "id": 32,
+    "story_id": 3,
+    "character_name": "Manager",
+    "content_en": "Of course, follow me. Your computer is ready.",
+    "content_ar": "بالطبع، اتبعيني. حاسوبك جاهز.",
+    "order_index": 3
+  },
+  {
+    "id": 33,
+    "story_id": 3,
+    "character_name": "Sarah",
+    "content_en": "Thank you! When is the morning meeting?",
+    "content_ar": "شكراً لك! متى موعد الاجتماع الصباحي؟",
+    "order_index": 4
+  },
+  {
+    "id": 34,
+    "story_id": 3,
+    "character_name": "Manager",
+    "content_en": "It starts at 10 AM in the main conference room.",
+    "content_ar": "يبدأ في العاشرة صباحاً في قاعة الاجتماعات الرئيسية.",
+    "order_index": 5
+  }
+]

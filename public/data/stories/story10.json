@@ -1,0 +1,97 @@
+{
+  "id": 10,
+  "title": "في المكتبة",
+  "description": "زيارة المكتبة للبحث عن كتب جديدة ومثيرة.",
+  "difficulty": "easy",
+  "thumbnail": "library.png",
+  "xp_reward": 140,
+  "scenes": [
+    {
+      "name": "Narrator",
+      "en": "Memo goes to the library. He loves reading books.",
+      "ar": "ميمو يذهب إلى المكتبة. يحب قراءة الكتب."
+    },
+    {
+      "name": "Librarian",
+      "en": "Good afternoon! Can I help you?",
+      "ar": "مساء الخير! هل يمكنني مساعدتك؟"
+    },
+    {
+      "name": "Memo",
+      "en": "Yes, please! I am looking for adventure books.",
+      "ar": "نعم، من فضلك! أبحث عن كتب المغامرات."
+    },
+    {
+      "name": "Librarian",
+      "en": "Adventure books are on the second floor.",
+      "ar": "كتب المغامرات في الطابق الثاني."
+    },
+    {
+      "name": "Memo",
+      "en": "Thank you! Can I borrow three books?",
+      "ar": "شكراً! هل يمكنني استعارة ثلاثة كتب؟"
+    },
+    {
+      "name": "Librarian",
+      "en": "Yes, you can! Do you have a library card?",
+      "ar": "نعم، يمكنك! هل لديك بطاقة مكتبة؟"
+    },
+    {
+      "name": "Memo",
+      "en": "Yes, I do! Here it is.",
+      "ar": "نعم، لدي! تفضل."
+    },
+    {
+      "name": "Librarian",
+      "en": "Perfect! You can keep the books for two weeks.",
+      "ar": "ممتاز! يمكنك الاحتفاظ بالكتب لمدة أسبوعين."
+    },
+    {
+      "name": "Memo",
+      "en": "Thank you very much! Have a nice day!",
+      "ar": "شكراً جزيلاً! أتمنى لك يوماً سعيداً!"
+    }
+  ],
+  "questions": [
+    {
+      "scene_idx": 2,
+      "type": "multiple_choice",
+      "q": "What books is Memo looking for?",
+      "options": [
+        "Adventure books",
+        "Science books",
+        "History books"
+      ],
+      "a": "Adventure books"
+    },
+    {
+      "scene_idx": 3,
+      "type": "typing",
+      "q": "The books are on the ___ floor.|||الكتب في الطابق الثاني.",
+      "a": "second"
+    },
+    {
+      "scene_idx": 7,
+      "type": "dictation",
+      "a": "You can keep the books for two weeks"
+    }
+  ],
+  "finalQuestions": [
+    {
+      "type": "multiple_choice",
+      "q": "How many books can Memo borrow?",
+      "options": [
+        "Three",
+        "Two",
+        "Five"
+      ],
+      "a": "Three"
+    },
+    {
+      "type": "typing",
+      "q": "Do you have a library ___?|||هل لديك بطاقة مكتبة؟",
+      "a": "card"
+    }
+  ]
+}
+

@@ -1,0 +1,110 @@
+[
+  {
+    "id": 1,
+    "title": "التعارف",
+    "titleEn": "Meeting Someone",
+    "icon": "handshake",
+    "color": "blue",
+    "difficulty": "easy",
+    "file": "situation1.json"
+  },
+  {
+    "id": 2,
+    "title": "في السوق",
+    "titleEn": "At the Market",
+    "icon": "shopping",
+    "color": "green",
+    "difficulty": "easy",
+    "file": "situation2.json"
+  },
+  {
+    "id": 3,
+    "title": "عند الطبيب",
+    "titleEn": "At the Doctor",
+    "icon": "doctor",
+    "color": "red",
+    "difficulty": "medium",
+    "file": "situation3.json"
+  },
+  {
+    "id": 4,
+    "title": "في الفندق",
+    "titleEn": "At the Hotel",
+    "icon": "hotel",
+    "color": "purple",
+    "difficulty": "medium",
+    "file": "situation4.json"
+  },
+  {
+    "id": 5,
+    "title": "في المطعم",
+    "titleEn": "At the Restaurant",
+    "icon": "restaurant",
+    "color": "orange",
+    "difficulty": "easy",
+    "file": "situation5.json"
+  },
+  {
+    "id": 6,
+    "title": "في المطار",
+    "titleEn": "At the Airport",
+    "icon": "airport",
+    "color": "cyan",
+    "difficulty": "medium",
+    "file": "situation6.json"
+  },
+  {
+    "id": 7,
+    "title": "في المكتبة",
+    "titleEn": "At the Library",
+    "icon": "library",
+    "color": "indigo",
+    "difficulty": "medium",
+    "file": "situation7.json"
+  },
+  {
+    "id": 8,
+    "title": "في محطة القطار",
+    "titleEn": "At the Train Station",
+    "icon": "train",
+    "color": "slate",
+    "difficulty": "medium",
+    "file": "situation8.json"
+  },
+  {
+    "id": 9,
+    "title": "في الصيدلية",
+    "titleEn": "At the Pharmacy",
+    "icon": "pharmacy",
+    "color": "rose",
+    "difficulty": "medium",
+    "file": "situation9.json"
+  },
+  {
+    "id": 10,
+    "title": "في المدرسة",
+    "titleEn": "At School",
+    "icon": "school",
+    "color": "indigo",
+    "difficulty": "medium",
+    "file": "situation10.json"
+  },
+  {
+    "id": 11,
+    "title": "في المكتب",
+    "titleEn": "At the Office",
+    "icon": "office",
+    "color": "slate",
+    "difficulty": "medium",
+    "file": "situation11.json"
+  },
+  {
+    "id": 12,
+    "title": "في المقهى",
+    "titleEn": "At the Cafe",
+    "icon": "cafe",
+    "color": "amber",
+    "difficulty": "easy",
+    "file": "situation12.json"
+  }
+]

@@ -1,0 +1,17 @@
+export const kidsSchool = [
+  { name: 'School', arabic: 'مدرسة', emoji: '🏫', color: 'bg-blue-100 text-blue-600 border-blue-200' },
+  { name: 'Teacher', arabic: 'معلم', emoji: '👨‍🏫', color: 'bg-indigo-100 text-indigo-600 border-indigo-200' },
+  { name: 'Student', arabic: 'طالب', emoji: '👨‍🎓', color: 'bg-cyan-100 text-cyan-600 border-cyan-200' },
+  { name: 'Book', arabic: 'كتاب', emoji: '📚', color: 'bg-rose-100 text-rose-600 border-rose-200' },
+  { name: 'Pencil', arabic: 'قلم رصاص', emoji: '✏️', color: 'bg-yellow-100 text-yellow-600 border-yellow-200' },
+  { name: 'Pen', arabic: 'قلم حبر', emoji: '🖊️', color: 'bg-blue-100 text-blue-600 border-blue-200' },
+  { name: 'Backpack', arabic: 'حقيبة ظهر', emoji: '🎒', color: 'bg-red-100 text-red-600 border-red-200' },
+  { name: 'Notebook', arabic: 'دفتر', emoji: '📓', color: 'bg-stone-100 text-stone-600 border-stone-200' },
+  { name: 'Ruler', arabic: 'مسطرة', emoji: '📏', color: 'bg-orange-100 text-orange-600 border-orange-200' },
+  { name: 'Scissors', arabic: 'مقص', emoji: '✂️', color: 'bg-zinc-100 text-zinc-600 border-zinc-200' },
+  { name: 'Eraser', arabic: 'ممحاة', emoji: '🧽', color: 'bg-pink-100 text-pink-600 border-pink-200' },
+  { name: 'Desk', arabic: 'مكتب', emoji: '🪑', color: 'bg-amber-100 text-amber-600 border-amber-200' },
+  { name: 'Blackboard', arabic: 'سبورة', emoji: '🪧', color: 'bg-green-100 text-green-600 border-green-200' },
+  { name: 'Crayon', arabic: 'قلم تلوين', emoji: '🖍️', color: 'bg-red-100 text-red-600 border-red-200' },
+  { name: 'Glue', arabic: 'صمغ', emoji: '🧴', color: 'bg-blue-100 text-blue-600 border-blue-200' },
+];
