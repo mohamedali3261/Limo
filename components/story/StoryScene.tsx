@@ -22,7 +22,7 @@ export function StoryScene({
   // تحديد نوع الشخصية والألوان المناسبة
   const getCharacterStyle = (name: string) => {
     const isNarrator = name === 'Narrator';
-    const isMemo = name === 'Limo';
+    const isLimoHero = name === 'Limo Hero';
     
     if (isNarrator) {
       return {
@@ -35,7 +35,7 @@ export function StoryScene({
       };
     }
     
-    if (isMemo) {
+    if (isLimoHero) {
       return {
         avatar: '👦',
         bgColor: 'bg-gradient-to-br from-blue-50 to-cyan-50',
