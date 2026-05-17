@@ -53,6 +53,7 @@ export function LessonContent({ title, content, onStartQuiz, isCompleted = false
       className={`bg-white rounded-[3.5rem] border border-gray-100 shadow-2xl shadow-gray-200/50 overflow-hidden font-sans relative ${
         isStory ? 'bg-[url("https://www.transparenttextures.com/patterns/paper-fibers.png")] bg-fixed' : ''
       }`}
+      style={{ willChange: isMobile ? 'auto' : 'opacity' }}
     >
       <div className={`p-6 md:p-10 space-y-8 text-right ${isStory ? 'bg-orange-50/30' : ''}`} dir="rtl">
         <div className="space-y-6">
@@ -95,10 +96,10 @@ export function LessonContent({ title, content, onStartQuiz, isCompleted = false
                   return (
                     <div
                       key={idx}
-                      className={`rounded-[2rem] p-5 border-2 ${isMobile ? '' : 'transition-all'} flex flex-col items-center text-center group cursor-pointer relative ${
+                      className={`rounded-[2rem] p-5 border-2 flex flex-col items-center text-center cursor-pointer relative ${
                         isLocked 
                           ? 'bg-gray-100 border-gray-200 opacity-50 cursor-not-allowed' 
-                          : `bg-gray-50 border-gray-100 ${isMobile ? '' : 'hover:border-primary/30 hover:shadow-lg'}`
+                          : `bg-gray-50 border-gray-100 ${!isMobile && 'hover:border-primary/30 hover:shadow-lg transition-all'}`
                       }`}
                       onClick={() => {
                         if (isLocked) {
@@ -118,9 +119,9 @@ export function LessonContent({ title, content, onStartQuiz, isCompleted = false
                           <Lock size={32} className="text-gray-400" />
                         </div>
                       )}
-                      <div className={`text-7xl font-black mb-2 ${isMobile ? '' : 'group-hover:scale-110 transition-transform'} ${
+                      <div className={`text-7xl font-black mb-2 ${
                         isLocked ? 'text-gray-300' : 'text-primary'
-                      }`}>
+                      } ${!isMobile && 'group-hover:scale-110 transition-transform'}`}>
                         {item.letter}
                       </div>
                       <div className="text-5xl mb-3">
@@ -131,10 +132,10 @@ export function LessonContent({ title, content, onStartQuiz, isCompleted = false
                         <div className={`text-xs font-medium ${isLocked ? 'text-gray-300' : 'text-gray-500'}`} dir="rtl">{item.translation}</div>
                       </div>
                       <button 
-                        className={`mt-4 p-3 rounded-full ${isMobile ? '' : 'transition-colors'} ${
+                        className={`mt-4 p-3 rounded-full ${
                           isLocked 
                             ? 'bg-gray-200 text-gray-400' 
-                            : `bg-primary/10 text-primary ${isMobile ? '' : 'group-hover:bg-primary group-hover:text-white'}`
+                            : `bg-primary/10 text-primary ${!isMobile && 'hover:bg-primary hover:text-white transition-colors'}`
                         }`}
                         onClick={(e) => {
                           e.stopPropagation();
@@ -161,14 +162,18 @@ export function LessonContent({ title, content, onStartQuiz, isCompleted = false
                 {vocabData.map((item, idx) => (
                   <div
                     key={idx}
-                    className="bg-gray-50 rounded-[1.5rem] p-5 border-2 border-gray-100 hover:border-primary/30 hover:shadow-lg transition-all flex flex-col justify-between items-start group cursor-pointer"
+                    className={`bg-gray-50 rounded-[1.5rem] p-5 border-2 border-gray-100 flex flex-col justify-between items-start cursor-pointer ${
+                      !isMobile && 'hover:border-primary/30 hover:shadow-lg transition-all'
+                    }`}
                     onClick={() => handleSpeak(item.word)}
                   >
                     <div className="space-y-2 w-full">
                       <div className="text-2xl font-bold text-gray-900">{item.word}</div>
                       <div className="text-sm font-medium text-gray-500" dir="rtl">{item.translation}</div>
                     </div>
-                    <button className="mt-3 p-3 rounded-lg bg-white shadow-sm text-primary group-hover:bg-primary group-hover:text-white transition-colors">
+                    <button className={`mt-3 p-3 rounded-lg bg-white shadow-sm text-primary ${
+                      !isMobile && 'hover:bg-primary hover:text-white transition-colors'
+                    }`}>
                       <Volume2 size={18} />
                     </button>
                   </div>
@@ -199,11 +204,15 @@ export function LessonContent({ title, content, onStartQuiz, isCompleted = false
                     className="flex justify-start" 
                     dir="ltr"
                   >
-                    <div className="bg-gray-50 p-6 rounded-[2rem] rounded-tl-none border border-gray-100 relative group max-w-[85%] shadow-sm hover:shadow-md transition-shadow">
+                    <div className={`bg-gray-50 p-6 rounded-[2rem] rounded-tl-none border border-gray-100 relative max-w-[85%] shadow-sm ${
+                      !isMobile && 'hover:shadow-md transition-shadow'
+                    }`}>
                        <span className="text-xl font-bold text-gray-900 leading-relaxed">{text}</span>
                        <button 
                          onClick={() => handleSpeak(text)}
-                         className="ml-4 p-2 bg-white text-primary rounded-xl shadow-sm hover:scale-110 transition-transform"
+                         className={`ml-4 p-2 bg-white text-primary rounded-xl shadow-sm ${
+                           !isMobile && 'hover:scale-110 transition-transform'
+                         }`}
                        >
                          <Volume2 size={18} />
                        </button>
@@ -224,13 +233,17 @@ export function LessonContent({ title, content, onStartQuiz, isCompleted = false
               if (isEnglish) {
                 const cleanText = line.replace(/^- /, '').trim();
                 return (
-                  <div key={idx} className="flex items-center justify-end gap-3 group">
-                    <span className="text-xl text-gray-800 font-bold bg-gray-50 px-4 py-2 rounded-xl group-hover:bg-primary/5 transition-colors" dir="ltr">
+                  <div key={idx} className="flex items-center justify-end gap-3">
+                    <span className={`text-xl text-gray-800 font-bold bg-gray-50 px-4 py-2 rounded-xl ${
+                      !isMobile && 'hover:bg-primary/5 transition-colors'
+                    }`} dir="ltr">
                       {line}
                     </span>
                     <button 
                       onClick={() => handleSpeak(cleanText)}
-                      className="p-2 bg-primary/10 text-primary rounded-lg hover:bg-primary hover:text-white transition-all shadow-sm"
+                      className={`p-2 bg-primary/10 text-primary rounded-lg shadow-sm ${
+                        !isMobile && 'hover:bg-primary hover:text-white transition-all'
+                      }`}
                     >
                       <Volume2 size={18} />
                     </button>
@@ -240,7 +253,7 @@ export function LessonContent({ title, content, onStartQuiz, isCompleted = false
               return (
                 <p 
                   key={idx} 
-                  className={`text-xl text-gray-500 font-medium leading-relaxed transition-all duration-300 ${
+                  className={`text-xl text-gray-500 font-medium leading-relaxed ${
                     !showTranslations ? 'blur-md select-none opacity-20' : 'blur-0 opacity-100'
                   }`}
                 >
@@ -269,17 +282,17 @@ export function LessonContent({ title, content, onStartQuiz, isCompleted = false
         <button 
           onClick={onStartQuiz}
           disabled={!isCompleted && isAlphabet && clickedLetters.length < alphabetData.length}
-          className={`w-full py-4 rounded-[1.5rem] font-black text-lg transition-all flex items-center justify-center gap-2 shadow-xl group ${
+          className={`w-full py-4 rounded-[1.5rem] font-black text-lg flex items-center justify-center gap-2 shadow-xl ${
             !isCompleted && isAlphabet && clickedLetters.length < alphabetData.length
               ? 'bg-gray-300 text-gray-500 cursor-not-allowed opacity-50'
-              : 'bg-primary hover:bg-primary-hover text-white shadow-primary/20'
+              : `bg-primary text-white shadow-primary/20 ${!isMobile && 'hover:bg-primary-hover transition-all'}`
           }`}
         >
           {!isCompleted && isAlphabet && clickedLetters.length < alphabetData.length 
             ? `اضغط على جميع الحروف (${clickedLetters.length}/${alphabetData.length})`
             : 'ابدأ الاختبار'
           }
-          <ChevronRight size={20} className={isMobile ? '' : 'group-hover:translate-x-1 transition-transform'} />
+          <ChevronRight size={20} className={!isMobile ? 'hover:translate-x-1 transition-transform' : ''} />
         </button>
       </div>
     </motion.div>
