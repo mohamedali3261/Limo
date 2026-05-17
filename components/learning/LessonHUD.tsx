@@ -38,7 +38,7 @@ export function LessonHUD({
           {/* Progress bar with dots */}
           <div className="relative">
             {/* Progress bar background */}
-            <div className="h-1.5 sm:h-2 bg-gray-200 rounded-full overflow-hidden relative">
+            <div className="hidden sm:block h-1.5 sm:h-2 bg-gray-200 rounded-full overflow-hidden relative">
               <motion.div 
                 initial={{ width: 0 }}
                 animate={{ width: `${percentage}%` }}
@@ -101,7 +101,7 @@ export function LessonHUD({
             )}
             
             {/* Progress counter */}
-            <div className="flex justify-between items-center mt-3 sm:mt-4 md:mt-5">
+            <div className="flex justify-between items-center mt-0 sm:mt-4 md:mt-5">
               <span className={`text-[10px] sm:text-xs font-bold ${isReviewMode ? 'text-orange-600' : 'text-gray-500'}`}>
                 {isReviewMode ? 'مراجعة' : mode === 'quiz' ? `س ${currentQuestionIndex + 1}` : 'الدرس'}
               </span>
