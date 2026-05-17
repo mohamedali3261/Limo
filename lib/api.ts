@@ -111,15 +111,15 @@ export async function apiFetch(url: string, options: any = {}) {
         const sceneQuestions = (storyData.questions || []).filter((q: any) => q.scene_idx === index)
           .map((q: any) => ({
             type: q.type,
-            question_text: q.q,
-            correct_answer: q.a,
-            options: q.options || []
+            question_text: q.question_en || q.q,
+            correct_answer: q.answer || q.a,
+            options: typeof q.options === 'string' ? q.options.split(' ') : (q.options || [])
           }));
         return {
           ...scene,
-          content_en: scene.en,
-          content_ar: scene.ar,
-          character: scene.name,
+          content_en: scene.content_en || scene.en,
+          content_ar: scene.content_ar || scene.ar,
+          character: scene.character_name || scene.name,
           questions: sceneQuestions
         };
       });
@@ -127,9 +127,9 @@ export async function apiFetch(url: string, options: any = {}) {
       // Map final questions
       const mappedFinalQuestions = (storyData.finalQuestions || []).map((q: any) => ({
         type: q.type,
-        question_text: q.q,
-        correct_answer: q.a,
-        options: q.options || []
+        question_text: q.question_en || q.q,
+        correct_answer: q.answer || q.a,
+        options: typeof q.options === 'string' ? q.options.split(' ') : (q.options || [])
       }));
       
       return { 
