@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, memo, useMemo } from 'react';
 import { motion } from 'motion/react';
 import { Volume2, ChevronRight, BookOpen, UserCircle2, GraduationCap, SpellCheck, Lock } from 'lucide-react';
 import { toast } from 'sonner';
@@ -12,7 +12,7 @@ interface LessonContentProps {
   isCompleted?: boolean;
 }
 
-export function LessonContent({ title, content, onStartQuiz, isCompleted = false }: LessonContentProps) {
+function LessonContentComponent({ title, content, onStartQuiz, isCompleted = false }: LessonContentProps) {
   const [showTranslations, setShowTranslations] = useState(true);
   const [clickedLetters, setClickedLetters] = useState<number[]>([]);
   const isMobile = useMediaQuery('(max-width: 768px)');
@@ -26,23 +26,26 @@ export function LessonContent({ title, content, onStartQuiz, isCompleted = false
   const isAlphabet = content.startsWith('ALPHABET_JSON:');
   const isVocab = content.startsWith('VOCAB_JSON:');
 
-  let alphabetData: any[] = [];
-  if (isAlphabet) {
+  // Memoize parsed data to prevent recalculation
+  const alphabetData = useMemo(() => {
+    if (!isAlphabet) return [];
     try {
-      alphabetData = JSON.parse(content.replace(/^ALPHABET_JSON:\s*/, ''));
+      return JSON.parse(content.replace(/^ALPHABET_JSON:\s*/, ''));
     } catch (e) {
       console.error('Failed to parse alphabet data', e);
+      return [];
     }
-  }
+  }, [content, isAlphabet]);
 
-  let vocabData: any[] = [];
-  if (isVocab) {
+  const vocabData = useMemo(() => {
+    if (!isVocab) return [];
     try {
-      vocabData = JSON.parse(content.replace(/^VOCAB_JSON:\s*/, ''));
+      return JSON.parse(content.replace(/^VOCAB_JSON:\s*/, ''));
     } catch (e) {
       console.error('Failed to parse vocab data', e);
+      return [];
     }
-  }
+  }, [content, isVocab]);
 
   return (
     <motion.div 
@@ -298,3 +301,5 @@ export function LessonContent({ title, content, onStartQuiz, isCompleted = false
     </motion.div>
   );
 }
+
+export const LessonContent = memo(LessonContentComponent);

@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef, useMemo } from 'react';
+import { useState, useEffect, useRef, useMemo, useTransition } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { apiFetch } from '../lib/api';
 import { 
@@ -20,6 +20,7 @@ import { LevelCard } from '../components/learning/LevelCard';
 export default function LearningPath() {
   const [levels, setLevels] = useState<any[]>([]);
   const [loading, setLoading] = useState(true);
+  const [isPending, startTransition] = useTransition();
   const { user } = useAuthStore();
   const { mapCharacterUrl, mapBackgroundUrls, mapAnimInterval } = useSettingsStore();
   const isMobile = useMediaQuery('(max-width: 768px)');
@@ -449,7 +450,10 @@ export default function LearningPath() {
                           description: 'يجب أن تتعلم بالترتيب لتحقيق أفضل النتائج.'
                         });
                       } else {
-                        navigate(`/learning/lesson/${node.id}`);
+                        // Use startTransition to avoid freezing UI
+                        startTransition(() => {
+                          navigate(`/learning/lesson/${node.id}`);
+                        });
                       }
                     }}
                     className={`relative flex items-center justify-center transition-all group ${
@@ -508,7 +512,7 @@ export default function LearningPath() {
                                 )}
                               </div>
                               {/* Simple Progress Mini-bar */}
-                              <div className="absolute -top-3 left-1/2 -translate-x-1/2 bg-gray-900 text-[8px] text-white px-2 py-0.5 rounded-full font-black shadow-sm hidden md:block">
+                              <div className="absolute -top-3 left-1/2 -translate-x-1/2 bg-gray-900 text-[8px] text-white px-2 py-0.5 rounded-full font-black shadow-sm">
                                 {(currentNodeIndex / (nodes.length - 1) * 100).toFixed(0)}%
                               </div>
                           </div>

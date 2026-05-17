@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { useState, useEffect } from 'react';
+import { useState, useEffect, Suspense } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import { apiFetch } from '../lib/api';
 import { ArrowLeft, Map } from 'lucide-react';
@@ -24,6 +24,7 @@ export default function LessonDetail() {
   const [data, setData] = useState<any>(null);
   const [loading, setLoading] = useState(true);
   const [mode, setMode] = useState<'lesson' | 'quiz'>('lesson');
+  const [pageReady, setPageReady] = useState(false);
   
   // Phase state for Phased Alphabet
   const [isPhased, setIsPhased] = useState(false);
@@ -78,6 +79,8 @@ export default function LessonDetail() {
         navigate('/learning');
       } finally {
         setLoading(false);
+        // Small delay to ensure render is complete before allowing interactions
+        requestAnimationFrame(() => setPageReady(true));
       }
     };
     fetchLesson();
@@ -215,7 +218,13 @@ export default function LessonDetail() {
           <div className="pt-24">
             <AnimatePresence mode="wait">
               {mode === 'lesson' ? (
-                <motion.div key="lesson">
+                <motion.div 
+                  key="lesson"
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  exit={{ opacity: 0, y: -20 }}
+                  transition={{ duration: 0.3 }}
+                >
                   <LessonContent 
                     title={data.lesson.title} 
                     content={isPhased ? `${phasedType}\n${JSON.stringify(phasedDataList[currentPhase].items)}` : data.lesson.content} 
@@ -230,7 +239,13 @@ export default function LessonDetail() {
                   />
                 </motion.div>
               ) : (
-                <motion.div key="quiz">
+                <motion.div 
+                  key="quiz"
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  exit={{ opacity: 0, y: -20 }}
+                  transition={{ duration: 0.3 }}
+                >
                   <QuizView 
                     currentQuestion={currentQuestion}
                     totalQuestions={currentQuestionsList.length}
