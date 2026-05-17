@@ -1,6 +1,6 @@
 import { useState, memo, useMemo } from 'react';
 import { motion } from 'motion/react';
-import { Volume2, ChevronRight, BookOpen, UserCircle2, GraduationCap, SpellCheck } from 'lucide-react';
+import { Volume2, ChevronRight, BookOpen, UserCircle2, GraduationCap, SpellCheck, CheckCircle2 } from 'lucide-react';
 import { toast } from 'sonner';
 import { useMediaQuery } from '../../lib/hooks/useMediaQuery';
 import { speak } from '../../lib/audio';
@@ -93,44 +93,49 @@ function LessonContentComponent({ title, content, onStartQuiz, isCompleted = fal
               <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6" dir="ltr">
                 {alphabetData.map((item, idx) => {
                   const isClicked = clickedLetters.includes(idx);
-                  
+                  const colorClasses = item.color || 'bg-blue-100 text-blue-600 border-blue-200';
+                  const baseClasses = 'hover:scale-105 active:scale-95';
+
                   return (
-                    <div
+                    <motion.button
                       key={idx}
-                      className={`rounded-[2rem] p-5 border-2 flex flex-col items-center text-center cursor-pointer relative bg-gray-50 border-gray-100 ${
-                        !isMobile && 'hover:border-primary/30 hover:shadow-lg transition-all'
-                      }`}
+                      initial={{ opacity: 0, scale: 0.8 }}
+                      animate={{ opacity: 1, scale: 1 }}
+                      transition={{ delay: idx * 0.05 }}
                       onClick={() => {
                         if (!isClicked) {
                           setClickedLetters([...clickedLetters, idx]);
                         }
                         handleSpeak(`${item.letter}, ${item.word}`);
                       }}
+                      className={`relative overflow-hidden rounded-[2rem] border-4 flex flex-col items-center justify-center transition-all min-h-[160px] ${baseClasses} ${
+                        isClicked ? '!border-emerald-500 !bg-emerald-50 scale-105 shadow-xl shadow-emerald-200' : colorClasses
+                      }`}
                     >
-                      <div className={`text-7xl font-black mb-2 text-primary ${
-                        !isMobile && 'group-hover:scale-110 transition-transform'
-                      }`}>
-                        {item.letter}
+                      {isClicked && (
+                        <div className="absolute top-4 right-4 z-10">
+                          <CheckCircle2 size={32} className="text-emerald-500 bg-white rounded-full shadow-sm" />
+                        </div>
+                      )}
+                      
+                      <div className="p-6 w-full flex flex-col items-center justify-center gap-2">
+                        <div className="text-5xl font-black mb-2" dir="ltr">{item.letter}</div>
+                        <div className="text-4xl">{item.emoji}</div>
+                        <div className="text-lg font-bold capitalize mt-2" dir="ltr">{item.word}</div>
+                        <div className="text-sm font-medium opacity-80">{item.translation}</div>
                       </div>
-                      <div className="text-5xl mb-3">
-                        {item.emoji}
-                      </div>
-                      <div className="space-y-1">
-                        <div className="text-lg font-bold text-gray-800">{item.word}</div>
-                        <div className="text-xs font-medium text-gray-500" dir="rtl">{item.translation}</div>
-                      </div>
-                      <button 
-                        className={`mt-4 p-3 rounded-full bg-primary/10 text-primary ${
-                          !isMobile && 'hover:bg-primary hover:text-white transition-colors'
-                        }`}
-                        onClick={(e) => {
-                          e.stopPropagation();
+                      
+                      <div 
+                        onClick={(e) => { 
+                          e.stopPropagation(); 
                           handleSpeak(`${item.letter}, ${item.word}`);
                         }}
+                        className="absolute bottom-3 left-1/2 -translate-x-1/2 bg-white/70 hover:bg-white text-gray-700 px-3 py-1.5 rounded-full flex items-center gap-1.5 shadow-sm text-xs font-bold transition-colors cursor-pointer"
                       >
-                        <Volume2 size={20} />
-                      </button>
-                    </div>
+                        <Volume2 size={14} />
+                        <span>استمع</span>
+                      </div>
+                    </motion.button>
                   );
                 })}
               </div>
