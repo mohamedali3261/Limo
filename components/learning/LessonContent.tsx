@@ -3,6 +3,7 @@ import { motion } from 'motion/react';
 import { Volume2, ChevronRight, BookOpen, UserCircle2, GraduationCap, SpellCheck, Lock } from 'lucide-react';
 import { toast } from 'sonner';
 import { useMediaQuery } from '../../lib/hooks/useMediaQuery';
+import { speak } from '../../lib/audio';
 
 interface LessonContentProps {
   title: string;
@@ -16,16 +17,8 @@ export function LessonContent({ title, content, onStartQuiz, isCompleted = false
   const [clickedLetters, setClickedLetters] = useState<number[]>([]);
   const isMobile = useMediaQuery('(max-width: 768px)');
 
-  const speak = (text: string) => {
-    if ('speechSynthesis' in window) {
-      // استخدم setTimeout لتجنب تجميد الواجهة على الموبايل
-      setTimeout(() => {
-        window.speechSynthesis.cancel();
-        const utterance = new SpeechSynthesisUtterance(text);
-        utterance.lang = 'en-US';
-        window.speechSynthesis.speak(utterance);
-      }, 0);
-    }
+  const handleSpeak = async (text: string) => {
+    await speak(text, 'en-US', 'male');
   };
 
   const isStory = title.includes('(Story)');
@@ -114,9 +107,9 @@ export function LessonContent({ title, content, onStartQuiz, isCompleted = false
                         }
                         if (!isClicked) {
                           setClickedLetters([...clickedLetters, idx]);
-                          speak(`${item.letter}, ${item.word}`);
+                          handleSpeak(`${item.letter}, ${item.word}`);
                         } else {
-                          speak(`${item.letter}, ${item.word}`);
+                          handleSpeak(`${item.letter}, ${item.word}`);
                         }
                       }}
                     >
@@ -146,7 +139,7 @@ export function LessonContent({ title, content, onStartQuiz, isCompleted = false
                         onClick={(e) => {
                           e.stopPropagation();
                           if (!isLocked) {
-                            speak(`${item.letter}, ${item.word}`);
+                            handleSpeak(`${item.letter}, ${item.word}`);
                           }
                         }}
                       >
@@ -169,7 +162,7 @@ export function LessonContent({ title, content, onStartQuiz, isCompleted = false
                   <div
                     key={idx}
                     className="bg-gray-50 rounded-[1.5rem] p-5 border-2 border-gray-100 hover:border-primary/30 hover:shadow-lg transition-all flex flex-col justify-between items-start group cursor-pointer"
-                    onClick={() => speak(item.word)}
+                    onClick={() => handleSpeak(item.word)}
                   >
                     <div className="space-y-2 w-full">
                       <div className="text-2xl font-bold text-gray-900">{item.word}</div>
@@ -209,7 +202,7 @@ export function LessonContent({ title, content, onStartQuiz, isCompleted = false
                     <div className="bg-gray-50 p-6 rounded-[2rem] rounded-tl-none border border-gray-100 relative group max-w-[85%] shadow-sm hover:shadow-md transition-shadow">
                        <span className="text-xl font-bold text-gray-900 leading-relaxed">{text}</span>
                        <button 
-                         onClick={() => speak(text)}
+                         onClick={() => handleSpeak(text)}
                          className="ml-4 p-2 bg-white text-primary rounded-xl shadow-sm hover:scale-110 transition-transform"
                        >
                          <Volume2 size={18} />
@@ -236,7 +229,7 @@ export function LessonContent({ title, content, onStartQuiz, isCompleted = false
                       {line}
                     </span>
                     <button 
-                      onClick={() => speak(cleanText)}
+                      onClick={() => handleSpeak(cleanText)}
                       className="p-2 bg-primary/10 text-primary rounded-lg hover:bg-primary hover:text-white transition-all shadow-sm"
                     >
                       <Volume2 size={18} />
@@ -261,7 +254,7 @@ export function LessonContent({ title, content, onStartQuiz, isCompleted = false
         {isStory && (
           <div className="pt-4 border-t border-orange-100">
              <button 
-               onClick={() => speak(content)}
+               onClick={() => handleSpeak(content)}
                className="mx-auto flex items-center gap-2 px-6 py-2 bg-primary text-white rounded-full font-bold shadow-lg hover:bg-primary-dark transition-all text-sm"
              >
                <Volume2 size={16} /> استمع للقصة كاملة
