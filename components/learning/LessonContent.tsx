@@ -102,8 +102,6 @@ export function LessonContent({ title, content, onStartQuiz, isCompleted = false
                       className={`rounded-[2rem] p-5 border-2 ${isMobile ? '' : 'transition-all'} flex flex-col items-center text-center group cursor-pointer relative ${
                         isLocked 
                           ? 'bg-gray-100 border-gray-200 opacity-50 cursor-not-allowed' 
-                          : isClicked
-                          ? 'bg-green-50 border-green-300 shadow-lg shadow-green-200/50'
                           : `bg-gray-50 border-gray-100 ${isMobile ? '' : 'hover:border-primary/30 hover:shadow-lg'}`
                       }`}
                       onClick={() => {
@@ -125,7 +123,7 @@ export function LessonContent({ title, content, onStartQuiz, isCompleted = false
                         </div>
                       )}
                       <div className={`text-7xl font-black mb-2 ${isMobile ? '' : 'group-hover:scale-110 transition-transform'} ${
-                        isLocked ? 'text-gray-300' : isClicked ? 'text-green-600' : 'text-primary'
+                        isLocked ? 'text-gray-300' : 'text-primary'
                       }`}>
                         {item.letter}
                       </div>
@@ -140,8 +138,6 @@ export function LessonContent({ title, content, onStartQuiz, isCompleted = false
                         className={`mt-4 p-3 rounded-full ${isMobile ? '' : 'transition-colors'} ${
                           isLocked 
                             ? 'bg-gray-200 text-gray-400' 
-                            : isClicked
-                            ? 'bg-green-200 text-green-600'
                             : `bg-primary/10 text-primary ${isMobile ? '' : 'group-hover:bg-primary group-hover:text-white'}`
                         }`}
                         onClick={(e) => {
