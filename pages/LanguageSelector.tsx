@@ -60,7 +60,7 @@ export default function LanguageSelector() {
 
   const handleLanguageSelect = (route: string, code: string) => {
     // Save selected language
-    localStorage.setItem('memohero_selected_language', code);
+    localStorage.setItem('limohero_selected_language', code);
     
     // Navigate to language route
     navigate(route);

@@ -71,7 +71,7 @@ export default function Layout({ children }: { children: ReactNode }) {
       <nav className="hidden md:flex w-56 bg-white/80 backdrop-blur-xl border-r border-gray-100 flex-col shrink-0 flex-none z-20 shadow-2xl shadow-gray-200/20">
         <div className="p-10 flex items-center gap-4">
           <h1 className="font-display font-black text-2xl text-gray-900 tracking-tight flex items-center gap-2">
-            Limo
+            Limo Hero
             <EnglishFlag className="w-8 h-6 rounded shadow-sm border border-gray-200" />
           </h1>
         </div>
@@ -121,7 +121,7 @@ export default function Layout({ children }: { children: ReactNode }) {
       <div className="md:hidden bg-white border-b border-gray-100 p-4 flex items-center justify-between sticky top-0 z-30">
         <div className="flex items-center gap-2">
            <span className="font-black text-xl text-gray-900 tracking-tight flex items-center gap-2">
-             Limo
+             Limo Hero
              <EnglishFlag className="w-7 h-5 rounded shadow-sm border border-gray-200" />
            </span>
         </div>

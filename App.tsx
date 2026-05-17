@@ -62,18 +62,18 @@ function PageTitleUpdater() {
 
   useEffect(() => {
     const pathTitles: Record<string, string> = {
-      '/': 'Limo - تعلم اللغات 🇬🇧',
-      '/languages': 'اختر اللغة - Limo 🇬🇧',
-      '/learning': 'مسار التعلم - Limo 🇬🇧',
-      '/stories': 'القصص - Limo 🇬🇧',
-      '/voice-conversation': 'محادثة صوتية - Limo 🇬🇧',
-      '/game': 'مركز الألعاب - Limo 🇬🇧',
-      '/profile': 'الملف الشخصي - Limo 🇬🇧',
-      '/kids': 'منطقة الأطفال - Limo 🇬🇧',
-      '/flashcards': 'بطاقات التعلم - Limo 🇬🇧',
-      '/french': 'الفرنسية - Limo 🇬🇧',
-      '/german': 'الألمانية - Limo 🇬🇧',
-      '/spanish': 'الإسبانية - Limo 🇬🇧',
+      '/': 'Limo Hero - تعلم اللغات 🇬🇧',
+      '/languages': 'اختر اللغة - Limo Hero 🇬🇧',
+      '/learning': 'مسار التعلم - Limo Hero 🇬🇧',
+      '/stories': 'القصص - Limo Hero 🇬🇧',
+      '/voice-conversation': 'محادثة صوتية - Limo Hero 🇬🇧',
+      '/game': 'مركز الألعاب - Limo Hero 🇬🇧',
+      '/profile': 'الملف الشخصي - Limo Hero 🇬🇧',
+      '/kids': 'منطقة الأطفال - Limo Hero 🇬🇧',
+      '/flashcards': 'بطاقات التعلم - Limo Hero 🇬🇧',
+      '/french': 'الفرنسية - Limo Hero 🇬🇧',
+      '/german': 'الألمانية - Limo Hero 🇬🇧',
+      '/spanish': 'الإسبانية - Limo Hero 🇬🇧',
     };
 
     // Check for exact match first
@@ -82,19 +82,19 @@ function PageTitleUpdater() {
     // If no exact match, check for partial matches
     if (!title) {
       if (location.pathname.includes('/kids')) {
-        title = 'منطقة الأطفال - Limo 🇬🇧';
+        title = 'منطقة الأطفال - Limo Hero 🇬🇧';
       } else if (location.pathname.includes('/game')) {
-        title = 'مركز الألعاب - Limo 🇬🇧';
+        title = 'مركز الألعاب - Limo Hero 🇬🇧';
       } else if (location.pathname.includes('/learning')) {
-        title = 'مسار التعلم - Limo 🇬🇧';
+        title = 'مسار التعلم - Limo Hero 🇬🇧';
       } else if (location.pathname.includes('/french')) {
-        title = 'الفرنسية - Limo 🇬🇧';
+        title = 'الفرنسية - Limo Hero 🇬🇧';
       } else if (location.pathname.includes('/german')) {
-        title = 'الألمانية - Limo 🇬🇧';
+        title = 'الألمانية - Limo Hero 🇬🇧';
       } else if (location.pathname.includes('/spanish')) {
-        title = 'الإسبانية - Limo 🇬🇧';
+        title = 'الإسبانية - Limo Hero 🇬🇧';
       } else {
-        title = 'Limo 🇬🇧';
+        title = 'Limo Hero 🇬🇧';
       }
     }
 
@@ -109,7 +109,7 @@ export default function App() {
   const { setPrimaryColor } = useThemeStore();
   const { setSettings } = useSettingsStore();
   const [showOnboarding, setShowOnboarding] = useState(() => {
-    const onboardingData = localStorage.getItem('memohero_onboarding');
+    const onboardingData = localStorage.getItem('limohero_onboarding');
     return !onboardingData;
   });
 
@@ -121,9 +121,9 @@ export default function App() {
       // Update session every minute
       intervalId = setInterval(() => {
         // This will keep the session active and track time
-        const currentUser = localStorage.getItem('memohero_current_user');
+        const currentUser = localStorage.getItem('limohero_current_user');
         if (currentUser) {
-          const sessions = JSON.parse(localStorage.getItem('memohero_user_sessions') || '{}');
+          const sessions = JSON.parse(localStorage.getItem('limohero_user_sessions') || '{}');
           const userId = JSON.parse(currentUser).id;
           
           if (sessions[userId]?.currentSessionStart) {

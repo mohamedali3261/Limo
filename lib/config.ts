@@ -1,24 +1,24 @@
 // Centralized configuration for the entire application
 export const APP_CONFIG = {
-  name: 'Limo',
+  name: 'Limo Hero',
   languages: {
     french: {
-      name: 'Limo 🇫🇷',
+      name: 'Limo Hero 🇫🇷',
       flag: '🇫🇷',
       code: 'fr'
     },
     german: {
-      name: 'Limo 🇩🇪',
+      name: 'Limo Hero 🇩🇪',
       flag: '🇩🇪',
       code: 'de'
     },
     spanish: {
-      name: 'Limo 🇪🇸',
+      name: 'Limo Hero 🇪🇸',
       flag: '🇪🇸',
       code: 'es'
     },
     english: {
-      name: 'Limo 🇬🇧',
+      name: 'Limo Hero 🇬🇧',
       flag: '🇬🇧',
       code: 'en'
     }

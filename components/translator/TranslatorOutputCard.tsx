@@ -69,7 +69,7 @@ export function TranslatorOutputCard({ result, targetLang, handleSavePhrase }: T
               onClick={() => {
                  if (navigator.share) {
                    navigator.share({
-                     title: 'Limo Translation',
+                     title: 'Limo Hero Translation',
                      text: `Checkout this translation!\n\nTranslation: ${result.translatedText}`,
                    }).catch(console.error);
                  } else {

@@ -13,8 +13,8 @@
     },
     {
       "name": "Manager",
-      "en": "Good morning, Leo! Please have a seat. Tell me about yourself.",
-      "ar": "صباح الخير يا ليو! تفضل بالجلوس. حدثني عن نفسك."
+      "en": "Good morning, limo! Please have a seat. Tell me about yourself.",
+      "ar": "صباح الخير يا ليمو! تفضل بالجلوس. حدثني عن نفسك."
     },
     {
       "name": "Memo",
@@ -71,7 +71,7 @@
     {
       "scene_idx": 2,
       "type": "multiple_choice",
-      "q": "What is Leo's job?",
+      "q": "What is limo's job?",
       "options": [
         "Software developer",
         "Teacher",

@@ -20,13 +20,13 @@ import wordMatchingData from '../data/games/word_matching.json';
 
 // LocalStorage keys
 const STORAGE_KEYS = {
-  CURRENT_USER: 'memohero_current_user',
-  USERS: 'memohero_users',
-  USER_PROGRESS: 'memohero_user_progress',
-  USER_ACHIEVEMENTS: 'memohero_user_achievements',
-  TRANSLATIONS: 'memohero_translations',
-  SAVED_PHRASES: 'memohero_saved_phrases',
-  USER_SESSIONS: 'memohero_user_sessions',
+  CURRENT_USER: 'limohero_current_user',
+  USERS: 'limohero_users',
+  USER_PROGRESS: 'limohero_user_progress',
+  USER_ACHIEVEMENTS: 'limohero_user_achievements',
+  TRANSLATIONS: 'limohero_translations',
+  SAVED_PHRASES: 'limohero_saved_phrases',
+  USER_SESSIONS: 'limohero_user_sessions',
 };
 
 // Security Questions
@@ -70,7 +70,7 @@ function requireAuth() {
 // Secure password hashing function
 async function hashPassword(password: string): Promise<string> {
   const encoder = new TextEncoder();
-  const data = encoder.encode(password + 'memohero_salt_2024');
+  const data = encoder.encode(password + 'limohero_salt_2024');
   const hashBuffer = await crypto.subtle.digest('SHA-256', data);
   const hashArray = Array.from(new Uint8Array(hashBuffer));
   const hashHex = hashArray.map(b => b.toString(16).padStart(2, '0')).join('');

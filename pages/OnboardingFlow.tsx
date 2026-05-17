@@ -48,7 +48,7 @@ export default function OnboardingFlow({ onComplete }: OnboardingFlowProps) {
 
   const handleComplete = () => {
     // Save onboarding data to localStorage or API
-    localStorage.setItem('memohero_onboarding', JSON.stringify(onboardingData));
+    localStorage.setItem('limohero_onboarding', JSON.stringify(onboardingData));
     onComplete(onboardingData);
   };
 

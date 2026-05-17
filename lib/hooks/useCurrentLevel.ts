@@ -11,7 +11,7 @@ export function useCurrentLevel() {
     
     if (!language) {
       // Try to get from localStorage
-      const savedUser = localStorage.getItem('memohero_current_user');
+      const savedUser = localStorage.getItem('limohero_current_user');
       if (savedUser) {
         try {
           const parsedUser = JSON.parse(savedUser);

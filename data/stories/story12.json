@@ -8,13 +8,13 @@
   "scenes": [
     {
       "name": "Narrator",
-      "en": "Memo is not feeling well. He goes to see the doctor.",
-      "ar": "ليو لا يشعر بصحة جيدة. يذهب لرؤية الطبيب."
+      "en": "limo is not feeling well. He goes to see the doctor.",
+      "ar": "ليمو لا يشعر بصحة جيدة. يذهب لرؤية الطبيب."
     },
     {
       "name": "Doctor",
-      "en": "Good morning, Leo! What is the problem?",
-      "ar": "صباح الخير يا ليو! ما هي المشكلة؟"
+      "en": "Good morning, limo! What is the problem?",
+      "ar": "صباح الخير يا ليمو! ما هي المشكلة؟"
     },
     {
       "name": "Memo",
@@ -61,7 +61,7 @@
     {
       "scene_idx": 2,
       "type": "multiple_choice",
-      "q": "What are Leo's symptoms?",
+      "q": "What are limo's symptoms?",
       "options": [
         "Headache and sore throat",
         "Broken leg",

@@ -78,7 +78,7 @@ export default function WelcomeScreen({ username, language, goal, currentLevel, 
     setIsReady(true);
     
     // Update user with username and language
-    const currentUser = JSON.parse(localStorage.getItem('memohero_current_user') || '{}');
+    const currentUser = JSON.parse(localStorage.getItem('limohero_current_user') || '{}');
     const updatedUser = {
       ...currentUser,
       username: username,
@@ -87,11 +87,11 @@ export default function WelcomeScreen({ username, language, goal, currentLevel, 
       onboarding_completed: true
     };
     
-    localStorage.setItem('memohero_current_user', JSON.stringify(updatedUser));
+    localStorage.setItem('limohero_current_user', JSON.stringify(updatedUser));
     localStorage.setItem(`${language}_current_level`, currentLevel);
     
     // Update auth store
-    const token = localStorage.getItem('memohero_token') || '';
+    const token = localStorage.getItem('limohero_token') || '';
     login(updatedUser, token);
     
     setTimeout(() => {

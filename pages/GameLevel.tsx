@@ -55,11 +55,11 @@ export default function GameLevel() {
           
           // Save completed level to localStorage
           const levelType = levelData.level.level_type;
-          const saved = localStorage.getItem(`memohero_completed_${levelType}`);
+          const saved = localStorage.getItem(`limohero_completed_${levelType}`);
           const completedLevels = saved ? JSON.parse(saved) : [];
           if (!completedLevels.includes(parseInt(levelId!))) {
             completedLevels.push(parseInt(levelId!));
-            localStorage.setItem(`memohero_completed_${levelType}`, JSON.stringify(completedLevels));
+            localStorage.setItem(`limohero_completed_${levelType}`, JSON.stringify(completedLevels));
           }
           
           toast.success(`مبروك! أكملت المستوى وحصلت على ${levelData.level.xp_reward} نقطة! 🏆`);

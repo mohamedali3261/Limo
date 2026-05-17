@@ -67,7 +67,7 @@ export default function Onboarding() {
       // Update global user state with the data returned from server
       if (response.user) {
         // تحديث بيانات المستخدم في الـ store و localStorage
-        const token = localStorage.getItem('memohero_token') || '';
+        const token = localStorage.getItem('limohero_token') || '';
         
         // التأكد من أن onboarding_completed = true
         const updatedUser = {
@@ -79,7 +79,7 @@ export default function Onboarding() {
         useAuthStore.getState().login(updatedUser, token);
         
         // تحديث localStorage مباشرة للتأكد
-        localStorage.setItem('memohero_user', JSON.stringify(updatedUser));
+        localStorage.setItem('limohero_user', JSON.stringify(updatedUser));
         
         toast.success('مرحباً بك في أكاديمية الأبطال!');
         
