@@ -50,7 +50,7 @@ export function LessonHUD({
                 }`}
               >
                 {/* Animated shine effect */}
-                <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/40 to-transparent animate-shimmer" />
+                <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/40 to-transparent" />
               </motion.div>
             </div>
             

@@ -1,7 +1,8 @@
 import { useState } from 'react';
-import { motion, AnimatePresence } from 'motion/react';
+import { motion } from 'motion/react';
 import { Volume2, ChevronRight, BookOpen, UserCircle2, GraduationCap, SpellCheck, Lock } from 'lucide-react';
 import { toast } from 'sonner';
+import { useMediaQuery } from '../../lib/hooks/useMediaQuery';
 
 interface LessonContentProps {
   title: string;
@@ -13,6 +14,7 @@ interface LessonContentProps {
 export function LessonContent({ title, content, onStartQuiz, isCompleted = false }: LessonContentProps) {
   const [showTranslations, setShowTranslations] = useState(true);
   const [clickedLetters, setClickedLetters] = useState<number[]>([]);
+  const isMobile = useMediaQuery('(max-width: 768px)');
 
   const speak = (text: string) => {
     if ('speechSynthesis' in window) {
@@ -48,9 +50,10 @@ export function LessonContent({ title, content, onStartQuiz, isCompleted = false
 
   return (
     <motion.div 
-      initial={{ opacity: 0, scale: 0.95 }}
-      animate={{ opacity: 1, scale: 1 }}
-      exit={{ opacity: 0, scale: 1.05 }}
+      initial={isMobile ? { opacity: 1 } : { opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={isMobile ? { opacity: 1 } : { opacity: 0 }}
+      transition={isMobile ? { duration: 0 } : { duration: 0.3 }}
       className={`bg-white rounded-[3.5rem] border border-gray-100 shadow-2xl shadow-gray-200/50 overflow-hidden font-sans relative ${
         isStory ? 'bg-[url("https://www.transparenttextures.com/patterns/paper-fibers.png")] bg-fixed' : ''
       }`}
@@ -94,11 +97,8 @@ export function LessonContent({ title, content, onStartQuiz, isCompleted = false
                   const isClicked = clickedLetters.includes(idx);
                   
                   return (
-                    <motion.div
+                    <div
                       key={idx}
-                      initial={{ opacity: 0, y: 20 }}
-                      animate={{ opacity: 1, y: 0 }}
-                      transition={{ delay: idx * 0.1 }}
                       className={`rounded-[2rem] p-5 border-2 transition-all flex flex-col items-center text-center group cursor-pointer relative ${
                         isLocked 
                           ? 'bg-gray-100 border-gray-200 opacity-50 cursor-not-allowed' 
@@ -158,7 +158,7 @@ export function LessonContent({ title, content, onStartQuiz, isCompleted = false
                           ✓
                         </div>
                       )}
-                    </motion.div>
+                    </div>
                   );
                 })}
               </div>
@@ -167,11 +167,8 @@ export function LessonContent({ title, content, onStartQuiz, isCompleted = false
             {isVocab && (
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5" dir="ltr">
                 {vocabData.map((item, idx) => (
-                  <motion.div
+                  <div
                     key={idx}
-                    initial={{ opacity: 0, y: 10 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ delay: idx * 0.05 }}
                     className="bg-gray-50 rounded-[1.5rem] p-5 border-2 border-gray-100 hover:border-primary/30 hover:shadow-lg transition-all flex flex-col justify-between items-start group cursor-pointer"
                     onClick={() => speak(item.word)}
                   >
@@ -182,7 +179,7 @@ export function LessonContent({ title, content, onStartQuiz, isCompleted = false
                     <button className="mt-3 p-3 rounded-lg bg-white shadow-sm text-primary group-hover:bg-primary group-hover:text-white transition-colors">
                       <Volume2 size={18} />
                     </button>
-                  </motion.div>
+                  </div>
                 ))}
               </div>
             )}
@@ -192,26 +189,20 @@ export function LessonContent({ title, content, onStartQuiz, isCompleted = false
 
               if (isStory) {
                 return (
-                  <motion.p 
-                    initial={{ opacity: 0, x: 20 }}
-                    animate={{ opacity: 1, x: 0 }}
-                    transition={{ delay: idx * 0.1 }}
+                  <p 
                     key={idx} 
                     className="text-3xl font-serif leading-relaxed text-gray-800 italic" 
                     dir="ltr"
                   >
                     {line}
-                  </motion.p>
+                  </p>
                 );
               }
 
               if (isInterview && line.startsWith('- ')) {
                 const text = line.replace(/^- /, '');
                 return (
-                  <motion.div 
-                    initial={{ opacity: 0, x: -20 }}
-                    animate={{ opacity: 1, x: 0 }}
-                    transition={{ delay: idx * 0.1 }}
+                  <div 
                     key={idx} 
                     className="flex justify-start" 
                     dir="ltr"
@@ -225,7 +216,7 @@ export function LessonContent({ title, content, onStartQuiz, isCompleted = false
                          <Volume2 size={18} />
                        </button>
                     </div>
-                  </motion.div>
+                  </div>
                 );
               }
 
@@ -296,7 +287,7 @@ export function LessonContent({ title, content, onStartQuiz, isCompleted = false
             ? `اضغط على جميع الحروف (${clickedLetters.length}/${alphabetData.length})`
             : 'ابدأ الاختبار'
           }
-          <ChevronRight size={20} className="group-hover:translate-x-1 transition-transform" />
+          <ChevronRight size={20} className={isMobile ? '' : 'group-hover:translate-x-1 transition-transform'} />
         </button>
       </div>
     </motion.div>

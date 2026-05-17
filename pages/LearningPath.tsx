@@ -3,12 +3,13 @@ import { useNavigate } from 'react-router-dom';
 import { apiFetch } from '../lib/api';
 import { 
   CheckCircle2, PlayCircle, Trophy, Star, Lock, MapIcon, 
-  GraduationCap, Gift, Compass, Cloud, Sprout, Flame,
+  GraduationCap, Gift, Compass, Cloud, Sprout,
   User, Sparkles, Sword, Zap, AudioLines, MapPin
 } from 'lucide-react';
 import { motion, useScroll, useSpring, AnimatePresence } from 'motion/react';
 import { useAuthStore } from '../lib/store/auth';
 import { useSettingsStore } from '../lib/store/settings';
+import { useMediaQuery } from '../lib/hooks/useMediaQuery';
 import { toast } from 'sonner';
 import { LoadingPage } from '../components/common/LoadingPage';
 
@@ -21,6 +22,7 @@ export default function LearningPath() {
   const [loading, setLoading] = useState(true);
   const { user } = useAuthStore();
   const { mapCharacterUrl, mapBackgroundUrls, mapAnimInterval } = useSettingsStore();
+  const isMobile = useMediaQuery('(max-width: 768px)');
 
   const navigate = useNavigate();
   const containerRef = useRef<HTMLDivElement>(null);
@@ -127,11 +129,8 @@ export default function LearningPath() {
       {/* Dynamic Background decor based on current section */}
       <AnimatePresence mode='wait'>
         {mapBg ? (
-          <motion.div 
+          <div 
             key={mapBg}
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            exit={{ opacity: 0 }}
             className="fixed inset-0 pointer-events-none z-0 transition-all duration-1000"
             style={{ 
               background: (() => {
@@ -152,11 +151,8 @@ export default function LearningPath() {
             }}
           />
         ) : nodes[currentNodeIndex]?.theme && (
-          <motion.div 
+          <div 
             key={nodes[currentNodeIndex].theme.id}
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            exit={{ opacity: 0 }}
             className={`fixed inset-0 pointer-events-none z-0 transition-colors duration-1000 ${
               nodes[currentNodeIndex].theme.bg.replace('from-', 'from-').replace('to-', 'to-')
             }`}
@@ -166,12 +162,8 @@ export default function LearningPath() {
 
       {/* Light Background Color Overlay for Current Level */}
       <div className="fixed inset-0 pointer-events-none z-0">
-        <motion.div
+        <div
           key={`level-bg-${nodes[currentNodeIndex]?.levelIndex}`}
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          exit={{ opacity: 0 }}
-          transition={{ duration: 0.5 }}
           className={`absolute inset-0 ${
             nodes[currentNodeIndex]?.levelIndex % 3 === 0 
               ? 'bg-gradient-to-br from-blue-50/40 to-cyan-50/40'
@@ -200,7 +192,9 @@ export default function LearningPath() {
         <div className="text-center mb-16 relative z-10">
           <div className="w-24 h-24 bg-orange-100 rounded-[2.5rem] flex items-center justify-center mx-auto mb-8 relative">
              <GraduationCap size={48} className="text-primary" />
-             <motion.div animate={{ scale: [1, 1.2, 1], opacity: [0.3, 0.1, 0.3] }} transition={{ repeat: Infinity, duration: 2 }} className="absolute inset-0 bg-primary rounded-full blur-2xl" />
+             {!isMobile && (
+               <motion.div animate={{ opacity: [0.3, 0.1, 0.3] }} transition={{ repeat: Infinity, duration: 2 }} className="absolute inset-0 bg-primary rounded-full blur-2xl" />
+             )}
           </div>
           <h2 className="text-4xl font-display font-black text-slate-900 mb-4 tracking-tight">ابدأ رحلتك الملحمية</h2>
           <p className="text-slate-400 font-bold max-w-xs mx-auto leading-relaxed">كل درس هو خطوة نحو العظمة. أكمل الدروس لفتح مناطق جديدة.</p>
@@ -215,15 +209,13 @@ export default function LearningPath() {
           {/* Floating Clouds Background */}
           <div className="absolute inset-0 pointer-events-none overflow-hidden -z-10 opacity-30">
              {[...Array(15)].map((_, i) => (
-                  <motion.div
+                  <div
                   key={`cloud-${i}`}
-                  animate={{ x: [0, window.innerWidth || 1000, 0] }}
-                  transition={{ duration: 30 + Math.random() * 40, repeat: Infinity, ease: "linear", delay: Math.random() * 20 }}
                   className="absolute filter opacity-60 text-gray-300"
                   style={{ top: `${i * 150 + Math.random() * 100}px`, left: `-${Math.random() * 20}%` }}
                 >
                   <Cloud size={64 + Math.random() * 64} strokeWidth={1} />
-                </motion.div>
+                </div>
              ))}
           </div>
 
@@ -272,7 +264,7 @@ export default function LearningPath() {
               return (
                 <g key={`segment-${index}`}>
                   {/* Shadow */}
-                  <motion.path 
+                  <path 
                     d={segmentD}
                     fill="none" 
                     stroke="#000" 
@@ -283,7 +275,7 @@ export default function LearningPath() {
                     vectorEffect="non-scaling-stroke"
                   />
                   {/* Base Segment */}
-                  <motion.path 
+                  <path 
                     d={segmentD}
                     fill="none" 
                     stroke={isCompleted ? "#CBD5E1" : "#E2E8F0"} 
@@ -294,7 +286,7 @@ export default function LearningPath() {
                   />
                   {/* Active/Completed Highlight */}
                   {isCompleted && (
-                    <motion.path 
+                    <path 
                       d={segmentD}
                       fill="none" 
                       stroke="#58CC02" 
@@ -302,9 +294,7 @@ export default function LearningPath() {
                       strokeLinecap="round"
                       strokeDasharray="8, 12"
                       vectorEffect="non-scaling-stroke"
-                      initial={{ pathLength: 0 }}
-                      animate={{ pathLength: 1 }}
-                      transition={{ duration: 1, delay: index * 0.1 }}
+                      style={{ strokeDashoffset: 0 }}
                     />
                   )}
                   {/* Small connection dot indicating the "pin" spot */}
@@ -342,10 +332,7 @@ export default function LearningPath() {
                 style={{ top: topOffset, height: segmentH }}
               >
                 {isFirstOfLevel && (
-                  <motion.div 
-                    initial={{ opacity: 0, scale: 0.9 }}
-                    whileInView={{ opacity: 1, scale: 1 }}
-                    viewport={{ once: true }}
+                  <div 
                     className="absolute top-10 left-1/2 -translate-x-1/2 w-full max-w-lg z-10"
                   >
                     <div className={`mx-4 p-8 rounded-[3rem] border-b-8 transition-all duration-500 shadow-xl overflow-hidden relative ${
@@ -381,9 +368,8 @@ export default function LearningPath() {
                                   <span>{Math.round((currentLevel?.lessons?.filter((l: any) => l.is_completed).length / currentLevel?.lessons?.length * 100) || 0)}%</span>
                                </div>
                                <div className="h-2 bg-slate-100 rounded-full overflow-hidden">
-                                  <motion.div 
-                                    initial={{ width: 0 }}
-                                    whileInView={{ width: `${(currentLevel?.lessons?.filter((l: any) => l.is_completed).length / currentLevel?.lessons?.length * 100) || 0}%` }}
+                                  <div 
+                                    style={{ width: `${(currentLevel?.lessons?.filter((l: any) => l.is_completed).length / currentLevel?.lessons?.length * 100) || 0}%` }}
                                     className="h-full bg-primary"
                                   />
                                </div>
@@ -391,7 +377,7 @@ export default function LearningPath() {
                          )}
                       </div>
                     </div>
-                  </motion.div>
+                  </div>
                 )}
 
                 <div 
@@ -414,7 +400,7 @@ export default function LearningPath() {
                   {/* Environmental Decorations */}
                   <div className="absolute -left-20 -top-8 pointer-events-none opacity-40 group-hover:opacity-100 transition-opacity flex items-center justify-center">
                     {index % 4 === 0 && <div className="text-primary/40 drop-shadow-lg scale-[4]">{node.theme?.particles?.[0] || <Sprout />}</div>}
-                    {index % 4 === 1 && <div className="text-accent/40 drop-shadow-lg scale-[4]">{node.theme?.particles?.[1] || <Flame />}</div>}
+                    {index % 4 === 1 && <div className="text-accent/40 drop-shadow-lg scale-[4]">{node.theme?.particles?.[1] || <Sparkles />}</div>}
                     {index % 4 === 2 && <div className="text-secondary/40 drop-shadow-lg scale-[4]">{node.theme?.particles?.[2] || <Sparkles />}</div>}
                   </div>
                 <div className="absolute -right-20 top-10 pointer-events-none opacity-40">
@@ -424,16 +410,14 @@ export default function LearningPath() {
 
                 {/* Flash Event Banner */}
                 {index === flashEventNodeId && !isCompleted && (
-                  <motion.div 
-                    initial={{ y: 20, opacity: 0 }}
-                    animate={{ y: 0, opacity: 1 }}
+                  <div 
                     className="absolute -top-16 z-30"
                   >
                     <div className="bg-gradient-to-r from-yellow-400 to-orange-500 text-white text-xs font-black px-3 py-1.5 rounded-full flex items-center gap-1 shadow-lg shadow-orange-500/30 border border-white/20 whitespace-nowrap">
                       <Zap size={14} className="fill-white animate-pulse" />
                       <span>حدث خاص: 2x نقاط</span>
                     </div>
-                  </motion.div>
+                  </div>
                 )}
 
                 {/* Friends at this node - HIDDEN */}
@@ -457,8 +441,8 @@ export default function LearningPath() {
                 {/* Node Buttons */}
                 {node.type === 'lesson' || node.type === 'boss' ? (
                   <motion.button
-                    whileHover={!isLocked ? { scale: 1.1, y: -5 } : {}}
-                    whileTap={!isLocked ? { scale: 0.9 } : {}}
+                    whileHover={!isLocked && !isMobile ? { y: -5 } : {}}
+                    whileTap={!isLocked && !isMobile ? {} : {}}
                     onClick={() => {
                       if (isLocked) {
                         toast.error('أكمل الدرس السابق أولاً! 🔒', {
@@ -500,22 +484,19 @@ export default function LearningPath() {
                          <span className="text-[9px] font-black uppercase tracking-tighter">تحدي الزعيم</span>
                       </div>
                     ) : (
-                      <motion.div animate={{ scale: [1, 1.1, 1] }} transition={{ repeat: Infinity }}>
+                      <div>
                          {levels[node.levelIndex]?.icon_url ? (
                            <img src={levels[node.levelIndex].icon_url} alt="" className="w-10 h-10 sm:w-14 sm:h-14 object-contain" />
                          ) : (
                            <PlayCircle className="w-12 h-12 sm:w-14 sm:h-14" />
                          )}
-                      </motion.div>
+                      </div>
                     )}
 
                     {/* Character Avatar on current node */}
                     {index === currentNodeIndex && (
                       <>
-                        <motion.div 
-                          initial={{ y: -50 }}
-                          animate={{ y: -70 }}
-                          transition={{ repeat: Infinity, duration: 1, repeatType: "reverse" }}
+                        <div 
                           className="absolute -top-[1.2rem] z-20"
                         >
                           <div className="relative">
@@ -532,13 +513,10 @@ export default function LearningPath() {
                               </div>
                           </div>
                           <div className="absolute -bottom-1 left-1/2 -translate-x-1/2 w-4 h-4 bg-primary rotate-45 -z-10" />
-                        </motion.div>
+                        </div>
 
                         {/* Companion Pet with Evolution */}
-                        <motion.div
-                          initial={{ x: 20, y: 0 }}
-                          animate={{ x: 25, y: -10 }}
-                          transition={{ repeat: Infinity, duration: 2, repeatType: "reverse" }}
+                        <div
                           className="absolute -right-14 -top-12 z-30"
                         >
                           <div 
@@ -558,16 +536,16 @@ export default function LearningPath() {
                             }}
                           >
                             <div className="text-2xl text-orange-500">
-                               {nodes[currentNodeIndex]?.levelIndex === 0 ? <Zap className="animate-bounce" /> : 
-                                nodes[currentNodeIndex]?.levelIndex === 1 ? <Sparkles className="animate-pulse" /> :
-                                nodes[currentNodeIndex]?.levelIndex === 2 ? <Cloud className="animate-bounce" /> :
+                               {nodes[currentNodeIndex]?.levelIndex === 0 ? <Zap /> : 
+                                nodes[currentNodeIndex]?.levelIndex === 1 ? <Sparkles /> :
+                                nodes[currentNodeIndex]?.levelIndex === 2 ? <Cloud /> :
                                 nodes[currentNodeIndex]?.levelIndex === 3 ? <GraduationCap /> : <Trophy />}
                             </div>
                             <div className="absolute -top-1 -right-1 w-4 h-4 bg-orange-500 rounded-full border border-white flex items-center justify-center">
                                <Star size={8} className="text-white fill-white" />
                             </div>
                           </div>
-                        </motion.div>
+                        </div>
                       </>
                     )}
 
@@ -580,7 +558,7 @@ export default function LearningPath() {
                 ) : (
                   // Chest Node
                   <motion.button
-                    whileHover={!isLocked ? { scale: 1.15 } : {}}
+                    whileHover={!isLocked ? {} : {}}
                     onClick={() => !isLocked && handleChestClick(node.id)}
                     className={`w-20 h-20 rounded-2xl flex items-center justify-center transition-all ${
                       isLocked 
@@ -595,9 +573,9 @@ export default function LearningPath() {
                     ) : isLocked ? (
                       <Lock className="w-6 h-6" />
                     ) : (
-                      <motion.div animate={{ rotate: [0, 5, -5, 0] }} transition={{ repeat: Infinity, duration: 2 }}>
+                      <div>
                         <Gift className="w-10 h-10" />
-                      </motion.div>
+                      </div>
                     )}
                   </motion.button>
                 )}
@@ -610,14 +588,12 @@ export default function LearningPath() {
 
         {/* Epic Finale Marker */}
         <div className="flex flex-col items-center pt-20 relative z-10">
-           <motion.div 
-             animate={{ y: [0, -10, 0], rotate: [0, 2, -2, 0] }}
-             transition={{ repeat: Infinity, duration: 4 }}
+           <div 
              className="w-32 h-32 bg-gray-900 rounded-[3rem] border-b-8 border-black flex items-center justify-center text-white relative shadow-2xl"
            >
               <Trophy size={64} className="text-yellow-400" />
               <div className="absolute -top-4 bg-red-500 text-white px-4 py-1 rounded-full text-xs font-black uppercase shadow-lg">Grand Finals</div>
-           </motion.div>
+           </div>
            <h3 className="mt-6 text-2xl font-black text-gray-900">أنت بطل الغد!</h3>
            <p className="text-gray-500 font-bold">المزيد من الدروس قادمة قريباً</p>
         </div>

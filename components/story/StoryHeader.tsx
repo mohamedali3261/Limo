@@ -37,7 +37,7 @@ export function StoryHeader({
               transition={{ duration: 0.6, ease: "easeInOut" }}
               className="h-full bg-gradient-to-r from-primary to-primary-dark rounded-full relative"
             >
-              <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/40 to-transparent animate-shimmer" />
+              <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/40 to-transparent" />
             </motion.div>
           </div>
           

@@ -5,6 +5,7 @@ import { filterUnitsByLevel, markLockedLessons } from '../../../../../lib/utils/
 import { Award, Flame, GraduationCap } from 'lucide-react';
 import { SpanishFlag } from '../../components/ui/SpanishFlag';
 import { motion } from 'motion/react';
+import { useMediaQuery } from '../../../../../lib/hooks/useMediaQuery';
 
 interface LearningPathProps {
   onOpenLesson: (lessonId: string, unitId: string) => void;
@@ -13,6 +14,7 @@ interface LearningPathProps {
 
 export function LearningPath({ onOpenLesson, completedLessons }: LearningPathProps) {
   const currentLevel = useCurrentLevel();
+  const isMobile = useMediaQuery('(max-width: 768px)');
   
   // Filter units by current level
   const filteredUnits = filterUnitsByLevel(courseData, currentLevel);
@@ -56,18 +58,18 @@ export function LearningPath({ onOpenLesson, completedLessons }: LearningPathPro
 
       <div className="max-w-xl mx-auto pb-20">
         {/* Level System Header */}
-        <motion.div 
-          initial={{ opacity: 0, y: -20 }}
-          animate={{ opacity: 1, y: 0 }}
+        <div 
           className="mb-12 text-center py-8"
         >
           <div className="w-24 h-24 bg-teal-100 rounded-[2.5rem] flex items-center justify-center mx-auto mb-8 relative">
             <GraduationCap size={48} className="text-teal-600" />
-            <motion.div animate={{ scale: [1, 1.2, 1], opacity: [0.3, 0.1, 0.3] }} transition={{ repeat: Infinity, duration: 2 }} className="absolute inset-0 bg-teal-600 rounded-full blur-2xl" />
+            {!isMobile && (
+              <motion.div animate={{ scale: [1, 1.2, 1], opacity: [0.3, 0.1, 0.3] }} transition={{ repeat: Infinity, duration: 2 }} className="absolute inset-0 bg-teal-600 rounded-full blur-2xl" />
+            )}
           </div>
           <h2 className="text-4xl font-display font-black text-slate-900 mb-4 tracking-tight">ابدأ رحلتك البطولية</h2>
           <p className="text-slate-400 font-bold max-w-xs mx-auto leading-relaxed">كل درس هو خطوة نحو العظمة. أكمل الدروس لفتح مناطق جديدة.</p>
-        </motion.div>
+        </div>
 
         {filteredUnits.map((unit, unitIdx) => (
           <UnitSection 

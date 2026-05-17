@@ -68,10 +68,8 @@ export const Unit: FC<UnitProps> = ({ unit }) => {
               <span>{Math.round(progressPercent)}%</span>
             </div>
             <div className="h-3 bg-white/20 rounded-full overflow-hidden backdrop-blur-sm">
-              <motion.div 
-                initial={{ width: 0 }}
-                whileInView={{ width: `${progressPercent}%` }}
-                transition={{ duration: 1, delay: 0.4 }}
+              <div 
+                style={{ width: `${progressPercent}%` }}
                 className="h-full bg-white rounded-full shadow-lg"
               />
             </div>
