@@ -58,19 +58,27 @@ export default function LessonDetail() {
         const res = await apiFetch(`/api/learning/lesson/${id}`);
         setData(res);
         
-        // Check for Phased data
+        // Check for Phased data using useMemo-like logic
         if (res.lesson.content?.startsWith('ALPHABET_PHASED_JSON:')) {
            setIsPhased(true);
            setPhasedType('ALPHABET_JSON:');
-           const parsed = JSON.parse(res.lesson.content.replace(/^ALPHABET_PHASED_JSON:\s*/, ''));
-           setPhasedDataList(parsed);
-           setCurrentQuestionsList(shuffleArray(parsed[0].quizzes));
+           try {
+             const parsed = JSON.parse(res.lesson.content.replace(/^ALPHABET_PHASED_JSON:\s*/, ''));
+             setPhasedDataList(parsed);
+             setCurrentQuestionsList(shuffleArray(parsed[0].quizzes));
+           } catch (e) {
+             console.error('Failed to parse phased alphabet', e);
+           }
         } else if (res.lesson.content?.startsWith('VOCAB_PHASED_JSON:')) {
            setIsPhased(true);
            setPhasedType('VOCAB_JSON:');
-           const parsed = JSON.parse(res.lesson.content.replace(/^VOCAB_PHASED_JSON:\s*/, ''));
-           setPhasedDataList(parsed);
-           setCurrentQuestionsList(shuffleArray(parsed[0].quizzes));
+           try {
+             const parsed = JSON.parse(res.lesson.content.replace(/^VOCAB_PHASED_JSON:\s*/, ''));
+             setPhasedDataList(parsed);
+             setCurrentQuestionsList(shuffleArray(parsed[0].quizzes));
+           } catch (e) {
+             console.error('Failed to parse phased vocab', e);
+           }
         } else {
            setCurrentQuestionsList(shuffleArray(res.quizzes || []));
         }
@@ -79,7 +87,6 @@ export default function LessonDetail() {
         navigate('/learning');
       } finally {
         setLoading(false);
-        // Small delay to ensure render is complete before allowing interactions
         requestAnimationFrame(() => setPageReady(true));
       }
     };

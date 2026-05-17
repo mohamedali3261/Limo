@@ -1,7 +1,7 @@
-import React from 'react';
 import { ArrowLeft } from 'lucide-react';
 import { motion } from 'motion/react';
 import { useNavigate } from 'react-router-dom';
+import { useMemo, useCallback } from 'react';
 
 interface LessonHUDProps {
   title?: string;
@@ -20,15 +20,22 @@ export function LessonHUD({
 }: LessonHUDProps) {
   const navigate = useNavigate();
 
-  const percentage = mode === 'lesson' 
-    ? 10 
-    : Math.round(((currentQuestionIndex + 1) / totalQuestions) * 100);
+  const percentage = useMemo(() => 
+    mode === 'lesson' 
+      ? 10 
+      : Math.round(((currentQuestionIndex + 1) / totalQuestions) * 100),
+    [mode, currentQuestionIndex, totalQuestions]
+  );
+
+  const handleNavigate = useCallback(() => {
+    navigate('/learning');
+  }, [navigate]);
 
   return (
     <div className="fixed top-0 left-0 right-0 z-[60] px-2 sm:px-4 py-2 sm:py-3 flex items-center justify-center pointer-events-none">
       <div className="bg-white/95 backdrop-blur-xl border border-gray-100 rounded-xl sm:rounded-2xl px-2 sm:px-4 py-2 sm:py-3 shadow-lg flex items-center gap-2 sm:gap-4 pointer-events-auto w-full max-w-3xl">
         <button 
-           onClick={() => navigate('/learning')}
+           onClick={handleNavigate}
            className="text-gray-400 hover:text-gray-600 transition-colors flex-shrink-0"
         >
            <ArrowLeft size={18} className="rtl:rotate-180 sm:w-5 sm:h-5" />

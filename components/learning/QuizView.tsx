@@ -1,5 +1,5 @@
 import { motion } from 'motion/react';
-import React, { useState } from 'react';
+import { useState, useMemo, useCallback } from 'react';
 import { BrainCircuit, Volume2, Puzzle, CheckCircle2, Type, BookOpen, MessageSquare, XCircle, Keyboard as KeyboardIcon } from 'lucide-react';
 import { MatchingGame } from './MatchingGame';
 import { ListeningSentence } from './ListeningSentence';
@@ -39,60 +39,68 @@ export function QuizView({
   const isLast = currentQuestion === totalQuestions - 1;
   const [mascotState, setMascotState] = useState<'idle' | 'happy' | 'sad' | 'talking' | 'thinking'>('thinking');
   const [mascotMessage, setMascotMessage] = useState<string>('فكر جيداً! 🤔');
-  const [shuffledOptions, setShuffledOptions] = useState<string[]>([]);
 
   // Shuffle function
-  const shuffleArray = (array: string[]) => {
+  const shuffleArray = useCallback((array: string[]) => {
     const shuffled = [...array];
     for (let i = shuffled.length - 1; i > 0; i--) {
       const j = Math.floor(Math.random() * (i + 1));
       [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
     }
     return shuffled;
-  };
+  }, []);
+
+  // Memoize shuffled options
+  const shuffledOptions = useMemo(() => {
+    if (questionData.options && Array.isArray(questionData.options)) {
+      return shuffleArray(questionData.options);
+    }
+    return [];
+  }, [currentQuestion, questionData.options, shuffleArray]);
 
   // تحديث حالة Mascot عند تغيير السؤال
-  React.useEffect(() => {
+  const updateMascotForQuestion = useCallback(() => {
     setMascotState('thinking');
     setMascotMessage('فكر جيداً! 🤔');
-    // Shuffle options when question changes
-    if (questionData.options && Array.isArray(questionData.options)) {
-      setShuffledOptions(shuffleArray(questionData.options));
+  }, []);
+
+  const handleMascotAnswered = useCallback(() => {
+    const isCorrect = selectedOption === questionData.correct_answer;
+    if (isCorrect) {
+      setMascotState('happy');
+      setMascotMessage('إجابة صحيحة! 🎉');
+    } else {
+      setMascotState('sad');
+      setMascotMessage('حاول مرة أخرى! 💪');
     }
-  }, [currentQuestion]);
+  }, [isAnswered, selectedOption, questionData.correct_answer]);
 
   // تحديث حالة Mascot عند الإجابة
   React.useEffect(() => {
     if (isAnswered) {
-      // سنحدد الحالة بناءً على الإجابة الصحيحة
-      const isCorrect = selectedOption === questionData.correct_answer;
-      if (isCorrect) {
-        setMascotState('happy');
-        setMascotMessage('إجابة صحيحة! 🎉');
-      } else {
-        setMascotState('sad');
-        setMascotMessage('حاول مرة أخرى! 💪');
-      }
+      handleMascotAnswered();
+    } else {
+      updateMascotForQuestion();
     }
-  }, [isAnswered, selectedOption, questionData.correct_answer]);
+  }, [isAnswered, currentQuestion]);
 
-  const handleSelect = (option: string) => {
+  const handleSelect = useCallback((option: string) => {
     onSelect(option);
     setMascotState('talking');
     setMascotMessage('اختيار جيد! ✨');
-  };
+  }, [onSelect]);
 
-  const handleCheck = () => {
+  const handleCheck = useCallback(() => {
     setMascotState('thinking');
     setMascotMessage('جاري التحقق... ⏳');
     onCheck();
-  };
+  }, [onCheck]);
 
-  const handleNext = () => {
+  const handleNext = useCallback(() => {
     setMascotState('happy');
     setMascotMessage(isLast ? 'أحسنت! 🏆' : 'هيا للسؤال التالي! 🚀');
     onNext();
-  };
+  }, [onNext, isLast]);
 
   return (
     <motion.div 
