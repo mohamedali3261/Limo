@@ -18,10 +18,13 @@ export function LessonContent({ title, content, onStartQuiz, isCompleted = false
 
   const speak = (text: string) => {
     if ('speechSynthesis' in window) {
-      window.speechSynthesis.cancel();
-      const utterance = new SpeechSynthesisUtterance(text);
-      utterance.lang = 'en-US';
-      window.speechSynthesis.speak(utterance);
+      // استخدم setTimeout لتجنب تجميد الواجهة على الموبايل
+      setTimeout(() => {
+        window.speechSynthesis.cancel();
+        const utterance = new SpeechSynthesisUtterance(text);
+        utterance.lang = 'en-US';
+        window.speechSynthesis.speak(utterance);
+      }, 0);
     }
   };
 
