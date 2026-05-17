@@ -42,6 +42,8 @@ export default function WordCatcher() {
   const [timeLeft, setTimeLeft] = useState(100);
   const [lives, setLives] = useState(5);
   const [isSentenceValid, setIsSentenceValid] = useState(false);
+  const [draggedIndex, setDraggedIndex] = useState<number | null>(null);
+  const [dragOverIndex, setDragOverIndex] = useState<number | null>(null);
   
   const navigate = useNavigate();
   const collectedWordsCountRef = useRef(0);
@@ -173,6 +175,31 @@ export default function WordCatcher() {
       [next[idx1], next[idx2]] = [next[idx2], next[idx1]];
       return next;
     });
+  };
+
+  const handleDragStart = (index: number) => {
+    setDraggedIndex(index);
+  };
+
+  const handleDragOver = (e: React.DragEvent) => {
+    e.preventDefault();
+    e.dataTransfer.dropEffect = 'move';
+  };
+
+  const handleDragEnter = (index: number) => {
+    setDragOverIndex(index);
+  };
+
+  const handleDragLeave = () => {
+    setDragOverIndex(null);
+  };
+
+  const handleDrop = (targetIndex: number) => {
+    if (draggedIndex !== null && draggedIndex !== targetIndex) {
+      swapWords(draggedIndex, targetIndex);
+    }
+    setDraggedIndex(null);
+    setDragOverIndex(null);
   };
 
   const startGame = (conv: Conversation) => {
@@ -331,26 +358,76 @@ export default function WordCatcher() {
               </div>
 
               <div className={`relative p-6 md:p-10 transition-all duration-700 ease-in-out border-t-2 ${isSentenceValid ? 'bg-gradient-to-t from-green-100 to-green-50 border-green-200' : 'bg-gradient-to-t from-slate-50 to-white border-slate-100'} flex flex-col items-center justify-center gap-8`}>
-                 <div className="flex flex-wrap justify-center items-center gap-3 md:gap-4 direction-ltr" dir="ltr">
-                    {collectedWords.map((word, idx) => (
-                      <motion.div 
-                        key={word.id}
-                        layout
-                        whileHover={{ scale: 1.05, y: -5 }}
-                        whileTap={{ scale: 0.95 }}
-                        onClick={() => {
-                          if (idx > 0) swapWords(idx, idx - 1);
-                        }}
-                        className={`px-5 md:px-8 py-3 md:py-5 rounded-2xl md:rounded-3xl border-b-4 font-black text-xl md:text-2xl cursor-pointer shadow-lg select-none transition-all ${
-                          isSentenceValid ? 'bg-green-500 text-white border-green-700 hover:bg-green-400' : 'bg-white border-slate-300 text-slate-800 hover:border-slate-400 hover:shadow-xl'
-                        }`}
-                      >
-                        {word.text}
-                      </motion.div>
-                    ))}
+                 {/* Visual feedback for drag state */}
+                 {draggedIndex !== null && (
+                   <motion.div 
+                     initial={{ opacity: 0 }}
+                     animate={{ opacity: 1 }}
+                     className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-blue-500 to-transparent"
+                   />
+                 )}
+                 
+                 <div className="flex flex-wrap justify-center items-center gap-2 md:gap-3 direction-ltr" dir="ltr">
+                    {collectedWords.map((word, idx) => {
+                      const isDragging = draggedIndex === idx;
+                      const isDragOver = dragOverIndex === idx;
+                      
+                      return (
+                        <motion.div 
+                          key={word.id}
+                          layout
+                          draggable
+                          onDragStart={() => handleDragStart(idx)}
+                          onDragOver={handleDragOver}
+                          onDragEnter={() => handleDragEnter(idx)}
+                          onDragLeave={handleDragLeave}
+                          onDrop={() => handleDrop(idx)}
+                          whileHover={!isDragging ? { scale: 1.08, y: -8 } : {}}
+                          animate={{
+                            scale: isDragging ? 0.9 : isDragOver ? 1.12 : 1,
+                            y: isDragOver ? -12 : 0,
+                            opacity: isDragging ? 0.6 : 1,
+                          }}
+                          transition={{ type: 'spring', stiffness: 300, damping: 20 }}
+                          className={`px-4 md:px-7 py-2.5 md:py-4 rounded-2xl md:rounded-3xl border-b-4 font-black text-lg md:text-2xl shadow-lg select-none transition-all relative ${
+                            isDragging 
+                              ? 'cursor-grabbing opacity-60 scale-90 border-b-2' 
+                              : 'cursor-grab'
+                          } ${
+                            isDragOver
+                              ? 'ring-4 ring-blue-400 ring-offset-2 scale-110 shadow-2xl'
+                              : ''
+                          } ${
+                            isSentenceValid 
+                              ? 'bg-green-500 text-white border-green-700 hover:bg-green-400 hover:shadow-xl' 
+                              : 'bg-white border-slate-300 text-slate-800 hover:border-blue-400 hover:shadow-xl hover:border-b-4'
+                          }`}
+                        >
+                          <div className="flex items-center gap-2">
+                            <span className="text-xs md:text-sm font-bold opacity-70">{idx + 1}</span>
+                            {word.text}
+                          </div>
+                          
+                          {/* Drag indicator */}
+                          {!isDragging && (
+                            <motion.div 
+                              className="absolute -left-2 top-1/2 -translate-y-1/2 w-1 h-6 bg-slate-300 rounded-full opacity-0 group-hover:opacity-100"
+                              animate={{ opacity: [0.3, 0.7, 0.3] }}
+                              transition={{ duration: 1.5, repeat: Infinity }}
+                            />
+                          )}
+                        </motion.div>
+                      );
+                    })}
                     {collectedWords.length === 0 && (
                       <div className="w-full flex items-center justify-center py-8">
-                         <p className="text-slate-300 font-black text-lg uppercase tracking-widest">انتظر الكلمات لتتساقط...</p>
+                         <motion.p 
+                           animate={{ opacity: [0.5, 1, 0.5] }}
+                           transition={{ duration: 2, repeat: Infinity }}
+                           className="text-slate-300 font-black text-lg uppercase tracking-widest"
+                         >
+                           انتظر الكلمات لتتساقط...
+                         </motion.p>
                       </div>
                     )}
                  </div>

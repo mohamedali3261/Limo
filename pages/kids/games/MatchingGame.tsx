@@ -235,11 +235,11 @@ export default function MatchingGame() {
       <motion.div 
         animate={wrongAttempt ? { x: [-10, 10, -10, 10, 0] } : {}}
         transition={{ duration: 0.4 }}
-        className="grid md:grid-cols-2 gap-8 mt-8"
+        className="grid grid-cols-2 md:grid-cols-2 gap-3 md:gap-8 mt-8"
       >
         {/* Words Column */}
-        <div className="space-y-4">
-          <h2 className="text-2xl font-black text-gray-800 text-center mb-6">الكلمات</h2>
+        <div className="space-y-2 md:space-y-4">
+          <h2 className="text-lg md:text-2xl font-black text-gray-800 text-center mb-3 md:mb-6">الكلمات</h2>
           {items.map((item) => {
             const isMatched = matchedIds.includes(item.id);
             const isSelected = selectedWord === item.id;
@@ -251,7 +251,7 @@ export default function MatchingGame() {
                 disabled={isMatched}
                 whileHover={!isMatched ? { scale: 1.05 } : {}}
                 whileTap={!isMatched ? { scale: 0.95 } : {}}
-                className={`w-full p-6 rounded-3xl border-4 font-black text-2xl transition-all ${
+                className={`w-full p-3 md:p-6 rounded-2xl md:rounded-3xl border-3 md:border-4 font-black text-sm md:text-2xl transition-all ${
                   isMatched 
                     ? 'bg-green-100 text-green-600 border-green-400 opacity-50 cursor-not-allowed' 
                     : isSelected
@@ -259,15 +259,15 @@ export default function MatchingGame() {
                     : 'bg-white text-gray-800 border-gray-200 hover:border-purple-300 hover:shadow-md cursor-pointer'
                 }`}
               >
-                <span className="capitalize" dir="ltr">{item.word}</span>
+                <span className="capitalize line-clamp-2" dir="ltr">{item.word}</span>
               </motion.button>
             );
           })}
         </div>
 
         {/* Emojis Column */}
-        <div className="space-y-4">
-          <h2 className="text-2xl font-black text-gray-800 text-center mb-6">الصور</h2>
+        <div className="space-y-2 md:space-y-4">
+          <h2 className="text-lg md:text-2xl font-black text-gray-800 text-center mb-3 md:mb-6">الصور</h2>
           {shuffledEmojis.map((item) => {
             const isMatched = matchedIds.includes(item.id);
             const isSelected = selectedEmoji === item.id;
@@ -279,7 +279,7 @@ export default function MatchingGame() {
                 disabled={isMatched}
                 whileHover={!isMatched ? { scale: 1.05 } : {}}
                 whileTap={!isMatched ? { scale: 0.95 } : {}}
-                className={`w-full p-6 rounded-3xl border-4 text-6xl transition-all flex items-center justify-center ${
+                className={`w-full p-3 md:p-6 rounded-2xl md:rounded-3xl border-3 md:border-4 text-4xl md:text-6xl transition-all flex items-center justify-center ${
                   isMatched 
                     ? 'bg-green-100 border-green-400 opacity-50 cursor-not-allowed' 
                     : isSelected
