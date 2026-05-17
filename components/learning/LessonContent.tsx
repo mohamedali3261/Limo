@@ -130,11 +130,6 @@ function LessonContentComponent({ title, content, onStartQuiz, isCompleted = fal
                       >
                         <Volume2 size={20} />
                       </button>
-                      {isClicked && (
-                        <div className="absolute top-2 right-2 w-6 h-6 bg-green-500 rounded-full flex items-center justify-center text-white text-xs font-bold">
-                          ✓
-                        </div>
-                      )}
                     </div>
                   );
                 })}

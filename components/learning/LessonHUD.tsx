@@ -38,21 +38,7 @@ export function LessonHUD({
           {/* Progress bar with dots */}
           <div className="relative">
             {/* Progress bar background */}
-            <div className="h-1.5 sm:h-2 bg-gray-200 rounded-full overflow-hidden relative">
-              <motion.div 
-                initial={{ width: 0 }}
-                animate={{ width: `${percentage}%` }}
-                transition={{ duration: 0.6, ease: "easeInOut" }}
-                className={`h-full rounded-full relative ${
-                  isReviewMode 
-                    ? 'bg-gradient-to-r from-orange-400 to-orange-600' 
-                    : 'bg-gradient-to-r from-primary to-primary-dark'
-                }`}
-              >
-                {/* Animated shine effect */}
-                <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/40 to-transparent" />
-              </motion.div>
-            </div>
+
             
             {/* Question dots positioned on the bar - Hidden on mobile, shown on desktop */}
             {mode === 'quiz' && totalQuestions > 0 && totalQuestions <= 15 && (
