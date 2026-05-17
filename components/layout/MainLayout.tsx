@@ -105,8 +105,7 @@ export default function MainLayout() {
       {/* Mobile Bottom Navigation */}
       <nav className="md:hidden bg-white border-t border-gray-100 flex justify-around p-3 pb-6 fixed bottom-0 left-0 right-0 z-40 backdrop-blur-lg bg-white/90 overflow-x-auto">
         {[
-          { name: 'الخريطة', path: '/map', icon: Languages },
-          { name: 'الدروس', path: '/learning', icon: GraduationCap },
+          { name: 'خريطة المغامرة', path: '/learning', icon: GraduationCap },
           { name: 'الحكايات', path: '/stories', icon: Bookmark },
           { name: 'المحادثة', path: '/voice-conversation', icon: MessageCircle },
           { name: 'الألعاب', path: '/game', icon: Gamepad2 },
