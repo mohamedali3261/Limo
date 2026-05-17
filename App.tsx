@@ -20,6 +20,7 @@ import Stories from './pages/Stories';
 import StoryView from './pages/StoryView';
 import GameHub from './pages/GameHub';
 import GameLevel from './pages/GameLevel';
+import GameTypeSelector from './pages/GameTypeSelector';
 import ProfilePage from './pages/Profile';
 import KidsHub from './pages/KidsHub';
 import KidsAlphabetPage from './pages/kids/KidsAlphabetPage';
@@ -255,6 +256,7 @@ export default function App() {
                 <Route path="/stories/:id" element={<StoryView />} />
                 <Route path="/voice-conversation" element={<VoiceConversation />} />
                 <Route path="/game" element={<GameHub />} />
+                <Route path="/game/type/:type" element={<GameTypeSelector />} />
                 <Route path="/game/level/:levelId" element={<GameLevel />} />
                 <Route path="/game/word-catcher" element={<WordCatcher />} />
                 <Route path="/profile" element={<ProfilePage />} />
