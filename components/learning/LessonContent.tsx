@@ -1,6 +1,6 @@
 import { useState, memo, useMemo } from 'react';
 import { motion } from 'motion/react';
-import { Volume2, ChevronRight, BookOpen, UserCircle2, GraduationCap, SpellCheck, Lock } from 'lucide-react';
+import { Volume2, ChevronRight, BookOpen, UserCircle2, GraduationCap, SpellCheck } from 'lucide-react';
 import { toast } from 'sonner';
 import { useMediaQuery } from '../../lib/hooks/useMediaQuery';
 import { speak } from '../../lib/audio';
@@ -92,59 +92,40 @@ function LessonContentComponent({ title, content, onStartQuiz, isCompleted = fal
             {isAlphabet && (
               <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6" dir="ltr">
                 {alphabetData.map((item, idx) => {
-                  // If lesson is completed, allow free access to all letters
-                  const isLocked = !isCompleted && idx > clickedLetters.length;
                   const isClicked = clickedLetters.includes(idx);
                   
                   return (
                     <div
                       key={idx}
-                      className={`rounded-[2rem] p-5 border-2 flex flex-col items-center text-center cursor-pointer relative ${
-                        isLocked 
-                          ? 'bg-gray-100 border-gray-200 opacity-50 cursor-not-allowed' 
-                          : `bg-gray-50 border-gray-100 ${!isMobile && 'hover:border-primary/30 hover:shadow-lg transition-all'}`
+                      className={`rounded-[2rem] p-5 border-2 flex flex-col items-center text-center cursor-pointer relative bg-gray-50 border-gray-100 ${
+                        !isMobile && 'hover:border-primary/30 hover:shadow-lg transition-all'
                       }`}
                       onClick={() => {
-                        if (isLocked) {
-                          toast.error(`اضغط على الحرف ${String.fromCharCode(65 + clickedLetters.length)} أولاً! 🔒`);
-                          return;
-                        }
                         if (!isClicked) {
                           setClickedLetters([...clickedLetters, idx]);
-                          handleSpeak(`${item.letter}, ${item.word}`);
-                        } else {
-                          handleSpeak(`${item.letter}, ${item.word}`);
                         }
+                        handleSpeak(`${item.letter}, ${item.word}`);
                       }}
                     >
-                      {isLocked && (
-                        <div className="absolute inset-0 flex items-center justify-center rounded-[2rem] bg-black/5">
-                          <Lock size={32} className="text-gray-400" />
-                        </div>
-                      )}
-                      <div className={`text-7xl font-black mb-2 ${
-                        isLocked ? 'text-gray-300' : 'text-primary'
-                      } ${!isMobile && 'group-hover:scale-110 transition-transform'}`}>
+                      <div className={`text-7xl font-black mb-2 text-primary ${
+                        !isMobile && 'group-hover:scale-110 transition-transform'
+                      }`}>
                         {item.letter}
                       </div>
                       <div className="text-5xl mb-3">
                         {item.emoji}
                       </div>
                       <div className="space-y-1">
-                        <div className={`text-lg font-bold ${isLocked ? 'text-gray-400' : 'text-gray-800'}`}>{item.word}</div>
-                        <div className={`text-xs font-medium ${isLocked ? 'text-gray-300' : 'text-gray-500'}`} dir="rtl">{item.translation}</div>
+                        <div className="text-lg font-bold text-gray-800">{item.word}</div>
+                        <div className="text-xs font-medium text-gray-500" dir="rtl">{item.translation}</div>
                       </div>
                       <button 
-                        className={`mt-4 p-3 rounded-full ${
-                          isLocked 
-                            ? 'bg-gray-200 text-gray-400' 
-                            : `bg-primary/10 text-primary ${!isMobile && 'hover:bg-primary hover:text-white transition-colors'}`
+                        className={`mt-4 p-3 rounded-full bg-primary/10 text-primary ${
+                          !isMobile && 'hover:bg-primary hover:text-white transition-colors'
                         }`}
                         onClick={(e) => {
                           e.stopPropagation();
-                          if (!isLocked) {
-                            handleSpeak(`${item.letter}, ${item.word}`);
-                          }
+                          handleSpeak(`${item.letter}, ${item.word}`);
                         }}
                       >
                         <Volume2 size={20} />
@@ -284,17 +265,11 @@ function LessonContentComponent({ title, content, onStartQuiz, isCompleted = fal
 
         <button 
           onClick={onStartQuiz}
-          disabled={!isCompleted && isAlphabet && clickedLetters.length < alphabetData.length}
-          className={`w-full py-4 rounded-[1.5rem] font-black text-lg flex items-center justify-center gap-2 shadow-xl ${
-            !isCompleted && isAlphabet && clickedLetters.length < alphabetData.length
-              ? 'bg-gray-300 text-gray-500 cursor-not-allowed opacity-50'
-              : `bg-primary text-white shadow-primary/20 ${!isMobile && 'hover:bg-primary-hover transition-all'}`
+          className={`w-full py-4 rounded-[1.5rem] font-black text-lg flex items-center justify-center gap-2 shadow-xl bg-primary text-white shadow-primary/20 ${
+            !isMobile && 'hover:bg-primary-hover transition-all'
           }`}
         >
-          {!isCompleted && isAlphabet && clickedLetters.length < alphabetData.length 
-            ? `اضغط على جميع الحروف (${clickedLetters.length}/${alphabetData.length})`
-            : 'ابدأ الاختبار'
-          }
+          ابدأ الاختبار
           <ChevronRight size={20} className={!isMobile ? 'hover:translate-x-1 transition-transform' : ''} />
         </button>
       </div>

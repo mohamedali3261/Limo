@@ -307,8 +307,10 @@ export default function LearningPath() {
 
           {nodes.map((node, index) => {
             const isCompleted = node.is_completed;
-            // Allow all lessons to be accessible - no locking
-            const isLocked = false;
+            const firstIncompleteIdx = nodes.findIndex(n => (n.type === 'lesson' || n.type === 'boss') && !n.is_completed);
+            // Lock the lesson if it's not the first incomplete one (sequential order)
+            // But allow access to completed lessons for review
+            const isLocked = (node.type === 'lesson' || node.type === 'boss') && !isCompleted && firstIncompleteIdx !== -1 && index !== firstIncompleteIdx;
             const isAudioLevel = node.id % 5 === 0 && node.type === 'lesson';
             
             // Check if this is the start of a new level
@@ -335,7 +337,7 @@ export default function LearningPath() {
                     className="absolute top-10 left-1/2 -translate-x-1/2 w-full max-w-lg z-10"
                   >
                     <div className={`mx-4 p-8 rounded-[3rem] border-b-8 transition-all duration-500 shadow-xl overflow-hidden relative ${
-                      'bg-white border-primary shadow-primary/10'
+                      isLocked ? 'bg-gray-100 border-gray-200 grayscale' : 'bg-white border-primary shadow-primary/10'
                     }`}>
                       {/* Decorative Background Icon */}
                       <div className="absolute -right-8 -bottom-8 opacity-5 transform rotate-12 scale-[3]">
@@ -343,19 +345,25 @@ export default function LearningPath() {
                       </div>
 
                       <div className="relative z-10 flex flex-col items-center text-center space-y-3">
-                         <div className={`w-16 h-16 rounded-2xl flex items-center justify-center mb-2 shadow-lg bg-primary text-white`}>
+                         <div className={`w-16 h-16 rounded-2xl flex items-center justify-center mb-2 shadow-lg ${
+                            isLocked ? 'bg-gray-200 text-gray-400' : 'bg-primary text-white'
+                         }`}>
                             <span className="text-2xl font-black">{node.levelIndex + 1}</span>
                          </div>
-                         <h2 className="text-2xl font-black text-gray-900">
+                         <h2 className={`text-2xl font-black ${isLocked ? 'text-gray-400' : 'text-gray-900'}`}>
                            {currentLevel?.title || 'مستوى جديد'}
                          </h2>
                          <div className="flex items-center gap-2">
-                           <div className="px-4 py-1.5 rounded-full text-xs font-black uppercase tracking-widest bg-primary/10 text-primary">
+                           <div className={`px-4 py-1.5 rounded-full text-xs font-black uppercase tracking-widest ${
+                             isLocked ? 'bg-gray-200 text-gray-400' : 'bg-primary/10 text-primary'
+                           }`}>
                              {node.theme?.name}
                            </div>
+                           {isLocked && <Lock size={14} className="text-gray-400" />}
                          </div>
                          
-                         <div className="w-full max-w-[200px] mt-4 space-y-1">
+                         {!isLocked && (
+                            <div className="w-full max-w-[200px] mt-4 space-y-1">
                                <div className="flex justify-between text-[10px] font-black text-slate-400 uppercase">
                                   <span>التقدم</span>
                                   <span>{Math.round((currentLevel?.lessons?.filter((l: any) => l.is_completed).length / currentLevel?.lessons?.length * 100) || 0)}%</span>
@@ -367,6 +375,7 @@ export default function LearningPath() {
                                   />
                                </div>
                             </div>
+                         )}
                       </div>
                     </div>
                   </div>
@@ -433,13 +442,19 @@ export default function LearningPath() {
                 {/* Node Buttons */}
                 {node.type === 'lesson' || node.type === 'boss' ? (
                   <motion.button
-                    whileHover={!isMobile ? { y: -5 } : {}}
-                    whileTap={!isMobile ? {} : {}}
+                    whileHover={!isLocked && !isMobile ? { y: -5 } : {}}
+                    whileTap={!isLocked && !isMobile ? {} : {}}
                     onClick={() => {
-                      // Use startTransition to avoid freezing UI
-                      startTransition(() => {
-                        navigate(`/learning/lesson/${node.id}`);
-                      });
+                      if (isLocked) {
+                        toast.error('أكمل الدرس السابق أولاً! 🔒', {
+                          description: 'يجب أن تتعلم بالترتيب لتحقيق أفضل النتائج.'
+                        });
+                      } else {
+                        // Use startTransition to avoid freezing UI
+                        startTransition(() => {
+                          navigate(`/learning/lesson/${node.id}`);
+                        });
+                      }
                     }}
                     className={`relative flex items-center justify-center transition-all group ${
                       node.type === 'boss' 
@@ -447,6 +462,7 @@ export default function LearningPath() {
                         : 'w-24 h-24 sm:w-28 sm:h-28 rounded-[2rem] border-b-[8px]'
                     } ${
                       isCompleted ? 'bg-[#58CC02] border-[#46A302] text-white' : 
+                      isLocked ? 'bg-[#E5E5E5] border-[#AFAFAF] text-gray-400 opacity-60' : 
                       node.type === 'boss' ? 'bg-red-500 border-red-700 text-white shadow-2xl shadow-red-500/30' :
                       'bg-primary border-[#cc5600] text-white shadow-2xl shadow-primary/30'
                     }`}
@@ -460,6 +476,8 @@ export default function LearningPath() {
                     
                     {isCompleted ? (
                       <CheckCircle2 className={`${node.type === 'boss' ? 'w-16 h-16 sm:w-20 sm:h-20' : 'w-12 h-12 sm:w-16 sm:h-16'}`} />
+                    ) : isLocked ? (
+                      <Lock className="w-8 h-8 opacity-40" />
                     ) : node.type === 'boss' ? (
                       <div className="flex flex-col items-center">
                          {levels[node.levelIndex]?.icon_url ? (
@@ -544,16 +562,20 @@ export default function LearningPath() {
                 ) : (
                   // Chest Node
                   <motion.button
-                    whileHover={{}}
-                    onClick={() => handleChestClick(node.id)}
+                    whileHover={!isLocked ? {} : {}}
+                    onClick={() => !isLocked && handleChestClick(node.id)}
                     className={`w-20 h-20 rounded-2xl flex items-center justify-center transition-all ${
-                      claimedRadios.includes(node.id) 
+                      isLocked 
+                        ? 'bg-gray-100 text-gray-300 opacity-50 cursor-not-allowed'
+                        : claimedRadios.includes(node.id) 
                         ? 'bg-gray-200 text-gray-400' 
                         : 'bg-yellow-100 text-yellow-600 border-b-6 border-yellow-300 shadow-lg'
                     }`}
                   >
                     {claimedRadios.includes(node.id) ? (
                       <Gift className="w-8 h-8 opacity-40" />
+                    ) : isLocked ? (
+                      <Lock className="w-6 h-6" />
                     ) : (
                       <div>
                         <Gift className="w-10 h-10" />
