@@ -122,7 +122,7 @@ export default function LearningPath() {
   };
 
   if (loading) {
-    return <LoadingPage message="بناء خريطة مغامرتك..." />;
+    return null;
   }
 
   return (

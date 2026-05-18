@@ -191,7 +191,7 @@ export default function LessonDetail() {
     }
   };
 
-  if (loading) return <LoadingPage />;
+  if (loading) return null;
 
   if (showResults) {
     const totalQuestions = isPhased ? phasedDataList.reduce((acc, curr) => acc + curr.quizzes.length, 0) : data.quizzes.length;

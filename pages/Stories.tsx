@@ -83,7 +83,7 @@ export default function Stories() {
   const completedCount = getCompletedCount();
 
   if (loading) {
-    return <LoadingPage />;
+    return null;
   }
 
   return (

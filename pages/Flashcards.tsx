@@ -124,7 +124,7 @@ export default function Flashcards() {
   };
 
   if (loading) {
-    return <LoadingPage />;
+    return null;
   }
 
   if (vocabulary.length === 0) {

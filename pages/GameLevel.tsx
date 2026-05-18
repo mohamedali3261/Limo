@@ -72,7 +72,7 @@ export default function GameLevel() {
   };
 
   if (loading || !levelData || !levelData.level || !levelData.challenges) {
-    return <LoadingPage message="جاري تجهيز المستوى..." />;
+    return null;
   }
 
   if (levelData.challenges.length === 0) {

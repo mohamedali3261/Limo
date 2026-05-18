@@ -170,7 +170,7 @@ export default function StoryView() {
     }
   };
 
-  if (loading) return <LoadingPage message="جاري تجهيز القصة..." />;
+  if (loading) return null;
 
   if (isFinished && story) {
     return <StoryCompletion story={story} onContinue={() => navigate('/stories')} />;

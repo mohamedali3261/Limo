@@ -64,7 +64,7 @@ export default function GameTypeSelector() {
     return gameInfoMap[gameType] || { name: gameType, description: 'لعبة تفاعلية', emoji: '🎮' };
   };
 
-  if (loading) return <LoadingPage message="جاري تحميل المستويات..." />;
+  if (loading) return null;
 
   const gameInfo = getGameInfo(type || '');
   const totalXP = levels.reduce((sum, level) => sum + (level.xp_reward || 0), 0);

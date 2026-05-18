@@ -33,7 +33,7 @@ export default function Leaderboard() {
   }, [user]);
 
   if (loading) {
-    return <LoadingPage message="جاري تجهيز قائمة الأبطال..." />;
+    return null;
   }
 
   const currentUserInTop10 = leaders.slice(0, 10).some(l => l.username === user?.username);

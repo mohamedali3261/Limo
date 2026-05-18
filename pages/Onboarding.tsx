@@ -103,7 +103,7 @@ export default function Onboarding() {
   };
 
   if (isLoading) {
-    return <LoadingPage message="بانتظار عالمك الجديد..." />;
+    return null;
   }
 
   if (steps.length === 0) return null;

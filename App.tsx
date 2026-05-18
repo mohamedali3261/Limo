@@ -5,6 +5,7 @@ import { useThemeStore } from './lib/store/theme';
 import { useSettingsStore } from './lib/store/settings';
 import { apiFetch } from './lib/api';
 import { Toaster } from 'sonner';
+import { LoadingPage } from './components/common/LoadingPage';
 
 import MainLayout from './components/layout/MainLayout';
 import AuthPage from './pages/Auth';
@@ -109,6 +110,7 @@ export default function App() {
   const { user, login, logout, token } = useAuthStore();
   const { setPrimaryColor } = useThemeStore();
   const { setSettings } = useSettingsStore();
+  const [isInitLoading, setIsInitLoading] = useState(true);
   const [showOnboarding, setShowOnboarding] = useState(() => {
     const onboardingData = localStorage.getItem('limohero_onboarding');
     return !onboardingData;
@@ -176,34 +178,40 @@ export default function App() {
 
     // التحقق من صحة الجلسة عند بدء التطبيق
     const initAuth = async () => {
-      if (token && user) {
-        try {
-          // التحقق من صحة التوكن
-          const data = await apiFetch('/api/auth/me');
-          // تحديث بيانات المستخدم إذا تغيرت
-          if (JSON.stringify(data.user) !== JSON.stringify(user)) {
-            login(data.user, token);
+      try {
+        if (token && user) {
+          try {
+            // التحقق من صحة التوكن
+            const data = await apiFetch('/api/auth/me');
+            // تحديث بيانات المستخدم إذا تغيرت
+            if (JSON.stringify(data.user) !== JSON.stringify(user)) {
+              login(data.user, token);
+            }
+          } catch (err) {
+            // في حالة فشل التحقق، تسجيل الخروج
+            logout();
           }
-        } catch (err) {
-          // في حالة فشل التحقق، تسجيل الخروج
-          logout();
-        }
-      } else if (!token && !user) {
-        // إذا لم يكن هناك مستخدم مسجل دخول، قم بإنشاء مستخدم افتراضي
-        try {
-          const result = await apiFetch('/api/auth/register', {
-            method: 'POST',
-            body: JSON.stringify({
-              username: `guest_${Date.now()}`,
-              password: 'guest_password_123'
-            })
-          });
-          if (result.user && result.token) {
-            login(result.user, result.token);
+        } else if (!token && !user) {
+          // إذا لم يكن هناك مستخدم مسجل دخول، قم بإنشاء مستخدم افتراضي
+          try {
+            const result = await apiFetch('/api/auth/register', {
+              method: 'POST',
+              body: JSON.stringify({
+                username: `guest_${Date.now()}`,
+                password: 'guest_password_123'
+              })
+            });
+            if (result.user && result.token) {
+              login(result.user, result.token);
+            }
+          } catch (err) {
+            console.error('Failed to create guest user', err);
           }
-        } catch (err) {
-          console.error('Failed to create guest user', err);
         }
+      } finally {
+        setTimeout(() => {
+          setIsInitLoading(false);
+        }, 1200);
       }
     };
     initAuth();
@@ -225,6 +233,10 @@ export default function App() {
     window.history.pushState({}, '', route);
     window.location.href = route;
   };
+
+  if (isInitLoading) {
+    return <LoadingPage />;
+  }
 
   // Show onboarding flow if user hasn't completed it
   if (showOnboarding) {

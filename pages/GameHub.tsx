@@ -75,7 +75,7 @@ export default function GameHub() {
     return acc;
   }, {} as Record<string, any[]>);
 
-  if (loading) return <LoadingPage />;
+  if (loading) return null;
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-50 to-blue-50 p-4 md:p-6 lg:p-8">
