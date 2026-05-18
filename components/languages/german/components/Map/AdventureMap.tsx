@@ -176,12 +176,12 @@ export default function AdventureMap() {
                     whileHover={isUnlocked && !level.isLocked ? { scale: 1.05 } : {}}
                     whileTap={isUnlocked && !level.isLocked ? { scale: 0.95 } : {}}
                     onClick={() => {
-                      if (isUnlocked && !level.isLocked) navigate(`${level.type === 'lesson' ? 'lesson' : 'quiz'}/${level.id}`);
+                      if (isUnlocked) navigate(`${level.type === 'lesson' ? 'lesson' : 'quiz'}/${level.id}`);
                     }}
                     className={`w-18 h-18 rounded-full flex items-center justify-center border-b-[4px] shadow-lg relative z-20 group transition-all duration-300 ${
                       isCompleted 
                         ? 'bg-amber-400 border-amber-500 text-white hover:bg-amber-300 shadow-amber-500/40 hover:border-amber-400' 
-                         : isCurrent && !level.isLocked
+                         : isCurrent
                           ? `${level.color} border-black/10 text-white hover:brightness-110 shadow-2xl shadow-${level.color.split('-')[1]}-500/50 ring-[3px] ring-white` 
                           : 'bg-slate-200 border-slate-300 text-slate-400'
                     }`}

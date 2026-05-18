@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { motion } from 'motion/react';
 import { Volume2, ArrowLeft, Play, Pause, BookOpen, MessageCircle, Mic } from 'lucide-react';
-import { speak } from '../lib/audio';
+import { speak, stopSpeaking } from '../lib/audio';
 import ConversationQuiz from './ConversationQuiz';
 import {
   HandshakeIcon,
@@ -84,9 +84,31 @@ export default function VoiceConversation() {
 
     // تحميل المواقف من ملف الفهرس
     fetch('/data/conversations/index.json')
-      .then(res => res.json())
-      .then(data => setSituations(data))
-      .catch(err => console.error('Error loading situations:', err));
+      .then(res => {
+        if (!res.ok) {
+          throw new Error(`Failed to load conversations: ${res.status}`);
+        }
+        return res.json();
+      })
+      .then(data => {
+        if (Array.isArray(data)) {
+          setSituations(data);
+        } else {
+          console.error('Invalid conversations data format');
+          setSituations([]);
+        }
+      })
+      .catch(err => {
+        console.error('Error loading situations:', err);
+        setSituations([]);
+      });
+
+    return () => {
+      // إيقاف أي صوت شغال وإلغاء التشغيل التلقائي عند مغادرة الصفحة
+      setAutoPlay(false);
+      autoPlayRef.current = false;
+      stopSpeaking();
+    };
   }, []);
 
   useEffect(() => {
@@ -133,11 +155,22 @@ export default function VoiceConversation() {
   const loadSituationDetails = async (situation: Situation) => {
     try {
       const file = (situation as any).file;
+      if (!file) {
+        // إذا لم يكن هناك ملف، استخدم البيانات الموجودة
+        setSelectedSituation(situation);
+        return;
+      }
       const response = await fetch(`/data/conversations/${file}`);
+      if (!response.ok) {
+        console.error('Failed to load situation details:', response.status);
+        setSelectedSituation(situation);
+        return;
+      }
       const fullData = await response.json();
       setSelectedSituation(fullData);
     } catch (err) {
       console.error('Error loading situation details:', err);
+      // استخدم البيانات الموجودة بدلاً من الفشل
       setSelectedSituation(situation);
     }
   };
@@ -229,6 +262,23 @@ export default function VoiceConversation() {
   }
 
   if (selectedSituation) {
+    // تأكد من أن selectedSituation لديها dialogues
+    if (!selectedSituation.dialogues || selectedSituation.dialogues.length === 0) {
+      return (
+        <div className="min-h-screen bg-gradient-to-br from-slate-50 to-gray-100 flex items-center justify-center">
+          <div className="text-center">
+            <h2 className="text-2xl font-bold text-gray-800 mb-4">خطأ في تحميل المحادثة</h2>
+            <button
+              onClick={() => setSelectedSituation(null)}
+              className="px-6 py-3 bg-blue-500 text-white rounded-lg font-bold hover:bg-blue-600"
+            >
+              العودة
+            </button>
+          </div>
+        </div>
+      );
+    }
+    
     const colors = getColorClasses(selectedSituation.color);
     const IconComponent = getIconComponent(selectedSituation.icon);
     
@@ -238,7 +288,10 @@ export default function VoiceConversation() {
         <div className={`bg-gradient-to-r ${colors.bg} text-white px-6 py-8 shadow-lg`}>
           <div className="max-w-4xl mx-auto">
             <button
-              onClick={() => setSelectedSituation(null)}
+              onClick={() => {
+                stopAutoPlay();
+                setSelectedSituation(null);
+              }}
               className="flex items-center gap-2 mb-4 hover:bg-white/20 px-4 py-2 rounded-xl transition-all"
             >
               <ArrowLeft size={20} />
@@ -280,13 +333,15 @@ export default function VoiceConversation() {
                 </>
               )}
             </button>
-            <button
-              onClick={() => setShowQuiz(true)}
-              className="flex items-center gap-2 px-6 py-3 rounded-2xl font-bold bg-blue-500 hover:bg-blue-600 text-white transition-all"
-            >
-              <BookOpen size={20} />
-              <span>اختبار</span>
-            </button>
+            {(selectedSituation as any).quiz && (
+              <button
+                onClick={() => setShowQuiz(true)}
+                className="flex items-center gap-2 px-6 py-3 rounded-2xl font-bold bg-blue-500 hover:bg-blue-600 text-white transition-all"
+              >
+                <BookOpen size={20} />
+                <span>اختبار</span>
+              </button>
+            )}
             {voicesLoaded && (
               <span className="text-xs bg-green-500 text-white px-3 py-2 rounded-full font-bold">
                 ✓ جاهز
@@ -353,20 +408,22 @@ export default function VoiceConversation() {
             })}
 
             {/* Quiz Button - Appears after all dialogues */}
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: (selectedSituation.dialogues.length) * 0.1 + 0.2 }}
-              className="flex justify-center mt-12"
-            >
-              <button
-                onClick={() => setShowQuiz(true)}
-                className="flex items-center gap-3 px-8 py-4 rounded-2xl font-bold bg-gradient-to-r from-blue-500 to-cyan-500 hover:from-blue-600 hover:to-cyan-600 text-white transition-all shadow-lg hover:shadow-xl transform hover:scale-105"
+            {(selectedSituation as any).quiz && (
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: (selectedSituation.dialogues.length) * 0.1 + 0.2 }}
+                className="flex justify-center mt-12"
               >
-                <BookOpen size={24} />
-                <span className="text-lg">اختبر معلوماتك</span>
-              </button>
-            </motion.div>
+                <button
+                  onClick={() => setShowQuiz(true)}
+                  className="flex items-center gap-3 px-8 py-4 rounded-2xl font-bold bg-gradient-to-r from-blue-500 to-cyan-500 hover:from-blue-600 hover:to-cyan-600 text-white transition-all shadow-lg hover:shadow-xl transform hover:scale-105"
+                >
+                  <BookOpen size={24} />
+                  <span className="text-lg">اختبر معلوماتك</span>
+                </button>
+              </motion.div>
+            )}
           </div>
         </div>
       </div>
@@ -420,52 +477,58 @@ export default function VoiceConversation() {
 
       {/* Situations Grid */}
       <main className="max-w-6xl mx-auto px-6 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {situations && situations.map((situation, index) => {
-            const colors = getColorClasses(situation.color);
-            const IconComponent = getIconComponent(situation.icon);
-            
-            return (
-              <motion.div
-                key={situation.id}
-                initial={{ opacity: 0, y: 30 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: index * 0.1 }}
-                onClick={() => loadSituationDetails(situation)}
-                className="group cursor-pointer"
-              >
-                <div className={`bg-gradient-to-br ${colors.light} border-3 ${colors.border} rounded-3xl p-6 shadow-lg hover:shadow-2xl transition-all hover:-translate-y-2`}>
-                  {/* Icon */}
-                  <div className={`w-20 h-20 ${colors.badge} rounded-2xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform`}>
-                    <IconComponent className={`w-12 h-12 ${colors.text}`} />
-                  </div>
+        {!situations || situations.length === 0 ? (
+          <div className="text-center py-12">
+            <p className="text-xl text-gray-600 font-bold">جاري تحميل المحادثات...</p>
+          </div>
+        ) : (
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {situations.map((situation, index) => {
+              const colors = getColorClasses(situation.color);
+              const IconComponent = getIconComponent(situation.icon);
+              
+              return (
+                <motion.div
+                  key={situation.id}
+                  initial={{ opacity: 0, y: 30 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ delay: index * 0.1 }}
+                  onClick={() => loadSituationDetails(situation)}
+                  className="group cursor-pointer"
+                >
+                  <div className={`bg-gradient-to-br ${colors.light} border-3 ${colors.border} rounded-3xl p-6 shadow-lg hover:shadow-2xl transition-all hover:-translate-y-2`}>
+                    {/* Icon */}
+                    <div className={`w-20 h-20 ${colors.badge} rounded-2xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform`}>
+                      <IconComponent className={`w-12 h-12 ${colors.text}`} />
+                    </div>
 
-                  {/* Title */}
-                  <h3 className={`text-2xl font-black ${colors.text} mb-2`}>
-                    {situation.title}
-                  </h3>
-                  <p className="text-gray-600 font-bold mb-4">{situation.titleEn}</p>
+                    {/* Title */}
+                    <h3 className={`text-2xl font-black ${colors.text} mb-2`}>
+                      {situation.title}
+                    </h3>
+                    <p className="text-gray-600 font-bold mb-4">{situation.titleEn}</p>
 
-                  {/* Info */}
-                  <div className="flex items-center justify-between">
-                    <span className={`${colors.badge} px-3 py-1 rounded-full text-xs font-black uppercase`}>
-                      {situation.difficulty === 'easy' ? 'سهل' : situation.difficulty === 'medium' ? 'متوسط' : 'صعب'}
-                    </span>
-                    <span className="text-gray-500 font-bold text-sm">
-                      {situation.dialogues?.length || 0} جملة
-                    </span>
-                  </div>
+                    {/* Info */}
+                    <div className="flex items-center justify-between">
+                      <span className={`${colors.badge} px-3 py-1 rounded-full text-xs font-black uppercase`}>
+                        {situation.difficulty === 'easy' ? 'سهل' : situation.difficulty === 'medium' ? 'متوسط' : 'صعب'}
+                      </span>
+                      <span className="text-gray-500 font-bold text-sm">
+                        {situation.dialogues?.length || 0} جملة
+                      </span>
+                    </div>
 
-                  {/* Arrow */}
-                  <div className={`mt-4 flex items-center gap-2 ${colors.text} font-black group-hover:gap-4 transition-all`}>
-                    <span>ابدأ التدريب</span>
-                    <span>←</span>
+                    {/* Arrow */}
+                    <div className={`mt-4 flex items-center gap-2 ${colors.text} font-black group-hover:gap-4 transition-all`}>
+                      <span>ابدأ التدريب</span>
+                      <span>←</span>
+                    </div>
                   </div>
-                </div>
-              </motion.div>
-            );
-          })}
-        </div>
+                </motion.div>
+              );
+            })}
+          </div>
+        )}
       </main>
     </div>
   );

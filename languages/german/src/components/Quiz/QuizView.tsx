@@ -108,9 +108,9 @@ export default function QuizView({ levelId, dataId, initialQuestions }: { levelI
     
     if (nextLevel) {
      if (nextLevel.type === 'quiz') {
-      navigate(`/quiz/${nextLevel.id}`);
+      navigate(`quiz/${nextLevel.id}`);
      } else {
-      navigate(`/level/${nextLevel.id}`);
+      navigate(`level/${nextLevel.id}`);
      }
     } else {
      navigate('/');

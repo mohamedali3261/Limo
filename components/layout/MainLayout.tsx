@@ -30,7 +30,7 @@ export default function MainLayout() {
       <div className="fixed bottom-0 left-0 w-[500px] h-[500px] bg-primary/5 rounded-full blur-[120px] pointer-events-none -z-10" />
 
       {/* Desktop Sidebar */}
-      <nav className="hidden md:flex w-48 bg-white/80 backdrop-blur-xl border-r border-gray-100 flex-col shrink-0 flex-none z-20 shadow-2xl shadow-gray-200/20 overflow-y-auto">
+      <nav id="desktop-sidebar" className="hidden md:flex w-48 bg-white/80 backdrop-blur-xl border-r border-gray-100 flex-col shrink-0 flex-none z-20 shadow-2xl shadow-gray-200/20 overflow-y-auto">
         <div className="flex items-center justify-center">
           <img src="/logo (4).png" alt="Logo" className="h-24 w-auto" />
         </div>
@@ -87,7 +87,7 @@ export default function MainLayout() {
       </nav>
 
       {/* Mobile Top Bar */}
-      <div className="md:hidden bg-white border-b border-gray-100 flex items-center justify-center sticky top-0 z-30">
+      <div id="mobile-top-bar" className="md:hidden bg-white border-b border-gray-100 flex items-center justify-center sticky top-0 z-30">
         <img src="/logo (4).png" alt="Logo" className="h-16 w-auto" />
       </div>
 
@@ -103,7 +103,7 @@ export default function MainLayout() {
       </main>
 
       {/* Mobile Bottom Navigation */}
-      <nav className="md:hidden bg-white border-t border-gray-100 flex justify-around p-3 pb-6 fixed bottom-0 left-0 right-0 z-40 backdrop-blur-lg bg-white/90 overflow-x-auto">
+      <nav id="mobile-navbar" className="md:hidden bg-white border-t border-gray-100 flex justify-around p-3 pb-6 fixed bottom-0 left-0 right-0 z-40 backdrop-blur-lg bg-white/90 overflow-x-auto">
         {[
           { name: 'خريطة المغامرة', path: '/learning', icon: GraduationCap },
           { name: 'الحكايات', path: '/stories', icon: Bookmark },

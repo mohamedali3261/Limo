@@ -47,7 +47,7 @@ export default function App() {
  <Layout>
  <Routes>
  <Route path="/" element={<AdventureMap />} />
- <Route path="/level/:id" element={<LessonRoute />} />
+ <Route path="/lesson/:id" element={<LessonRoute />} />
  <Route path="/quiz/:id" element={<QuizRoute />} />
  <Route path="/conversations" element={<ConversationList />} />
  <Route path="/conversations/:id" element={<ConversationView />} />

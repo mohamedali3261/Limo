@@ -122,49 +122,49 @@ export default function WordCatcher() {
     if (isFullscreen) {
       document.body.style.overflow = 'hidden';
       // إخفاء الـ navbar من الموبايل (الأسفل)
-      const mobileNavbar = document.querySelector('nav[class*="bottom-0"]');
+      const mobileNavbar = document.getElementById('mobile-navbar');
       if (mobileNavbar) {
         (mobileNavbar as HTMLElement).style.display = 'none';
       }
       // إخفاء الـ sidebar من الديسكتوب (اليسار)
-      const desktopSidebar = document.querySelector('nav[class*="md:flex"]');
+      const desktopSidebar = document.getElementById('desktop-sidebar');
       if (desktopSidebar) {
         (desktopSidebar as HTMLElement).style.display = 'none';
       }
       // إخفاء الـ top bar من الموبايل
-      const topBar = document.querySelector('div[class*="md:hidden"][class*="bg-white"]');
+      const topBar = document.getElementById('mobile-top-bar');
       if (topBar) {
         (topBar as HTMLElement).style.display = 'none';
       }
     } else {
       document.body.style.overflow = 'auto';
-      const mobileNavbar = document.querySelector('nav[class*="bottom-0"]');
+      const mobileNavbar = document.getElementById('mobile-navbar');
       if (mobileNavbar) {
-        (mobileNavbar as HTMLElement).style.display = 'flex';
+        (mobileNavbar as HTMLElement).style.display = '';
       }
-      const desktopSidebar = document.querySelector('nav[class*="md:flex"]');
+      const desktopSidebar = document.getElementById('desktop-sidebar');
       if (desktopSidebar) {
-        (desktopSidebar as HTMLElement).style.display = 'flex';
+        (desktopSidebar as HTMLElement).style.display = '';
       }
-      const topBar = document.querySelector('div[class*="md:hidden"][class*="bg-white"]');
+      const topBar = document.getElementById('mobile-top-bar');
       if (topBar) {
-        (topBar as HTMLElement).style.display = 'flex';
+        (topBar as HTMLElement).style.display = '';
       }
     }
     
     return () => {
       document.body.style.overflow = 'auto';
-      const mobileNavbar = document.querySelector('nav[class*="bottom-0"]');
+      const mobileNavbar = document.getElementById('mobile-navbar');
       if (mobileNavbar) {
-        (mobileNavbar as HTMLElement).style.display = 'flex';
+        (mobileNavbar as HTMLElement).style.display = '';
       }
-      const desktopSidebar = document.querySelector('nav[class*="md:flex"]');
+      const desktopSidebar = document.getElementById('desktop-sidebar');
       if (desktopSidebar) {
-        (desktopSidebar as HTMLElement).style.display = 'flex';
+        (desktopSidebar as HTMLElement).style.display = '';
       }
-      const topBar = document.querySelector('div[class*="md:hidden"][class*="bg-white"]');
+      const topBar = document.getElementById('mobile-top-bar');
       if (topBar) {
-        (topBar as HTMLElement).style.display = 'flex';
+        (topBar as HTMLElement).style.display = '';
       }
     };
   }, [isFullscreen]);

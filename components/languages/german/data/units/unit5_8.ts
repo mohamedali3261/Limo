@@ -6,7 +6,6 @@ export const unit5_8: CourseUnit[] = [
     title: 'الوحدة الخامسة: مفردات إضافية',
     description: 'الملابس والمهن',
     color: 'bg-orange-500',
-    difficulty: 'intermediate',
     levels: [
       { id: 17, title: 'الملابس', description: 'الملابس والأزياء', type: 'lesson', color: 'bg-orange-500', dataId: 'level8Clothes', difficulty: 'intermediate' },
       { id: 18, title: 'اختبار الملابس', description: 'تطبيق عملي', type: 'quiz', color: 'bg-yellow-500', dataId: 'level8Quiz', difficulty: 'intermediate' },
@@ -19,7 +18,6 @@ export const unit5_8: CourseUnit[] = [
     title: 'الوحدة السادسة: المستوى المتقدم',
     description: 'الصفات والأماكن في المدينة',
     color: 'bg-indigo-500',
-    difficulty: 'intermediate',
     levels: [
       { id: 21, title: 'الصفات', description: 'وصف الأشياء', type: 'lesson', color: 'bg-indigo-500', dataId: 'level10Adjectives', difficulty: 'intermediate' },
       { id: 22, title: 'اختبار الصفات', description: 'تطبيق عملي', type: 'quiz', color: 'bg-yellow-500', dataId: 'level10Quiz', difficulty: 'intermediate' },
@@ -33,7 +31,6 @@ export const unit5_8: CourseUnit[] = [
     title: 'الوحدة السابعة: الحياة اليومية',
     description: 'الوقت، التواريخ، والهوايات',
     color: 'bg-cyan-500',
-    difficulty: 'intermediate',
     levels: [
       { id: 26, title: 'الوقت والزمن', description: 'الساعات والأيام', type: 'lesson', color: 'bg-cyan-500', dataId: 'level12Time', difficulty: 'intermediate' },
       { id: 27, title: 'اختبار الوقت', description: 'تطبيق عملي', type: 'quiz', color: 'bg-yellow-500', dataId: 'level12Quiz', difficulty: 'intermediate' },
@@ -47,7 +44,6 @@ export const unit5_8: CourseUnit[] = [
     title: 'الوحدة الثامنة: عالمنا',
     description: 'الطقس والمواصلات',
     color: 'bg-amber-500',
-    difficulty: 'intermediate',
     levels: [
       { id: 31, title: 'الطقس', description: 'كيف حال الجو اليوم؟', type: 'lesson', color: 'bg-amber-500', dataId: 'level14Weather', difficulty: 'intermediate' },
       { id: 32, title: 'اختبار الطقس', description: 'تطبيق عملي', type: 'quiz', color: 'bg-yellow-500', dataId: 'level14Quiz', difficulty: 'intermediate' },

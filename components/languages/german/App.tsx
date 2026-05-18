@@ -29,14 +29,26 @@ function QuizRoute() {
  const { id } = useParams();
  const location = useLocation();
  
+ console.log('QuizRoute - ID:', id);
+ console.log('courseUnits:', courseUnits);
+ 
  // Handle conversation-specific quizzes
  if (id?.startsWith('conv-')) {
    const questions = location.state?.questions;
    return <QuizView levelId={0} dataId={id} initialQuestions={questions} />;
  }
 
- const level = courseUnits.flatMap(u => u.levels).find(l => l.id === Number(id));
- if (!level) return <Navigate to="/" />;
+ const allLevels = courseUnits.flatMap(u => u.levels);
+ console.log('All levels:', allLevels);
+ 
+ const level = allLevels.find(l => l.id === Number(id));
+ console.log('Found level:', level);
+ 
+ if (!level) {
+   console.warn('Level not found for ID:', id);
+   return <Navigate to="/" />;
+ }
+ 
  return <QuizView levelId={level.id} dataId={level.dataId} />;
 }
 

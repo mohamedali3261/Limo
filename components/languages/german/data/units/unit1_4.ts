@@ -6,7 +6,6 @@ export const unit1_4: CourseUnit[] = [
     title: 'الوحدة الأولى: الأساسيات',
     description: 'تعلم الحروف، الأصوات، والأرقام',
     color: 'bg-green-500',
-    difficulty: 'beginner',
     levels: [
       { id: 1, title: 'الحروف والأصوات', description: 'القسم الأول', type: 'lesson', color: 'bg-green-500', dataId: 'level1Alphabet', difficulty: 'beginner' },
       { id: 2, title: 'اختبار الحروف', description: 'تأكد من إتقانك للأساسيات', type: 'quiz', color: 'bg-yellow-500', dataId: 'level1Quiz', difficulty: 'beginner' },
@@ -19,7 +18,6 @@ export const unit1_4: CourseUnit[] = [
     title: 'الوحدة الثانية: مفردات هامة (الجزء الأول)',
     description: 'مجموعة من الكلمات الأساسية التي نحتاجها يومياً',
     color: 'bg-purple-500',
-    difficulty: 'beginner',
     levels: [
       { id: 5, title: 'الألوان', description: 'تعرف على الألوان الأساسية', type: 'lesson', color: 'bg-purple-500', dataId: 'level4Colors', difficulty: 'beginner' },
       { id: 6, title: 'اختبار الألوان', description: 'تطبيق عملي', type: 'quiz', color: 'bg-yellow-500', dataId: 'level4Quiz', difficulty: 'beginner' },
@@ -32,7 +30,6 @@ export const unit1_4: CourseUnit[] = [
     title: 'الوحدة الثالثة: التعارف',
     description: 'كيف تلقي التحية وتعرف بنفسك',
     color: 'bg-blue-500',
-    difficulty: 'elementary',
     levels: [
       { id: 9, title: 'التحيات', description: 'الصباح والمساء ووداعاً', type: 'lesson', color: 'bg-blue-500', dataId: 'level2Greetings', difficulty: 'elementary' },
       { id: 10, title: 'اختبار التحيات', description: 'تطبيق عملي', type: 'quiz', color: 'bg-yellow-500', dataId: 'level2Quiz', difficulty: 'elementary' },
@@ -44,7 +41,6 @@ export const unit1_4: CourseUnit[] = [
     title: 'الوحدة الرابعة: مفردات هامة (الجزء الثاني)',
     description: 'العائلة، والطعام، والشراب',
     color: 'bg-pink-500',
-    difficulty: 'elementary',
     levels: [
       { id: 12, title: 'العائلة', description: 'أفراد العائلة', type: 'lesson', color: 'bg-pink-500', dataId: 'level7Family', difficulty: 'elementary' },
       { id: 13, title: 'اختبار العائلة', description: 'تطبيق عملي', type: 'quiz', color: 'bg-yellow-500', dataId: 'level7Quiz', difficulty: 'elementary' },

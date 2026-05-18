@@ -42,7 +42,7 @@ export default function LessonView({ levelId, dataId }: { levelId: number; dataI
     if (currentIndex !== -1 && currentIndex < allLevels.length - 1) {
       const nextLevel = allLevels[currentIndex + 1];
       unlockLevel(nextLevel.id);
-      navigate(`/${nextLevel.type === 'lesson' ? 'level' : 'quiz'}/${nextLevel.id}`);
+      navigate(`${nextLevel.type === 'lesson' ? 'lesson' : 'quiz'}/${nextLevel.id}`);
     } else if (levelId === 72) { // Final level
        navigate('/');
     } else {

@@ -122,7 +122,7 @@ export default function AdventureMap() {
                     whileHover={isUnlocked ? { scale: 1.05 } : {}}
                     whileTap={isUnlocked ? { scale: 0.95 } : {}}
                     onClick={() => {
-                      if (isUnlocked) navigate(`/${level.type === 'lesson' ? 'level' : 'quiz'}/${level.id}`);
+                      if (isUnlocked) navigate(`${level.type === 'lesson' ? 'lesson' : 'quiz'}/${level.id}`);
                     }}
                     className={`w-18 h-18 rounded-full flex items-center justify-center border-b-[4px] shadow-lg relative z-20 group transition-all duration-300 ${
                       isCompleted 

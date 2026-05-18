@@ -330,7 +330,7 @@ export default function ConversationView() {
                   العودة للقائمة
                 </button>
                 <button 
-                  onClick={() => navigate(`/quiz/conv-${conversation.id}`, { state: { questions: conversation.quizQuestions } })}
+                  onClick={() => navigate(`quiz/conv-${conversation.id}`, { state: { questions: conversation.quizQuestions } })}
                   className="py-4 px-8 rounded-3xl bg-amber-400 border-2 border-amber-300 text-amber-950 font-black text-xl hover:bg-amber-500 transition-all shadow-[0_6px_0_0_#d97706] active:translate-y-[6px] active:shadow-none flex items-center gap-3"
                 >
                   <ClipboardCheck className="w-6 h-6" />

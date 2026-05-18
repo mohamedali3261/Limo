@@ -29,14 +29,26 @@ export default function QuizView({ levelId, dataId, initialQuestions }: { levelI
     setOriginalLength(initialQuestions.length);
   } else {
     const data = getQuizData(dataId);
+    console.log('Quiz Data ID:', dataId);
+    console.log('Quiz Data:', data);
     if (data && data.length > 0) {
      setQuizQuestions(data);
      setOriginalLength(data.length);
+    } else {
+      console.warn('No quiz data found for:', dataId);
     }
   }
  }, [dataId, initialQuestions]);
 
- if (quizQuestions.length === 0) return null;
+ if (quizQuestions.length === 0) return (
+  <div className="flex-1 flex flex-col items-center justify-center p-4 max-w-3xl mx-auto w-full">
+    <div className="text-center">
+      <div className="text-6xl mb-4">⏳</div>
+      <h2 className="text-2xl font-black text-slate-800 mb-2">جاري تحميل الاختبار...</h2>
+      <p className="text-slate-600 font-bold">يرجى الانتظار قليلاً</p>
+    </div>
+  </div>
+ );
 
  const currentQ = quizQuestions[currentIdx];
  const isLast = currentIdx === quizQuestions.length - 1;
@@ -108,9 +120,9 @@ export default function QuizView({ levelId, dataId, initialQuestions }: { levelI
     
     if (nextLevel) {
      if (nextLevel.type === 'quiz') {
-      navigate(`/quiz/${nextLevel.id}`);
+      navigate(`quiz/${nextLevel.id}`);
      } else {
-      navigate(`/level/${nextLevel.id}`);
+      navigate(`lesson/${nextLevel.id}`);
      }
     } else {
      navigate('/');

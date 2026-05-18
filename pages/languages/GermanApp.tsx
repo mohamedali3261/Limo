@@ -22,7 +22,7 @@ function QuizRoute() {
  const { id } = useParams();
  const level = courseUnits.flatMap(u => u.levels).find(l => l.id === Number(id));
  if (!level) return <Navigate to=".." relative="route" />;
- return <QuizView levelId={level.id} />;
+ return <QuizView levelId={level.id} dataId={level.dataId} />;
 }
 
 function LayoutWrapper() {
