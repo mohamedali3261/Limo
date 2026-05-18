@@ -357,7 +357,10 @@ export const mockApi = {
       const lesson = lessonsData.find((l: any) => l.id === lessonId);
       if (!lesson) throw new Error('Lesson not found');
       
-      const quizzes = quizzesData.filter((q: any) => q.lesson_id === lessonId);
+      const quizzes = quizzesData.filter((q: any) => q.lesson_id === lessonId).map((q: any) => ({
+        ...q,
+        options: typeof q.options === 'string' ? JSON.parse(q.options) : q.options
+      }));
       return { ...lesson, quizzes };
     },
 

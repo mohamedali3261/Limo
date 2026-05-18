@@ -1,6 +1,6 @@
-import { useState, memo, useMemo } from 'react';
-import { motion } from 'motion/react';
-import { Volume2, ChevronRight, BookOpen, UserCircle2, GraduationCap, SpellCheck, CheckCircle2 } from 'lucide-react';
+import { useState, memo, useMemo, useEffect } from 'react';
+import { motion, AnimatePresence } from 'motion/react';
+import { Volume2, ChevronRight, BookOpen, UserCircle2, GraduationCap, SpellCheck } from 'lucide-react';
 import { useMediaQuery } from '../../lib/hooks/useMediaQuery';
 import { speak } from '../../lib/audio';
 
@@ -12,7 +12,7 @@ interface LessonContentProps {
 
 function LessonContentComponent({ title, content, onStartQuiz }: LessonContentProps) {
   const [showTranslations, setShowTranslations] = useState(true);
-  const [clickedLetters, setClickedLetters] = useState<number[]>([]);
+  const [currentIndex, setCurrentIndex] = useState(0);
   const isMobile = useMediaQuery('(max-width: 768px)');
 
   const handleSpeak = async (text: string) => {
@@ -44,6 +44,30 @@ function LessonContentComponent({ title, content, onStartQuiz }: LessonContentPr
       return [];
     }
   }, [content, isVocab]);
+
+  const items = useMemo(() => {
+    if (isAlphabet) return alphabetData;
+    if (isVocab) return vocabData;
+    return [];
+  }, [isAlphabet, isVocab, alphabetData, vocabData]);
+
+  const hasCarousel = isAlphabet || isVocab;
+
+  useEffect(() => {
+    if (!hasCarousel || items.length === 0) return;
+
+    const currentItem = items[currentIndex];
+    if (currentItem) {
+      const textToSpeak = isAlphabet
+        ? `${currentItem.letter}, ${currentItem.word}`
+        : currentItem.word;
+      
+      const timer = setTimeout(() => {
+        handleSpeak(textToSpeak);
+      }, 400);
+      return () => clearTimeout(timer);
+    }
+  }, [currentIndex, hasCarousel, items, isAlphabet]);
 
   return (
     <motion.div 
@@ -87,79 +111,146 @@ function LessonContentComponent({ title, content, onStartQuiz }: LessonContentPr
           </div>
           
           <div className={`space-y-6 ${isStory ? 'max-w-2xl mx-auto text-center' : ''}`}>
-            {isAlphabet && (
-              <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6" dir="ltr">
-                {alphabetData.map((item: any, idx: number) => {
-                  const isClicked = clickedLetters.includes(idx);
-                  const colorClasses = item.color || 'bg-blue-100 text-blue-600 border-blue-200';
-                  const baseClasses = 'hover:scale-105 active:scale-95';
-
-                  return (
-                    <motion.div
-                      key={idx}
-                      initial={{ opacity: 0, scale: 0.8 }}
-                      animate={{ opacity: 1, scale: 1 }}
-                      transition={{ delay: idx * 0.05 }}
-                      onClick={() => {
-                        if (!isClicked) {
-                          setClickedLetters([...clickedLetters, idx]);
-                        }
-                        handleSpeak(`${item.letter}, ${item.word}`);
-                      }}
-                      className={`relative overflow-hidden rounded-[2rem] border-4 flex flex-col items-center justify-center transition-all min-h-[160px] cursor-pointer ${baseClasses} ${
-                        isClicked ? '!border-emerald-500 !bg-emerald-50 scale-105 shadow-xl shadow-emerald-200' : colorClasses
-                      }`}
-                    >
-                      {isClicked && (
-                        <div className="absolute top-4 right-4 z-10">
-                          <CheckCircle2 size={32} className="text-emerald-500 bg-white rounded-full shadow-sm" />
-                        </div>
-                      )}
-                      
-                      <div className="p-6 w-full flex flex-col items-center justify-center gap-2">
-                        <div className="text-5xl font-black mb-2" dir="ltr">{item.letter}</div>
-                        <div className="text-4xl">{item.emoji}</div>
-                        <div className="text-lg font-bold capitalize mt-2" dir="ltr">{item.word}</div>
-                        <div className="text-sm font-medium opacity-80">{item.translation}</div>
-                        
-                        <div 
-                          className="mt-3 p-2.5 bg-white/80 text-gray-700 rounded-full flex items-center gap-1.5 shadow-sm text-xs font-bold"
-                        >
-                          <Volume2 size={16} />
-                          <span>استمع</span>
-                        </div>
-                      </div>
-                    </motion.div>
-                  );
-                })}
-              </div>
-            )}
-
-            {isVocab && (
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5" dir="ltr">
-                {vocabData.map((item: any, idx: number) => (
-                  <div
-                    key={idx}
-                    className={`bg-gray-50 rounded-[1.5rem] p-5 border-2 border-gray-100 flex flex-col justify-between items-start cursor-pointer ${
-                      !isMobile && 'hover:border-primary/30 hover:shadow-lg transition-all'
-                    }`}
-                    onClick={() => handleSpeak(item.word)}
-                  >
-                    <div className="space-y-2 w-full">
-                      <div className="text-2xl font-bold text-gray-900">{item.word}</div>
-                      <div className="text-sm font-medium text-gray-500" dir="rtl">{item.translation}</div>
-                    </div>
-                    <button className={`mt-3 p-3 rounded-lg bg-white shadow-sm text-primary ${
-                      !isMobile && 'hover:bg-primary hover:text-white transition-colors'
-                    }`}>
-                      <Volume2 size={18} />
-                    </button>
+            {hasCarousel && items.length > 0 && (
+              <div className="w-full py-4 flex flex-col items-center justify-center">
+                {/* Progress bar */}
+                <div className="w-full max-w-lg space-y-2 mb-8" dir="rtl">
+                  <div className="flex justify-between text-xs font-black text-gray-400 uppercase tracking-wider">
+                    <span>التقدم في الدرس</span>
+                    <span>الكارت {currentIndex + 1} من {items.length}</span>
                   </div>
-                ))}
+                  <div className="h-2.5 bg-gray-100 rounded-full overflow-hidden shadow-inner">
+                    <motion.div 
+                      initial={{ width: 0 }}
+                      animate={{ width: `${((currentIndex + 1) / items.length) * 100}%` }}
+                      transition={{ duration: 0.3 }}
+                      className="h-full bg-primary rounded-full"
+                    />
+                  </div>
+                </div>
+
+                {/* Animated Flashcard */}
+                <AnimatePresence mode="wait">
+                  <motion.div
+                    key={currentIndex}
+                    initial={{ opacity: 0, x: 50, scale: 0.95 }}
+                    animate={{ opacity: 1, x: 0, scale: 1 }}
+                    exit={{ opacity: 0, x: -50, scale: 0.95 }}
+                    transition={{ type: "spring", damping: 25, stiffness: 200 }}
+                    onClick={() => {
+                      const currentItem = items[currentIndex];
+                      if (currentItem) {
+                        handleSpeak(isAlphabet ? `${currentItem.letter}, ${currentItem.word}` : currentItem.word);
+                      }
+                    }}
+                    className="bg-white border-4 border-gray-100 rounded-[3rem] p-8 md:p-12 w-full max-w-lg mx-auto flex flex-col items-center gap-6 md:gap-8 shadow-xl shadow-gray-200/50 hover:shadow-2xl hover:border-primary/20 transition-all cursor-pointer relative overflow-hidden group select-none active:scale-[0.98] min-h-[320px] justify-center"
+                  >
+                    {/* Top Accent Gradient Bar */}
+                    <div className="absolute top-0 inset-x-0 h-2 bg-gradient-to-r from-primary to-orange-400"></div>
+
+                    {/* Speaker Button */}
+                    <motion.button
+                      whileHover={{ scale: 1.1 }}
+                      whileTap={{ scale: 0.9 }}
+                      onClick={(e) => {
+                        e.stopPropagation();
+                        const currentItem = items[currentIndex];
+                        if (currentItem) {
+                          handleSpeak(isAlphabet ? `${currentItem.letter}, ${currentItem.word}` : currentItem.word);
+                        }
+                      }}
+                      className="absolute top-6 left-6 bg-primary/10 text-primary w-12 h-12 rounded-2xl flex items-center justify-center hover:bg-primary hover:text-white transition-all shadow-md group active:scale-95 z-10 animate-pulse"
+                    >
+                      <Volume2 size={24} />
+                    </motion.button>
+
+                    {isAlphabet ? (
+                      <div className="flex flex-col items-center text-center mt-4">
+                        {/* Large Letter */}
+                        <h1 className="text-8xl md:text-9xl font-black text-primary tracking-tight mb-2 drop-shadow-sm select-none">
+                          {items[currentIndex].letter}
+                        </h1>
+                        
+                        {/* Emoji */}
+                        <div className="text-7xl md:text-8xl my-3 transform group-hover:scale-110 transition-transform select-none">
+                          {items[currentIndex].emoji}
+                        </div>
+
+                        {/* English Word */}
+                        <h2 className="text-3xl md:text-4xl font-extrabold text-gray-800 capitalize tracking-wide select-none">
+                          {items[currentIndex].word}
+                        </h2>
+                      </div>
+                    ) : (
+                      <div className="flex flex-col items-center justify-center text-center mt-6 min-h-[160px]">
+                        {/* Vocab Word */}
+                        <h1 className="text-3xl md:text-4xl lg:text-5xl font-extrabold text-gray-800 leading-tight select-none">
+                          {items[currentIndex].word}
+                        </h1>
+                      </div>
+                    )}
+
+                    {/* Divider */}
+                    <div className="w-24 h-1 bg-gray-100 rounded-full my-1"></div>
+
+                    {/* Translation Area */}
+                    <div className="flex flex-col items-center">
+                      <p className="text-2xl md:text-3xl font-black text-teal-600 transition-all duration-300 select-none">
+                        {items[currentIndex].translation}
+                      </p>
+                    </div>
+                  </motion.div>
+                </AnimatePresence>
+
+                {/* Sleek Navigation Footer */}
+                <div className="flex items-center justify-between gap-4 mt-8 w-full max-w-lg mx-auto" dir="rtl">
+                  {/* Previous Button */}
+                  <motion.button
+                    whileHover={currentIndex > 0 ? { scale: 1.03 } : {}}
+                    whileTap={currentIndex > 0 ? { scale: 0.98 } : {}}
+                    onClick={() => {
+                      if (currentIndex > 0) {
+                        setCurrentIndex(prev => prev - 1);
+                      }
+                    }}
+                    disabled={currentIndex === 0}
+                    className={`flex items-center gap-2 px-6 py-4 rounded-2xl font-black text-sm border-2 transition-all ${
+                      currentIndex === 0
+                        ? 'border-gray-100 text-gray-300 bg-gray-50 opacity-40 cursor-not-allowed'
+                        : 'border-gray-200 text-gray-600 bg-white hover:bg-gray-50 hover:border-gray-300'
+                    }`}
+                  >
+                    <span>السابق</span>
+                  </motion.button>
+
+                  {/* Next or Start Quiz Button */}
+                  {currentIndex < items.length - 1 ? (
+                    <motion.button
+                      whileHover={{ scale: 1.03 }}
+                      whileTap={{ scale: 0.98 }}
+                      onClick={() => {
+                        setCurrentIndex(prev => prev + 1);
+                      }}
+                      className="flex-1 py-4 bg-primary text-white rounded-2xl font-black text-lg flex items-center justify-center gap-2 shadow-lg shadow-primary/20 hover:bg-primary-dark transition-all"
+                    >
+                      <span>التالي</span>
+                    </motion.button>
+                  ) : (
+                    <motion.button
+                      whileHover={{ scale: 1.03 }}
+                      whileTap={{ scale: 0.98 }}
+                      onClick={onStartQuiz}
+                      className="flex-1 py-4 bg-teal-500 text-white rounded-2xl font-black text-lg flex items-center justify-center gap-2 shadow-lg shadow-teal-500/20 hover:bg-teal-600 transition-all"
+                    >
+                      <span>ابدأ الاختبار</span>
+                      <ChevronRight size={20} className="rotate-180" />
+                    </motion.button>
+                  )}
+                </div>
               </div>
             )}
 
-            {!isAlphabet && !isVocab && content.split('\n').map((line, idx) => {
+            {!hasCarousel && content.split('\n').map((line, idx) => {
               if (!line.trim()) return null;
 
               if (isStory) {
@@ -253,19 +344,23 @@ function LessonContentComponent({ title, content, onStartQuiz }: LessonContentPr
           </div>
         )}
         
-        <div className="bg-gray-50 p-5 rounded-[1.5rem] border-2 border-gray-100 italic font-bold text-gray-700 text-sm flex items-center justify-center gap-2">
-          <span>💡 نصيحة: حاول نطق هذه الجمل بصوت عالٍ لبناء الذاكرة العضلية!</span>
-        </div>
+        {!hasCarousel && (
+          <div className="bg-gray-50 p-5 rounded-[1.5rem] border-2 border-gray-100 italic font-bold text-gray-700 text-sm flex items-center justify-center gap-2">
+            <span>💡 نصيحة: حاول نطق هذه الجمل بصوت عالٍ لبناء الذاكرة العضلية!</span>
+          </div>
+        )}
 
-        <button 
-          onClick={onStartQuiz}
-          className={`w-full py-4 rounded-[1.5rem] font-black text-lg flex items-center justify-center gap-2 shadow-xl bg-primary text-white shadow-primary/20 ${
-            !isMobile && 'hover:bg-primary-hover transition-all'
-          }`}
-        >
-          ابدأ الاختبار
-          <ChevronRight size={20} className={!isMobile ? 'hover:translate-x-1 transition-transform' : ''} />
-        </button>
+        {!hasCarousel && (
+          <button 
+            onClick={onStartQuiz}
+            className={`w-full py-4 rounded-[1.5rem] font-black text-lg flex items-center justify-center gap-2 shadow-xl bg-primary text-white shadow-primary/20 ${
+              !isMobile && 'hover:bg-primary-hover transition-all'
+            }`}
+          >
+            ابدأ الاختبار
+            <ChevronRight size={20} className={!isMobile ? 'hover:translate-x-1 transition-transform' : ''} />
+          </button>
+        )}
       </div>
     </motion.div>
   );

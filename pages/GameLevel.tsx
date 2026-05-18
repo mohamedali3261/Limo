@@ -123,9 +123,8 @@ export default function GameLevel() {
               <div className="flex-1">
                   <div className="space-y-2">
                     <div className="h-3 bg-gray-200 rounded-full overflow-hidden">
-                        <motion.div 
-                            initial={{ width: 0 }}
-                            animate={{ width: `${((selectedLessonIndex + 1) / levelData.challenges.length) * 100}%` }}
+                        <div 
+                            style={{ width: `${((selectedLessonIndex + 1) / levelData.challenges.length) * 100}%` }}
                             className="h-full bg-primary"
                         />
                     </div>
@@ -135,43 +134,37 @@ export default function GameLevel() {
                   </div>
               </div>
           </header>
-
+          
           <main className="flex-1 flex flex-col justify-center">
-                <AnimatePresence mode="wait">
-                    <motion.div
-                        key={selectedLessonIndex}
-                        initial={{ opacity: 0, x: 20 }}
-                        animate={{ opacity: 1, x: 0 }}
-                        exit={{ opacity: 0, x: -20 }}
-                    >
-                            {levelData.level.level_type === 'scrambled_word' && (
-                                <ScrambledWordGame 
-                                    word={currentChallenge.question_text} 
-                                    onComplete={handleComplete} 
-                                />
-                            )}
-                            {levelData.level.level_type === 'sentence_arrangement' && (
-                                <SentenceArrangementGame 
-                                    sentence={currentChallenge.question_text} 
-                                    onComplete={handleComplete} 
-                                />
-                            )}
-                            {levelData.level.level_type === 'translation' && (
-                                <TranslationChallengeGame 
-                                    text={currentChallenge.question_text} 
-                                    expectedTranslation={currentChallenge.answer_text} 
-                                    onComplete={handleComplete} 
-                                />
-                            )}
-                            {levelData.level.level_type === 'word_matching' && (
-                                <WordMatchingGame 
-                                    data={currentChallenge.options}
-                                    title={currentChallenge.context_ar || currentChallenge.question_text}
-                                    onComplete={handleComplete} 
-                                />
-                            )}
-                    </motion.div>
-                </AnimatePresence>
+                <div key={selectedLessonIndex}>
+                        {levelData.level.level_type === 'scrambled_word' && (
+                            <ScrambledWordGame 
+                                word={currentChallenge.question_text} 
+                                translation={currentChallenge.context_ar}
+                                onComplete={handleComplete} 
+                            />
+                        )}
+                        {levelData.level.level_type === 'sentence_arrangement' && (
+                            <SentenceArrangementGame 
+                                sentence={currentChallenge.question_text} 
+                                onComplete={handleComplete} 
+                            />
+                        )}
+                        {levelData.level.level_type === 'translation' && (
+                            <TranslationChallengeGame 
+                                text={currentChallenge.question_text} 
+                                expectedTranslation={currentChallenge.answer_text} 
+                                onComplete={handleComplete} 
+                            />
+                        )}
+                        {levelData.level.level_type === 'word_matching' && (
+                            <WordMatchingGame 
+                                data={currentChallenge.options}
+                                title={currentChallenge.context_ar || currentChallenge.question_text}
+                                onComplete={handleComplete} 
+                            />
+                        )}
+                </div>
           </main>
       </div>
     </div>

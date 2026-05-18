@@ -187,14 +187,14 @@ export default function LessonDetail() {
       setCurrentQuestionsList(shuffleArray(phasedDataList[0].quizzes));
       setMode('lesson');
     } else {
-      setCurrentQuestionsList(shuffleArray(data.quiz));
+      setCurrentQuestionsList(shuffleArray(data.quizzes));
     }
   };
 
   if (loading) return <LoadingPage />;
 
   if (showResults) {
-    const totalQuestions = isPhased ? phasedDataList.reduce((acc, curr) => acc + curr.quizzes.length, 0) : data.quiz.length;
+    const totalQuestions = isPhased ? phasedDataList.reduce((acc, curr) => acc + curr.quizzes.length, 0) : data.quizzes.length;
     return (
       <LessonResults 
         score={score} 

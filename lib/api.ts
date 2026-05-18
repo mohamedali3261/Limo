@@ -1,5 +1,16 @@
 import { mockApi } from './mockApi';
 
+// Helper function to decode Arabic Mojibake (ISO-8859-1 string containing UTF-8 bytes)
+function decodeMojibake(str: string | null | undefined): string {
+  if (!str) return '';
+  try {
+    const bytes = new Uint8Array(str.split('').map(c => c.charCodeAt(0)));
+    return new TextDecoder('utf-8').decode(bytes);
+  } catch (e) {
+    return str;
+  }
+}
+
 // Mock API Router - Routes API calls to mock implementation
 export async function apiFetch(url: string, options: any = {}) {
   try {
@@ -157,12 +168,26 @@ export async function apiFetch(url: string, options: any = {}) {
     
     if (url.match(/\/api\/learning\/game-levels\/(\d+)$/)) {
       const levelId = parseInt(url.match(/\/api\/learning\/game-levels\/(\d+)$/)?.[1] || '0');
-      return await mockApi.learning.getGameLevel(levelId);
+      const data = await mockApi.learning.getGameLevel(levelId);
+      if (data && data.challenges) {
+        data.challenges = data.challenges.map((c: any) => ({
+          ...c,
+          context_ar: decodeMojibake(c.context_ar)
+        }));
+      }
+      return data;
     }
     
     if (url.match(/\/api\/learning\/game-level\/(\d+)$/)) {
       const levelId = parseInt(url.match(/\/api\/learning\/game-level\/(\d+)$/)?.[1] || '0');
-      return await mockApi.learning.getGameLevel(levelId);
+      const data = await mockApi.learning.getGameLevel(levelId);
+      if (data && data.challenges) {
+        data.challenges = data.challenges.map((c: any) => ({
+          ...c,
+          context_ar: decodeMojibake(c.context_ar)
+        }));
+      }
+      return data;
     }
     
     if (url.includes('/api/learning/complete-game-level')) {

@@ -32,7 +32,7 @@ export function LessonHUD({
   }, [navigate]);
 
   return (
-    <div className="fixed top-16 left-0 right-0 z-[60] px-2 sm:px-4 py-2 sm:py-3 flex items-center justify-center pointer-events-none">
+    <div className="sticky top-0 z-[60] py-4 bg-slate-50/95 backdrop-blur-md flex items-center justify-center pointer-events-none -mx-4 md:-mx-8 px-4 md:px-8 border-b border-slate-100">
       <div className="bg-white/95 backdrop-blur-xl border border-gray-100 rounded-xl sm:rounded-2xl px-2 sm:px-4 py-2 sm:py-3 shadow-lg flex items-center gap-2 sm:gap-4 pointer-events-auto w-full max-w-3xl">
         <button 
            onClick={handleNavigate}
@@ -45,7 +45,7 @@ export function LessonHUD({
           {/* Progress bar with dots */}
           <div className="relative">
             {/* Progress bar background */}
-
+            <div className="absolute top-1 sm:top-1.5 left-0 right-0 h-1 bg-gray-100 rounded-full -z-10" />
             
             {/* Question dots positioned on the bar */}
             {mode === 'quiz' && totalQuestions > 0 && totalQuestions <= 15 && (

@@ -18,7 +18,7 @@ export function AudioCard({ spanish, arabic, category, index }: AudioCardProps) 
     utterance.lang = 'es-ES';
     // Tune properties for better voice if possible
     utterance.rate = audioSpeed; 
-    utterance.pitch = 1.2; // Youthful pitch
+    utterance.pitch = 1.0;
     window.speechSynthesis.speak(utterance);
   };
 

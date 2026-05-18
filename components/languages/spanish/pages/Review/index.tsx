@@ -19,7 +19,7 @@ export default function Review() {
     const utterance = new SpeechSynthesisUtterance(currentWord.spanish);
     utterance.lang = 'es-ES';
     utterance.rate = audioSpeed;
-    utterance.pitch = 1.2;
+    utterance.pitch = 1.0;
     window.speechSynthesis.speak(utterance);
   };
 

@@ -51,8 +51,8 @@ function InteractiveScenario({ scenarioId, onBack }: { scenarioId: string, onBac
     window.speechSynthesis.cancel();
     const utterance = new SpeechSynthesisUtterance(text);
     utterance.lang = 'es-ES';
-    utterance.rate = audioSpeed * 0.9; // Slightly slower for clarity
-    utterance.pitch = 1.3; // Even more youthful/expressive
+    utterance.rate = audioSpeed;
+    utterance.pitch = 1.0;
     window.speechSynthesis.speak(utterance);
   };
 

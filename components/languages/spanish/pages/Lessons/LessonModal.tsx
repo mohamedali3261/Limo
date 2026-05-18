@@ -74,18 +74,18 @@ export function LessonModal({
     window.speechSynthesis.cancel();
     const utterance = new SpeechSynthesisUtterance(text || stepData.spanish);
     utterance.lang = "es-ES";
-    utterance.rate = audioSpeed * 1.25; // Increased speed as requested
-    utterance.pitch = 1.2;
+    utterance.rate = audioSpeed;
+    utterance.pitch = 1.0;
 
     if (secondaryText) {
       utterance.onend = () => {
         setTimeout(() => {
           const secondUtterance = new SpeechSynthesisUtterance(secondaryText);
           secondUtterance.lang = "es-ES";
-          secondUtterance.rate = audioSpeed * 1.25;
-          secondUtterance.pitch = 1.2;
+          secondUtterance.rate = audioSpeed;
+          secondUtterance.pitch = 1.0;
           window.speechSynthesis.speak(secondUtterance);
-        }, 200); // Shorter delay for faster feel
+        }, 300); // Natural delay
       };
     }
 

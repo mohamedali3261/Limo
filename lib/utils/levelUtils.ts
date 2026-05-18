@@ -21,8 +21,8 @@ export function isLessonAccessible(lessonDifficulty: string, currentLevel: strin
   // If lesson difficulty is not recognized, allow access
   if (lessonIndex === -1) return true;
   
-  // Allow access if lesson is at or above current level
-  return lessonIndex >= currentIndex;
+  // Allow access if lesson is at or below current level
+  return lessonIndex <= currentIndex;
 }
 
 /**
