@@ -118,7 +118,7 @@ export default function WordCatcher() {
   }, [collectedWords, currentLine]);
 
   useEffect(() => {
-    // إخفاء الـ navbar عند ملء الشاشة
+    // إخفاء الـ navbar عند ملئ الشاشة
     if (isFullscreen) {
       document.body.style.overflow = 'hidden';
       // إخفاء الـ navbar من الموبايل (الأسفل)
@@ -331,7 +331,7 @@ export default function WordCatcher() {
                   <button 
                     onClick={() => setIsFullscreen(!isFullscreen)}
                     className="px-8 py-3 rounded-2xl font-black text-lg shadow-lg transition-all flex items-center justify-center gap-2 bg-purple-500 text-white hover:bg-purple-600 active:scale-95"
-                    title={isFullscreen ? 'خروج من ملء الشاشة' : 'فتح اللعبة بملء الشاشة'}
+                    title={isFullscreen ? 'خروج من ملئ الشاشة' : 'فتح اللعبة بملئ الشاشة'}
                   >
                     <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       {isFullscreen ? (
@@ -340,7 +340,7 @@ export default function WordCatcher() {
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6v4m12-4h4v4M6 18h4v-4m12 4h-4v-4" />
                       )}
                     </svg>
-                    {isFullscreen ? 'خروج من ملء الشاشة' : 'ملء الشاشة'}
+                    {isFullscreen ? 'خروج من ملئ الشاشة' : 'ملئا لشاشة'}
                   </button>
                 )}
                 <button 
@@ -381,7 +381,7 @@ export default function WordCatcher() {
                   <button 
                     onClick={() => setIsFullscreen(!isFullscreen)}
                     className={`bg-white border border-slate-200 rounded-2xl text-slate-400 hover:text-slate-900 shadow-sm transition-all hover:scale-105 active:scale-95 ${isFullscreen && isMobile ? 'p-2' : 'p-3'}`}
-                    title={isFullscreen ? 'خروج من ملء الشاشة' : 'ملء الشاشة'}
+                    title={isFullscreen ? 'خروج من ملئ الشاشة' : 'ملئ الشاشة'}
                   >
                     <svg className={`fill-none stroke-current ${isFullscreen && isMobile ? 'w-5 h-5' : 'w-6 h-6'}`} viewBox="0 0 24 24">
                       {isFullscreen ? (
@@ -421,7 +421,7 @@ export default function WordCatcher() {
                     <button 
                       onClick={() => setIsFullscreen(false)}
                       className="p-2 bg-white border border-slate-200 rounded-2xl text-slate-400 hover:text-slate-900 shadow-sm transition-all hover:scale-105 active:scale-95"
-                      title="خروج من ملء الشاشة"
+                      title="خروج من ملئ الشاشة"
                     >
                       <ChevronLeft size={20} />
                     </button>
