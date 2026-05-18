@@ -1,5 +1,5 @@
 import { motion } from 'motion/react';
-import { useState, useMemo, useCallback } from 'react';
+import { useState, useMemo, useCallback, useEffect } from 'react';
 import { BrainCircuit, Volume2, Puzzle, CheckCircle2, Type, BookOpen, MessageSquare, XCircle, Keyboard as KeyboardIcon } from 'lucide-react';
 import { MatchingGame } from './MatchingGame';
 import { ListeningSentence } from './ListeningSentence';
@@ -76,7 +76,7 @@ export function QuizView({
   }, [isAnswered, selectedOption, questionData.correct_answer]);
 
   // تحديث حالة Mascot عند الإجابة
-  React.useEffect(() => {
+  useEffect(() => {
     if (isAnswered) {
       handleMascotAnswered();
     } else {

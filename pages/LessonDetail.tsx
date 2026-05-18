@@ -1,15 +1,12 @@
-import * as React from 'react';
-import { useState, useEffect, Suspense } from 'react';
+import { useState, useEffect } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import { apiFetch } from '../lib/api';
-import { ArrowLeft, Map } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
 import { toast } from 'sonner';
 import { useAuthStore } from '../lib/store/auth';
 import { LessonContent } from '../components/learning/LessonContent';
 import { QuizView } from '../components/learning/QuizView';
 import { LessonResults } from '../components/learning/LessonResults';
-
 import { LessonHUD } from '../components/learning/LessonHUD';
 import { playSuccessSound } from '../lib/audio';
 import { useSettingsStore } from '../lib/store/settings';
@@ -24,7 +21,6 @@ export default function LessonDetail() {
   const [data, setData] = useState<any>(null);
   const [loading, setLoading] = useState(true);
   const [mode, setMode] = useState<'lesson' | 'quiz'>('lesson');
-  const [pageReady, setPageReady] = useState(false);
   
   // Phase state for Phased Alphabet
   const [isPhased, setIsPhased] = useState(false);
@@ -87,7 +83,6 @@ export default function LessonDetail() {
         navigate('/learning');
       } finally {
         setLoading(false);
-        requestAnimationFrame(() => setPageReady(true));
       }
     };
     fetchLesson();
@@ -242,7 +237,6 @@ export default function LessonDetail() {
                         setMode('quiz');
                       }
                     }}
-                    isCompleted={data.lesson.is_completed}
                   />
                 </motion.div>
               ) : (

@@ -32,7 +32,7 @@ export function LessonHUD({
   }, [navigate]);
 
   return (
-    <div className="fixed top-0 left-0 right-0 z-[60] px-2 sm:px-4 py-2 sm:py-3 flex items-center justify-center pointer-events-none">
+    <div className="fixed top-16 left-0 right-0 z-[60] px-2 sm:px-4 py-2 sm:py-3 flex items-center justify-center pointer-events-none">
       <div className="bg-white/95 backdrop-blur-xl border border-gray-100 rounded-xl sm:rounded-2xl px-2 sm:px-4 py-2 sm:py-3 shadow-lg flex items-center gap-2 sm:gap-4 pointer-events-auto w-full max-w-3xl">
         <button 
            onClick={handleNavigate}
@@ -47,9 +47,9 @@ export function LessonHUD({
             {/* Progress bar background */}
 
             
-            {/* Question dots positioned on the bar - Hidden on mobile, shown on desktop */}
+            {/* Question dots positioned on the bar */}
             {mode === 'quiz' && totalQuestions > 0 && totalQuestions <= 15 && (
-              <div className="hidden sm:flex absolute -top-1 sm:-top-1.5 left-0 right-0 justify-between px-0.5">
+              <div className="flex absolute -top-1 sm:-top-1.5 left-1/2 -translate-x-1/2 justify-center gap-1 sm:gap-1.5">
                 {Array.from({ length: totalQuestions }).map((_, index) => (
                   <motion.div
                     key={index}
@@ -61,7 +61,7 @@ export function LessonHUD({
                     className="relative"
                   >
                     <div 
-                      className={`w-3 h-3 sm:w-4 sm:h-4 md:w-5 md:h-5 rounded-full transition-all duration-500 border border-2 ${
+                      className={`w-2 h-2 sm:w-3 sm:h-3 md:w-4 md:h-4 lg:w-5 lg:h-5 rounded-full transition-all duration-500 border border-2 ${
                         index < currentQuestionIndex 
                           ? isReviewMode
                             ? 'bg-orange-500 border-orange-500 shadow-md sm:shadow-lg shadow-orange-500/50'
@@ -82,7 +82,7 @@ export function LessonHUD({
                           transition={{ duration: 0.3 }}
                           className="absolute inset-0 flex items-center justify-center"
                         >
-                          <svg className="w-2 h-2 sm:w-2.5 sm:h-2.5 md:w-3 md:h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+                          <svg className="w-1 h-1 sm:w-1.5 sm:h-1.5 md:w-2 md:h-2 text-white" fill="currentColor" viewBox="0 0 20 20">
                             <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                           </svg>
                         </motion.div>

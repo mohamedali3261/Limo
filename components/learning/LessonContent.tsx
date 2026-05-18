@@ -1,7 +1,6 @@
 import { useState, memo, useMemo } from 'react';
 import { motion } from 'motion/react';
 import { Volume2, ChevronRight, BookOpen, UserCircle2, GraduationCap, SpellCheck, CheckCircle2 } from 'lucide-react';
-import { toast } from 'sonner';
 import { useMediaQuery } from '../../lib/hooks/useMediaQuery';
 import { speak } from '../../lib/audio';
 
@@ -9,10 +8,9 @@ interface LessonContentProps {
   title: string;
   content: string;
   onStartQuiz: () => void;
-  isCompleted?: boolean;
 }
 
-function LessonContentComponent({ title, content, onStartQuiz, isCompleted = false }: LessonContentProps) {
+function LessonContentComponent({ title, content, onStartQuiz }: LessonContentProps) {
   const [showTranslations, setShowTranslations] = useState(true);
   const [clickedLetters, setClickedLetters] = useState<number[]>([]);
   const isMobile = useMediaQuery('(max-width: 768px)');
@@ -71,7 +69,7 @@ function LessonContentComponent({ title, content, onStartQuiz, isCompleted = fal
               </div>
               <div>
                 <h1 className="text-3xl md:text-4xl font-display font-black text-gray-900 tracking-tight leading-tight">{title}</h1>
-                <p className="text-gray-400 font-bold uppercase tracking-widest text-[8px] mt-1 text-right">Hero Training Session</p>
+                <p className="text-gray-400 font-bold uppercase tracking-widest text-[8px] mt-1 text-right">جلسة تدريب البطل</p>
               </div>
             </div>
             
@@ -91,13 +89,13 @@ function LessonContentComponent({ title, content, onStartQuiz, isCompleted = fal
           <div className={`space-y-6 ${isStory ? 'max-w-2xl mx-auto text-center' : ''}`}>
             {isAlphabet && (
               <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6" dir="ltr">
-                {alphabetData.map((item, idx) => {
+                {alphabetData.map((item: any, idx: number) => {
                   const isClicked = clickedLetters.includes(idx);
                   const colorClasses = item.color || 'bg-blue-100 text-blue-600 border-blue-200';
                   const baseClasses = 'hover:scale-105 active:scale-95';
 
                   return (
-                    <motion.button
+                    <motion.div
                       key={idx}
                       initial={{ opacity: 0, scale: 0.8 }}
                       animate={{ opacity: 1, scale: 1 }}
@@ -108,7 +106,7 @@ function LessonContentComponent({ title, content, onStartQuiz, isCompleted = fal
                         }
                         handleSpeak(`${item.letter}, ${item.word}`);
                       }}
-                      className={`relative overflow-hidden rounded-[2rem] border-4 flex flex-col items-center justify-center transition-all min-h-[160px] ${baseClasses} ${
+                      className={`relative overflow-hidden rounded-[2rem] border-4 flex flex-col items-center justify-center transition-all min-h-[160px] cursor-pointer ${baseClasses} ${
                         isClicked ? '!border-emerald-500 !bg-emerald-50 scale-105 shadow-xl shadow-emerald-200' : colorClasses
                       }`}
                     >
@@ -123,19 +121,15 @@ function LessonContentComponent({ title, content, onStartQuiz, isCompleted = fal
                         <div className="text-4xl">{item.emoji}</div>
                         <div className="text-lg font-bold capitalize mt-2" dir="ltr">{item.word}</div>
                         <div className="text-sm font-medium opacity-80">{item.translation}</div>
+                        
+                        <div 
+                          className="mt-3 p-2.5 bg-white/80 text-gray-700 rounded-full flex items-center gap-1.5 shadow-sm text-xs font-bold"
+                        >
+                          <Volume2 size={16} />
+                          <span>استمع</span>
+                        </div>
                       </div>
-                      
-                      <div 
-                        onClick={(e) => { 
-                          e.stopPropagation(); 
-                          handleSpeak(`${item.letter}, ${item.word}`);
-                        }}
-                        className="absolute bottom-3 left-1/2 -translate-x-1/2 bg-white/70 hover:bg-white text-gray-700 px-3 py-1.5 rounded-full flex items-center gap-1.5 shadow-sm text-xs font-bold transition-colors cursor-pointer"
-                      >
-                        <Volume2 size={14} />
-                        <span>استمع</span>
-                      </div>
-                    </motion.button>
+                    </motion.div>
                   );
                 })}
               </div>
@@ -143,7 +137,7 @@ function LessonContentComponent({ title, content, onStartQuiz, isCompleted = fal
 
             {isVocab && (
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5" dir="ltr">
-                {vocabData.map((item, idx) => (
+                {vocabData.map((item: any, idx: number) => (
                   <div
                     key={idx}
                     className={`bg-gray-50 rounded-[1.5rem] p-5 border-2 border-gray-100 flex flex-col justify-between items-start cursor-pointer ${
