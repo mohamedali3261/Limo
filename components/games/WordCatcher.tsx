@@ -7,6 +7,7 @@ import { CONVERSATIONS, LEVELS } from './wordCatcher/constants';
 import { FallingWordCard } from './wordCatcher/FallingWordCard';
 import { GameOver } from './wordCatcher/GameOver';
 import { WordCatcherLevelCard } from '../gamehub/WordCatcherLevelCard';
+import { useMediaQuery } from '../../lib/hooks/useMediaQuery';
 
 const STORAGE_KEY = 'wordCatcher_progress';
 
@@ -35,6 +36,7 @@ export default function WordCatcher() {
   const [progress, setProgress] = useState<ConversationProgress>(loadProgress);
   const [activeConv, setActiveConv] = useState<Conversation | null>(null);
   const [currentLineIndex, setCurrentLineIndex] = useState(0);
+  const isMobile = useMediaQuery('(max-width: 768px)');
   
   const [words, setWords] = useState<FallingWord[]>([]);
   const [collectedWords, setCollectedWords] = useState<{ id: string; text: string }[]>([]);
@@ -358,8 +360,8 @@ export default function WordCatcher() {
               </div>
 
               <div className={`relative p-6 md:p-10 transition-all duration-700 ease-in-out border-t-2 ${isSentenceValid ? 'bg-gradient-to-t from-green-100 to-green-50 border-green-200' : 'bg-gradient-to-t from-slate-50 to-white border-slate-100'} flex flex-col items-center justify-center gap-8`}>
-                 {/* Visual feedback for drag state */}
-                 {draggedIndex !== null && (
+                 {/* Visual feedback for drag state - only on desktop */}
+                 {!isMobile && draggedIndex !== null && (
                    <motion.div 
                      initial={{ opacity: 0 }}
                      animate={{ opacity: 1 }}
@@ -375,26 +377,26 @@ export default function WordCatcher() {
                       return (
                         <motion.div 
                           key={word.id}
-                          layout
-                          draggable
-                          onDragStart={() => handleDragStart(idx)}
-                          onDragOver={handleDragOver}
-                          onDragEnter={() => handleDragEnter(idx)}
-                          onDragLeave={handleDragLeave}
-                          onDrop={() => handleDrop(idx)}
-                          whileHover={!isDragging ? { scale: 1.08, y: -8 } : {}}
-                          animate={{
+                          layout={!isMobile}
+                          draggable={!isMobile}
+                          onDragStart={() => !isMobile && handleDragStart(idx)}
+                          onDragOver={!isMobile ? handleDragOver : undefined}
+                          onDragEnter={() => !isMobile && handleDragEnter(idx)}
+                          onDragLeave={() => !isMobile && handleDragLeave()}
+                          onDrop={() => !isMobile && handleDrop(idx)}
+                          whileHover={!isMobile && !isDragging ? { scale: 1.08, y: -8 } : {}}
+                          animate={!isMobile ? {
                             scale: isDragging ? 0.9 : isDragOver ? 1.12 : 1,
                             y: isDragOver ? -12 : 0,
                             opacity: isDragging ? 0.6 : 1,
-                          }}
-                          transition={{ type: 'spring', stiffness: 300, damping: 20 }}
+                          } : {}}
+                          transition={!isMobile ? { type: 'spring', stiffness: 300, damping: 20 } : {}}
                           className={`px-4 md:px-7 py-2.5 md:py-4 rounded-2xl md:rounded-3xl border-b-4 font-black text-lg md:text-2xl shadow-lg select-none transition-all relative ${
-                            isDragging 
+                            isDragging && !isMobile
                               ? 'cursor-grabbing opacity-60 scale-90 border-b-2' 
-                              : 'cursor-grab'
+                              : !isMobile ? 'cursor-grab' : 'cursor-pointer'
                           } ${
-                            isDragOver
+                            isDragOver && !isMobile
                               ? 'ring-4 ring-blue-400 ring-offset-2 scale-110 shadow-2xl'
                               : ''
                           } ${
@@ -408,8 +410,8 @@ export default function WordCatcher() {
                             {word.text}
                           </div>
                           
-                          {/* Drag indicator */}
-                          {!isDragging && (
+                          {/* Drag indicator - only on desktop */}
+                          {!isDragging && !isMobile && (
                             <motion.div 
                               className="absolute -left-2 top-1/2 -translate-y-1/2 w-1 h-6 bg-slate-300 rounded-full opacity-0 group-hover:opacity-100"
                               animate={{ opacity: [0.3, 0.7, 0.3] }}
